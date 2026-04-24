@@ -22,6 +22,7 @@ def generate_ideas(system_prompt: str, trends_text: str) -> str:
                 {"role": "user", "content": f"INPUT TRENDS:\n{trends_text}"},
             ],
             temperature=0.4,
+            max_tokens=700,
         )
         return resp.choices[0].message.content
 
