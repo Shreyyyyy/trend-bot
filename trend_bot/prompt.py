@@ -10,10 +10,14 @@ Hard rules:
 
 Sources:
 - You MUST attach exactly ONE credible source URL per idea, chosen from the provided SOURCE URL POOL.
-- Prefer sources in this order: official docs, GitHub repo, arXiv, well-known engineering blogs, Hacker News discussion.
-- Avoid low-credibility/random blog links.
+- Prefer: official docs, GitHub repo, arXiv, well-known engineering blogs, Hacker News discussion.
 
-OUTPUT FORMAT (STRICT):
-5 lines of project names
-url where di you find them
+OUTPUT FORMAT (ULTRA-STRICT):
+Return EXACTLY 5 lines and NOTHING ELSE.
+Each line must be:
+
+<n>) <Project name> — <Source URL>
+
+Example:
+1) Agent Replay Harness — https://github.com/... 
 """

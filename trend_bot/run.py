@@ -46,42 +46,50 @@ def _postprocess_ideas(raw: str) -> str:
 
     Extract the first 5 (Project, Source) pairs and emit a tiny message.
     """
-    lines = [ln.strip() for ln in raw.splitlines()]
-    pairs: list[tuple[str, str]] = []
+    lines = [ln.strip() for ln in raw.splitlines() if ln.strip()]
 
-    i = 0
-    while i < len(lines) and len(pairs) < 5:
-        l = lines[i]
-        # Accept multiple formats
-        if l.lower().startswith("project:") or l.lower().startswith("1) project") or ") project" in l.lower():
-            # normalize project line
-            if ":" in l:
-                name = l.split(":", 1)[1].strip()
-            else:
-                name = l
-
-            # find source on same/next few lines
-            src = ""
-            for j in range(i + 1, min(i + 6, len(lines))):
-                sj = lines[j]
-                if sj.lower().startswith("source:"):
-                    src = sj.split(":", 1)[1].strip()
-                    break
-            if name and src:
-                pairs.append((name, src))
-                i += 1
+    # Preferred: parse strict 5-line format: "n) name — url"
+    out_lines: list[str] = []
+    for ln in lines:
+        if len(out_lines) >= 5:
+            break
+        if "http" not in ln:
+            continue
+        # try split on emdash/mdash/hyphen separators
+        sep = "—" if "—" in ln else "-" if " - " in ln else None
+        if sep:
+            left, right = ln.split(sep, 1)
+            url = right.strip()
+            name = left.split(")", 1)[1].strip() if ")" in left else left.strip()
+            if url.startswith("http") and name:
+                out_lines.append(f"{len(out_lines)+1}) {name} — {url}")
                 continue
-        i += 1
 
-    # Fallback: if model ignored the format, just keep the first 20 lines.
-    if not pairs:
-        return "\n".join(lines[:20]).strip()
+        # else: line has URL but not the separator; keep it as-is (cleaned)
+        out_lines.append(ln)
 
-    out_lines = ["This week’s 5 project ideas:"]
-    for idx, (name, src) in enumerate(pairs, start=1):
-        out_lines.append(f"{idx}) {name}")
-        out_lines.append(f"   Source: {src}")
-    return "\n".join(out_lines).strip() + "\n"
+    # Secondary fallback: pair URLs with previous line as name
+    if len(out_lines) < 5:
+        pairs: list[str] = []
+        prev = ""
+        for ln in lines:
+            if "http" in ln:
+                # extract first url-like token
+                parts = [p for p in ln.replace("(", " ").replace(")", " ").split() if p.startswith("http")]
+                if parts:
+                    name = prev[:120] if prev else "Project idea"
+                    pairs.append(f"{len(pairs)+1}) {name} — {parts[0]}")
+                    if len(pairs) >= 5:
+                        break
+            prev = ln
+        if pairs:
+            out_lines = pairs
+
+    # Absolute fallback
+    if not out_lines:
+        return "No ideas generated. (Model returned empty output.)\n"
+
+    return "\n".join(out_lines[:5]).strip() + "\n"
 
 
 def main():
