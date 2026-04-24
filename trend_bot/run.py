@@ -23,6 +23,24 @@ def _trends_to_text(trends: dict) -> str:
     return "\n".join(lines)
 
 
+def _collect_source_urls(trends: dict) -> list[str]:
+    urls: list[str] = []
+    for block in trends.get("queries", []):
+        for r in block.get("results", [])[:6]:
+            u = r.get("url")
+            if isinstance(u, str) and u.startswith("http"):
+                urls.append(u)
+    # de-dupe while preserving order
+    seen = set()
+    out = []
+    for u in urls:
+        if u in seen:
+            continue
+        seen.add(u)
+        out.append(u)
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", type=Path, default=Path("out"))
@@ -34,6 +52,9 @@ def main():
     (args.out / "trends.json").write_text(json.dumps(trends, indent=2), encoding="utf-8")
 
     trends_text = _trends_to_text(trends)
+    src_urls = _collect_source_urls(trends)
+    if src_urls:
+        trends_text += "\n\nSOURCE URL POOL (choose exactly one per idea):\n" + "\n".join(f"- {u}" for u in src_urls[:60])
     ideas_md = generate_ideas(SYSTEM_PROMPT, trends_text)
     (args.out / "ideas.md").write_text(ideas_md, encoding="utf-8")
 

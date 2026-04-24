@@ -46,28 +46,11 @@ STEP 5: RANKING
 
 OUTPUT FORMAT (STRICT):
 
-For each idea:
+Return EXACTLY 5 items. For each item output exactly:
 
-1. Project Name:
-2. Problem:
-3. Why it matters:
-4. Solution:
-5. Tech Stack:
-6. Difficulty: (Easy/Medium/Hard)
-7. Time Estimate: (in days)
-8. Unique Insight:
-9. MVP Features:
- - bullet points
-10. Future Scope:
+1) Project: <short name>
+2) Summary: <exactly 2 lines; practical + buildable in 5–7 days>
+3) Source: <one URL from the trends that most directly inspired it>
 
-FINAL SECTION:
-
-Generate a SHORT notification message for mobile (Telegram/WhatsApp):
-
-🔥 Idea 1: <name>
-💡 <1-line problem>
-⚙️ <tech stack short>
-⏱️ <days>
-
-(repeat for top 3 ideas only)
+No extra sections. No long analysis. No tables.
 """
