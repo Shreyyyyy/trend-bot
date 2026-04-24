@@ -31,15 +31,48 @@ def _shorten(text: str, max_chars: int = 3500) -> str:
     return text[:max_chars - 1] + "…"
 
 
-def send_markdown(text: str) -> None:
+def _clean_for_telegram(text: str) -> str:
+    # Keep it plain and readable on mobile.
+    # - Strip markdown-ish headers/formatting
+    # - Collapse extra blank lines
+    lines = []
+    for raw in text.splitlines():
+        s = raw.strip()
+        if not s:
+            # keep a single blank line (handled later)
+            lines.append("")
+            continue
+        # Drop common markdown header prefixes
+        while s.startswith("#"):
+            s = s.lstrip("#").strip()
+        # Normalize bullets
+        if s.startswith("-"):
+            s = "• " + s.lstrip("-").strip()
+        lines.append(s)
+
+    # collapse multiple blank lines
+    out = []
+    blank = False
+    for l in lines:
+        if l == "":
+            if blank:
+                continue
+            blank = True
+            out.append("")
+        else:
+            blank = False
+            out.append(l)
+    return "\n".join(out).strip()
+
+
+def send_text(text: str) -> None:
     token = _must_env("TELEGRAM_BOT_TOKEN")
     chat_id = _must_env("TELEGRAM_CHAT_ID")
 
     url = f"https://api.telegram.org/bot{token}/sendMessage"
     payload = {
         "chat_id": chat_id,
-        "text": _shorten(text),
-        # markdown is fragile; plain text is more reliable.
+        "text": _shorten(_clean_for_telegram(text)),
         "disable_web_page_preview": True,
     }
     r = requests.post(url, json=payload, timeout=30)
@@ -52,9 +85,8 @@ def main() -> None:
     args = ap.parse_args()
 
     text = args.ideas.read_text(encoding="utf-8")
-    send_markdown(text)
+    send_text(text)
 
 
 if __name__ == "__main__":
     main()
-
