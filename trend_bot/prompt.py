@@ -14,13 +14,6 @@ Sources:
 - Avoid low-credibility/random blog links.
 
 OUTPUT FORMAT (STRICT):
-Return ONLY these 5 blocks, nothing else:
-
-1) Project: <name>
-   Source: <url>
-
-2) Project: <name>
-   Source: <url>
-
-... up to 5.
+5 lines of project names
+url where di you find them
 """
