@@ -204,6 +204,46 @@ export default function Home() {
             </a>
           </div>
 
+          {/* Intelligence Index - Left Sidebar (Fixed Access) */}
+          {!chatOpen && (
+            <div className="absolute left-6 md:left-10 top-1/2 -translate-y-1/2 z-50 hidden lg:flex flex-col gap-4">
+              <div className="flex items-center gap-3 mb-2">
+                <div className="w-1.5 h-6 bg-blue-600 rounded-full" />
+                <span className="text-[10px] font-black uppercase tracking-[0.4em] text-white/40">Active Signals</span>
+              </div>
+              {projects.map((p, i) => (
+                <motion.div
+                  key={p.id}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: i * 0.1 }}
+                  className={`group relative flex items-center justify-between gap-6 p-4 rounded-2xl border transition-all duration-300 w-64 ${
+                    hoveredIndex === i 
+                      ? "bg-blue-600/10 border-blue-500/30 shadow-[0_0_30px_rgba(59,130,246,0.1)]" 
+                      : "bg-white/[0.02] border-white/5 hover:bg-white/[0.05] hover:border-white/10"
+                  }`}
+                  onMouseEnter={() => setHoveredIndex(i)}
+                  onMouseLeave={() => setHoveredIndex(null)}
+                >
+                  <div className="flex flex-col gap-1 min-w-0">
+                    <span className="text-[9px] font-black text-blue-500/60 uppercase">Signal 0{i + 1}</span>
+                    <p className="text-xs font-black text-gray-200 truncate group-hover:text-white transition-colors">{p.name}</p>
+                  </div>
+                  {p.url && (
+                    <a 
+                      href={p.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="p-2 rounded-xl bg-white/5 hover:bg-blue-600 text-gray-500 hover:text-white transition-all active:scale-90"
+                    >
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  )}
+                </motion.div>
+              ))}
+            </div>
+          )}
+
           <div className="relative flex items-center justify-center w-full h-full overflow-hidden">
             {loading ? (
               <div className="w-40 h-40 md:w-80 md:h-80 rounded-full border-4 border-white/5 border-t-blue-500 animate-spin" />
@@ -298,19 +338,6 @@ export default function Home() {
                               </div>
                               <p className="text-base md:text-2xl text-gray-200 font-black leading-tight tracking-tight">{projects[hoveredIndex].build}</p>
                             </div>
-
-                            {projects[hoveredIndex].url && (
-                              <div className="pt-2">
-                                <a 
-                                  href={projects[hoveredIndex].url}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full text-[10px] font-black uppercase tracking-[0.2em] text-white transition-all pointer-events-auto active:scale-95 group"
-                                >
-                                  Explore Source <ExternalLink className="w-3 h-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                                </a>
-                              </div>
-                            )}
                           </div>
                         </motion.div>
                       )}
