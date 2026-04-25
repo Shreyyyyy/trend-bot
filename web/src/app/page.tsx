@@ -475,7 +475,7 @@ export default function Home() {
                 : "bg-red-600/10 border-red-500/30 text-red-400"
             }`}
           >
-            {showToast.type === 'success' ? <Zap className="w-5 h-5 animate-pulse" /> : <X className="w-5 h-5" />}
+            {showToast.type === 'success' ? <Zap className="w-5 h-5 animate-pulse" /> : <span className="text-xl leading-none">✕</span>}
             <span className="text-xs font-black tracking-[0.3em] uppercase">{showToast.message}</span>
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent animate-[shimmer_2s_infinite]" />
           </motion.div>
