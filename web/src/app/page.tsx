@@ -229,7 +229,14 @@ export default function Home() {
               Array(5).fill(0).map((_, i) => <div key={i} className="h-40 bg-white/5 rounded-3xl animate-pulse" />)
             ) : (
               projects.map((p, i) => (
-                <div key={i} className="p-6 rounded-[2rem] bg-white/[0.03] border border-white/10 hover:border-purple-500/30 transition-all group">
+                <motion.div 
+                  key={i} 
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.1 }}
+                  className="p-6 rounded-[2rem] bg-white/[0.03] border border-white/10 hover:border-purple-500/30 transition-all group"
+                >
                   <div className="flex items-start justify-between mb-4">
                     <span className="text-[10px] font-mono text-gray-600">IDEA #0{p.id}</span>
                     <a href={p.url} target="_blank" className="p-2 bg-white/5 rounded-lg text-gray-500 hover:text-white hover:bg-white/10 transition-all">
