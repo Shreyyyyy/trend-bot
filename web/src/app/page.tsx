@@ -117,12 +117,20 @@ export default function Home() {
 
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
-  // Constants for Pie Chart
-  const size = 560;
-  const radius = size / 2.5;
-  const innerRadius = radius * 0.45;
+  // Constants for Pie Chart - Enlarged
+  const size = 720;
+  const radius = size / 2.3;
+  const innerRadius = radius * 0.5;
   const centerX = size / 2;
   const centerY = size / 2;
+
+  const colors = [
+    "#ef4444", // Red
+    "#f59e0b", // Amber
+    "#10b981", // Emerald
+    "#3b82f6", // Blue
+    "#8b5cf6", // Violet
+  ];
 
   const getCoordinatesForPercent = (percent: number) => {
     const x = Math.cos(2 * Math.PI * percent);
@@ -201,27 +209,26 @@ export default function Home() {
                       <motion.path
                         key={i}
                         d={pathData}
-                        fill={isHovered ? "rgba(59, 130, 246, 0.4)" : "rgba(255, 255, 255, 0.03)"}
-                        stroke="rgba(255, 255, 255, 0.1)"
-                        strokeWidth="1.5"
+                        fill={isHovered ? colors[i % colors.length] : `${colors[i % colors.length]}15`}
+                        stroke={isHovered ? colors[i % colors.length] : `${colors[i % colors.length]}30`}
+                        strokeWidth="2"
                         onMouseEnter={() => setHoveredIndex(i)}
                         onMouseLeave={() => setHoveredIndex(null)}
                         onClick={() => handleSend(`Strategic breakdown of ${p.name}`)}
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: isHovered ? 1.05 : 1 }}
                         transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                        className="cursor-pointer transition-colors duration-300"
+                        className="cursor-pointer transition-all duration-300"
                       />
                     );
                   })}
                   
                   {/* Decorative Outer Rings */}
-                  <circle cx={centerX} cy={centerY} r={radius + 30} fill="none" stroke="rgba(59, 130, 246, 0.1)" strokeWidth="1" strokeDasharray="4 8" className="animate-[spin_60s_linear_infinite]" />
-                  <circle cx={centerX} cy={centerY} r={radius + 60} fill="none" stroke="rgba(255, 255, 255, 0.03)" strokeWidth="0.5" />
+                  <circle cx={centerX} cy={centerY} r={radius + 40} fill="none" stroke="rgba(255, 255, 255, 0.05)" strokeWidth="1" strokeDasharray="5 10" className="animate-[spin_80s_linear_infinite]" />
                 </svg>
 
                 {/* Central Intelligence HUD */}
-                <div className="absolute pointer-events-none flex flex-col items-center justify-center text-center max-w-[420px]">
+                <div className="absolute pointer-events-none flex flex-col items-center justify-center text-center max-w-[450px]">
                   <AnimatePresence mode="wait">
                     {hoveredIndex === null ? (
                       <motion.div
@@ -231,45 +238,43 @@ export default function Home() {
                         exit={{ opacity: 0, scale: 1.1 }}
                         className="space-y-4"
                       >
-                        <div className="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-4 border border-white/10 shadow-2xl">
-                          <Bot className="w-8 h-8 text-blue-500" />
+                        <div className="w-20 h-20 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-4 border border-white/10 shadow-[0_0_50px_rgba(255,255,255,0.05)]">
+                          <Bot className="w-10 h-10 text-white/20" />
                         </div>
-                        <h4 className="text-xs font-black text-blue-400 uppercase tracking-[0.4em]">Signal Lab</h4>
-                        <p className="text-sm text-gray-500 font-bold leading-relaxed">Hover a segment to decode<br/>market intelligence</p>
+                        <h4 className="text-sm font-black text-white/20 uppercase tracking-[0.5em]">System Idle</h4>
+                        <p className="text-sm text-gray-600 font-bold leading-relaxed">Select a segment to<br/>initiate data analysis</p>
                       </motion.div>
                     ) : (
                       <motion.div
                         key={hoveredIndex}
-                        initial={{ opacity: 0, y: 10 }}
+                        initial={{ opacity: 0, y: 15 }}
                         animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -10 }}
+                        exit={{ opacity: 0, y: -15 }}
                         className="space-y-8"
                       >
                         <div className="space-y-2">
-                          <span className="text-xs font-black text-blue-400 uppercase tracking-[0.2em]">Signal 0{hoveredIndex + 1}</span>
-                          <h2 className="text-4xl font-black tracking-tighter leading-none text-white">{projects[hoveredIndex].name}</h2>
-                          <div className="flex items-center justify-center gap-2 text-[10px] text-gray-500 font-black uppercase mt-3 tracking-widest border border-white/5 bg-white/5 py-1 px-3 rounded-full w-fit mx-auto">
+                          <span className="text-xs font-black uppercase tracking-[0.3em]" style={{ color: colors[hoveredIndex % colors.length] }}>
+                            Signal 0{hoveredIndex + 1}
+                          </span>
+                          <h2 className="text-5xl font-black tracking-tighter leading-none text-white">{projects[hoveredIndex].name}</h2>
+                          <div className="flex items-center justify-center gap-2 text-[10px] text-gray-500 font-black uppercase mt-4 tracking-[0.2em] border border-white/5 bg-white/5 py-1.5 px-4 rounded-full w-fit mx-auto">
                              <Globe className="w-3 h-3" /> {projects[hoveredIndex].market}
                           </div>
                         </div>
 
-                        <div className="grid grid-cols-1 gap-6 px-6 text-left">
+                        <div className="grid grid-cols-1 gap-8 px-10 text-left">
                           <div className="space-y-2">
-                            <div className="flex items-center gap-2 text-[10px] font-black text-blue-400 uppercase tracking-[0.2em]">
-                              <Target className="w-4 h-4" /> Why
+                            <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.3em]" style={{ color: colors[hoveredIndex % colors.length] }}>
+                              <Target className="w-4 h-4 opacity-50" /> Hypothesis
                             </div>
-                            <p className="text-sm text-gray-400 font-semibold leading-relaxed italic">{projects[hoveredIndex].why}</p>
+                            <p className="text-sm text-gray-400 font-bold leading-relaxed italic">{projects[hoveredIndex].why}</p>
                           </div>
                           <div className="space-y-2">
-                            <div className="flex items-center gap-2 text-[10px] font-black text-purple-400 uppercase tracking-[0.2em]">
-                              <Zap className="w-4 h-4" /> Build
+                            <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.3em]" style={{ color: colors[hoveredIndex % colors.length] }}>
+                              <Zap className="w-4 h-4 opacity-50" /> Execution
                             </div>
-                            <p className="text-base text-gray-200 font-black leading-tight tracking-tight">{projects[hoveredIndex].build}</p>
+                            <p className="text-lg text-gray-200 font-black leading-tight tracking-tight">{projects[hoveredIndex].build}</p>
                           </div>
-                        </div>
-                        
-                        <div className="pt-4 text-[10px] font-black text-white/30 uppercase tracking-[0.3em] animate-pulse">
-                          Click to analyze
                         </div>
                       </motion.div>
                     )}
@@ -280,19 +285,20 @@ export default function Home() {
                 {projects.map((p, i) => {
                   const sliceSize = 1 / projects.length;
                   const angle = (i * sliceSize + sliceSize / 2) * 2 * Math.PI - Math.PI / 2;
-                  const labelRadius = radius + 110;
+                  const labelRadius = radius + 130;
                   const x = centerX + Math.cos(angle) * labelRadius;
                   const y = centerY + Math.sin(angle) * labelRadius;
                   
                   return (
                     <motion.div
                       key={i}
-                      className="absolute text-[11px] font-black uppercase tracking-[0.15em] text-center whitespace-nowrap pointer-events-none"
+                      className="absolute text-[12px] font-black uppercase tracking-[0.2em] text-center whitespace-nowrap pointer-events-none"
                       style={{ left: x, top: y, transform: 'translate(-50%, -50%)' }}
                       animate={{ 
-                        color: hoveredIndex === i ? "#fff" : "#4b5563",
-                        scale: hoveredIndex === i ? 1.2 : 1,
-                        opacity: hoveredIndex === i || hoveredIndex === null ? 1 : 0.4
+                        color: hoveredIndex === i ? colors[i % colors.length] : "#4b5563",
+                        scale: hoveredIndex === i ? 1.3 : 1,
+                        opacity: hoveredIndex === i || hoveredIndex === null ? 1 : 0.2,
+                        filter: hoveredIndex === i ? `drop-shadow(0 0 10px ${colors[i % colors.length]}50)` : "none"
                       }}
                     >
                       {p.name.split(" ").slice(0, 2).join(" ")}
