@@ -216,9 +216,9 @@ export default function Home() {
               </div>
             ) : (
               <div className="relative flex items-center justify-center w-full h-full">
-                {/* SVG Pie Chart - Scaled on Mobile */}
-                <div className="scale-[0.45] sm:scale-[0.7] md:scale-100 transition-transform duration-1000">
-                  <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} className="transform -rotate-90 max-w-none">
+                {/* SVG Pie Chart - Scaled on Mobile to fit screen better */}
+                <div className="scale-[0.65] sm:scale-[0.8] md:scale-100 transition-transform duration-1000 flex items-center justify-center">
+                  <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} className="transform -rotate-90 max-w-none drop-shadow-[0_0_30px_rgba(59,130,246,0.1)]">
                   {projects.map((p, i) => {
                     const sliceSize = 1 / projects.length;
                     const startPercent = i * sliceSize;
