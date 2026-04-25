@@ -204,7 +204,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="relative flex items-center justify-center w-full h-full scale-[0.5] sm:scale-[0.7] md:scale-100 transition-transform duration-700">
+          <div className="relative flex items-center justify-center w-full h-full overflow-hidden">
             {loading ? (
               <div className="w-40 h-40 md:w-80 md:h-80 rounded-full border-4 border-white/5 border-t-blue-500 animate-spin" />
             ) : projects.length === 0 ? (
@@ -215,9 +215,10 @@ export default function Home() {
                 <h3 className="text-xs md:text-sm font-black text-white/30 uppercase tracking-widest">No Signals Loaded</h3>
               </div>
             ) : (
-              <div className="relative flex items-center justify-center">
-                {/* SVG Pie Chart */}
-                <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} className="transform -rotate-90">
+              <div className="relative flex items-center justify-center w-full h-full">
+                {/* SVG Pie Chart - Scaled on Mobile */}
+                <div className="scale-[0.45] sm:scale-[0.7] md:scale-100 transition-transform duration-1000">
+                  <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} className="transform -rotate-90 max-w-none">
                   {projects.map((p, i) => {
                     const sliceSize = 1 / projects.length;
                     const startPercent = i * sliceSize;
@@ -263,10 +264,13 @@ export default function Home() {
                     );
                   })}
 
-                  {/* Decorative Outer Rings */}
                   <circle cx={centerX} cy={centerY} r={radius + 40} fill="none" stroke="rgba(255, 255, 255, 0.05)" strokeWidth="1" strokeDasharray="5 10" className="animate-[spin_80s_linear_infinite]" />
-                </svg>                {/* Central Intelligence HUD */}
-                <div className="absolute pointer-events-none flex flex-col items-center justify-center text-center max-w-[280px] md:max-w-[450px]">
+                </svg>
+              </div>
+
+              {/* Central Intelligence HUD - UN-SCALED for maximum readability */}
+              <div className="absolute inset-0 pointer-events-none flex flex-col items-center justify-center text-center p-6">
+                <div className="max-w-[320px] md:max-w-[450px] w-full">
                   <AnimatePresence mode="wait">
                     {hoveredIndex === null ? (
                       <motion.div
@@ -285,39 +289,40 @@ export default function Home() {
                     ) : (
                       <motion.div
                         key={hoveredIndex}
-                        initial={{ opacity: 0, y: 15 }}
+                        initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -15 }}
-                        className="space-y-4 md:space-y-8"
+                        exit={{ opacity: 0, y: -20 }}
+                        className="space-y-6 md:space-y-10"
                       >
-                        <div className="space-y-1 md:space-y-2">
+                        <div className="space-y-2 md:space-y-4">
                           <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.3em]" style={{ color: colors[hoveredIndex % colors.length] }}>
                             Signal 0{hoveredIndex + 1}
                           </span>
-                          <h2 className="text-2xl md:text-5xl font-black tracking-tighter leading-none text-white">{projects[hoveredIndex].name}</h2>
-                          <div className="flex items-center justify-center gap-2 text-[8px] md:text-[10px] text-gray-500 font-black uppercase mt-2 md:mt-4 tracking-[0.2em] border border-white/5 bg-white/5 py-1 md:py-1.5 px-3 md:px-4 rounded-full w-fit mx-auto">
-                             <Globe className="w-2.5 h-2.5 md:w-3 md:h-3" /> {projects[hoveredIndex].market}
+                          <h2 className="text-3xl md:text-6xl font-black tracking-tighter leading-tight text-white drop-shadow-2xl">{projects[hoveredIndex].name}</h2>
+                          <div className="flex items-center justify-center gap-2 text-[10px] md:text-[12px] text-gray-400 font-black uppercase mt-2 md:mt-4 tracking-[0.2em] border border-white/10 bg-white/5 py-1.5 px-4 rounded-full w-fit mx-auto">
+                             <Globe className="w-3 h-3 md:w-4 md:h-4" /> {projects[hoveredIndex].market}
                           </div>
                         </div>
 
-                        <div className="grid grid-cols-1 gap-4 md:gap-8 px-4 md:px-10 text-left">
-                          <div className="space-y-1 md:space-y-2">
-                            <div className="flex items-center gap-2 text-[8px] md:text-[10px] font-black uppercase tracking-[0.3em]" style={{ color: colors[hoveredIndex % colors.length] }}>
-                              <Target className="w-3 h-3 md:w-4 md:h-4 opacity-50" /> Hypothesis
+                        <div className="grid grid-cols-1 gap-6 md:gap-10 text-left">
+                          <div className="space-y-2">
+                            <div className="flex items-center gap-2 text-[10px] md:text-[12px] font-black uppercase tracking-[0.4em]" style={{ color: colors[hoveredIndex % colors.length] }}>
+                              <Target className="w-3.5 h-3.5 md:w-5 md:h-5 opacity-60" /> Hypothesis
                             </div>
-                            <p className="text-[11px] md:text-sm text-gray-400 font-bold leading-relaxed italic line-clamp-3 md:line-clamp-none">{projects[hoveredIndex].why}</p>
+                            <p className="text-sm md:text-lg text-gray-400 font-bold leading-snug italic line-clamp-3 md:line-clamp-none">{projects[hoveredIndex].why}</p>
                           </div>
-                          <div className="space-y-1 md:space-y-2">
-                            <div className="flex items-center gap-2 text-[8px] md:text-[10px] font-black uppercase tracking-[0.3em]" style={{ color: colors[hoveredIndex % colors.length] }}>
-                              <Zap className="w-3 h-3 md:w-4 md:h-4 opacity-50" /> Execution
+                          <div className="space-y-2">
+                            <div className="flex items-center gap-2 text-[10px] md:text-[12px] font-black uppercase tracking-[0.4em]" style={{ color: colors[hoveredIndex % colors.length] }}>
+                              <Zap className="w-3.5 h-3.5 md:w-5 md:h-5 opacity-60" /> Execution
                             </div>
-                            <p className="text-sm md:text-lg text-gray-200 font-black leading-tight tracking-tight">{projects[hoveredIndex].build}</p>
+                            <p className="text-base md:text-2xl text-gray-200 font-black leading-tight tracking-tight">{projects[hoveredIndex].build}</p>
                           </div>
                         </div>
                       </motion.div>
                     )}
                   </AnimatePresence>
                 </div>
+              </div>
 
                 {/* External Labels for Pie */}
                 {projects.map((p, i) => {
