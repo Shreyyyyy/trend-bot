@@ -259,56 +259,63 @@ export default function Home() {
               <div className="relative flex items-center justify-center w-full h-full">
                 {/* SVG Pie Chart */}
                 <div 
-                  className="scale-[0.55] sm:scale-[0.75] md:scale-100 transition-transform duration-1000 flex items-center justify-center"
+                  className="w-full h-full flex items-center justify-center"
                   onMouseLeave={() => setHoveredIndex(null)}
                 >
                   <svg 
                     width={size} 
                     height={size} 
                     viewBox={`0 0 ${size} ${size}`} 
-                    className="transform -rotate-90 max-w-none drop-shadow-[0_0_30px_rgba(59,130,246,0.1)]"
+                    className="transform -rotate-90 max-w-none drop-shadow-[0_0_30px_rgba(59,130,246,0.1)] overflow-visible"
+                    style={{ 
+                      transform: `rotate(-90deg) scale(${typeof window !== 'undefined' && window.innerWidth < 640 ? 0.55 : typeof window !== 'undefined' && window.innerWidth < 1024 ? 0.75 : 1})`,
+                      transformOrigin: 'center'
+                    }}
                   >
-                    {projects.map((p, i) => {
-                      const sliceSize = 1 / projects.length;
-                      const startPercent = i * sliceSize;
-                      const endPercent = (i + 1) * sliceSize;
-                      const [startX, startY] = getCoordinatesForPercent(startPercent);
-                      const [endX, endY] = getCoordinatesForPercent(endPercent);
-                      const largeArcFlag = sliceSize > 0.5 ? 1 : 0;
-                      const pathData = [
-                        `M ${centerX + startX * radius} ${centerY + startY * radius}`,
-                        `A ${radius} ${radius} 0 ${largeArcFlag} 1 ${centerX + endX * radius} ${centerY + endY * radius}`,
-                        `L ${centerX + endX * innerRadius} ${centerY + endY * innerRadius}`,
-                        `A ${innerRadius} ${innerRadius} 0 ${largeArcFlag} 0 ${centerX + startX * innerRadius} ${centerY + startY * innerRadius}`,
-                        "Z",
-                      ].join(" ");
-                      const isHovered = hoveredIndex === i;
-                      return (
-                        <motion.path
-                          key={i}
-                          d={pathData}
-                          fill={isHovered ? `${colors[i % colors.length]}10` : `${colors[i % colors.length]}25`}
-                          stroke={isHovered ? colors[i % colors.length] : `${colors[i % colors.length]}40`}
-                          strokeWidth={isHovered ? "3" : "1.5"}
-                          onMouseEnter={() => setHoveredIndex(i)}
-                          onClick={() => {
-                            if (typeof window !== "undefined" && window.innerWidth < 768) {
-                              setHoveredIndex(hoveredIndex === i ? null : i);
-                            } else {
-                              handleSend(`Strategic breakdown of ${p.name}`);
-                            }
-                          }}
-                          initial={{ opacity: 0, scale: 0.8 }}
-                          animate={{
-                            opacity: hoveredIndex !== null && !isHovered ? 0.3 : 1,
-                            scale: isHovered ? 1.02 : 1
-                          }}
-                          transition={{ type: "spring", stiffness: 300, damping: 25 }}
-                          className="cursor-pointer transition-all duration-500"
-                        />
-                      );
-                    })}
-                    <circle cx={centerX} cy={centerY} r={radius + 40} fill="none" stroke="rgba(255, 255, 255, 0.05)" strokeWidth="1" strokeDasharray="5 10" className="animate-[spin_80s_linear_infinite]" />
+                    <g className="transition-transform duration-1000">
+                      {projects.map((p, i) => {
+                        const sliceSize = 1 / projects.length;
+                        const startPercent = i * sliceSize;
+                        const endPercent = (i + 1) * sliceSize;
+                        const [startX, startY] = getCoordinatesForPercent(startPercent);
+                        const [endX, endY] = getCoordinatesForPercent(endPercent);
+                        const largeArcFlag = sliceSize > 0.5 ? 1 : 0;
+                        const pathData = [
+                          `M ${centerX + startX * radius} ${centerY + startY * radius}`,
+                          `A ${radius} ${radius} 0 ${largeArcFlag} 1 ${centerX + endX * radius} ${centerY + endY * radius}`,
+                          `L ${centerX + endX * innerRadius} ${centerY + endY * innerRadius}`,
+                          `A ${innerRadius} ${innerRadius} 0 ${largeArcFlag} 0 ${centerX + startX * innerRadius} ${centerY + startY * innerRadius}`,
+                          "Z",
+                        ].join(" ");
+                        const isHovered = hoveredIndex === i;
+                        return (
+                          <motion.path
+                            key={i}
+                            d={pathData}
+                            fill={isHovered ? `${colors[i % colors.length]}10` : `${colors[i % colors.length]}25`}
+                            stroke={isHovered ? colors[i % colors.length] : `${colors[i % colors.length]}40`}
+                            strokeWidth={isHovered ? "3" : "1.5"}
+                            onMouseEnter={() => setHoveredIndex(i)}
+                            onClick={() => {
+                              if (typeof window !== "undefined" && window.innerWidth < 768) {
+                                setHoveredIndex(hoveredIndex === i ? null : i);
+                              } else {
+                                handleSend(`Strategic breakdown of ${p.name}`);
+                              }
+                            }}
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            animate={{
+                              opacity: hoveredIndex !== null && !isHovered ? 0.3 : 1,
+                              scale: isHovered ? 1.02 : 1
+                            }}
+                            transition={{ type: "spring", stiffness: 300, damping: 25 }}
+                            className="cursor-pointer transition-all duration-500"
+                            pointerEvents="auto"
+                          />
+                        );
+                      })}
+                      <circle cx={centerX} cy={centerY} r={radius + 40} fill="none" stroke="rgba(255, 255, 255, 0.05)" strokeWidth="1" strokeDasharray="5 10" className="animate-[spin_80s_linear_infinite]" />
+                    </g>
                   </svg>
                 </div>
 
