@@ -125,89 +125,96 @@ export default function Home() {
 
       <div className="flex-grow flex overflow-hidden relative z-10">
         {/* Main Feed Section */}
-        <div className={`${chatOpen ? "w-[58%]" : "w-full"} flex flex-col items-center justify-start pt-8 pb-4 px-8 transition-all duration-500 ease-in-out overflow-hidden`}>
-          <div className="w-full max-w-2xl h-full flex flex-col">
+        <div className={`${chatOpen ? "w-[58%]" : "w-full"} flex flex-col items-center justify-start pt-10 pb-6 px-10 transition-all duration-500 ease-in-out overflow-hidden`}>
+          <div className="w-full max-w-3xl h-full flex flex-col">
             {/* Header Area */}
-            <div className="flex-none flex items-end justify-between mb-6 border-b border-white/5 pb-4">
-              <div className="space-y-1">
-                <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="flex items-center gap-2 text-blue-400 font-bold tracking-widest text-[10px] uppercase">
-                  <Sparkles className="w-3 h-3" />
-                  Weekly Intel
+            <div className="flex-none flex items-end justify-between mb-8 border-b border-white/5 pb-6">
+              <div className="space-y-1.5">
+                <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="flex items-center gap-2 text-blue-400 font-black tracking-[0.2em] text-[11px] uppercase">
+                  <Sparkles className="w-3.5 h-3.5" />
+                  Weekly Intelligence
                 </motion.div>
-                <motion.h1 initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-white to-white/60 bg-clip-text text-transparent">
+                <motion.h1 initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-4xl font-black tracking-tighter bg-gradient-to-br from-white via-white to-white/40 bg-clip-text text-transparent">
                   Market Signals
                 </motion.h1>
-                {dateRange && <p className="text-[10px] text-gray-500 font-medium">{dateRange}</p>}
+                {dateRange && <p className="text-xs text-gray-500 font-bold tracking-wide">{dateRange}</p>}
               </div>
 
               <button
                 onClick={handleRefresh}
                 disabled={refreshing}
-                className="group relative flex items-center gap-2 text-[10px] font-bold text-white/70 hover:text-white bg-white/5 hover:bg-white/10 border border-white/10 rounded-full px-4 py-2 transition-all active:scale-95 disabled:opacity-50 overflow-hidden"
+                className="group relative flex items-center gap-2.5 text-xs font-black text-white/80 hover:text-white bg-white/5 hover:bg-blue-600/10 border border-white/10 hover:border-blue-500/30 rounded-2xl px-6 py-3 transition-all active:scale-95 disabled:opacity-50 overflow-hidden shadow-lg shadow-black/20"
               >
-                <RefreshCw className={`w-3 h-3 transition-transform duration-700 ${refreshing ? "animate-spin" : "group-hover:rotate-180"}`} />
-                {refreshing ? "Scanning..." : "Update Feed"}
+                <RefreshCw className={`w-4 h-4 transition-transform duration-1000 ${refreshing ? "animate-spin" : "group-hover:rotate-180"}`} />
+                {refreshing ? "Scanning Ecosystem..." : "Refresh Intelligence"}
               </button>
             </div>
 
-            {/* Scrollable Cards Area */}
-            <div className="flex-grow overflow-y-auto pr-2 space-y-3 custom-scrollbar">
+            {/* Cards Area - Adjusted for better density */}
+            <div className="flex-grow overflow-y-auto pr-3 space-y-4 custom-scrollbar pb-6">
               {loading ? (
-                <div className="space-y-3 w-full">
+                <div className="space-y-4 w-full">
                   {Array(5).fill(0).map((_, i) => (
-                    <div key={i} className="h-24 bg-white/[0.02] border border-white/5 rounded-2xl animate-pulse" />
+                    <div key={i} className="h-36 bg-white/[0.02] border border-white/5 rounded-[2.5rem] animate-pulse" />
                   ))}
                 </div>
               ) : projects.length === 0 ? (
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center py-12 bg-white/[0.02] border border-dashed border-white/10 rounded-3xl">
-                  <div className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <Zap className="w-5 h-5 text-gray-600" />
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex flex-col items-center justify-center h-full bg-white/[0.01] border border-dashed border-white/5 rounded-[3rem]">
+                  <div className="w-16 h-16 bg-white/5 rounded-3xl flex items-center justify-center mb-6 shadow-2xl">
+                    <Zap className="w-8 h-8 text-gray-700" />
                   </div>
-                  <h3 className="text-xs font-bold text-white/80">No trends detected</h3>
-                  <p className="text-[10px] text-gray-500 mt-1">Ready for your first weekly scan?</p>
+                  <h3 className="text-lg font-black text-white/40 uppercase tracking-widest">No Signals Detected</h3>
+                  <p className="text-sm text-gray-600 mt-2 font-medium">Trigger a manual scan to begin.</p>
                 </motion.div>
               ) : (
                 <AnimatePresence mode="wait">
-                  <motion.div key={dateRange} className="space-y-3 pb-4">
+                  <motion.div key={dateRange} className="space-y-4">
                     {projects.map((p, i) => (
                       <motion.div
                         key={i}
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: i * 0.05 }}
+                        initial={{ opacity: 0, scale: 0.98 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: i * 0.08, type: "spring", damping: 20 }}
                         className="group relative"
-                        onClick={() => handleSend(`Deep dive on "${p.name}". What is the technical implementation?`)}
+                        onClick={() => handleSend(`Strategic analysis for "${p.name}". Why now?`)}
                       >
-                        <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-[1.4rem] opacity-0 group-hover:opacity-100 transition duration-500 blur-sm" />
-                        <div className="relative bg-[#0d1117]/60 backdrop-blur-xl border border-white/5 group-hover:border-white/10 p-4 rounded-[1.2rem] transition-all duration-300 cursor-pointer">
-                          <div className="flex items-start justify-between mb-2">
-                            <div className="flex items-center gap-3">
-                              <span className="flex items-center justify-center w-6 h-6 rounded-lg bg-blue-500/10 text-blue-400 text-[10px] font-black border border-blue-500/10">
+                        <div className="absolute -inset-1 bg-gradient-to-r from-blue-600/10 via-purple-600/10 to-blue-600/10 rounded-[2.2rem] opacity-0 group-hover:opacity-100 transition duration-700 blur-xl" />
+                        <div className="relative bg-white/[0.02] backdrop-blur-3xl border border-white/[0.06] group-hover:border-white/[0.12] p-8 rounded-[2rem] transition-all duration-500 cursor-pointer shadow-2xl">
+                          <div className="flex items-start justify-between mb-5">
+                            <div className="flex items-center gap-5">
+                              <span className="flex items-center justify-center w-10 h-10 rounded-2xl bg-blue-500/10 text-blue-400 text-sm font-black border border-blue-500/20 shadow-inner">
                                 {p.id}
                               </span>
-                              <h2 className="text-[15px] font-bold text-white/90 group-hover:text-white transition-colors">{p.name}</h2>
+                              <div>
+                                <h2 className="text-xl font-black text-white/90 group-hover:text-white transition-colors tracking-tight">{p.name}</h2>
+                                {p.market && (
+                                  <div className="flex items-center gap-1.5 mt-1">
+                                    <span className="text-[9px] font-black uppercase tracking-[0.15em] text-gray-600">{p.market}</span>
+                                  </div>
+                                )}
+                              </div>
                             </div>
                             {p.url && (
-                              <a href={p.url} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()} className="p-1.5 rounded-md bg-white/5 text-gray-600 hover:text-blue-400 hover:bg-blue-400/10 transition-all">
-                                <ExternalLink className="w-3 h-3" />
+                              <a href={p.url} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()} className="p-3 rounded-2xl bg-white/5 text-gray-600 hover:text-blue-400 hover:bg-blue-400/10 transition-all shadow-lg border border-white/5">
+                                <ExternalLink className="w-5 h-5" />
                               </a>
                             )}
                           </div>
 
-                          <div className="grid grid-cols-2 gap-4">
-                            <div className="space-y-0.5">
-                              <div className="flex items-center gap-1.5 text-[8px] font-bold text-blue-400/70 uppercase tracking-wider">
-                                <Target className="w-2.5 h-2.5" />
-                                Why
+                          <div className="grid grid-cols-2 gap-8">
+                            <div className="space-y-2">
+                              <div className="flex items-center gap-2 text-[10px] font-black text-blue-400/60 uppercase tracking-widest">
+                                <Target className="w-3.5 h-3.5" />
+                                Hypothesis
                               </div>
-                              <p className="text-[11px] text-gray-500 leading-snug font-medium line-clamp-2">{p.why}</p>
+                              <p className="text-sm text-gray-400 leading-relaxed font-medium group-hover:text-gray-300 transition-colors">{p.why}</p>
                             </div>
-                            <div className="space-y-0.5">
-                              <div className="flex items-center gap-1.5 text-[8px] font-bold text-purple-400/70 uppercase tracking-wider">
-                                <Zap className="w-2.5 h-2.5" />
-                                Build
+                            <div className="space-y-2">
+                              <div className="flex items-center gap-2 text-[10px] font-black text-purple-400/60 uppercase tracking-widest">
+                                <Zap className="w-3.5 h-3.5" />
+                                Execution
                               </div>
-                              <p className="text-[11px] text-gray-500 leading-snug font-medium line-clamp-2">{p.build}</p>
+                              <p className="text-sm text-gray-400 leading-relaxed font-medium group-hover:text-gray-300 transition-colors">{p.build}</p>
                             </div>
                           </div>
                         </div>
@@ -217,9 +224,6 @@ export default function Home() {
                 </AnimatePresence>
               )}
             </div>
-            {!loading && projects.length > 0 && (
-              <p className="flex-none text-[9px] text-gray-700 py-3 text-center border-t border-white/5 mt-2">Click any idea for strategic analysis.</p>
-            )}
           </div>
         </div>
 
