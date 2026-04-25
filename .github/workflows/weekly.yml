@@ -34,6 +34,18 @@ jobs:
         run: |
           python -m trend_bot.run --out out
           python -m trend_bot.notify_telegram --ideas out/ideas.md
+          # Copy to web public folder for the UI
+          mkdir -p web/public/data
+          cp out/trends.json web/public/data/trends.json
+          cp out/ideas.md web/public/data/ideas.md
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add out/ web/public/data/
+          git commit -m "Weekly trend update [skip ci]" || echo "No changes to commit"
+          git push
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4

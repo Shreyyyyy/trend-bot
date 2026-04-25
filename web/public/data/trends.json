@@ -1,0 +1,427 @@
+{
+  "queries": [
+    {
+      "query": "GitHub trending LLM router multi model inference",
+      "results": [
+        {
+          "url": "https://github.com/MilkThink-Lab/Awesome-Routing-LLMs",
+          "title": "MilkThink-Lab/Awesome-Routing-LLMs - GitHub",
+          "content": "RouteLLM: Learning to Route LLMs from Preference Data, ICLR'25, Link, Method. TensorOpera Router: A Multi-Model Router for Efficient LLM Inference, EMNLP'24",
+          "score": 0.7604555,
+          "raw_content": null
+        },
+        {
+          "url": "https://github.com/ulab-uiuc/LLMRouter",
+          "title": "LLMRouter: An Open-Source Library for LLM Routing - GitHub",
+          "content": "Now you can visually construct data generation and routing pipelines, drag-and-drop nodes to train routers, and monitor performance in real-time. Updates include service-specific dict configs (OpenAI, Anthropic, etc.) and multimodal routing (Video/Image + Text) on Geometry3K, MathVista, and Charades-Ego\u2014all in the first unified open-source LLM routing library with 16+ routers, a unified CLI, Gradio UI, and 11 datasets. \ud83d\ude80 **[2025-12]**: **LLMRouter** is officially released - ship smarter \ud83e\udde0, cost-aware \ud83d\udcb8 LLM routing with 16+ routers \ud83e\udded, a unified `llmrouter` CLI \ud83d\udee0\ufe0f, and a plugin workflow for custom routers \ud83e\udde9. LLMRouter requires API keys to make LLM API calls for inference, chat, and data generation. LLMRouter supports locally hosted LLM inference servers that provide OpenAI-compatible APIs (e.g., Ollama, vLLM, SGLang). LLMRouter includes a complete data generation pipeline that transforms raw benchmark datasets into formatted routing data with embeddings. LLMRouter includes example custom routers you can learn from:. **OpenClaw Router** is an OpenAI-compatible API server that brings LLMRouter's intelligent routing to production environments.",
+          "score": 0.6227582,
+          "raw_content": null
+        },
+        {
+          "url": "https://github.com/junchenzhi/Awesome-LLM-Ensemble",
+          "title": "Awesome-LLM-Ensemble \"Harnessing Multiple Large ... - GitHub",
+          "content": "In essence, this approach employs a routing algorithm prior to LLM inference to allocate a specific query to the most suitable model, allowing the selected",
+          "score": 0.6180666,
+          "raw_content": null
+        },
+        {
+          "url": "https://github.com/LLM-inference-router/vllm-router/actions",
+          "title": "Actions \u00b7 llm-semantic-router/vllm-router - GitHub",
+          "content": "Multi-container testing. Test your web service and its DB in your workflow by simply adding some docker-compose to your workflow file.",
+          "score": 0.5455042,
+          "raw_content": null
+        },
+        {
+          "url": "https://github.com/llm-d/llm-d",
+          "title": "GitHub - llm-d/llm-d: Achieve state of the art inference performance ...",
+          "content": "llm-d is a high-performance distributed inference serving stack optimized for production deployments on Kubernetes. We help you achieve the fastest \"time to",
+          "score": 0.53866833,
+          "raw_content": null
+        },
+        {
+          "url": "https://github.com/vllm-project/semantic-router",
+          "title": "GitHub - vllm-project/semantic-router: System Level Intelligent Router for Mixture-of-Models at Cloud, Data Center and Edge",
+          "content": "[Skip to content](https://github.com/vllm-project/semantic-router#start-of-content). [Reload](https://github.com/vllm-project/semantic-router) to refresh your session.You signed out in another tab or window. [Reload](https://github.com/vllm-project/semantic-router) to refresh your session.Dismiss alert. *   [Code](https://github.com/vllm-project/semantic-router). *   [Issues 101](https://github.com/vllm-project/semantic-router/issues). *   [Pull requests 69](https://github.com/vllm-project/semantic-router/pulls). *   [Discussions](https://github.com/vllm-project/semantic-router/discussions). *   [Actions](https://github.com/vllm-project/semantic-router/actions). *   [Projects](https://github.com/vllm-project/semantic-router/projects). *   [Security and quality 0](https://github.com/vllm-project/semantic-router/security). *   [Insights](https://github.com/vllm-project/semantic-router/pulse). *   [Code](https://github.com/vllm-project/semantic-router). *   [Issues](https://github.com/vllm-project/semantic-router/issues). *   [Pull requests](https://github.com/vllm-project/semantic-router/pulls). *   [Discussions](https://github.com/vllm-project/semantic-router/discussions). *   [Actions](https://github.com/vllm-project/semantic-router/actions). *   [Projects](https://github.com/vllm-project/semantic-router/projects). *   [Security and quality](https://github.com/vllm-project/semantic-router/security). *   [Insights](https://github.com/vllm-project/semantic-router/pulse). [](https://github.com/vllm-project/semantic-router). *   [README](https://github.com/vllm-project/semantic-router#). *   [Code of conduct](https://github.com/vllm-project/semantic-router#). *   [Contributing](https://github.com/vllm-project/semantic-router#). *   [Apache-2.0 license](https://github.com/vllm-project/semantic-router#). [](https://github.com/vllm-project/semantic-router#about). [](https://github.com/vllm-project/semantic-router#getting-started). [](https://github.com/vllm-project/semantic-router#install). [](https://github.com/vllm-project/semantic-router#latest-news). [](https://github.com/vllm-project/semantic-router#community). [](https://github.com/vllm-project/semantic-router#community-meetings). [](https://github.com/vllm-project/semantic-router#contributing). If you want to contribute, start with **[CONTRIBUTING.md](https://github.com/vllm-project/semantic-router/blob/main/CONTRIBUTING.md)**. [](https://github.com/vllm-project/semantic-router#citation). howpublished={\\url{https://github.com/vllm-project/semantic-router}},. [](https://github.com/vllm-project/semantic-router#star-history). [](https://github.com/vllm-project/semantic-router#sponsors). [Readme](https://github.com/vllm-project/semantic-router#readme-ov-file). [Apache-2.0 license](https://github.com/vllm-project/semantic-router#Apache-2.0-1-ov-file). [Code of conduct](https://github.com/vllm-project/semantic-router#coc-ov-file). [Contributing](https://github.com/vllm-project/semantic-router#contributing-ov-file). [Please reload this page](https://github.com/vllm-project/semantic-router). [Activity](https://github.com/vllm-project/semantic-router/activity). [Custom properties](https://github.com/vllm-project/semantic-router/custom-properties). [**3.8k** stars](https://github.com/vllm-project/semantic-router/stargazers). [**59** watching](https://github.com/vllm-project/semantic-router/watchers). [**631** forks](https://github.com/vllm-project/semantic-router/forks). ## [Releases 2](https://github.com/vllm-project/semantic-router/releases). [v0.2.0 - Athena Latest Mar 10, 2026](https://github.com/vllm-project/semantic-router/releases/tag/v0.2.0). [+ 1 release](https://github.com/vllm-project/semantic-router/releases). ## [Packages 12](https://github.com/orgs/vllm-project/packages?repo_name=semantic-router). [+ 9 packages](https://github.com/orgs/vllm-project/packages?repo_name=semantic-router). ## [Contributors 98](https://github.com/vllm-project/semantic-router/graphs/contributors). [+ 84 contributors](https://github.com/vllm-project/semantic-router/graphs/contributors). *   [Go 44.0%](https://github.com/vllm-project/semantic-router/search?l=go). *   [Python 18.2%](https://github.com/vllm-project/semantic-router/search?l=python). *   [TypeScript 14.6%](https://github.com/vllm-project/semantic-router/search?l=typescript). *   [Rust 11.5%](https://github.com/vllm-project/semantic-router/search?l=rust). *   [CSS 4.0%](https://github.com/vllm-project/semantic-router/search?l=css). *   [Shell 2.9%](https://github.com/vllm-project/semantic-router/search?l=shell).",
+          "score": 0.51618147,
+          "raw_content": null
+        }
+      ]
+    },
+    {
+      "query": "open source RAG framework trending",
+      "results": [
+        {
+          "url": "https://www.reddit.com/r/LargeLanguageModels/comments/1jqj4gc/exploring_rag_optimization_an_opensource_approach/",
+          "title": "Exploring RAG Optimization \u2013 An Open-Source Approach for deep ...",
+          "content": "TRENDING TODAY. Open App. Skip to Navigation Skip to Right ... r/Rag - Open-Source RAG framework for deep learning pipelines written in C++.",
+          "score": 0.8016413,
+          "raw_content": null
+        },
+        {
+          "url": "https://medium.com/@lssmj2014/github-trending-january-26-2026-openai-codex-emerges-rag-revolution-aab1b2455c3c",
+          "title": "January 26, 2026 \u2014 OpenAI Codex Emerges & RAG Revolution | by ...",
+          "content": "GitHub Trending: January 26, 2026 \u2014 OpenAI Codex Emerges & RAG Revolution ; Most open: OpenCode; Most lightweight: Codex; Best quality: Claude",
+          "score": 0.64826655,
+          "raw_content": null
+        },
+        {
+          "url": "https://alphacorp.ai/blog/rag-frameworks-top-5-picks-in-2026",
+          "title": "RAG Frameworks 2026: Top 5 Ranked for Production AI",
+          "content": "Multiple enterprise analyses this year position LlamaIndex as the retrieval-first framework \u2014 purpose-built for connecting LLMs to messy, sprawling corporate knowledge.[Second Talent\u2019s 2026 enterprise framework comparison](https://www.secondtalent.com/resources/top-rag-frameworks-and-tools-for-enterprise-ai-applications/)reports a 35% boost in retrieval accuracy and document retrieval speeds 40% faster than LangChain in their benchmarks. If your project is really an agent orchestration problem \u2014 tool calling, branching logic, multi-step reasoning with external APIs \u2014 LlamaIndex will feel incomplete.[Tredence\u2019s 2026 analysis](https://www.tredence.com/blog/top-rag-frameworks)explicitly notes fewer built-in components for complex agent workflows compared to LangChain. LlamaIndex for ingestion and retrieval, LangChain/LangGraph for orchestration and agents.[Multiple enterprise sources](https://www.secondtalent.com/resources/top-rag-frameworks-and-tools-for-enterprise-ai-applications/)confirm this is already the pattern serious production teams follow. **LlamaIndex**is my top pick for 2026 because retrieval quality is what makes or breaks RAG, and no framework takes retrieval more seriously.**LangChain**is the right call when your system needs to do more than retrieve \u2014 when it needs to reason, act, and orchestrate.**Haystack**is the safest bet in regulated environments where pipeline discipline and evaluation aren\u2019t optional.",
+          "score": 0.61695945,
+          "raw_content": null
+        },
+        {
+          "url": "https://www.facebook.com/groups/techtitansgroup/posts/1514639759863337/",
+          "title": "Open-source project for next-gen ai systems - Facebook",
+          "content": "Retrieval-Augmented Generation (RAG) is evolving fast \u2014 and this open-source project is a goldmine for anyone building next-gen AI systems.",
+          "score": 0.60750073,
+          "raw_content": null
+        },
+        {
+          "url": "https://thebizaihub.com/best-open-source-rag-frameworks/",
+          "title": "Best Open Source RAG Frameworks 2025: 7 Tools That Work",
+          "content": "The real question isn\u2019t \u201cwhat\u2019s the best RAG framework?\u201d It\u2019s \u201cwhich framework matches your actual use case without requiring a PhD to configure?\u201d. I tested each framework with the same 2,847 internal company documents and tracked three specific metrics: retrieval accuracy (did it find the right chunks?), answer quality (did the LLM get proper context?), and setup friction (hours until first useful output). I\u2019ve seen frameworks default to 512-token chunks that split tables in half, making the retrieved context completely useless. **What not to do:** Don\u2019t use LangChain\u2019s default chunking for technical documentation or anything with code blocks. LlamaIndex works best when your use case is straightforward: lots of documents, users asking questions, you need accurate retrieval. You define a prompt template in the query itself, and Weaviate retrieves relevant chunks then generates answers using your specified LLM. If answers need complex reasoning across many documents, RAG\u2019s context limits become painful.",
+          "score": 0.59880555,
+          "raw_content": null
+        },
+        {
+          "url": "https://www.facebook.com/groups/techtitansgroup/posts/1443335200327127/",
+          "title": "An opensource agentic RAG framework that thinks before it acts ...",
+          "content": "Weaviate new RAG framework uses decision trees to intelligently choose tools, evaluate results, and decide when to stop or try a different",
+          "score": 0.52583206,
+          "raw_content": null
+        }
+      ]
+    },
+    {
+      "query": "Hacker News RAG slow expensive pipeline",
+      "results": [
+        {
+          "url": "https://news.ycombinator.com/item?id=38763827",
+          "title": "Some caution here. Not everything needs to go into a RAG pipeline (Eg: a databas... | Hacker News",
+          "content": "The only thing that has even been remotely useful to tackling the kind of questions I want to ask of my data sources is having the LLM generate search queries, navigate the knowledge graph, and rank the relevance of retrieved snippets but that often takes dozens if not hundreds of LLM calls which is incredibly slow and expensive. | | | |  | | --- | | fennecbutt on Dec 26, 2023  | parent | prev | next )   As a human would you read 100GB of data all at once? I kinda expect that GPT4 was trained on the data that is available on LibGen | | | |  | | --- | | throwup238 on Dec 26, 2023  | root | parent )   I need it to be able to cite answers, explore surrounding context, and while it might have been trained on Libgen, it doesn't mean it \"internalized\" all the data, let alone enough to be useful.",
+          "score": 0.73459625,
+          "raw_content": null
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=46608281",
+          "title": "RAG, llm pipeline industry just continues in the same fashion of ...",
+          "content": "RAG, llm pipeline industry just continues in the same fashion of throwing even more glue, insanely slow, expensive, but works due to somehow companies",
+          "score": 0.61363083,
+          "raw_content": null
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=45062372",
+          "title": "I\u2019ve been working on RAG systems a lot this year and I think one thing people mi... | Hacker News",
+          "content": "|     |  |  | | --- | --- | | |  | | --- | | bjornsing 7 months ago  | next )   > Moreover, GraphRag preprocessing is insanely expensive and precisely does not scale linearly with your dataset. | | | |  | | --- | | agentcoops 7 months ago  | parent )   Honestly I don\u2019t know the best answer, but my sense is there\u2019s something important in the direction the OP is going: I.e moving away from vector search or preprocessing towards dynamic exploration of the document space by an agent. GraphRAG gets around this by preprocessing these \u201cnarrative\u201d summaries of pretty much every combination of topics in a document: vector search then returns a combination of individual topic descriptions, relations between topic descriptions, raw excerpts from the data, and then such overarching \u201cnarratives.\u201d This definitely works pretty well in general, but a lot of the narratives turn out to be pretty useless for the important questions and it\u2019s expensive for preprocessing etc.",
+          "score": 0.59457535,
+          "raw_content": null
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=46616529",
+          "title": "Ask HN: How are you doing RAG locally?",
+          "content": "![Image 28](https://news.ycombinator.com/s.gif)[](https://news.ycombinator.com/vote?id=46628249&how=up&goto=item%3Fid%3D46616529)[lee1012](https://news.ycombinator.com/user?id=lee1012)[3 months ago](https://news.ycombinator.com/item?id=46628249) | [parent](https://news.ycombinator.com/item?id=46616529#46628220) | [prev](https://news.ycombinator.com/item?id=46616529#46633462) | [next](https://news.ycombinator.com/item?id=46616529#46628892)[[\u2013]](javascript:void(0)) static embedding models im finding quite fast lee101/gobed [https://github.com/lee101/gobed](https://github.com/lee101/gobed) is 1ms on gpu :) would need to be trained for code though the bigger code llm embeddings can be high quality too so its just yea about where is ideal on the pareto fronteir really , often yea though your right it tends to be bm25 or rg even for code but yea more complex solutions are kind of possible too if its really important the search is high quality ![Image 29](https://news.ycombinator.com/s.gif)[](https://news.ycombinator.com/vote?id=46628892&how=up&goto=item%3Fid%3D46616529)[ehsanu1](https://news.ycombinator.com/user?id=ehsanu1)[3 months ago](https://news.ycombinator.com/item?id=46628892) | [parent](https://news.ycombinator.com/item?id=46616529#46628220) | [prev](https://news.ycombinator.com/item?id=46616529#46628249) | [next](https://news.ycombinator.com/item?id=46616529#46628616)[[\u2013]](javascript:void(0)) I've gotten great results applying it to file paths + signatures. From wikipedia: RAG enables large language models (LLMs) to retrieve and incorporate new information from external data sources ![Image 58](https://news.ycombinator.com/s.gif)[](https://news.ycombinator.com/vote?id=46629103&how=up&goto=item%3Fid%3D46616529)[autogn0me](https://news.ycombinator.com/user?id=autogn0me)[3 months ago](https://news.ycombinator.com/item?id=46629103) | [prev](https://news.ycombinator.com/item?id=46616529#46633970) | [next](https://news.ycombinator.com/item?id=46616529#46632355)[[\u2013]](javascript:void(0)) [https://github.com/ggozad/haiku.rag/](https://github.com/ggozad/haiku.rag/) - the embedded lancedb is convenient and has benchmarks; uses docling.",
+          "score": 0.3298238,
+          "raw_content": null
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=47499356",
+          "title": "From zero to a RAG system: successes and failures | Hacker News",
+          "content": "World is much bigger than we think :) | | | |  | | --- | | hbrn 26 days ago  | root | parent | prev | next )   >all you need to do to make an agentic RAG is to have the LLM be able to write/rewrite its own search queries (possibly in multiple passes) I think this is a huge oversimplification, the term \"search query\" is doing a lot of heavy lifting here. | | | |  | | --- | | magospietato 27 days ago  | parent | prev | next )   It's not that the context window is adequate, but rather an agentic LLM can search the source of truth using appropriate tools (SQL, term search, etc.) RAG made sense when the semantic search was based on human input and happening as a workflow step before populating context.",
+          "score": 0.27311417,
+          "raw_content": null
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=45645349",
+          "title": "Production RAG: what I learned from processing 5M+ documents | Hacker News",
+          "content": "| | | |  | | --- | | cipherself 6 months ago  | root | parent | prev | next )   I am working on search but rather for text-to-image retrieval, nevertheless, I am curious if by *that's all baked into Azure AI search* you also meant *synthetic query generation* from the grandparent comment. | | | |  | | --- | | andreasgl 6 months ago  | parent | next )   I think they mean query expansion:  | | | |  | | --- | | daemonologist 6 months ago  | parent | prev | next )   It's described in the remainder of the point - they use an LLM to generate additional search queries, either rephrasings of the user's query or bringing additional context from the chat history.",
+          "score": 0.20963182,
+          "raw_content": null
+        }
+      ]
+    },
+    {
+      "query": "AI agent reliability tool failures looping",
+      "results": [
+        {
+          "url": "https://medium.com/@Micheal-Lanham/agent-reliability-engineering-stop-your-ai-agents-from-failing-at-3-am-f10d1ac8d2ef",
+          "title": "Agent Reliability Engineering: Stop Your AI Agents from Failing at 3 ...",
+          "content": "Break down failures into tool/API errors (timeouts, rate limits) and agent logic errors (invalid requests, infinite loops). Each category",
+          "score": 0.99998116,
+          "raw_content": null
+        },
+        {
+          "url": "https://dev.to/nebulagg/why-90-of-ai-agent-projects-fail-and-the-patterns-that-fix-it-1dma",
+          "title": "Why 90% of AI Agent Projects Fail (and the Patterns That Fix It)",
+          "content": "This is the failure mode that costs real money. An agent gets stuck in a reasoning loop \u2014 maybe it is retrying a failed approach, or it keeps",
+          "score": 0.9999385,
+          "raw_content": null
+        },
+        {
+          "url": "https://www.fixbrokenaiapps.com/blog/ai-agents-infinite-loops",
+          "title": "Fix Broken AI Apps | Expert Repair for Replit, Lovable, Bolt & More",
+          "content": "To combat this, engineers must implement **Loop Guardrails**, a set of explicit, external mechanisms that enforce maximum iteration limits, detect repetitive outputs, and trigger hard terminations to ensure agent reliability and resource stability. **Loop Guardrails** are based on the principle of **External Enforcement:** the system running the agent, not the agent itself, is ultimately responsible for guaranteeing termination. info(\"Agent signaled explicit termination.\")   break   turn_count +=  1   else:  # This block runs if the loop completed due to turn/time limit   logger. error(\"Agent detected performing repetitive action, initiating forced termination.\")   raise  AgentLoopDetectedError(\"Repetitive action detected.\")  # Inside your agent loop:  # monitor.add_action(last_tool_call_or_response_summary). * **False Positives:** Aggressive loop guardrails can sometimes prematurely terminate an agent that genuinely needs many turns or repetitions (e.g., a complex research task requiring multiple API calls). By implementing robust Loop Guardrails, you shift the responsibility of termination from the agent's probabilistic reasoning to deterministic, auditable system controls.",
+          "score": 0.9999145,
+          "raw_content": null
+        },
+        {
+          "url": "https://www.mindstudio.ai/blog/reliability-compounding-problem-ai-agent-stacks/",
+          "title": "What Is the Reliability Compounding Problem in AI Agent Stacks?",
+          "content": "Each tool call is a separate operation with its own failure surface: The tool invocation itself can fail; The tool can return an error or",
+          "score": 0.99989605,
+          "raw_content": null
+        },
+        {
+          "url": "https://galileo.ai/blog/ai-agent-reliability-strategies",
+          "title": "A Guide to AI Agent Reliability for Mission Critical Systems | Galileo",
+          "content": "Their ability to choose multiple valid approaches to solve the same problem makes[evaluating AI agents](https://www.galileo.ai/blog/mastering-agents-evaluating-ai-agents) and ensuring their reliability extraordinarily challenging. This challenge multiplies in[multi-agent systems](https://www.galileo.ai/blog/autogen-multi-agent) where coordination failures can cascade across shared models and interconnected workflows. Agent system failures stem from fundamental architectural and operational challenges inherent in[AI agent architectures](https://www.galileo.ai/blog/single-vs-multi-agent) that traditional software development practices fail to address. Establish [performance benchmarking](https://galileo.ai/blog/evaluating-ai-agent-performance-benchmarks-real-world-tasks) that measures agent effectiveness across different scenarios and configurations to identify optimal deployment strategies. To avoid building from the ground up, [Galileo's CLHF](https://docs.galileo.ai/galileo/gen-ai-studio-products/galileo-evaluate/how-to/continuous-learning-via-human-feedback) (Continuous Learning with Human Feedback) capabilities enable teams to customize agent evaluation metrics with minimal annotated examples. Deploy comprehensive [error tracking](https://docs.galileo.ai/galileo/gen-ai-studio-products/galileo-evaluate/faq/errors-computing-metrics) that distinguishes between tool execution failures and agent usage errors. Galileo's [Tool Selection Quality](https://v2docs.galileo.ai/concepts/metrics/agentic/tool-selection-quality) and [Tool Error Detection](https://docs.galileo.ai/galileo/gen-ai-studio-products/galileo-guardrail-metrics/tool-error) metrics provide precisely this type of specialized monitoring, enabling teams to identify tool-related failures before they impact end users through research-backed evaluation frameworks designed for agentic systems. Explore [Galileo](https://app.galileo.ai/sign-up)'s comprehensive platform for building reliable and trustworthy AI agents that consistently perform in production environments. [Agent Reliability](https://galileo.ai/agent-reliability).",
+          "score": 0.99980444,
+          "raw_content": null
+        },
+        {
+          "url": "https://latitude.so/blog/why-ai-agents-break-in-production",
+          "title": "Why AI Agents Break in Production: Failure Patterns and How to Detect Them | Latitude",
+          "content": "Why AI agents fail in production: reasoning drift, tool failures, context saturation, goal misalignment. * AI agents fail on 63% of complex multi-step tasks in production \u2014 not due to model capability but due to interaction-level failure patterns between steps. * Latitude's GEPA algorithm converts annotated production failures into runnable regression evals automatically \u2014 growing the eval library without requiring engineers to write eval logic for each new pattern. Dev-time tests miss production failures for three structural reasons: (1) Real user inputs differ from synthetic test cases \u2014 users probe agents in unpredicted ways that no benchmark constructor anticipated. Production AI agent failures cluster into four primary categories: (1) **Reasoning drift** \u2014 the agent's reasoning path diverges from the intended goal over a multi-turn session, appearing in sessions with 5+ turns. Failure clustering converts production patterns into evaluations through three components: (1) Prioritized annotation queues that surface the traces most likely to contain meaningful failures \u2014 session length outliers, unusual tool error rates, low quality scores.",
+          "score": 0.99968004,
+          "raw_content": null
+        }
+      ]
+    },
+    {
+      "query": "PDF parsing tables images bounding boxes docling liteparse",
+      "results": [
+        {
+          "url": "https://www.codecademy.com/article/docling-ai-a-complete-guide-to-parsing",
+          "title": "Docling AI: A Complete Guide to Parsing | Codecademy",
+          "content": "[Docling](https://www.Docling.ai/) is an open-source framework created by IBM to convert unstructured documents into structured machine-readable formats. Here we are taking our PDF and breaking it into clean, structured parts that we can use in our LLMs. Using Docling\u2019s `DocumentConverter`, it first processes the entire PDF and turns it into a structured document. ## How to extract tables from documents using Docling. We are extracting tables from a PDF using Docling\u2019s parsing pipeline here. We can use Docling to extract these figures and images from the documents. You have now mastered how Docling AI can transform complex PDFs, such as the Docling technical paper, into clean, structured text, tables, images, and metadata. Docling is used to extract structured data\u2014such as text, tables, images, layout elements, and equations\u2014from PDFs, research papers, Word files, and scanned documents. Docling AI is a document-understanding framework that converts PDFs, images, and complex layouts into structured, machine-readable data. * [How to extract tables from documents using Docling](#heading-how-to-extract-tables-from-documents-using-docling).",
+          "score": 0.64344186,
+          "raw_content": null
+        },
+        {
+          "url": "https://www.facebook.com/groups/aiworldopen/posts/1361193385815215/",
+          "title": "Liteparse: A Fast and Light PDF Parsing Tool - Facebook",
+          "content": "It provides high-quality spatial text parsing with bounding boxes, without proprietary LLM features or cloud dependencies. Everything runs",
+          "score": 0.6399392,
+          "raw_content": null
+        },
+        {
+          "url": "https://www.docling.ai/",
+          "title": "Docling",
+          "content": "## [D ![Image 1](https://www.docling.ai/img/logo.svg) ## CLING](https://www.docling.ai/). *   [Start](https://www.docling.ai/#start). *   [Features](https://www.docling.ai/#features). *   [Papers](https://www.docling.ai/papers/). *   [Blog](https://www.docling.ai/blog/). [![Image 2](https://www.docling.ai/img/github.svg)](https://github.com/docling-project/docling \"GitHub\"). ### Docling converts messy documents into structured data and simplifies downstream document and AI processing by detecting tables, formulas, reading order, OCR, and much more. ![Image 3](https://www.docling.ai/img/bigduck.webp)[![Image 4](https://www.docling.ai/img/community/github.svg) GitHub](https://docling-project.github.io/docling)[![Image 5](https://www.docling.ai/img/community/huggingface.svg) HuggingFace](https://huggingface.co/docling-project)[![Image 6](https://www.docling.ai/img/community/discord.svg) Discord](https://www.docling.ai/discord)[![Image 7](https://www.docling.ai/img/community/linkedin.svg) LinkedIn](https://linkedin.com/company/docling)[![Image 8](https://www.docling.ai/img/community/youtube.svg) YouTube](https://www.youtube.com/playlist?list=PLt0drfpBaTa1ywCtPwJGLYg-t0UmxhQP4). ##### [From Source to Structure: The LaTeX Backend Story Mar 15, 2026](https://www.docling.ai/blog/20260315_00_the_latex_story/)[All blog posts](https://www.docling.ai/blog/). `docling https://arxiv.org/pdf/2206.01062`. **Deploy** it as [Docling Serve ![Image 9](https://www.docling.ai/img/serve.webp)](https://github.com/docling-project/docling-serve). **Enable** an agent via [Docling MCP ![Image 10](https://www.docling.ai/img/mcp.webp)](https://github.com/docling-project/docling-mcp). **Import** many document formats into a unified and structured [Docling Document](https://docling-project.github.io/docling/concepts/docling_document) , including scanned pages via an OCR engine of your choice. | Image | [Header](https://www.docling.ai/#text-header) | [Structure](https://www.docling.ai/#table-structure) | [Image](https://www.docling.ai/#picture-image) |. | Number | [Paragraph](https://www.docling.ai/#text-paragraph) | [Cell](https://www.docling.ai/#table-cell) | [Class](https://www.docling.ai/#picture-class) |. | [Header](https://www.docling.ai/#furniture) | [List item](https://www.docling.ai/#seq-list) |  | [Description](https://www.docling.ai/#picture-description) |. | [Footer](https://www.docling.ai/#furniture) | [Code](https://www.docling.ai/#seq-code) |  |  |. |  | [Formula](https://www.docling.ai/#formula) | [Caption](https://www.docling.ai/#table-caption) |. |  | [Reading order](https://www.docling.ai/#order) |. |  | [Chunks](https://www.docling.ai/#chunks) |. | [Bounding boxes](https://www.docling.ai/#layout) |. ![Image 11](https://www.docling.ai/img/lf.svg) Copyright \u00a9 Docling, a Series of LF Projects, LLC.",
+          "score": 0.6342494,
+          "raw_content": null
+        },
+        {
+          "url": "https://www.llamaindex.ai/blog/liteparse-local-document-parsing-for-ai-agents",
+          "title": "LiteParse: Local Document Parsing for AI Agents",
+          "content": "# LiteParse: Local Document Parsing for AI Agents. * Text Output for Modern LLMs. Every AI agent needs to read documents. Along the way, we learned a lot about what fast, lightweight document parsing actually looks like under the hood, and today we're open-sourcing that core as **LiteParse**. LiteParse is a CLI and TS-native library for parsing out layout-aware text from PDFs, Office docs, and images. LiteParse is the best AI-native text parsing tool for agents. **LlamaParse** is for complex document processing where you need higher accuracy on difficult layouts, structured output modes (markdown tables, JSON schemas), and premium OCR. We\u2019ve seen Anthropic\u2019s official PDF skill encourage writing python code with tools like pypdf or pdfplumber, but this means the agent is writing new code every time it needs to process PDFs. Another common pattern we\u2019ve observed is the agent writing code to quickly parse text, and then find screenshots for more detailed analysis.",
+          "score": 0.5060794,
+          "raw_content": null
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=p98wp4VmeZM",
+          "title": "LiteParse Fast Local Document and PDF Parser Tutorial - YouTube",
+          "content": "... parsing with precise bounding boxes, giving you the exact location of every word. Plus, it features a flexible OCR system with Tesseract.js",
+          "score": 0.47811517,
+          "raw_content": null
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=CrAs59Mnehg",
+          "title": "LiteParse - 100% Local PDF Parsing (No GPU) - YouTube",
+          "content": "... Docling? Let's find out! LiteParse docs: https ... LiteParse - 100% Local PDF Parsing (No GPU) | Document Processing for RAG & AI Agents.",
+          "score": 0.44956237,
+          "raw_content": null
+        }
+      ]
+    },
+    {
+      "query": "local LLM performance optimization llama.cpp vLLM",
+      "results": [
+        {
+          "url": "https://docs.wallaroo.ai/202404/wallaroo-llm/wallaroo-llm-optimizations/wallaroo-llm-optimizations-vllm-llama/",
+          "title": "LLM Inference with vLLM and llama.cpp | Wallaroo.AI (Version 2024.4)",
+          "content": "## LLM Inference with vLLM and llama.cpp. Llama.cpp and Virtual LLM (vLLM) are two versatile tools for optimizing LLM deployments with innovative solutions to different pitfalls of LLMs. ## Comparison Between Llama.cpp and vLLM. vLLM and Llama.cpp differ in the following respects. Llama.cpp is optimized for CPU usage and can run on consumer-grade hardware; vLLM leverages GPU acceleration to achieve higher performance. This makes vLLM more suitable for environments with access to powerful GPUs, whereas Llama.cpp is ideal for scenarios where GPU resources are limited. vLLM offers a more straightforward setup process compared to Llama.cpp. Both Llama.cpp and vLLM are deployed in Wallaroo using the Custom Model or Bring Your Own Predict (BYOP) framework. ### Deploying Llama.cpp in Wallaroo. Deploying LLama.cpp with the Wallaroo BYOP framework requires Llama-cpp-python. Llama 3 8B Instruct is used for this example of deploying a vLLM. Both Llama.cpp and vLLM deployed in Wallaroo have potential to be industry standards. The following tutorials demonstrate deploying Llama.cpp and vLLM in Wallaroo.",
+          "score": 0.843393,
+          "raw_content": null
+        },
+        {
+          "url": "https://developers.redhat.com/articles/2025/09/30/vllm-or-llamacpp-choosing-right-llm-inference-engine-your-use-case",
+          "title": "vLLM or llama.cpp: Choosing the right LLM inference engine for your use case | Red Hat Developer",
+          "content": "vLLM is designed for high-throughput, multi-user serving, while llama.cpp is optimized for single-stream efficiency and portability. While llama.cpp shows comparable performance at a concurrency of 1, vLLM's total generative power quickly surpasses it and continues to grow with the load. Figure 2: \u00a0While both models perform similarly with a single concurrent request, vLLM's total generative power rapidly exceeds llama.cpp's as the load increases. **At peak load, vLLM delivered more than 35 times the request throughput (RPS) and more than 44 times the total output tokens per second (TPS) compared to llama.cpp.** llama.cpp's architecture is suited for single-user or low-concurrency tasks. Figure 3: vLLM maintains a low and stable TTFT as concurrency increases, while llama.cpp's TTFT grows exponentially due to its queuing model. * **Inter-token Latency (ITL):** vLLM's P99 ITL is lower than llama.cpp's at low concurrency levels (1\u20134 users). Figure 4: At low concurrency, vLLM has lower ITL, but llama.cpp's ITL is significantly lower and more stable at higher loads, reflecting vLLM's throughput-latency trade-off.",
+          "score": 0.83742094,
+          "raw_content": null
+        },
+        {
+          "url": "https://www.decodesfuture.com/articles/llama-cpp-vs-ollama-vs-vllm-local-llm-stack-guide",
+          "title": "llama.cpp vs Ollama vs vLLM: 2026 Comparison [Benchmarks]",
+          "content": "# Ollama vs llama.cpp vs vLLM: Higher Performance Local AI in 2026. In 2026, the choice of **ollama vs llama.cpp**, or perhaps **vLLM**, determines the success of an AI deployment, balancing the competing needs of raw throughput, developer experience, and hardware portability. Frameworks like llama.cpp and Ollama run entirely on local hardware with no background telemetry, making them ideal for air gapped deployments where no network calls are permitted once the model is downloaded. High performance engines like vLLM utilize continuous batching and PagedAttention to keep latency extremely low, even under heavy multi user loads, ensuring that the first token is available for the agent to process almost instantaneously. In 2026, understanding the architectural differences between PagedAttention in vLLM and the GGUF efficiency of llama.cpp is the difference between a stalled project and a successful, scalable AI deployment. See the March 2026 uncensored LLM releases roundup for the newest GGUF-compatible models that run directly on Ollama, Llama.cpp, and vLLM.",
+          "score": 0.80442166,
+          "raw_content": null
+        },
+        {
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1qexkwb/llamacpp_vs_vllm/",
+          "title": "Llama.cpp vs vllm : r/LocalLLaMA",
+          "content": "# Llama.cpp vs vllm : r/LocalLLaMA. [Skip to main content](https://www.reddit.com/r/LocalLLaMA/comments/1qexkwb/llamacpp_vs_vllm/#main-content)Llama.cpp vs vllm : r/LocalLLaMA. Open menu Open navigation[](https://www.reddit.com/)Go to Reddit Home. Get App Get the Reddit app [Log In](https://www.reddit.com/login/)Log in to Reddit. [![Image 1](https://styles.redditmedia.com/t5_81eyvm/styles/communityIcon_cumnsvx9kzma1.png?width=96&height=96&frame=1&auto=webp&crop=96%3A96%2Csmart&s=0ae51826e9b99ef23f985ae5b3c6c8d76b205c79) Go to LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/). [r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/)\u20223mo ago. # Llama.cpp vs vllm. [Question | Help](https://www.reddit.com/r/LocalLLaMA/?f=flair_name%3A%22Question%20%7C%20Help%22). By continuing, you agree to our[User Agreement](https://www.redditinc.com/policies/user-agreement)and acknowledge that you understand the[Privacy Policy](https://www.redditinc.com/policies/privacy-policy). [Performance comparison of Llama.cpp and vllm](https://www.reddit.com/answers/c862f70d-650d-426d-bd90-3a8775274740/?q=Performance+comparison+of+Llama.cpp+and+vllm&source=PDP). [Llama.cpp paged attention features](https://www.reddit.com/answers/ffd724ca-e2d1-49a9-bd66-50dc68d6b425/?q=Llama.cpp+paged+attention+features&source=PDP). [Best practices for hosting LLaMA locally](https://www.reddit.com/answers/72931c45-be13-4f32-ab3e-6db02f72c803/?q=Best+practices+for+hosting+LLaMA+locally&source=PDP). [Top tools for optimizing AI model performance](https://www.reddit.com/answers/46365152-39c4-42d6-9a23-330e9428376b/?q=Top+tools+for+optimizing+AI+model+performance&source=PDP). [How to fine-tune LLaMA for specific tasks](https://www.reddit.com/answers/987875ed-9fb9-41c0-8525-5a02b06c740d/?q=How+to+fine-tune+LLaMA+for+specific+tasks&source=PDP). ![Image 2: Llama](https://emoji.redditmedia.com/23w2nhjj1e9f1_t5_81eyvm/Llama)![Image 3: Llama](https://emoji.redditmedia.com/23w2nhjj1e9f1_t5_81eyvm/Llama). [https://x.com/localllamasub](https://x.com/localllamasub). Anyone can view, post, and comment to this community. [Reddit Rules](https://www.redditinc.com/policies/content-policy)[Privacy Policy](https://www.reddit.com/policies/privacy-policy)[User Agreement](https://www.redditinc.com/policies/user-agreement)[Your Privacy Choices](https://support.reddithelp.com/hc/articles/43980704794004)[Accessibility](https://support.reddithelp.com/hc/sections/38303584022676-Accessibility)[Reddit, Inc. All rights reserved.](https://redditinc.com/). *   [About Reddit](https://www.redditinc.com/). *   [Advertise](https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta). *   [Developer Platform](https://developers.reddit.com/?utm_source=reddit&utm_medium=left_nav_resources). *   [Reddit Pro BETA](https://www.reddit.com/reddit-pro?utm_source=reddit&utm_medium=left_nav_resources). *   [Help](https://support.reddithelp.com/hc?utm_source=reddit&utm_medium=footer&utm_campaign=evergreen). *   [Careers](https://www.redditinc.com/careers). *   [Press](https://www.redditinc.com/press). *   [Best of Reddit](https://www.reddit.com/posts/2026/global/). *   [Reddit Rules](https://www.redditinc.com/policies/content-policy). *   [Privacy Policy](https://www.reddit.com/policies/privacy-policy). *   [User Agreement](https://www.redditinc.com/policies/user-agreement). *   [Your Privacy Choices](https://support.reddithelp.com/hc/articles/43980704794004). *   [Accessibility](https://support.reddithelp.com/hc/sections/38303584022676-Accessibility). All rights reserved.](https://redditinc.com/). ![Image 4](https://id.rlcdn.com/472486.gif).",
+          "score": 0.79769903,
+          "raw_content": null
+        },
+        {
+          "url": "https://www.clarifai.com/blog/ilama.cpp",
+          "title": "llama.cpp: Fast Local LLM Inference, Hardware Choices & Tuning",
+          "content": "Before llama.cpp, running models like LLAMA or Vicuna locally required bespoke GPU kernels or memory\u2011hungry Python environments. **Why does llama.cpp exist?** To provide an open\u2011source, C/C++ framework that runs large language models efficiently on CPUs and GPUs using quantization. Combined with Clarifai\u2019s model inference service, you can orchestrate calls across local and cloud resources, load balance across GPUs and integrate retrieval\u2011augmented generation pipelines. **Summary:** Expect 1.5\u2011bit quantization, new models like Mixtral and DBRX, hardware leaps with Blackwell GPUs and Apple\u2019s M4 Ultra, and more sophisticated deployment patterns. **Answer:** llama.cpp is a C/C++ library that enables running LLMs on local hardware using quantization for efficiency. **Summary:** llama.cpp is a flexible, open\u2011source inference engine that runs on CPUs and GPUs. Choose models wisely, monitor hardware, and stay updated to avoid common pitfalls. Named frameworks like **F.A.S.T.E.R.**, **SQE Matrix**, **Tuning Pyramid** and **Tiered Deployment Model** simplify complex decisions, while Clarifai\u2019s compute orchestration and GPU hosting services provide a seamless bridge to scale when local resources fall short.",
+          "score": 0.7216064,
+          "raw_content": null
+        },
+        {
+          "url": "https://itecsonline.com/post/vllm-vs-ollama-vs-llama.cpp-vs-tgi-vs-tensort",
+          "title": "vLLM vs Ollama vs llama.cpp vs TGI vs TensorRT-LLM: 2025 Guide",
+          "content": "The article explores each framework's strengths and limitations across development, production, and enterprise scenarios, offering actionable guidance for selecting the optimal solution based on organizational requirements, resource constraints, and operational maturity. TensorRT-LLM leverages NVIDIA's decades of GPU optimization expertise, implementing aggressive kernel fusion, precision optimization, and hardware-specific tuning that extracts maximum performance from NVIDIA GPUs. The framework achieves inference speeds that can exceed other solutions by 2-5x, making it compelling for latency-sensitive applications or cost-optimization scenarios where maximizing throughput per GPU directly impacts economics. **Ideal use case:** TensorRT-LLM justifies its complexity for high-scale production deployments where inference costs dominate operational expenses, latency-critical applications requiring sub-100ms response times, or scenarios where maximizing utilization of expensive GPU infrastructure directly impacts business economics. GPU-based solutions (vLLM, TGI, TensorRT-LLM) excel at serving hundreds of concurrent users, while CPU-based solutions (llama.cpp) optimize for resource efficiency in edge deployments or single-user scenarios where high concurrency isn't required.",
+          "score": 0.69795954,
+          "raw_content": null
+        }
+      ]
+    },
+    {
+      "query": "arXiv retrieval embedding optimization paper",
+      "results": [
+        {
+          "url": "https://arxiv.org/html/2508.21038v2",
+          "title": "On the Theoretical Limitations of Embedding-Based Retrieval - arXiv",
+          "content": "Overall, our work contributes: (1) a theoretical basis for the fundamental limitations of embedding models, (2) a best-case empirical analysis",
+          "score": 0.99984026,
+          "raw_content": null
+        },
+        {
+          "url": "https://arxiv.org/abs/2603.09185",
+          "title": "DEO: Training-Free Direct Embedding Optimization for Negation ...",
+          "content": "Abstract page for arXiv paper 2603.09185: DEO: Training-Free Direct Embedding Optimization for Negation-Aware Retrieval.",
+          "score": 0.9997677,
+          "raw_content": null
+        },
+        {
+          "url": "https://arxiv.org/pdf/2508.21038?",
+          "title": "[PDF] On the Theoretical Limitations of Embedding-Based Retrieval - arXiv",
+          "content": "Overall, our work contributes: (1) a theoretical basis for the fundamental limitations of embedding models, (2) a best-case empirical analysis",
+          "score": 0.99972624,
+          "raw_content": null
+        },
+        {
+          "url": "https://arxiv.org/abs/2505.00105",
+          "title": "[2505.00105] Optimization of embeddings storage for RAG systems ...",
+          "content": "Abstract page for arXiv paper 2505.00105: Optimization of embeddings storage for RAG systems using quantization and dimensionality reduction",
+          "score": 0.9997131,
+          "raw_content": null
+        },
+        {
+          "url": "https://arxiv.org/pdf/2508.21038",
+          "title": "[PDF] On the Theoretical Limitations of Embedding-Based Retrieval - arXiv",
+          "content": "Overall, our work contributes: (1) a theoretical basis for the fundamental limitations of embedding models, (2) a best-case empirical analysis showing that this",
+          "score": 0.9996259,
+          "raw_content": null
+        },
+        {
+          "url": "https://arxiv.org/abs/2505.01946",
+          "title": "[2505.01946] Embedding based retrieval for long tail search queries in ecommerce",
+          "content": "| Comments: | Published at RecSys '24: Proceedings of the 18th ACM Conference on Recommender Systems |. | Subjects: | Information Retrieval (cs.IR) |. | Cite as: | arXiv:2505.01946 [cs.IR] |. |  | (or  arXiv:2505.01946v2 [cs.IR] for this version) |. |  |  Focus to learn more  arXiv-issued DOI via DataCite |. | Journal\u00a0reference: | In Proceedings of the 18th ACM Conference on Recommender Systems (pp. ### References & Citations. # Bibliographic and Citation Tools. # Recommenders and Search Tools. # arXivLabs: experimental projects with community collaborators. arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community?",
+          "score": 0.9994684,
+          "raw_content": null
+        }
+      ]
+    },
+    {
+      "query": "smaller faster transformer architecture arXiv",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/2507.19795",
+          "title": "Smaller, Faster, Cheaper: Architectural Designs for Efficient Machine ...",
+          "content": "Abstract page for arXiv paper 2507.19795: Smaller, Faster, Cheaper: Architectural Designs for Efficient Machine Learning.",
+          "score": 0.9999888,
+          "raw_content": null
+        },
+        {
+          "url": "https://arxiv.org/abs/2404.14462",
+          "title": "[2404.14462] Towards smaller, faster decoder-only transformers",
+          "content": "In this study, we introduce three modifications to the decoder-only transformer architecture, namely ParallelGPT (pgpt), LinearGPT (lgpt), and ConvGPT (cgpt).",
+          "score": 0.9999863,
+          "raw_content": null
+        },
+        {
+          "url": "https://arxiv.org/abs/2508.04461",
+          "title": "[2508.04461] Small transformer architectures for task switching - arXiv",
+          "content": "In this framework models work on ongoing token sequences with the current task being determined by stochastically interspersed control tokens.",
+          "score": 0.9999825,
+          "raw_content": null
+        },
+        {
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1m4swld/smaller_faster_smarter_why_mor_might_replace/",
+          "title": "Smaller, Faster, Smarter: Why MoR Might Replace Transformers",
+          "content": "Sounds like an improved transformer architecture instead of replacement. ... arxiv.org/abs/2507.10524. Title: Mixture-of-Recursions (Mor):",
+          "score": 0.9999808,
+          "raw_content": null
+        },
+        {
+          "url": "https://arxiv.org/html/2404.14462v3",
+          "title": "Towards Smaller, Faster Decoder-Only Transformers: Architectural Variants and Their Implications",
+          "content": "These variants demonstrate comparable performance to the conventional architecture in language generation, yet benefit from reduced model sizes and faster training processes. Recognizing the significant impact of model size on the computational overhead of training and inference, we introduce three compact variants\u2014ParallelGPT (pgpt), LineardGPT (lgpt), and ConvGPT (cgpt)\u2014each designed to reduce parameter count while maintaining, or potentially enhancing, model performance. These models demonstrate performance on par with traditional architectures in text generation tasks, but with the advantage of smaller model sizes and faster training times. The lgpt architecture can reduce the number of parameters in the model in terms of millions depending on the size of the original gpt architecture with the same number of layers and dimensions. The architectural modifications analyzed in this study not only enhance the efficiency of the transformer models in terms of faster inference and training with fewer parameters, but also underline the need to further explore this area of research.",
+          "score": 0.9999794,
+          "raw_content": null
+        },
+        {
+          "url": "https://arxiv.org/html/2404.14462v4",
+          "title": "Towards Smaller, Faster Decoder-Only Transformers - arXiv",
+          "content": "Our work introduces three new variants of the decoder-only transformer architecture aimed at improving training and inferencing efficiency:",
+          "score": 0.99996674,
+          "raw_content": null
+        }
+      ]
+    },
+    {
+      "query": "multimodal RAG PDF image table",
+      "results": [
+        {
+          "url": "https://www.linkedin.com/pulse/multi-modal-rag-handling-pdfs-text-images-tables-zeelan-shaik-ardqc",
+          "title": "Multi-Modal RAG: Handling PDFs with Text, Images, and Tables",
+          "content": "Multi-Modal RAG extends traditional RAG systems by processing multiple data types (text, images, tables) from documents like PDFs.",
+          "score": 0.81595254,
+          "raw_content": null
+        },
+        {
+          "url": "https://www.snowflake.com/en/engineering-blog/arctic-agentic-rag-multimodal-pdf-retrieval/",
+          "title": "Multimodal PDF Retrieval with Snowflake Cortex | Arctic Agentic RAG",
+          "content": "In this blog post, we show how we improved Snowflake Cortex AI multimodal retrieval by treating each PDF page as a stand-alone image \u2014 allowing natural language queries to match both text *and* visuals. These documents combine long-form text, financial tables, technical diagrams and slide visuals \u2014 all packed into complex layouts that don\u2019t play nicely with traditional retrieval-augmented generation (RAG) systems. With this evaluation framework in place, we tested how both text-based and multimodal retrieval methods performed across different document types and retrieval challenges. However, for financial reports, such as SEC filings \u2014 which feature clean text and highly structured tables \u2014 traditional pipelines using OCR and chunked text embeddings still delivered the highest retrieval accuracy. While multimodal models are strong at capturing layout and visual context, they \u2014 like text-based embeddings \u2014 often prioritize topical relevance. Together, these retrieval strategies form a flexible foundation for building high-quality RAG systems that work across the full spectrum of enterprise documents \u2014 from structured filings to layout-heavy slide decks.",
+          "score": 0.7451949,
+          "raw_content": null
+        },
+        {
+          "url": "https://medium.com/@ashwindevelops/rag-with-images-and-tables-enhancing-retrieval-augmented-generation-for-multimodal-content-a18da39571d5",
+          "title": "RAG with Images and Tables: Enhancing Retrieval-Augmented Generation for Multimodal Content",
+          "content": "# RAG with Images and Tables: Enhancing Retrieval-Augmented Generation for Multimodal Content | by Ashwindevelops | Medium. # RAG with Images and Tables: Enhancing Retrieval-Augmented Generation for Multimodal Content. We covered the core components of a RAG system: document processing, text splitting, embedding generation, vector storage, and the retrieval-generation pipeline. **What it does:** Processes each content type (text, images, tables) with specialized tools optimized for that modality. **What it does**: Converts the extracted multimodal content into structured HTML that preserves both the content and the relationships between different elements. **Implementation insight:** When converting to HTML, use semantic HTML5 tags (like `<figure>`, `<figcaption>`, `<table>`, `<section>`) to preserve the semantic meaning of different content elements, not just their visual appearance. **What it does:** Divides the HTML content into semantically meaningful chunks while preserving the relationships between different elements. relationship_graph.add_edge(section_id, current_chunk[\"id\"], relation=\"contains\"). relationship_graph.add_edge(section_id, chunk_id, relation=\"contains\"). Our recommended approach to multimodal RAG \u2014 using modality-specific processing with late fusion and relationship preservation \u2014 provides the best balance of performance, accuracy, and implementation complexity.",
+          "score": 0.7393665,
+          "raw_content": null
+        },
+        {
+          "url": "https://github.com/deep-div/Multimodel-RAG",
+          "title": "Multimodal RAG for PDF Ingestion and Text-Image Output - GitHub",
+          "content": "Multimodal RAG ingests PDFs and generates combined text and image outputs by retrieving and grounding relevant information from the documents.",
+          "score": 0.71040785,
+          "raw_content": null
+        },
+        {
+          "url": "https://pathway.com/developers/templates/rag/multimodal-rag",
+          "title": "Multimodal RAG for PDFs with Text, Images, and Charts - Pathway",
+          "content": "* **Run an App Template:** See how to build and run a multimodal RAG application using open-source frameworks like Pathway. However, unlike MM-RAG, which integrates retrieved data into the prompt for generating new content, multimodal search focuses on retrieving relevant results based on the query input. This makes multimodal search ideal for tasks like image or text searches in large datasets, while MM-RAG is better suited for generating responses that incorporate diverse data formats. This architecture ensures our multimodal RAG system is efficient, scalable, and capable of handling complex data types, making it ideal for production use cases, especially in finance where understanding data within PDFs is crucial. com/ pathwaycom/ llm - app/ raw/ main/ templates/ multimodal_rag/ data/ 20230203_alphabet_10K. You used the BaseRAGQuestionAnswerer class from pathway.xpacks, which integrates the foundational components for our RAG application, including data ingestion, LLM integration, database creation and querying, and serving the application on an endpoint.",
+          "score": 0.64128816,
+          "raw_content": null
+        },
+        {
+          "url": "https://towardsdatascience.com/building-a-multimodal-rag-with-text-images-tables-from-sources-in-response/",
+          "title": "Building a Multimodal RAG That Responds with Text, Images, and ...",
+          "content": "This approach assumes that **the caption or summary of an image generated from its content, always contains enough context** about the text or themes that appear in the document, for which this image would be an appropriate response. It is also to be noted that in the research papers, the figures and tables have a author provided caption, however, during the extraction process, this is extracted not as part of the image, but as part of the text. What the above has illustrated is that the real-world documents do not follow any standard format of text, images, tables and captions, thereby making the process of associating context to the figures difficult. In the next step, we take the generated text response and find the top 2 closest image matches (based on caption embeddings) to the response. This enhanced pipeline demonstrates how **context-aware image summarization** and **text response based image selection** can dramatically improve multimodal retrieval accuracy.",
+          "score": 0.63804686,
+          "raw_content": null
+        }
+      ]
+    }
+  ]
+}

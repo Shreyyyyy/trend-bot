@@ -57,5 +57,22 @@ This repo includes a GitHub Actions workflow:
 - Get chat_id:
   - easiest: message the bot once, then use a helper like @RawDataBot to read chat_id
 
-### Trigger manually
+## Web UI (Vercel)
+
+The repo now includes a premium Next.js dashboard located in the `/web` folder.
+
+### Deployment
+1) Create a new project on **Vercel**.
+2) Set the **Root Directory** to `web`.
+3) Add Environment Variables:
+   - `GROQ_API_KEY`
+   - `GROQ_MODEL` (e.g., `llama-3.3-70b-versatile`)
+4) Deploy!
+
+### Features
+- **Project Dashboard**: View the latest 5 ideas in a beautiful glassmorphic UI.
+- **AI Chatbot**: A floating assistant that knows about this week's trends and can help you brainstorm implementation details.
+- **Auto-Sync**: The UI automatically updates whenever the GitHub Action runs on Monday.
+
+## Trigger manually
 GitHub → Actions → “Weekly Trend Bot” → Run workflow
