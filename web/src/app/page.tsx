@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import { Send, Bot, ExternalLink, RefreshCw, Sparkles, Zap, Target, Globe, Github, X } from "lucide-react";
+import { Send, Bot, ExternalLink, RefreshCw, Sparkles, Zap, Target, Globe } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface Project {
@@ -198,7 +198,7 @@ export default function Home() {
               className="flex flex-col items-end opacity-40 hover:opacity-100 transition-all duration-500 group cursor-pointer"
             >
               <span className="text-[8px] md:text-[9px] font-black tracking-[0.4em] text-white/50 group-hover:text-blue-500 uppercase mb-0.5 md:mb-1 transition-colors flex items-center gap-2">
-                Architect <Github className="w-2 md:w-2.5 h-2 md:h-2.5" />
+                Architect <ExternalLink className="w-2 md:w-2.5 h-2 md:h-2.5" />
               </span>
               <span className="text-[9px] md:text-[11px] font-black tracking-widest text-white group-hover:text-blue-400 uppercase transition-colors">Shreyans Jain</span>
             </a>
