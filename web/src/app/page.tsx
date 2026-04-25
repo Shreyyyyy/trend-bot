@@ -191,10 +191,17 @@ export default function Home() {
 
           {/* Developer Credit - Top Right */}
           <div className="absolute top-10 right-10 z-50">
-            <div className="flex flex-col items-end opacity-40 hover:opacity-100 transition-all duration-500 group cursor-default">
-              <span className="text-[9px] font-black tracking-[0.4em] text-white/50 group-hover:text-blue-500 uppercase mb-1 transition-colors">Architect</span>
-              <span className="text-[11px] font-black tracking-widest text-white group-hover:text-white uppercase transition-colors">Shreyans Jain</span>
-            </div>
+            <a 
+              href="https://github.com/shreyyyyy" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex flex-col items-end opacity-40 hover:opacity-100 transition-all duration-500 group cursor-pointer"
+            >
+              <span className="text-[9px] font-black tracking-[0.4em] text-white/50 group-hover:text-blue-500 uppercase mb-1 transition-colors flex items-center gap-2">
+                Architect <Github className="w-2.5 h-2.5" />
+              </span>
+              <span className="text-[11px] font-black tracking-widest text-white group-hover:text-blue-400 uppercase transition-colors">Shreyans Jain</span>
+            </a>
           </div>
 
           <div className="relative flex items-center justify-center w-full h-full">
