@@ -70,9 +70,12 @@ The repo now includes a premium Next.js dashboard located in the `/web` folder.
 4) Deploy!
 
 ### Features
-- **Project Dashboard**: View the latest 5 ideas in a beautiful glassmorphic UI.
-- **AI Chatbot**: A floating assistant that knows about this week's trends and can help you brainstorm implementation details.
-- **Auto-Sync**: The UI automatically updates whenever the GitHub Action runs on Monday.
+- **Interactive Radar Chart**: A high-tech SVG Pie Chart HUD that expands on hover/tap to reveal deep strategic insights.
+- **Rainbow Intelligence**: Vibrant, color-coded segments that prioritize signals visually.
+- **AI Strategic Consultant**: A context-aware chatbot that helps you break down and execute specific trends.
+- **Zero-Scroll Dashboard**: A "Single Pane of Glass" design optimized for deep focus.
+- **Mobile First**: Fully responsive design with touch-optimized controls for on-the-go intelligence.
+- **Auto-Sync**: Automatically updates via GitHub Actions or manual "Live Sync" in the UI.
 
 ## Trigger manually
 GitHub → Actions → “Weekly Trend Bot” → Run workflow
