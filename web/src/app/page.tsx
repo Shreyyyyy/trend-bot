@@ -152,24 +152,31 @@ export default function Home() {
         <div className={`${chatOpen ? "w-[58%]" : "w-full"} h-full flex flex-col items-center justify-center transition-all duration-500 ease-in-out overflow-hidden px-10`}>
           
           {/* Header (Minimal) */}
-          <div className="absolute top-8 left-10 flex items-center gap-6">
+          <div className="absolute top-10 left-10 flex items-center gap-10 z-50">
             <div>
-              <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="text-blue-500 font-black tracking-[0.3em] text-[10px] uppercase mb-1">
-                Trend Ecosystem
+              <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} className="text-blue-500 font-black tracking-[0.4em] text-[10px] uppercase mb-1.5 flex items-center gap-2">
+                <div className="w-1 h-1 bg-blue-500 rounded-full animate-pulse" />
+                Strategic Intelligence
               </motion.div>
-              <motion.h1 initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-3xl font-black tracking-tighter">
+              <motion.h1 initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 }} className="text-4xl font-black tracking-tighter text-white">
                 Market Signals
               </motion.h1>
-              <p className="text-[10px] text-gray-600 font-bold tracking-widest uppercase mt-1">{dateRange || "Awaiting Scan"}</p>
+              <div className="flex items-center gap-3 mt-2">
+                <span className="h-px w-6 bg-white/20" />
+                <p className="text-sm text-white font-black tracking-wider uppercase drop-shadow-lg">
+                  {dateRange || "Awaiting Intelligence Sync"}
+                </p>
+              </div>
             </div>
 
             <button
               onClick={handleRefresh}
               disabled={refreshing}
-              className="group flex items-center gap-2 text-[10px] font-black text-white/50 hover:text-white bg-white/5 hover:bg-blue-600/20 border border-white/5 hover:border-blue-500/30 rounded-xl px-4 py-2 transition-all active:scale-95"
+              className={`group relative flex items-center gap-3 text-[11px] font-black text-white bg-white/5 hover:bg-blue-600 border border-white/10 hover:border-blue-400 rounded-xl px-6 py-3 transition-all active:scale-95 shadow-2xl overflow-hidden ${refreshing ? "cursor-wait opacity-80" : "cursor-pointer"}`}
             >
-              <RefreshCw className={`w-3 h-3 ${refreshing ? "animate-spin" : ""}`} />
-              {refreshing ? "Scanning..." : "Sync"}
+              <RefreshCw className={`w-4 h-4 transition-transform duration-1000 ${refreshing ? "animate-spin" : "group-hover:rotate-180"}`} />
+              <span className="relative z-10">{refreshing ? "FETCHING TRENDS..." : "SYNC INTELLIGENCE"}</span>
+              {refreshing && <div className="absolute inset-0 bg-blue-500/20 animate-pulse" />}
             </button>
           </div>
 
