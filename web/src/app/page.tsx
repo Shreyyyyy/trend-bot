@@ -139,7 +139,7 @@ export default function Home() {
   };
 
   return (
-    <div className="h-screen w-screen bg-[#02040a] text-white flex flex-col overflow-hidden font-sans selection:bg-blue-500/30 relative">
+    <div className="min-h-screen lg:h-screen w-screen bg-[#02040a] text-white flex flex-col overflow-y-auto lg:overflow-hidden font-sans selection:bg-blue-500/30 relative">
       {/* Background Glow */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-600/10 rounded-full blur-[120px]" />
@@ -147,45 +147,32 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-50" />
       </div>
 
-      <div className="flex-grow flex overflow-hidden relative z-10">
+      <div className="flex-grow flex flex-col lg:flex-row overflow-visible lg:overflow-hidden relative z-10">
         {/* Main Section: Interactive Pie Chart */}
-        <div className={`${chatOpen ? "hidden md:flex md:w-[58%]" : "w-full"} h-full flex flex-col items-center justify-center transition-all duration-500 ease-in-out overflow-hidden px-4 md:px-10`}>
+        <div className={`${chatOpen ? "hidden md:flex md:w-[58%]" : "w-full"} min-h-screen lg:h-full flex flex-col items-center justify-center transition-all duration-500 ease-in-out overflow-visible lg:overflow-hidden px-4 md:px-10 py-20 lg:py-0`}>
 
           {/* Header (Minimal) */}
-          <div className="absolute top-6 left-6 md:top-10 md:left-10 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-10 z-50">
+          <div className="absolute top-6 left-6 md:top-10 md:left-10 flex flex-row items-center justify-between w-[calc(100%-48px)] md:w-auto gap-4 md:gap-10 z-50">
             <div>
-              <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} className="text-blue-500 font-black tracking-[0.4em] text-[10px] uppercase mb-1.5 flex items-center gap-2">
+              <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} className="text-blue-500 font-black tracking-[0.4em] text-[8px] md:text-[10px] uppercase mb-1 flex items-center gap-2">
                 <div className="w-1 h-1 bg-blue-500 rounded-full animate-pulse" />
                 Strategic Intelligence
               </motion.div>
-              <motion.h1 initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 }} className="text-4xl font-black tracking-tighter text-white">
+              <motion.h1 initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 }} className="text-2xl md:text-4xl font-black tracking-tighter text-white">
                 Market Signals
               </motion.h1>
-              <div className="flex items-center gap-3 mt-2">
-                <span className="h-px w-6 bg-white/20" />
-                <p className="text-sm text-white font-black tracking-wider uppercase drop-shadow-lg">
-                  {dateRange || "Awaiting Intelligence Sync"}
-                </p>
-              </div>
             </div>
 
             <div className="relative group/sync">
               <button
                 onClick={handleRefresh}
                 disabled={refreshing}
-                className={`group relative flex items-center gap-3 text-[11px] font-black text-white bg-white/5 hover:bg-blue-600 border border-white/10 hover:border-blue-400 rounded-xl px-6 py-3 transition-all active:scale-95 shadow-2xl overflow-hidden ${refreshing ? "cursor-wait opacity-80" : "cursor-pointer"}`}
+                className={`group relative flex items-center gap-3 text-[9px] md:text-[11px] font-black text-white bg-white/5 hover:bg-blue-600 border border-white/10 hover:border-blue-400 rounded-xl px-4 md:px-6 py-2.5 md:py-3 transition-all active:scale-95 shadow-2xl overflow-hidden ${refreshing ? "cursor-wait opacity-80" : "cursor-pointer"}`}
               >
-                <RefreshCw className={`w-4 h-4 transition-transform duration-1000 ${refreshing ? "animate-spin" : "group-hover:rotate-180"}`} />
-                <span className="relative z-10">{refreshing ? "FETCHING TRENDS..." : "SYNC INTELLIGENCE"}</span>
-                {refreshing && <div className="absolute inset-0 bg-blue-500/20 animate-pulse" />}
+                <RefreshCw className={`w-3.5 h-3.5 md:w-4 md:h-4 transition-transform duration-1000 ${refreshing ? "animate-spin" : "group-hover:rotate-180"}`} />
+                <span className="relative z-10 hidden sm:inline">{refreshing ? "FETCHING..." : "SYNC"}</span>
+                <span className="relative z-10 sm:hidden">{refreshing ? "..." : "SYNC"}</span>
               </button>
-              
-              {/* Sync One-Liner Tooltip */}
-              <div className="absolute top-full mt-3 left-0 w-max opacity-0 group-hover/sync:opacity-100 transition-opacity duration-300 pointer-events-none hidden md:block">
-                <div className="bg-blue-600/10 backdrop-blur-xl border border-blue-500/30 px-3 py-1.5 rounded-lg">
-                  <p className="text-[9px] font-black text-blue-400 uppercase tracking-widest">Perform live market scan for latest signals</p>
-                </div>
-              </div>
             </div>
           </div>
 
@@ -204,20 +191,20 @@ export default function Home() {
             </a>
           </div>
 
-          {/* Intelligence Index - Responsive Fixed Access */}
+          {/* Intelligence Index - Responsive Sidebar (Desktop Only) */}
           {!chatOpen && (
-            <div className="absolute lg:left-10 lg:top-1/2 lg:-translate-y-1/2 left-0 right-0 bottom-6 lg:bottom-auto z-50 flex lg:flex-col flex-row gap-3 px-6 lg:px-0 overflow-x-auto lg:overflow-x-visible no-scrollbar">
-              <div className="hidden lg:flex items-center gap-3 mb-2">
+            <div className="absolute left-10 top-1/2 -translate-y-1/2 z-50 hidden lg:flex flex-col gap-4">
+              <div className="flex items-center gap-3 mb-2">
                 <div className="w-1.5 h-6 bg-blue-600 rounded-full" />
                 <span className="text-[10px] font-black uppercase tracking-[0.4em] text-white/40">Active Signals</span>
               </div>
               {projects.map((p, i) => (
                 <motion.div
                   key={p.id}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.1 }}
-                  className={`group relative flex items-center justify-between gap-4 lg:gap-6 p-3 lg:p-4 rounded-2xl border transition-all duration-300 w-[180px] lg:w-64 flex-none lg:flex-auto ${
+                  className={`group relative flex items-center justify-between gap-6 p-4 rounded-2xl border transition-all duration-300 w-64 ${
                     hoveredIndex === i 
                       ? "bg-blue-600/10 border-blue-500/30 shadow-[0_0_30px_rgba(59,130,246,0.1)]" 
                       : "bg-white/[0.02] border-white/5 hover:bg-white/[0.05] hover:border-white/10"
@@ -226,17 +213,17 @@ export default function Home() {
                   onMouseLeave={() => setHoveredIndex(null)}
                 >
                   <div className="flex flex-col gap-1 min-w-0">
-                    <span className="text-[8px] lg:text-[9px] font-black text-blue-500/60 uppercase whitespace-nowrap">Signal 0{i + 1}</span>
-                    <p className="text-[10px] lg:text-xs font-black text-gray-200 truncate group-hover:text-white transition-colors">{p.name}</p>
+                    <span className="text-[9px] font-black text-blue-500/60 uppercase">Signal 0{i + 1}</span>
+                    <p className="text-xs font-black text-gray-200 truncate group-hover:text-white transition-colors">{p.name}</p>
                   </div>
                   {p.url && (
                     <a 
                       href={p.url} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="p-1.5 lg:p-2 rounded-xl bg-white/5 hover:bg-blue-600 text-gray-500 hover:text-white transition-all active:scale-90 flex-none"
+                      className="p-2 rounded-xl bg-white/5 hover:bg-blue-600 text-gray-500 hover:text-white transition-all active:scale-90"
                     >
-                      <ExternalLink className="w-3 lg:w-3.5 h-3 lg:h-3.5" />
+                      <ExternalLink className="w-3.5 h-3.5" />
                     </a>
                   )}
                 </motion.div>
@@ -372,6 +359,45 @@ export default function Home() {
                     );
                   })}
                 </div>
+              </div>
+            )}
+
+            {/* Mobile Signals Briefing (Visible only on mobile scroll) */}
+            {!loading && projects.length > 0 && (
+              <div className="lg:hidden w-full space-y-4 mt-20 pb-10">
+                <div className="flex items-center gap-3 px-2">
+                  <div className="w-1.5 h-6 bg-blue-600 rounded-full" />
+                  <span className="text-[10px] font-black uppercase tracking-[0.4em] text-white/40">Signals Briefing</span>
+                </div>
+                {projects.map((p, i) => (
+                  <motion.div
+                    key={p.id}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="p-6 rounded-3xl bg-white/[0.02] border border-white/5 backdrop-blur-3xl space-y-4"
+                  >
+                    <div className="flex justify-between items-start">
+                      <div className="space-y-1">
+                        <span className="text-[10px] font-black text-blue-500 uppercase tracking-widest">Signal 0{i + 1}</span>
+                        <h3 className="text-2xl font-black text-white leading-tight">{p.name}</h3>
+                      </div>
+                      {p.url && (
+                        <a href={p.url} target="_blank" rel="noopener noreferrer" className="p-3 bg-white/5 rounded-2xl text-blue-400">
+                          <ExternalLink className="w-5 h-5" />
+                        </a>
+                      )}
+                    </div>
+                    <div className="space-y-2">
+                      <div className="text-[10px] font-black text-white/30 uppercase tracking-[0.3em]">Hypothesis</div>
+                      <p className="text-sm text-gray-400 leading-relaxed italic">"{p.why}"</p>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="text-[10px] font-black text-white/30 uppercase tracking-[0.3em]">Execution</div>
+                      <p className="text-base text-gray-200 font-bold leading-snug">{p.build}</p>
+                    </div>
+                  </motion.div>
+                ))}
               </div>
             )}
           </div>
