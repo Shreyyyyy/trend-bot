@@ -42,54 +42,40 @@ def _collect_source_urls(trends: dict) -> list[str]:
 
 
 def _postprocess_ideas(raw: str) -> str:
-    """Force a crisp output regardless of model verbosity.
-
-    Extract the first 5 (Project, Source) pairs and emit a tiny message.
-    """
+    """Ensure output is exactly 5 lines: 'n) Name — URL'."""
     lines = [ln.strip() for ln in raw.splitlines() if ln.strip()]
-
-    # Preferred: parse strict 5-line format: "n) name — url"
     out_lines: list[str] = []
+
     for ln in lines:
         if len(out_lines) >= 5:
             break
-        if "http" not in ln:
-            continue
-        # try split on emdash/mdash/hyphen separators
-        sep = "—" if "—" in ln else "-" if " - " in ln else None
-        if sep:
-            left, right = ln.split(sep, 1)
-            url = right.strip()
-            name = left.split(")", 1)[1].strip() if ")" in left else left.strip()
-            if url.startswith("http") and name:
-                out_lines.append(f"{len(out_lines)+1}) {name} — {url}")
-                continue
+        # Look for the pattern "something - http" or "something — http"
+        if "http" in ln:
+            # Clean up the line to match "n) Name — URL"
+            # Remove existing numbering if present
+            content = ln.split(")", 1)[1].strip() if ")" in ln[:5] else ln
+            # Normalize separator to em-dash
+            if " — " in content:
+                pass
+            elif " - " in content:
+                content = content.replace(" - ", " — ")
+            elif " —" in content:
+                content = content.replace(" —", " — ")
+            elif "— " in content:
+                content = content.replace("— ", " — ")
+            
+            # If no separator found but URL exists, add one
+            if " — " not in content:
+                parts = content.split("http", 1)
+                content = f"{parts[0].strip()} — http{parts[1].strip()}"
+            
+            out_lines.append(f"{len(out_lines)+1}) {content}")
 
-        # else: line has URL but not the separator; keep it as-is (cleaned)
-        out_lines.append(ln)
+    # Fallback/Padding
+    while len(out_lines) < 5:
+        out_lines.append(f"{len(out_lines)+1}) [Idea pending further research] — https://github.com/trending")
 
-    # Secondary fallback: pair URLs with previous line as name
-    if len(out_lines) < 5:
-        pairs: list[str] = []
-        prev = ""
-        for ln in lines:
-            if "http" in ln:
-                # extract first url-like token
-                parts = [p for p in ln.replace("(", " ").replace(")", " ").split() if p.startswith("http")]
-                if parts:
-                    name = prev[:120] if prev else "Project idea"
-                    pairs.append(f"{len(pairs)+1}) {name} — {parts[0]}")
-                    if len(pairs) >= 5:
-                        break
-            prev = ln
-        if pairs:
-            out_lines = pairs
-
-    # Absolute fallback
-    if not out_lines:
-        return "No ideas generated. (Model returned empty output.)\n"
-
-    return "\n".join(out_lines[:5]).strip() + "\n"
+    return "\n".join(out_lines)
 
 
 def main():

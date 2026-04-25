@@ -32,37 +32,9 @@ def _shorten(text: str, max_chars: int = 3500) -> str:
 
 
 def _clean_for_telegram(text: str) -> str:
-    # Keep it plain and readable on mobile.
-    # - Strip markdown-ish headers/formatting
-    # - Collapse extra blank lines
-    lines = []
-    for raw in text.splitlines():
-        s = raw.strip()
-        if not s:
-            # keep a single blank line (handled later)
-            lines.append("")
-            continue
-        # Drop common markdown header prefixes
-        while s.startswith("#"):
-            s = s.lstrip("#").strip()
-        # Normalize bullets
-        if s.startswith("-"):
-            s = "• " + s.lstrip("-").strip()
-        lines.append(s)
-
-    # collapse multiple blank lines
-    out = []
-    blank = False
-    for l in lines:
-        if l == "":
-            if blank:
-                continue
-            blank = True
-            out.append("")
-        else:
-            blank = False
-            out.append(l)
-    return "\n".join(out).strip()
+    """Minimal cleaning to ensure exactly one line per project."""
+    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+    return "\n".join(lines[:5])
 
 
 def send_text(text: str) -> None:
