@@ -42,16 +42,31 @@ export default function Home() {
 
   useEffect(() => {
     async function fetchData() {
+      // 1. Try loading from localStorage first (for instant feedback)
+      const cachedDate = localStorage.getItem("trendbot_date");
+      const cachedProjects = localStorage.getItem("trendbot_projects");
+      if (cachedDate && cachedProjects) {
+        setDateRange(cachedDate);
+        setProjects(JSON.parse(cachedProjects));
+        setLoading(false);
+      }
+
       try {
         const ideasRes = await fetch("/data/ideas.md");
         const ideasText = await ideasRes.text();
         const dateMatch = ideasText.match(/^DATE:\s*(.+)/m);
         const rawDate = dateMatch ? dateMatch[1].trim() : "";
-        // Only show real dates (not the placeholder)
-        if (rawDate && rawDate !== "No data yet") setDateRange(rawDate);
-
+        
         const lines = ideasText.split("\n").filter(l => l.trim() && /^\d+[\.\)]/.test(l.trim())).slice(0, 5);
-        setProjects(lines.map(parseLine));
+        
+        // Only override cache if ideas.md actually has data
+        if (rawDate && rawDate !== "No data yet" && lines.length > 0) {
+          const parsed = lines.map(parseLine);
+          setDateRange(rawDate);
+          setProjects(parsed);
+          localStorage.setItem("trendbot_date", rawDate);
+          localStorage.setItem("trendbot_projects", JSON.stringify(parsed));
+        }
       } catch (e) {
         console.error(e);
       } finally {
@@ -69,8 +84,14 @@ export default function Home() {
       const res = await fetch("/api/refresh", { method: "POST" });
       const data = await res.json();
       if (data.error) throw new Error(data.error);
+      
+      const parsed = data.ideas.map(parseLine);
       setDateRange(data.dateRange);
-      setProjects(data.ideas.map(parseLine));
+      setProjects(parsed);
+      
+      // Store in localStorage
+      localStorage.setItem("trendbot_date", data.dateRange);
+      localStorage.setItem("trendbot_projects", JSON.stringify(parsed));
     } catch (e: any) {
       alert("Refresh failed: " + e.message);
     } finally {
