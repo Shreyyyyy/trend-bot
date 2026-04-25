@@ -102,8 +102,10 @@ def main():
 
     args.out.mkdir(parents=True, exist_ok=True)
 
-    trends = fetch_trends()
-    (args.out / "trends.json").write_text(json.dumps(trends, indent=2), encoding="utf-8")
+    from datetime import datetime
+    timestamp = datetime.now().isoformat()
+    meta = {"timestamp": timestamp, "trends": trends}
+    (args.out / "trends.json").write_text(json.dumps(meta, indent=2), encoding="utf-8")
 
     trends_text = _trends_to_text(trends)
     src_urls = _collect_source_urls(trends)
@@ -111,6 +113,9 @@ def main():
         trends_text += "\n\nSOURCE URL POOL (choose exactly one per idea):\n" + "\n".join(f"- {u}" for u in src_urls[:60])
     raw = generate_ideas(SYSTEM_PROMPT, trends_text)
     ideas_text = _postprocess_ideas(raw)
+    
+    # Add timestamp header to ideas.md for parsing
+    ideas_text = f"DATE: {timestamp}\n" + ideas_text
     (args.out / "ideas.md").write_text(ideas_text, encoding="utf-8")
 
     print(f"Wrote: {args.out/'trends.json'}")

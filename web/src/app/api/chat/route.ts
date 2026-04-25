@@ -7,15 +7,18 @@ const groq = new Groq({
 
 export async function POST(req: Request) {
   try {
-    const { message, projects } = await req.json();
+    const { message, projects, rawTrends } = await req.json();
 
-    const systemPrompt = `You are the Trend Bot Assistant. You help users understand AI trends and project ideas.
+    const systemPrompt = `You are the Trend Bot Assistant. 
     
     Current Project Ideas:
     ${JSON.stringify(projects, null, 2)}
     
-    Answer the user's question based on these projects and general AI knowledge. 
-    Be concise, technical, and helpful. If they ask for a deep dive or implementation details, give them high-level advice.`;
+    Underlying Trends/Signals Gathered:
+    ${JSON.stringify(rawTrends, null, 2)}
+    
+    Answer the user's question. If they click on a trend signal, provide a deep dive into WHY it's trending and WHAT problems it causes.
+    Be concise, technical, and high-energy. Focus on developer opportunities.`;
 
     const completion = await groq.chat.completions.create({
       messages: [
@@ -23,8 +26,8 @@ export async function POST(req: Request) {
         { role: "user", content: message },
       ],
       model: process.env.GROQ_MODEL || "llama-3.3-70b-versatile",
-      temperature: 0.5,
-      max_tokens: 500,
+      temperature: 0.6,
+      max_tokens: 800,
     });
 
     return NextResponse.json({ reply: completion.choices[0].message.content });
