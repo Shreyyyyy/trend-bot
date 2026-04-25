@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import { Send, Bot, ExternalLink, RefreshCw, Sparkles, Zap, Target, Globe } from "lucide-react";
+import { Send, Bot, ExternalLink, RefreshCw, Sparkles, Zap, Target, Globe, Github, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface Project {
