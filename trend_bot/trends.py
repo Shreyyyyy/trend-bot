@@ -18,24 +18,25 @@ def fetch_trends() -> dict[str, Any]:
     client = TavilyClient(api_key=api_key)
 
     base_queries = [
-        "GitHub trending LLM router multi model inference",
-        "open source RAG framework trending",
-        "Hacker News RAG slow expensive pipeline",
-        "AI agent reliability tool failures looping",
-        "PDF parsing tables images bounding boxes docling liteparse",
-        "local LLM performance optimization llama.cpp vLLM",
-        "arXiv retrieval embedding optimization paper",
-        "smaller faster transformer architecture arXiv",
-        "multimodal RAG PDF image table",
+        "site:reddit.com/r/MachineLearning OR site:reddit.com/r/LocalLLM latest AI problems frustrations",
+        "site:reddit.com/r/OpenAI OR site:reddit.com/r/LangChain 'how to' solve RAG issues",
+        "GitHub engineering blog latest LLM infrastructure scaling",
+        "GitHub trending AI projects problem solving tools",
+        "Hacker News latest AI startups solving developer pain points",
+        "Reddit threads 'unsolved' AI agent reliability issues",
+        "GitHub issues 'help wanted' trending LLM frameworks",
+        "latest engineering blogs AI infrastructure bottlenecks",
+        "multimodal RAG PDF image table problem solving",
     ]
 
     extra = os.environ.get("EXTRA_QUERIES", "").strip()
     if extra:
         base_queries.extend([q.strip() for q in extra.split(",") if q.strip()])
 
-    results = []
-    for q in base_queries:
-        r = client.search(query=q, search_depth="basic", max_results=6)
+    for i, q in enumerate(base_queries):
+        # Use advanced search for the first few primary queries for a 'deep dive'
+        depth = "advanced" if i < 3 else "basic"
+        r = client.search(query=q, search_depth=depth, max_results=6)
         results.append({"query": q, "results": r.get("results", [])})
 
     return {"queries": results}
