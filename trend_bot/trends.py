@@ -37,7 +37,7 @@ def fetch_trends() -> dict[str, Any]:
     for i, q in enumerate(base_queries):
         # Use advanced search for the first few primary queries for a 'deep dive'
         depth = "advanced" if i < 3 else "basic"
-        r = client.search(query=q, search_depth=depth, max_results=6)
+        r = client.search(query=q, search_depth=depth, max_results=6, time_range="week")
         results.append({"query": q, "results": r.get("results", [])})
 
     return {"queries": results}
