@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import { Send, Bot, TrendingUp, ExternalLink, Calendar } from "lucide-react";
+import { Send, Bot, ExternalLink } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface Project {
@@ -33,7 +33,7 @@ export default function Home() {
         if (dateMatch) setTimestamp(dateMatch[1]);
 
         const lines = ideasText.split("\n").filter(l => l.trim() && /^\d+[\.\)]/.test(l.trim()));
-        const parsed: Project[] = lines.map((line, index) => {
+        const parsed: Project[] = lines.slice(0, 5).map((line, index) => {
           const [main, ...rest] = line.split(" | ");
           const [prefix, urlPart] = main.split(" — ");
           const name = prefix.replace(/^\d+[\.\)]\s*/, "").trim();
@@ -81,82 +81,66 @@ export default function Home() {
     }
   };
 
-  const formatTimeline = (iso: string) => {
-    if (!iso) return "This week";
-    const end = new Date(iso);
-    const start = new Date(end);
-    start.setDate(start.getDate() - 7);
-    return `${start.toLocaleDateString("en-GB", { day: "numeric", month: "short" })} – ${end.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}`;
+  const formatDate = (iso: string) => {
+    if (!iso) return "";
+    const d = new Date(iso);
+    return d.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
   };
 
   return (
     <div className="h-screen w-screen bg-[#07080c] text-white flex flex-col overflow-hidden font-sans">
 
-      {/* Header */}
-      <header className="flex-none h-14 px-8 flex items-center justify-between border-b border-white/[0.06] bg-black/20">
-        <div className="flex items-center gap-2.5">
-          <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
-            <TrendingUp className="w-4 h-4" />
+      <div className={`flex-grow flex overflow-hidden transition-all duration-300`}>
+        {/* Main ideas pane */}
+        <div className={`${chatOpen ? "w-[55%]" : "w-full"} flex flex-col items-center justify-center px-8 transition-all duration-300`}>
+          <div className="w-full max-w-xl">
+
+            {/* Dynamic Date */}
+            {!loading && timestamp && (
+              <p className="text-xs font-semibold uppercase tracking-widest text-gray-600 mb-6">
+                {formatDate(timestamp)}
+              </p>
+            )}
+
+            {/* 5 Project Ideas */}
+            {loading ? (
+              <div className="space-y-4">
+                {Array(5).fill(0).map((_, i) => (
+                  <div key={i} className="h-12 bg-white/[0.03] rounded-xl animate-pulse" />
+                ))}
+              </div>
+            ) : (
+              <ol className="space-y-3">
+                {projects.map((p, i) => (
+                  <motion.li
+                    key={i}
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: i * 0.08 }}
+                    className="group flex items-center gap-4 px-5 py-3.5 rounded-xl bg-white/[0.03] border border-white/[0.06] hover:border-white/20 hover:bg-white/[0.05] transition-all cursor-pointer"
+                    onClick={() => handleSend(`Tell me more about: ${p.name}`)}
+                  >
+                    <span className="flex-none text-sm font-mono text-gray-600 w-4">{p.id}.</span>
+                    <span className="flex-grow text-sm font-medium text-white/80 group-hover:text-white transition-colors">
+                      {p.name}
+                    </span>
+                    <a
+                      href={p.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={e => e.stopPropagation()}
+                      className="flex-none text-gray-700 hover:text-blue-400 transition-colors"
+                    >
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </motion.li>
+                ))}
+              </ol>
+            )}
           </div>
-          <span className="font-bold tracking-tight">TrendBot</span>
-        </div>
-        <div className="flex items-center gap-2 text-xs text-gray-400 bg-white/[0.03] border border-white/[0.06] rounded-full px-4 py-1.5">
-          <Calendar className="w-3.5 h-3.5 text-blue-400" />
-          <span>{formatTimeline(timestamp)}</span>
-        </div>
-        <div className="w-[120px]" /> {/* spacer for centering */}
-      </header>
-
-      {/* Body */}
-      <div className="flex-grow flex overflow-hidden">
-
-        {/* Left: 5 Ideas */}
-        <div className={`${chatOpen ? "w-[55%]" : "w-full"} flex-none flex flex-col transition-all duration-300 overflow-y-auto px-8 py-6`}>
-          {loading ? (
-            <div className="space-y-3">
-              {Array(5).fill(0).map((_, i) => <div key={i} className="h-24 bg-white/[0.03] rounded-2xl animate-pulse" />)}
-            </div>
-          ) : (
-            <div className="space-y-3 max-w-2xl mx-auto w-full">
-              <p className="text-xs text-gray-500 font-semibold uppercase tracking-widest mb-5">This week's execution-ready ideas</p>
-              {projects.map((p, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.07 }}
-                  className="group flex items-start gap-4 px-5 py-4 rounded-2xl bg-white/[0.03] border border-white/[0.06] hover:border-white/20 hover:bg-white/[0.05] transition-all cursor-pointer"
-                  onClick={() => handleSend(`Tell me more about idea #${p.id}: ${p.name}`)}
-                >
-                  <span className="flex-none mt-0.5 text-sm font-mono font-bold text-gray-600 w-5">{p.id}.</span>
-                  <div className="flex-grow min-w-0">
-                    <div className="flex items-start justify-between gap-3">
-                      <p className="font-semibold text-white/90 group-hover:text-white text-[15px] leading-snug">{p.name}</p>
-                      <a
-                        href={p.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={e => e.stopPropagation()}
-                        className="flex-none text-gray-600 hover:text-blue-400 transition-colors mt-0.5"
-                      >
-                        <ExternalLink className="w-3.5 h-3.5" />
-                      </a>
-                    </div>
-                    {(p.why || p.build || p.market) && (
-                      <div className="flex flex-wrap gap-x-4 gap-y-0.5 mt-1.5">
-                        {p.why && <p className="text-xs text-gray-500"><span className="text-gray-600 font-semibold">Why:</span> {p.why}</p>}
-                        {p.market && <p className="text-xs text-gray-500"><span className="text-gray-600 font-semibold">Market:</span> {p.market}</p>}
-                      </div>
-                    )}
-                  </div>
-                </motion.div>
-              ))}
-              <p className="text-center text-[11px] text-gray-700 pt-4">Click any idea to ask the AI for a deep dive.</p>
-            </div>
-          )}
         </div>
 
-        {/* Right: Chat Panel (appears on demand) */}
+        {/* Chat panel */}
         <AnimatePresence>
           {chatOpen && (
             <motion.div
@@ -166,25 +150,19 @@ export default function Home() {
               transition={{ duration: 0.25 }}
               className="flex-none border-l border-white/[0.06] flex flex-col overflow-hidden bg-black/10"
             >
-              {/* Chat header */}
               <div className="flex-none h-11 px-5 flex items-center justify-between border-b border-white/[0.06]">
                 <div className="flex items-center gap-2">
                   <Bot className="w-4 h-4 text-blue-400" />
-                  <span className="text-sm font-semibold text-white/70">AI Assistant</span>
+                  <span className="text-sm font-semibold text-white/60">AI Assistant</span>
                 </div>
-                <button onClick={() => setChatOpen(false)} className="text-xs text-gray-600 hover:text-white transition-colors">✕ close</button>
+                <button onClick={() => setChatOpen(false)} className="text-xs text-gray-700 hover:text-white transition-colors">✕</button>
               </div>
 
-              {/* Messages */}
               <div className="flex-grow overflow-y-auto px-5 py-4 space-y-3">
                 <AnimatePresence initial={false}>
                   {messages.map((m, i) => (
-                    <motion.div
-                      key={i}
-                      initial={{ opacity: 0, y: 6 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}
-                    >
+                    <motion.div key={i} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }}
+                      className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}>
                       <div className={`max-w-[90%] px-3.5 py-2.5 rounded-xl text-sm leading-relaxed whitespace-pre-wrap ${
                         m.role === "user"
                           ? "bg-blue-600 text-white rounded-tr-sm"
@@ -207,7 +185,6 @@ export default function Home() {
                 <div ref={chatEndRef} />
               </div>
 
-              {/* Input */}
               <div className="flex-none px-4 pb-4 pt-2 border-t border-white/[0.06]">
                 <div className="relative">
                   <input
@@ -229,16 +206,15 @@ export default function Home() {
             </motion.div>
           )}
         </AnimatePresence>
-
       </div>
 
-      {/* Floating chat button when panel is closed */}
+      {/* Floating chat button */}
       {!chatOpen && (
         <button
-          onClick={() => { setChatOpen(true); }}
-          className="fixed bottom-6 right-6 w-12 h-12 bg-blue-600 hover:bg-blue-500 rounded-full shadow-lg shadow-blue-600/20 flex items-center justify-center transition-all active:scale-95"
+          onClick={() => setChatOpen(true)}
+          className="fixed bottom-6 right-6 w-11 h-11 bg-blue-600 hover:bg-blue-500 rounded-full shadow-lg shadow-blue-600/20 flex items-center justify-center transition-all active:scale-95"
         >
-          <Bot className="w-5 h-5" />
+          <Bot className="w-4 h-4" />
         </button>
       )}
     </div>
