@@ -139,7 +139,7 @@ export default function Home() {
   };
 
   return (
-    <div className="h-screen w-screen bg-[#02040a] text-white flex flex-col overflow-hidden font-sans selection:bg-blue-500/30">
+    <div className="h-screen w-screen bg-[#02040a] text-white flex flex-col overflow-hidden font-sans selection:bg-blue-500/30 relative">
       {/* Background Glow */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-600/10 rounded-full blur-[120px]" />
@@ -149,10 +149,10 @@ export default function Home() {
 
       <div className="flex-grow flex overflow-hidden relative z-10">
         {/* Main Section: Interactive Pie Chart */}
-        <div className={`${chatOpen ? "w-[58%]" : "w-full"} h-full flex flex-col items-center justify-center transition-all duration-500 ease-in-out overflow-hidden px-10`}>
+        <div className={`${chatOpen ? "hidden md:flex md:w-[58%]" : "w-full"} h-full flex flex-col items-center justify-center transition-all duration-500 ease-in-out overflow-hidden px-4 md:px-10`}>
 
           {/* Header (Minimal) */}
-          <div className="absolute top-10 left-10 flex items-center gap-10 z-50">
+          <div className="absolute top-6 left-6 md:top-10 md:left-10 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-10 z-50">
             <div>
               <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} className="text-blue-500 font-black tracking-[0.4em] text-[10px] uppercase mb-1.5 flex items-center gap-2">
                 <div className="w-1 h-1 bg-blue-500 rounded-full animate-pulse" />
@@ -181,7 +181,7 @@ export default function Home() {
               </button>
               
               {/* Sync One-Liner Tooltip */}
-              <div className="absolute top-full mt-3 left-0 w-max opacity-0 group-hover/sync:opacity-100 transition-opacity duration-300 pointer-events-none">
+              <div className="absolute top-full mt-3 left-0 w-max opacity-0 group-hover/sync:opacity-100 transition-opacity duration-300 pointer-events-none hidden md:block">
                 <div className="bg-blue-600/10 backdrop-blur-xl border border-blue-500/30 px-3 py-1.5 rounded-lg">
                   <p className="text-[9px] font-black text-blue-400 uppercase tracking-widest">Perform live market scan for latest signals</p>
                 </div>
@@ -190,29 +190,29 @@ export default function Home() {
           </div>
 
           {/* Developer Credit - Top Right */}
-          <div className="absolute top-10 right-10 z-50">
+          <div className="absolute top-6 right-6 md:top-10 md:right-10 z-50">
             <a 
               href="https://github.com/shreyyyyy" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex flex-col items-end opacity-40 hover:opacity-100 transition-all duration-500 group cursor-pointer"
             >
-              <span className="text-[9px] font-black tracking-[0.4em] text-white/50 group-hover:text-blue-500 uppercase mb-1 transition-colors flex items-center gap-2">
-                Architect <Github className="w-2.5 h-2.5" />
+              <span className="text-[8px] md:text-[9px] font-black tracking-[0.4em] text-white/50 group-hover:text-blue-500 uppercase mb-0.5 md:mb-1 transition-colors flex items-center gap-2">
+                Architect <Github className="w-2 md:w-2.5 h-2 md:h-2.5" />
               </span>
-              <span className="text-[11px] font-black tracking-widest text-white group-hover:text-blue-400 uppercase transition-colors">Shreyans Jain</span>
+              <span className="text-[9px] md:text-[11px] font-black tracking-widest text-white group-hover:text-blue-400 uppercase transition-colors">Shreyans Jain</span>
             </a>
           </div>
 
-          <div className="relative flex items-center justify-center w-full h-full">
+          <div className="relative flex items-center justify-center w-full h-full scale-[0.5] sm:scale-[0.7] md:scale-100 transition-transform duration-700">
             {loading ? (
-              <div className="w-80 h-80 rounded-full border-4 border-white/5 border-t-blue-500 animate-spin" />
+              <div className="w-40 h-40 md:w-80 md:h-80 rounded-full border-4 border-white/5 border-t-blue-500 animate-spin" />
             ) : projects.length === 0 ? (
               <div className="text-center group cursor-pointer" onClick={handleRefresh}>
-                <div className="w-20 h-20 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-500/20 transition-colors">
-                  <Zap className="w-8 h-8 text-gray-700 group-hover:text-blue-400" />
+                <div className="w-16 h-16 md:w-20 md:h-20 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-500/20 transition-colors">
+                  <Zap className="w-6 h-6 md:w-8 md:h-8 text-gray-700 group-hover:text-blue-400" />
                 </div>
-                <h3 className="text-sm font-black text-white/30 uppercase tracking-widest">No Signals Loaded</h3>
+                <h3 className="text-xs md:text-sm font-black text-white/30 uppercase tracking-widest">No Signals Loaded</h3>
               </div>
             ) : (
               <div className="relative flex items-center justify-center">
@@ -259,10 +259,8 @@ export default function Home() {
 
                   {/* Decorative Outer Rings */}
                   <circle cx={centerX} cy={centerY} r={radius + 40} fill="none" stroke="rgba(255, 255, 255, 0.05)" strokeWidth="1" strokeDasharray="5 10" className="animate-[spin_80s_linear_infinite]" />
-                </svg>
-
-                {/* Central Intelligence HUD */}
-                <div className="absolute pointer-events-none flex flex-col items-center justify-center text-center max-w-[450px]">
+                </svg>                {/* Central Intelligence HUD */}
+                <div className="absolute pointer-events-none flex flex-col items-center justify-center text-center max-w-[280px] md:max-w-[450px]">
                   <AnimatePresence mode="wait">
                     {hoveredIndex === null ? (
                       <motion.div
@@ -272,11 +270,11 @@ export default function Home() {
                         exit={{ opacity: 0, scale: 1.1 }}
                         className="space-y-4"
                       >
-                        <div className="w-20 h-20 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-4 border border-white/10 shadow-[0_0_50px_rgba(255,255,255,0.05)]">
-                          <Bot className="w-10 h-10 text-white/20" />
+                        <div className="w-12 h-12 md:w-20 md:h-20 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-4 border border-white/10 shadow-[0_0_50px_rgba(255,255,255,0.05)]">
+                          <Bot className="w-6 h-6 md:w-10 md:h-10 text-white/20" />
                         </div>
-                        <h4 className="text-sm font-black text-white/20 uppercase tracking-[0.5em]">System Idle</h4>
-                        <p className="text-sm text-gray-600 font-bold leading-relaxed">Select a segment to<br />initiate data analysis</p>
+                        <h4 className="text-[10px] md:text-sm font-black text-white/20 uppercase tracking-[0.5em]">System Idle</h4>
+                        <p className="text-[10px] md:text-sm text-gray-600 font-bold leading-relaxed">Select a segment to<br/>initiate data analysis</p>
                       </motion.div>
                     ) : (
                       <motion.div
@@ -284,30 +282,30 @@ export default function Home() {
                         initial={{ opacity: 0, y: 15 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -15 }}
-                        className="space-y-8"
+                        className="space-y-4 md:space-y-8"
                       >
-                        <div className="space-y-2">
-                          <span className="text-xs font-black uppercase tracking-[0.3em]" style={{ color: colors[hoveredIndex % colors.length] }}>
+                        <div className="space-y-1 md:space-y-2">
+                          <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.3em]" style={{ color: colors[hoveredIndex % colors.length] }}>
                             Signal 0{hoveredIndex + 1}
                           </span>
-                          <h2 className="text-5xl font-black tracking-tighter leading-none text-white">{projects[hoveredIndex].name}</h2>
-                          <div className="flex items-center justify-center gap-2 text-[10px] text-gray-500 font-black uppercase mt-4 tracking-[0.2em] border border-white/5 bg-white/5 py-1.5 px-4 rounded-full w-fit mx-auto">
-                            <Globe className="w-3 h-3" /> {projects[hoveredIndex].market}
+                          <h2 className="text-2xl md:text-5xl font-black tracking-tighter leading-none text-white">{projects[hoveredIndex].name}</h2>
+                          <div className="flex items-center justify-center gap-2 text-[8px] md:text-[10px] text-gray-500 font-black uppercase mt-2 md:mt-4 tracking-[0.2em] border border-white/5 bg-white/5 py-1 md:py-1.5 px-3 md:px-4 rounded-full w-fit mx-auto">
+                             <Globe className="w-2.5 h-2.5 md:w-3 md:h-3" /> {projects[hoveredIndex].market}
                           </div>
                         </div>
 
-                        <div className="grid grid-cols-1 gap-8 px-10 text-left">
-                          <div className="space-y-2">
-                            <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.3em]" style={{ color: colors[hoveredIndex % colors.length] }}>
-                              <Target className="w-4 h-4 opacity-50" /> Hypothesis
+                        <div className="grid grid-cols-1 gap-4 md:gap-8 px-4 md:px-10 text-left">
+                          <div className="space-y-1 md:space-y-2">
+                            <div className="flex items-center gap-2 text-[8px] md:text-[10px] font-black uppercase tracking-[0.3em]" style={{ color: colors[hoveredIndex % colors.length] }}>
+                              <Target className="w-3 h-3 md:w-4 md:h-4 opacity-50" /> Hypothesis
                             </div>
-                            <p className="text-sm text-gray-400 font-bold leading-relaxed italic">{projects[hoveredIndex].why}</p>
+                            <p className="text-[11px] md:text-sm text-gray-400 font-bold leading-relaxed italic line-clamp-3 md:line-clamp-none">{projects[hoveredIndex].why}</p>
                           </div>
-                          <div className="space-y-2">
-                            <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.3em]" style={{ color: colors[hoveredIndex % colors.length] }}>
-                              <Zap className="w-4 h-4 opacity-50" /> Execution
+                          <div className="space-y-1 md:space-y-2">
+                            <div className="flex items-center gap-2 text-[8px] md:text-[10px] font-black uppercase tracking-[0.3em]" style={{ color: colors[hoveredIndex % colors.length] }}>
+                              <Zap className="w-3 h-3 md:w-4 md:h-4 opacity-50" /> Execution
                             </div>
-                            <p className="text-lg text-gray-200 font-black leading-tight tracking-tight">{projects[hoveredIndex].build}</p>
+                            <p className="text-sm md:text-lg text-gray-200 font-black leading-tight tracking-tight">{projects[hoveredIndex].build}</p>
                           </div>
                         </div>
                       </motion.div>
@@ -322,13 +320,13 @@ export default function Home() {
                   const labelRadius = radius + 130;
                   const x = centerX + Math.cos(angle) * labelRadius;
                   const y = centerY + Math.sin(angle) * labelRadius;
-
+                  
                   return (
                     <motion.div
                       key={i}
-                      className="absolute text-[12px] font-black uppercase tracking-[0.2em] text-center whitespace-nowrap pointer-events-none"
+                      className="absolute text-[10px] md:text-[12px] font-black uppercase tracking-[0.2em] text-center whitespace-nowrap pointer-events-none hidden md:block"
                       style={{ left: x, top: y, transform: 'translate(-50%, -50%)' }}
-                      animate={{
+                      animate={{ 
                         color: hoveredIndex === i ? colors[i % colors.length] : "#4b5563",
                         scale: hoveredIndex === i ? 1.3 : 1,
                         opacity: hoveredIndex === i || hoveredIndex === null ? 1 : 0.2,
@@ -352,7 +350,7 @@ export default function Home() {
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: "100%", opacity: 0 }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="flex-none w-[42%] border-l border-white/10 bg-[#0d1117]/50 backdrop-blur-2xl flex flex-col shadow-[-20px_0_40px_rgba(0,0,0,0.4)]"
+              className="fixed inset-0 md:relative md:inset-auto flex-none w-full md:w-[42%] border-l border-white/10 bg-[#0d1117]/95 md:bg-[#0d1117]/50 backdrop-blur-3xl flex flex-col shadow-[-20px_0_40px_rgba(0,0,0,0.4)] z-[100]"
             >
               <div className="flex-none h-16 px-6 flex items-center justify-between border-b border-white/5">
                 <div className="flex items-center gap-3">
