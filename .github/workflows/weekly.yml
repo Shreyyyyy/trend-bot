@@ -6,6 +6,9 @@ on:
     # Daily at 09:30 Asia/Kolkata = 04:00 UTC
     - cron: "0 4 * * *"
 
+permissions:
+  contents: write
+
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -39,11 +42,11 @@ jobs:
           cp out/trends.json web/public/data/trends.json
           cp out/ideas.md web/public/data/ideas.md
 
-      - name: Commit and push changes
+      - name: Commit and push UI data
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add out/ web/public/data/
+          git add web/public/data/
           git commit -m "Weekly trend update [skip ci]" || echo "No changes to commit"
           git push
 
@@ -52,4 +55,3 @@ jobs:
         with:
           name: trend-bot-out
           path: out/
-
