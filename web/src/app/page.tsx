@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 interface Project {
   id: number;
+  raw: string;     // full line as-is from ideas.md
   name: string;
   url: string;
   why: string;
@@ -15,7 +16,7 @@ interface Project {
 
 export default function Home() {
   const [projects, setProjects] = useState<Project[]>([]);
-  const [timestamp, setTimestamp] = useState<string>("");
+  const [dateRange, setDateRange] = useState<string>("");
   const [loading, setLoading] = useState(true);
   const [messages, setMessages] = useState<{ role: "user" | "assistant"; content: string }[]>([]);
   const [input, setInput] = useState("");
@@ -29,21 +30,37 @@ export default function Home() {
         const ideasRes = await fetch("/data/ideas.md");
         const ideasText = await ideasRes.text();
 
-        const dateMatch = ideasText.match(/DATE: (.*)/);
-        if (dateMatch) setTimestamp(dateMatch[1]);
+        // DATE line is already human-readable e.g. "19th Apr 2026 to 26th Apr 2026"
+        const dateMatch = ideasText.match(/^DATE:\s*(.+)/m);
+        if (dateMatch) setDateRange(dateMatch[1].trim());
 
-        const lines = ideasText.split("\n").filter(l => l.trim() && /^\d+[\.\)]/.test(l.trim()));
-        const parsed: Project[] = lines.slice(0, 5).map((line, index) => {
+        const lines = ideasText
+          .split("\n")
+          .filter(l => l.trim() && /^\d+[\.\)]/.test(l.trim()))
+          .slice(0, 5);
+
+        const parsed: Project[] = lines.map((line, index) => {
           const [main, ...rest] = line.split(" | ");
-          const [prefix, urlPart] = main.split(" — ");
-          const name = prefix.replace(/^\d+[\.\)]\s*/, "").trim();
-          const url = urlPart ? urlPart.trim() : "";
+          // Name — URL (handle double-dash gracefully)
+          const dashIdx = main.indexOf(" — ");
+          const name = dashIdx > -1
+            ? main.slice(0, dashIdx).replace(/^\d+[\.\)]\s*/, "").trim()
+            : main.replace(/^\d+[\.\)]\s*/, "").trim();
+          const url = dashIdx > -1 ? main.slice(dashIdx + 3).trim() : "";
           const meta: any = {};
           rest.forEach(r => {
-            const [k, ...v] = r.split(": ");
-            meta[k.trim()] = v.join(": ").trim();
+            const colonIdx = r.indexOf(": ");
+            if (colonIdx > -1) meta[r.slice(0, colonIdx).trim()] = r.slice(colonIdx + 2).trim();
           });
-          return { id: index + 1, name, url, why: meta["WHY"] || "", build: meta["BUILD"] || "", market: meta["MARKET"] || "" };
+          return {
+            id: index + 1,
+            raw: line,
+            name,
+            url,
+            why: meta["WHY"] || "",
+            build: meta["BUILD"] || "",
+            market: meta["MARKET"] || "",
+          };
         });
         setProjects(parsed);
       } catch (e) {
@@ -81,71 +98,60 @@ export default function Home() {
     }
   };
 
-  const ordinal = (n: number) => {
-    const s = ["th", "st", "nd", "rd"];
-    const v = n % 100;
-    return n + (s[(v - 20) % 10] || s[v] || s[0]);
-  };
-
-  const formatDate = (iso: string) => {
-    if (!iso) return "";
-    const end = new Date(iso);
-    const start = new Date(end);
-    start.setDate(start.getDate() - 7);
-    const fmt = (d: Date) =>
-      `${ordinal(d.getDate())} ${d.toLocaleDateString("en-GB", { month: "short" })} ${d.getFullYear()}`;
-    return `${fmt(start)} to ${fmt(end)}`;
-  };
-
   return (
     <div className="h-screen w-screen bg-[#07080c] text-white flex flex-col overflow-hidden font-sans">
+      <div className="flex-grow flex overflow-hidden">
 
-      <div className={`flex-grow flex overflow-hidden transition-all duration-300`}>
-        {/* Main ideas pane */}
+        {/* Main pane */}
         <div className={`${chatOpen ? "w-[55%]" : "w-full"} flex flex-col items-center justify-center px-8 transition-all duration-300`}>
-          <div className="w-full max-w-xl">
+          <div className="w-full max-w-lg">
 
-            {/* Dynamic Date */}
-            {!loading && timestamp && (
-              <p className="text-xs font-semibold uppercase tracking-widest text-gray-600 mb-6">
-                {formatDate(timestamp)}
+            {/* Date range */}
+            {dateRange && (
+              <p className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-7">
+                {dateRange}
               </p>
             )}
 
-            {/* 5 Project Ideas */}
             {loading ? (
-              <div className="space-y-4">
-                {Array(5).fill(0).map((_, i) => (
-                  <div key={i} className="h-12 bg-white/[0.03] rounded-xl animate-pulse" />
-                ))}
+              <div className="space-y-3">
+                {Array(5).fill(0).map((_, i) => <div key={i} className="h-10 bg-white/[0.03] rounded-xl animate-pulse" />)}
               </div>
             ) : (
-              <ol className="space-y-3">
+              <ol className="space-y-2.5">
                 {projects.map((p, i) => (
                   <motion.li
                     key={i}
-                    initial={{ opacity: 0, x: -10 }}
+                    initial={{ opacity: 0, x: -8 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: i * 0.08 }}
-                    className="group flex items-center gap-4 px-5 py-3.5 rounded-xl bg-white/[0.03] border border-white/[0.06] hover:border-white/20 hover:bg-white/[0.05] transition-all cursor-pointer"
+                    transition={{ delay: i * 0.07 }}
+                    className="group flex items-center gap-3 px-4 py-3 rounded-xl bg-white/[0.03] border border-white/[0.05] hover:border-white/20 hover:bg-white/[0.06] transition-all cursor-pointer"
                     onClick={() => handleSend(`Tell me more about: ${p.name}`)}
                   >
-                    <span className="flex-none text-sm font-mono text-gray-600 w-4">{p.id}.</span>
-                    <span className="flex-grow text-sm font-medium text-white/80 group-hover:text-white transition-colors">
+                    <span className="flex-none text-xs font-mono text-gray-600 w-4">{p.id}.</span>
+                    <span className="flex-grow text-sm font-medium text-white/75 group-hover:text-white transition-colors truncate">
                       {p.name}
                     </span>
-                    <a
-                      href={p.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={e => e.stopPropagation()}
-                      className="flex-none text-gray-700 hover:text-blue-400 transition-colors"
-                    >
-                      <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
+                    {p.url && (
+                      <a
+                        href={p.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={e => e.stopPropagation()}
+                        className="flex-none text-gray-700 hover:text-blue-400 transition-colors"
+                      >
+                        <ExternalLink className="w-3.5 h-3.5" />
+                      </a>
+                    )}
                   </motion.li>
                 ))}
               </ol>
+            )}
+
+            {!loading && (
+              <p className="text-[11px] text-gray-700 mt-6 text-center">
+                Click any idea to ask the AI for a deeper analysis.
+              </p>
             )}
           </div>
         </div>
@@ -157,7 +163,7 @@ export default function Home() {
               initial={{ width: 0, opacity: 0 }}
               animate={{ width: "45%", opacity: 1 }}
               exit={{ width: 0, opacity: 0 }}
-              transition={{ duration: 0.25 }}
+              transition={{ duration: 0.2 }}
               className="flex-none border-l border-white/[0.06] flex flex-col overflow-hidden bg-black/10"
             >
               <div className="flex-none h-11 px-5 flex items-center justify-between border-b border-white/[0.06]">
@@ -218,7 +224,6 @@ export default function Home() {
         </AnimatePresence>
       </div>
 
-      {/* Floating chat button */}
       {!chatOpen && (
         <button
           onClick={() => setChatOpen(true)}

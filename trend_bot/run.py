@@ -72,7 +72,7 @@ def _postprocess_ideas(raw: str) -> str:
         if "|" in clean_text:
             # Reconstruct carefully
             parts = clean_text.split("|", 1)
-            name = parts[0].strip()
+            name = parts[0].strip().rstrip("— ").rstrip()
             metadata = f" | {parts[1].strip()}"
         else:
             # Heuristic: Name is usually the first part
@@ -103,7 +103,21 @@ def main():
     args.out.mkdir(parents=True, exist_ok=True)
 
     from datetime import datetime
-    timestamp = datetime.now().isoformat()
+
+    def _ordinal(n):
+        s = ["th", "st", "nd", "rd"]
+        v = n % 100
+        return str(n) + (s[(v - 20) % 10] if (v - 20) % 10 < len(s) else s[v] if v < len(s) else s[0])
+
+    def _fmt_date(d):
+        mon = d.strftime("%b")
+        return f"{_ordinal(d.day)} {mon} {d.year}"
+
+    now = datetime.now()
+    week_ago = datetime(now.year, now.month, now.day) - __import__('datetime').timedelta(days=7)
+    date_range = f"{_fmt_date(week_ago)} to {_fmt_date(now)}"
+    timestamp = now.isoformat()
+
     trends = fetch_trends()
     meta = {"timestamp": timestamp, "trends": trends}
     (args.out / "trends.json").write_text(json.dumps(meta, indent=2), encoding="utf-8")
@@ -114,9 +128,9 @@ def main():
         trends_text += "\n\nSOURCE URL POOL (choose exactly one per idea):\n" + "\n".join(f"- {u}" for u in src_urls[:60])
     raw = generate_ideas(SYSTEM_PROMPT, trends_text)
     ideas_text = _postprocess_ideas(raw)
-    
-    # Add timestamp header to ideas.md for parsing
-    ideas_text = f"DATE: {timestamp}\n" + ideas_text
+
+    # Add human-readable date range header
+    ideas_text = f"DATE: {date_range}\n" + ideas_text
     (args.out / "ideas.md").write_text(ideas_text, encoding="utf-8")
 
     print(f"Wrote: {args.out/'trends.json'}")
