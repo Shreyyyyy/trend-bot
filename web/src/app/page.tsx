@@ -34,6 +34,7 @@ export default function Home() {
   const [dateRange, setDateRange] = useState<string>("");
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
+  const [showToast, setShowToast] = useState<{ show: boolean, message: string, type: 'success' | 'error' }>({ show: false, message: '', type: 'success' });
   const [messages, setMessages] = useState<{ role: "user" | "assistant"; content: string }[]>([]);
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
@@ -86,8 +87,14 @@ export default function Home() {
       setProjects(parsed);
       localStorage.setItem("trendbot_date", data.dateRange);
       localStorage.setItem("trendbot_projects", JSON.stringify(parsed));
+      
+      // Trigger Success Toast
+      setShowToast({ show: true, message: "INTELLIGENCE SYNC COMPLETED", type: 'success' });
+      setTimeout(() => setShowToast(prev => ({ ...prev, show: false })), 3000);
+      
     } catch (e: any) {
-      alert("Refresh failed: " + e.message);
+      setShowToast({ show: true, message: `SYNC FAILED: ${e.message}`, type: 'error' });
+      setTimeout(() => setShowToast(prev => ({ ...prev, show: false })), 4000);
     } finally {
       setRefreshing(false);
     }
@@ -444,6 +451,26 @@ export default function Home() {
           <Bot className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
         </motion.button>
       )}
+
+      {/* Sync Completion Notification (Toast) */}
+      <AnimatePresence>
+        {showToast.show && (
+          <motion.div
+            initial={{ opacity: 0, y: 50, scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 20, scale: 0.9 }}
+            className={`fixed bottom-10 left-1/2 -translate-x-1/2 z-[200] flex items-center gap-4 px-8 py-4 rounded-2xl border backdrop-blur-2xl shadow-[0_0_50px_rgba(0,0,0,0.5)] ${
+              showToast.type === 'success' 
+                ? "bg-blue-600/10 border-blue-500/30 text-blue-400" 
+                : "bg-red-600/10 border-red-500/30 text-red-400"
+            }`}
+          >
+            {showToast.type === 'success' ? <Zap className="w-5 h-5 animate-pulse" /> : <X className="w-5 h-5" />}
+            <span className="text-xs font-black tracking-[0.3em] uppercase">{showToast.message}</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent animate-[shimmer_2s_infinite]" />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
