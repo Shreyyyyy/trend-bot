@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import { Send, Bot, TrendingUp, Cpu, Globe, Rocket, MessageSquare, ChevronRight, ExternalLink, Calendar, Bell, Info } from "lucide-react";
+import { Send, Bot, TrendingUp, ExternalLink, Calendar, Bell, Zap, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface Project {
@@ -13,18 +13,19 @@ interface Project {
   market: string;
 }
 
-interface RawTrend {
-  query: string;
-  results: { title: string; url: string; content: string }[];
+interface TrendItem {
+  title: string;
+  url: string;
+  content: string;
 }
 
 export default function Home() {
   const [projects, setProjects] = useState<Project[]>([]);
-  const [rawTrends, setRawTrends] = useState<RawTrend[]>([]);
+  const [trendItems, setTrendItems] = useState<TrendItem[]>([]);
   const [timestamp, setTimestamp] = useState<string>("");
   const [loading, setLoading] = useState(true);
   const [messages, setMessages] = useState<{ role: "user" | "assistant"; content: string }[]>([
-    { role: "assistant", content: "Hi! I'm the Trend Bot assistant. Ask me anything about this week's AI trends, or click a trend on the left to learn more!" }
+    { role: "assistant", content: "👋 Welcome! Click any trend signal on the left to get a deep-dive analysis, or ask me anything about this week's AI landscape." }
   ]);
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
@@ -33,14 +34,17 @@ export default function Home() {
   useEffect(() => {
     async function fetchData() {
       try {
-        // Fetch Ideas
-        const ideasRes = await fetch("/data/ideas.md");
+        const [ideasRes, trendsRes] = await Promise.all([
+          fetch("/data/ideas.md"),
+          fetch("/data/trends.json"),
+        ]);
+
+        // Parse ideas
         const ideasText = await ideasRes.text();
-        
         const dateMatch = ideasText.match(/DATE: (.*)/);
         if (dateMatch) setTimestamp(dateMatch[1]);
 
-        const lines = ideasText.split("\n").filter(l => l.trim() && l.includes(")"));
+        const lines = ideasText.split("\n").filter(l => l.trim() && /^\d+[\.\)]/.test(l.trim()));
         const parsed: Project[] = lines.map((line, index) => {
           const [main, ...rest] = line.split(" | ");
           const [prefix, urlPart] = main.split(" — ");
@@ -55,10 +59,22 @@ export default function Home() {
         });
         setProjects(parsed);
 
-        // Fetch Raw Trends
-        const trendsRes = await fetch("/data/trends.json");
+        // Parse real trends — extract actual article results, not queries
         const trendsData = await trendsRes.json();
-        setRawTrends(trendsData.trends.queries || []);
+        const queries = trendsData?.trends?.queries || trendsData?.queries || [];
+        const items: TrendItem[] = [];
+        for (const q of queries) {
+          for (const r of (q.results || [])) {
+            if (r.title && r.url && r.content && items.length < 12) {
+              // Filter out garbage/nav-heavy content
+              const snippet = r.content.replace(/\[.*?\]\(.*?\)/g, "").replace(/!\[.*?\]\(.*?\)/g, "").trim();
+              if (snippet.length > 40) {
+                items.push({ title: r.title, url: r.url, content: snippet.slice(0, 100) + "…" });
+              }
+            }
+          }
+        }
+        setTrendItems(items);
       } catch (e) {
         console.error("Failed to fetch data", e);
       } finally {
@@ -75,196 +91,177 @@ export default function Home() {
   const handleSend = async (customMsg?: string) => {
     const msg = customMsg || input.trim();
     if (!msg || isTyping) return;
-    
     if (!customMsg) setInput("");
     setMessages(prev => [...prev, { role: "user", content: msg }]);
     setIsTyping(true);
-
     try {
       const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: msg, projects, rawTrends }),
+        body: JSON.stringify({ message: msg, projects, trendItems }),
       });
       const data = await res.json();
       setMessages(prev => [...prev, { role: "assistant", content: data.reply }]);
-    } catch (e) {
-      setMessages(prev => [...prev, { role: "assistant", content: "Sorry, I'm having trouble connecting. Please try again." }]);
+    } catch {
+      setMessages(prev => [...prev, { role: "assistant", content: "Sorry, couldn't connect. Try again." }]);
     } finally {
       setIsTyping(false);
     }
   };
 
-  const formatDate = (iso: string) => {
-    if (!iso) return "...";
-    const date = new Date(iso);
-    const prevWeek = new Date(date);
-    prevWeek.setDate(prevWeek.getDate() - 7);
-    return `${prevWeek.toLocaleDateString()} — ${date.toLocaleDateString()}`;
+  const formatTimeline = (iso: string) => {
+    if (!iso) return "This week";
+    const end = new Date(iso);
+    const start = new Date(end);
+    start.setDate(start.getDate() - 7);
+    return `${start.toLocaleDateString("en-GB", { day: "numeric", month: "short" })} – ${end.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}`;
   };
 
   return (
-    <div className="min-h-screen bg-[#050507] text-white selection:bg-blue-500/30 font-sans overflow-hidden flex flex-col">
-      {/* Background Decor */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-[50%] h-[50%] bg-blue-600/5 blur-[120px] rounded-full" />
-        <div className="absolute bottom-0 right-1/4 w-[50%] h-[50%] bg-purple-600/5 blur-[120px] rounded-full" />
-      </div>
+    <div className="h-screen w-screen bg-[#07080c] text-white flex flex-col overflow-hidden font-sans">
 
-      {/* Header / Timeline */}
-      <header className="relative z-20 border-b border-white/5 bg-black/20 backdrop-blur-md px-6 py-4 flex justify-between items-center">
-        <div className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-            <TrendingUp className="w-5 h-5" />
+      {/* Top Bar */}
+      <header className="flex-none h-14 px-6 flex items-center justify-between border-b border-white/[0.06] bg-black/30 backdrop-blur-md z-20">
+        <div className="flex items-center gap-2.5">
+          <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+            <TrendingUp className="w-4 h-4" />
           </div>
-          <span className="font-bold tracking-tight text-lg">TrendBot</span>
-        </div>
-        
-        <div className="flex items-center gap-2 px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-xs font-medium text-gray-400">
-          <Calendar className="w-3.5 h-3.5 text-blue-400" />
-          <span>Timeline: {formatDate(timestamp)}</span>
+          <span className="font-bold text-base tracking-tight">TrendBot</span>
+          <span className="text-[10px] font-mono text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 px-2 py-0.5 rounded-full ml-1">AI</span>
         </div>
 
-        <div className="flex items-center gap-4">
-          <button className="text-gray-400 hover:text-white transition-colors"><Info className="w-5 h-5" /></button>
-          <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-blue-500 to-purple-500" />
+        <div className="flex items-center gap-2 text-xs text-gray-400 bg-white/[0.03] border border-white/[0.06] rounded-full px-4 py-1.5">
+          <Calendar className="w-3.5 h-3.5 text-blue-400" />
+          <span className="font-medium">{formatTimeline(timestamp)}</span>
+        </div>
+
+        <div className="flex items-center gap-2">
+          <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+          <span className="text-[11px] text-gray-500 font-medium">Live</span>
         </div>
       </header>
 
-      {/* Layout Grid */}
-      <div className="flex-grow flex relative z-10 overflow-hidden">
-        
-        {/* Left Sidebar: Trends Notifications */}
-        <aside className="w-80 border-r border-white/5 flex flex-col hidden lg:flex bg-black/10">
-          <div className="p-6 border-b border-white/5 flex items-center justify-between">
-            <h2 className="text-sm font-bold uppercase tracking-widest text-gray-500 flex items-center gap-2">
-              <Bell className="w-4 h-4 text-blue-500" /> Latest Signals
-            </h2>
+      {/* Body */}
+      <div className="flex-grow flex overflow-hidden">
+
+        {/* Left: Trend Signals */}
+        <aside className="w-72 flex-none border-r border-white/[0.06] flex flex-col bg-black/10">
+          <div className="flex-none px-5 py-3 border-b border-white/[0.06] flex items-center gap-2">
+            <Bell className="w-3.5 h-3.5 text-blue-400" />
+            <span className="text-[11px] font-bold uppercase tracking-widest text-gray-500">Live Signals</span>
           </div>
-          <div className="flex-grow overflow-y-auto p-4 space-y-3 custom-scrollbar">
-            {loading ? (
-              Array(6).fill(0).map((_, i) => <div key={i} className="h-20 bg-white/5 rounded-2xl animate-pulse" />)
-            ) : (
-              rawTrends.map((trend, i) => (
+          <div className="flex-grow overflow-y-auto px-3 py-3 space-y-2">
+            {loading
+              ? Array(8).fill(0).map((_, i) => <div key={i} className="h-16 bg-white/[0.03] rounded-xl animate-pulse" />)
+              : trendItems.map((item, i) => (
                 <motion.button
                   key={i}
-                  whileHover={{ x: 4 }}
-                  onClick={() => handleSend(`Tell me more about this trend: "${trend.query}"`)}
-                  className="w-full text-left p-4 bg-white/[0.03] hover:bg-white/10 border border-white/5 rounded-2xl transition-all group"
+                  whileHover={{ x: 3 }}
+                  onClick={() => handleSend(`Deep dive into this trend for me: "${item.title}". What's the problem it reveals, why is it trending now, and what can a developer build?`)}
+                  className="w-full text-left px-3.5 py-3 rounded-xl bg-white/[0.02] hover:bg-white/[0.07] border border-white/[0.05] hover:border-blue-500/30 transition-all group"
                 >
-                  <p className="text-xs font-mono text-blue-400 mb-1">Signal {i+1}</p>
-                  <p className="text-sm font-medium text-gray-200 line-clamp-2 leading-snug group-hover:text-white">{trend.query}</p>
+                  <p className="text-xs font-semibold text-white/80 line-clamp-2 leading-snug group-hover:text-white mb-1">{item.title}</p>
+                  <p className="text-[10px] text-gray-600 line-clamp-1 group-hover:text-gray-400">{item.content}</p>
                 </motion.button>
-              ))
-            )}
+              ))}
           </div>
         </aside>
 
-        {/* Center: The Brain (Chatbot) */}
-        <main className="flex-grow flex flex-col bg-black/5 relative">
-          <div className="flex-grow overflow-y-auto p-8 space-y-6 custom-scrollbar">
-            <div className="max-w-3xl mx-auto space-y-6 pt-10">
-              <AnimatePresence>
-                {messages.map((m, i) => (
-                  <motion.div 
-                    key={i}
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}
-                  >
-                    <div className={`max-w-[85%] p-5 rounded-3xl text-[15px] leading-relaxed shadow-lg ${
-                      m.role === "user" 
-                        ? "bg-blue-600 text-white rounded-tr-none" 
-                        : "bg-white/5 text-gray-200 border border-white/10 rounded-tl-none backdrop-blur-xl"
-                    }`}>
-                      {m.content}
+        {/* Center: Chat */}
+        <main className="flex-grow flex flex-col overflow-hidden relative">
+          {/* Chat messages */}
+          <div className="flex-grow overflow-y-auto px-8 py-6 space-y-4">
+            <AnimatePresence initial={false}>
+              {messages.map((m, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.2 }}
+                  className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}
+                >
+                  {m.role === "assistant" && (
+                    <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center mr-2.5 flex-none mt-1">
+                      <Bot className="w-4 h-4" />
                     </div>
-                  </motion.div>
-                ))}
-              </AnimatePresence>
-              {isTyping && (
-                <div className="flex justify-start">
-                  <div className="bg-white/5 p-4 rounded-3xl rounded-tl-none border border-white/10 flex gap-1.5 items-center">
-                    <span className="w-1.5 h-1.5 bg-blue-500 rounded-full animate-bounce" />
-                    <span className="w-1.5 h-1.5 bg-blue-500 rounded-full animate-bounce delay-100" />
-                    <span className="w-1.5 h-1.5 bg-blue-500 rounded-full animate-bounce delay-200" />
+                  )}
+                  <div className={`max-w-[75%] px-4 py-3 rounded-2xl text-sm leading-relaxed whitespace-pre-wrap ${
+                    m.role === "user"
+                      ? "bg-blue-600 text-white rounded-tr-sm"
+                      : "bg-white/[0.05] text-gray-100 border border-white/[0.07] rounded-tl-sm"
+                  }`}>
+                    {m.content}
                   </div>
+                </motion.div>
+              ))}
+            </AnimatePresence>
+            {isTyping && (
+              <div className="flex justify-start">
+                <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center mr-2.5">
+                  <Bot className="w-4 h-4" />
                 </div>
-              )}
-              <div ref={chatEndRef} />
-            </div>
+                <div className="px-4 py-3 bg-white/[0.05] border border-white/[0.07] rounded-2xl rounded-tl-sm flex gap-1 items-center">
+                  <span className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-bounce" style={{animationDelay:"0ms"}} />
+                  <span className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-bounce" style={{animationDelay:"120ms"}} />
+                  <span className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-bounce" style={{animationDelay:"240ms"}} />
+                </div>
+              </div>
+            )}
+            <div ref={chatEndRef} />
           </div>
 
-          {/* Chat Input Area */}
-          <div className="p-8 border-t border-white/5 bg-black/40 backdrop-blur-xl">
-            <div className="max-w-3xl mx-auto relative group">
-              <input 
+          {/* Input */}
+          <div className="flex-none px-8 pb-6 pt-3 border-t border-white/[0.06] bg-black/20 backdrop-blur-md">
+            <div className="relative">
+              <input
                 type="text"
                 value={input}
-                onChange={(e) => setInput(e.target.value)}
-                onKeyDown={(e) => e.key === "Enter" && handleSend()}
-                placeholder="Ask about a trend or implementation..."
-                className="w-full bg-white/5 border border-white/10 rounded-2xl py-5 pl-6 pr-16 text-lg focus:outline-none focus:border-blue-500/50 transition-all placeholder:text-gray-600 shadow-inner"
+                onChange={e => setInput(e.target.value)}
+                onKeyDown={e => e.key === "Enter" && handleSend()}
+                placeholder="Ask anything about a trend or project idea…"
+                className="w-full bg-white/[0.04] border border-white/[0.08] rounded-2xl py-3.5 pl-5 pr-14 text-sm focus:outline-none focus:border-blue-500/40 transition-colors placeholder:text-gray-600"
               />
-              <button 
+              <button
                 onClick={() => handleSend()}
-                className="absolute right-3 top-1/2 -translate-y-1/2 w-12 h-12 bg-blue-600 hover:bg-blue-500 rounded-xl flex items-center justify-center transition-all shadow-lg shadow-blue-600/20 active:scale-95"
+                className="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 bg-blue-600 hover:bg-blue-500 active:scale-95 rounded-xl flex items-center justify-center transition-all"
               >
-                <Send className="w-6 h-6" />
+                <Send className="w-4 h-4" />
               </button>
             </div>
-            <p className="text-center text-[11px] text-gray-600 mt-4 uppercase tracking-[0.2em] font-bold">TrendBot Intelligence Node v2.0</p>
           </div>
         </main>
 
-        {/* Right Sidebar: Execution (Ideas) */}
-        <aside className="w-[450px] border-l border-white/5 flex flex-col bg-black/10 hidden xl:flex">
-          <div className="p-6 border-b border-white/5 flex items-center justify-between">
-            <h2 className="text-sm font-bold uppercase tracking-widest text-gray-500 flex items-center gap-2">
-              <Rocket className="w-4 h-4 text-purple-500" /> Build Queue
-            </h2>
+        {/* Right: Build Queue */}
+        <aside className="w-80 flex-none border-l border-white/[0.06] flex flex-col bg-black/10">
+          <div className="flex-none px-5 py-3 border-b border-white/[0.06] flex items-center gap-2">
+            <Zap className="w-3.5 h-3.5 text-purple-400" />
+            <span className="text-[11px] font-bold uppercase tracking-widest text-gray-500">Build Queue</span>
           </div>
-          <div className="flex-grow overflow-y-auto p-6 space-y-6 custom-scrollbar">
-            {loading ? (
-              Array(5).fill(0).map((_, i) => <div key={i} className="h-40 bg-white/5 rounded-3xl animate-pulse" />)
-            ) : (
-              projects.map((p, i) => (
-                <motion.div 
-                  key={i} 
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className="p-6 rounded-[2rem] bg-white/[0.03] border border-white/10 hover:border-purple-500/30 transition-all group"
-                >
-                  <div className="flex items-start justify-between mb-4">
-                    <span className="text-[10px] font-mono text-gray-600">IDEA #0{p.id}</span>
-                    <a href={p.url} target="_blank" className="p-2 bg-white/5 rounded-lg text-gray-500 hover:text-white hover:bg-white/10 transition-all">
-                      <ExternalLink className="w-4 h-4" />
+          <div className="flex-grow overflow-y-auto px-3 py-3 space-y-2">
+            {loading
+              ? Array(5).fill(0).map((_, i) => <div key={i} className="h-28 bg-white/[0.03] rounded-xl animate-pulse" />)
+              : projects.map((p, i) => (
+                <div key={i} className="group px-4 py-3.5 rounded-xl bg-white/[0.02] border border-white/[0.05] hover:border-purple-500/30 hover:bg-white/[0.04] transition-all">
+                  <div className="flex items-start justify-between mb-2">
+                    <span className="text-[9px] font-mono text-gray-600 font-bold uppercase tracking-wider">#{String(p.id).padStart(2,"0")}</span>
+                    <a href={p.url} target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-white transition-colors">
+                      <ExternalLink className="w-3 h-3" />
                     </a>
                   </div>
-                  <h3 className="text-lg font-bold mb-2 group-hover:text-purple-400 transition-colors">{p.name}</h3>
-                  <p className="text-sm text-gray-400 mb-4 leading-relaxed line-clamp-3">{p.why}</p>
-                  <div className="bg-purple-500/5 p-4 rounded-2xl border border-purple-500/10 space-y-3">
-                    <div>
-                      <span className="text-[9px] uppercase font-bold text-purple-500 tracking-wider">The Build</span>
-                      <p className="text-xs text-gray-300 mt-1">{p.build}</p>
+                  <p className="text-sm font-semibold text-white/80 group-hover:text-white transition-colors leading-snug mb-1.5 line-clamp-2">{p.name}</p>
+                  <p className="text-[11px] text-gray-500 line-clamp-2 leading-relaxed">{p.why}</p>
+                  {p.build && (
+                    <div className="mt-2.5 pt-2.5 border-t border-white/[0.04]">
+                      <p className="text-[10px] text-purple-400/70 font-bold uppercase tracking-wider mb-1">Build</p>
+                      <p className="text-[11px] text-gray-500 line-clamp-2">{p.build}</p>
                     </div>
-                  </div>
-                </motion.div>
-              ))
-            )}
+                  )}
+                </div>
+              ))}
           </div>
         </aside>
 
       </div>
-
-      <style jsx global>{`
-        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
-        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
-        .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.05); border-radius: 10px; }
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.1); }
-      `}</style>
     </div>
   );
 }

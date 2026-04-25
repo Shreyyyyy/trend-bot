@@ -7,18 +7,20 @@ const groq = new Groq({
 
 export async function POST(req: Request) {
   try {
-    const { message, projects, rawTrends } = await req.json();
+    const { message, projects, trendItems } = await req.json();
 
-    const systemPrompt = `You are the Trend Bot Assistant. 
+    const systemPrompt = `You are TrendBot Assistant — a sharp, concise AI advisor for developers.
     
-    Current Project Ideas:
-    ${JSON.stringify(projects, null, 2)}
-    
-    Underlying Trends/Signals Gathered:
-    ${JSON.stringify(rawTrends, null, 2)}
-    
-    Answer the user's question. If they click on a trend signal, provide a deep dive into WHY it's trending and WHAT problems it causes.
-    Be concise, technical, and high-energy. Focus on developer opportunities.`;
+This week's project ideas:
+${JSON.stringify(projects, null, 2)}
+
+Real trend signals gathered from Reddit, GitHub, HN, and arXiv this week:
+${JSON.stringify(trendItems, null, 2)}
+
+Rules:
+- When asked about a trend, explain: WHY it's trending, the pain it reveals, and the best project to build.
+- Be concise (3-5 sentences max unless asked for detail).
+- Speak like a senior engineer, not a marketer.`;
 
     const completion = await groq.chat.completions.create({
       messages: [
