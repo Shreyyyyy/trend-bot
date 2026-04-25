@@ -216,141 +216,122 @@ export default function Home() {
               </div>
             ) : (
               <div className="relative flex items-center justify-center w-full h-full">
-                {/* SVG Pie Chart - Scaled on Mobile to fit screen better */}
+                {/* SVG Pie Chart */}
                 <div className="scale-[0.65] sm:scale-[0.8] md:scale-100 transition-transform duration-1000 flex items-center justify-center">
                   <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} className="transform -rotate-90 max-w-none drop-shadow-[0_0_30px_rgba(59,130,246,0.1)]">
-                  {projects.map((p, i) => {
-                    const sliceSize = 1 / projects.length;
-                    const startPercent = i * sliceSize;
-                    const endPercent = (i + 1) * sliceSize;
-                    const [startX, startY] = getCoordinatesForPercent(startPercent);
-                    const [endX, endY] = getCoordinatesForPercent(endPercent);
-                    const largeArcFlag = sliceSize > 0.5 ? 1 : 0;
-
-                    const pathData = [
-                      `M ${centerX + startX * radius} ${centerY + startY * radius}`,
-                      `A ${radius} ${radius} 0 ${largeArcFlag} 1 ${centerX + endX * radius} ${centerY + endY * radius}`,
-                      `L ${centerX + endX * innerRadius} ${centerY + endY * innerRadius}`,
-                      `A ${innerRadius} ${innerRadius} 0 ${largeArcFlag} 0 ${centerX + startX * innerRadius} ${centerY + startY * innerRadius}`,
-                      "Z",
-                    ].join(" ");
-
-                    const isHovered = hoveredIndex === i;
-
-                    return (
-                      <motion.path
-                        key={i}
-                        d={pathData}
-                        fill={isHovered ? `${colors[i % colors.length]}10` : `${colors[i % colors.length]}25`}
-                        stroke={isHovered ? colors[i % colors.length] : `${colors[i % colors.length]}40`}
-                        strokeWidth={isHovered ? "3" : "1.5"}
-                        onMouseEnter={() => setHoveredIndex(i)}
-                        onMouseLeave={() => setHoveredIndex(null)}
-                        onClick={() => {
-                          if (typeof window !== "undefined" && window.innerWidth < 768) {
-                            setHoveredIndex(hoveredIndex === i ? null : i);
-                          } else {
-                            handleSend(`Strategic breakdown of ${p.name}`);
-                          }
-                        }}
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{
-                          opacity: hoveredIndex !== null && !isHovered ? 0.3 : 1,
-                          scale: isHovered ? 1.02 : 1
-                        }}
-                        transition={{ type: "spring", stiffness: 300, damping: 25 }}
-                        className="cursor-pointer transition-all duration-500"
-                      />
-                    );
-                  })}
-
-                  <circle cx={centerX} cy={centerY} r={radius + 40} fill="none" stroke="rgba(255, 255, 255, 0.05)" strokeWidth="1" strokeDasharray="5 10" className="animate-[spin_80s_linear_infinite]" />
-                </svg>
-              </div>
-
-              {/* Central Intelligence HUD - UN-SCALED for maximum readability */}
-              <div className="absolute inset-0 pointer-events-none flex flex-col items-center justify-center text-center p-6">
-                <div className="max-w-[320px] md:max-w-[450px] w-full">
-                  <AnimatePresence mode="wait">
-                    {hoveredIndex === null ? (
-                      <motion.div
-                        key="idle"
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 1.1 }}
-                        className="space-y-4"
-                      >
-                        <div className="w-12 h-12 md:w-20 md:h-20 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-4 border border-white/10 shadow-[0_0_50px_rgba(255,255,255,0.05)]">
-                          <Bot className="w-6 h-6 md:w-10 md:h-10 text-white/20" />
-                        </div>
-                        <h4 className="text-[10px] md:text-sm font-black text-white/20 uppercase tracking-[0.5em]">System Idle</h4>
-                        <p className="text-[10px] md:text-sm text-gray-600 font-bold leading-relaxed">Select a segment to<br/>initiate data analysis</p>
-                      </motion.div>
-                    ) : (
-                      <motion.div
-                        key={hoveredIndex}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -20 }}
-                        className="space-y-6 md:space-y-10"
-                      >
-                        <div className="space-y-2 md:space-y-4">
-                          <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.3em]" style={{ color: colors[hoveredIndex % colors.length] }}>
-                            Signal 0{hoveredIndex + 1}
-                          </span>
-                          <h2 className="text-3xl md:text-6xl font-black tracking-tighter leading-tight text-white drop-shadow-2xl">{projects[hoveredIndex].name}</h2>
-                          <div className="flex items-center justify-center gap-2 text-[10px] md:text-[12px] text-gray-400 font-black uppercase mt-2 md:mt-4 tracking-[0.2em] border border-white/10 bg-white/5 py-1.5 px-4 rounded-full w-fit mx-auto">
-                             <Globe className="w-3 h-3 md:w-4 md:h-4" /> {projects[hoveredIndex].market}
-                          </div>
-                        </div>
-
-                        <div className="grid grid-cols-1 gap-6 md:gap-10 text-left">
-                          <div className="space-y-2">
-                            <div className="flex items-center gap-2 text-[10px] md:text-[12px] font-black uppercase tracking-[0.4em]" style={{ color: colors[hoveredIndex % colors.length] }}>
-                              <Target className="w-3.5 h-3.5 md:w-5 md:h-5 opacity-60" /> Hypothesis
-                            </div>
-                            <p className="text-sm md:text-lg text-gray-400 font-bold leading-snug italic line-clamp-3 md:line-clamp-none">{projects[hoveredIndex].why}</p>
-                          </div>
-                          <div className="space-y-2">
-                            <div className="flex items-center gap-2 text-[10px] md:text-[12px] font-black uppercase tracking-[0.4em]" style={{ color: colors[hoveredIndex % colors.length] }}>
-                              <Zap className="w-3.5 h-3.5 md:w-5 md:h-5 opacity-60" /> Execution
-                            </div>
-                            <p className="text-base md:text-2xl text-gray-200 font-black leading-tight tracking-tight">{projects[hoveredIndex].build}</p>
-                          </div>
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+                    {projects.map((p, i) => {
+                      const sliceSize = 1 / projects.length;
+                      const startPercent = i * sliceSize;
+                      const endPercent = (i + 1) * sliceSize;
+                      const [startX, startY] = getCoordinatesForPercent(startPercent);
+                      const [endX, endY] = getCoordinatesForPercent(endPercent);
+                      const largeArcFlag = sliceSize > 0.5 ? 1 : 0;
+                      const pathData = [
+                        `M ${centerX + startX * radius} ${centerY + startY * radius}`,
+                        `A ${radius} ${radius} 0 ${largeArcFlag} 1 ${centerX + endX * radius} ${centerY + endY * radius}`,
+                        `L ${centerX + endX * innerRadius} ${centerY + endY * innerRadius}`,
+                        `A ${innerRadius} ${innerRadius} 0 ${largeArcFlag} 0 ${centerX + startX * innerRadius} ${centerY + startY * innerRadius}`,
+                        "Z",
+                      ].join(" ");
+                      const isHovered = hoveredIndex === i;
+                      return (
+                        <motion.path
+                          key={i}
+                          d={pathData}
+                          fill={isHovered ? `${colors[i % colors.length]}10` : `${colors[i % colors.length]}25`}
+                          stroke={isHovered ? colors[i % colors.length] : `${colors[i % colors.length]}40`}
+                          strokeWidth={isHovered ? "3" : "1.5"}
+                          onMouseEnter={() => setHoveredIndex(i)}
+                          onMouseLeave={() => setHoveredIndex(null)}
+                          onClick={() => {
+                            if (typeof window !== "undefined" && window.innerWidth < 768) {
+                              setHoveredIndex(hoveredIndex === i ? null : i);
+                            } else {
+                              handleSend(`Strategic breakdown of ${p.name}`);
+                            }
+                          }}
+                          initial={{ opacity: 0, scale: 0.8 }}
+                          animate={{
+                            opacity: hoveredIndex !== null && !isHovered ? 0.3 : 1,
+                            scale: isHovered ? 1.02 : 1
+                          }}
+                          transition={{ type: "spring", stiffness: 300, damping: 25 }}
+                          className="cursor-pointer transition-all duration-500"
+                        />
+                      );
+                    })}
+                    <circle cx={centerX} cy={centerY} r={radius + 40} fill="none" stroke="rgba(255, 255, 255, 0.05)" strokeWidth="1" strokeDasharray="5 10" className="animate-[spin_80s_linear_infinite]" />
+                  </svg>
                 </div>
 
-                {/* External Labels for Pie - Shared coordinate space */}
-                {projects.map((p, i) => {
-                  const sliceSize = 1 / projects.length;
-                  const angle = (i * sliceSize + sliceSize / 2) * 2 * Math.PI - Math.PI / 2;
-                  const labelRadius = radius + 130;
-                  const xOffset = Math.cos(angle) * labelRadius;
-                  const yOffset = Math.sin(angle) * labelRadius;
-                  
-                  return (
-                    <motion.div
-                      key={i}
-                      className="absolute text-[10px] md:text-[12px] font-black uppercase tracking-[0.2em] text-center whitespace-nowrap pointer-events-none hidden md:block"
-                      style={{ 
-                        left: `calc(50% + ${xOffset}px)`,
-                        top: `calc(50% + ${yOffset}px)`,
-                        transform: 'translate(-50%, -50%)' 
-                      }}
-                      animate={{ 
-                        color: hoveredIndex === i ? colors[i % colors.length] : "#4b5563",
-                        scale: hoveredIndex === i ? 1.3 : 1,
-                        opacity: hoveredIndex === i || hoveredIndex === null ? 1 : 0.2,
-                        filter: hoveredIndex === i ? `drop-shadow(0 0 10px ${colors[i % colors.length]}50)` : "none"
-                      }}
-                    >
-                      {p.name.split(" ").slice(0, 2).join(" ")}
-                    </motion.div>
-                  );
-                })}
+                {/* Central Intelligence HUD */}
+                <div className="absolute inset-0 pointer-events-none flex flex-col items-center justify-center text-center p-6">
+                  <div className="max-w-[320px] md:max-w-[450px] w-full">
+                    <AnimatePresence mode="wait">
+                      {hoveredIndex === null ? (
+                        <motion.div key="idle" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 1.1 }} className="space-y-4">
+                          <div className="w-12 h-12 md:w-20 md:h-20 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-4 border border-white/10 shadow-[0_0_50px_rgba(255,255,255,0.05)]">
+                            <Bot className="w-6 h-6 md:w-10 md:h-10 text-white/20" />
+                          </div>
+                          <h4 className="text-[10px] md:text-sm font-black text-white/20 uppercase tracking-[0.5em]">System Idle</h4>
+                          <p className="text-[10px] md:text-sm text-gray-600 font-bold leading-relaxed">Select a segment to<br/>initiate data analysis</p>
+                        </motion.div>
+                      ) : (
+                        <motion.div key={hoveredIndex} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="space-y-6 md:space-y-10">
+                          <div className="space-y-2 md:space-y-4">
+                            <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.3em]" style={{ color: colors[hoveredIndex % colors.length] }}>Signal 0{hoveredIndex + 1}</span>
+                            <h2 className="text-3xl md:text-6xl font-black tracking-tighter leading-tight text-white drop-shadow-2xl">{projects[hoveredIndex].name}</h2>
+                            <div className="flex items-center justify-center gap-2 text-[10px] md:text-[12px] text-gray-400 font-black uppercase mt-2 md:mt-4 tracking-[0.2em] border border-white/10 bg-white/5 py-1.5 px-4 rounded-full w-fit mx-auto">
+                               <Globe className="w-3 h-3 md:w-4 md:h-4" /> {projects[hoveredIndex].market}
+                            </div>
+                          </div>
+                          <div className="grid grid-cols-1 gap-6 md:gap-10 text-left">
+                            <div className="space-y-2">
+                              <div className="flex items-center gap-2 text-[10px] md:text-[12px] font-black uppercase tracking-[0.4em]" style={{ color: colors[hoveredIndex % colors.length] }}>
+                                <Target className="w-3.5 h-3.5 md:w-5 md:h-5 opacity-60" /> Hypothesis
+                              </div>
+                              <p className="text-sm md:text-lg text-gray-400 font-bold leading-snug italic line-clamp-3 md:line-clamp-none">{projects[hoveredIndex].why}</p>
+                            </div>
+                            <div className="space-y-2">
+                              <div className="flex items-center gap-2 text-[10px] md:text-[12px] font-black uppercase tracking-[0.4em]" style={{ color: colors[hoveredIndex % colors.length] }}>
+                                <Zap className="w-3.5 h-3.5 md:w-5 md:h-5 opacity-60" /> Execution
+                              </div>
+                              <p className="text-base md:text-2xl text-gray-200 font-black leading-tight tracking-tight">{projects[hoveredIndex].build}</p>
+                            </div>
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+
+                  {/* External Labels for Pie */}
+                  {projects.map((p, i) => {
+                    const sliceSize = 1 / projects.length;
+                    const angle = (i * sliceSize + sliceSize / 2) * 2 * Math.PI - Math.PI / 2;
+                    const labelRadius = radius + 130;
+                    const xOffset = Math.cos(angle) * labelRadius;
+                    const yOffset = Math.sin(angle) * labelRadius;
+                    return (
+                      <motion.div
+                        key={i}
+                        className="absolute text-[10px] md:text-[12px] font-black uppercase tracking-[0.2em] text-center whitespace-nowrap pointer-events-none hidden md:block"
+                        style={{ 
+                          left: `calc(50% + ${xOffset}px)`,
+                          top: `calc(50% + ${yOffset}px)`,
+                          transform: 'translate(-50%, -50%)' 
+                        }}
+                        animate={{ 
+                          color: hoveredIndex === i ? colors[i % colors.length] : "#4b5563",
+                          scale: hoveredIndex === i ? 1.3 : 1,
+                          opacity: hoveredIndex === i || hoveredIndex === null ? 1 : 0.2,
+                          filter: hoveredIndex === i ? `drop-shadow(0 0 10px ${colors[i % colors.length]}50)` : "none"
+                        }}
+                      >
+                        {p.name.split(" ").slice(0, 2).join(" ")}
+                      </motion.div>
+                    );
+                  })}
+                </div>
               </div>
             )}
           </div>
