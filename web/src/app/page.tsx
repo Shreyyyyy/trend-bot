@@ -298,6 +298,19 @@ export default function Home() {
                               </div>
                               <p className="text-base md:text-2xl text-gray-200 font-black leading-tight tracking-tight">{projects[hoveredIndex].build}</p>
                             </div>
+
+                            {projects[hoveredIndex].url && (
+                              <div className="pt-2">
+                                <a 
+                                  href={projects[hoveredIndex].url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full text-[10px] font-black uppercase tracking-[0.2em] text-white transition-all pointer-events-auto active:scale-95 group"
+                                >
+                                  Explore Source <ExternalLink className="w-3 h-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                                </a>
+                              </div>
+                            )}
                           </div>
                         </motion.div>
                       )}
