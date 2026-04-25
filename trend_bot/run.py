@@ -104,6 +104,7 @@ def main():
 
     from datetime import datetime
     timestamp = datetime.now().isoformat()
+    trends = fetch_trends()
     meta = {"timestamp": timestamp, "trends": trends}
     (args.out / "trends.json").write_text(json.dumps(meta, indent=2), encoding="utf-8")
 
