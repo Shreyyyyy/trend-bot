@@ -81,10 +81,20 @@ export default function Home() {
     }
   };
 
+  const ordinal = (n: number) => {
+    const s = ["th", "st", "nd", "rd"];
+    const v = n % 100;
+    return n + (s[(v - 20) % 10] || s[v] || s[0]);
+  };
+
   const formatDate = (iso: string) => {
     if (!iso) return "";
-    const d = new Date(iso);
-    return d.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+    const end = new Date(iso);
+    const start = new Date(end);
+    start.setDate(start.getDate() - 7);
+    const fmt = (d: Date) =>
+      `${ordinal(d.getDate())} ${d.toLocaleDateString("en-GB", { month: "short" })} ${d.getFullYear()}`;
+    return `${fmt(start)} to ${fmt(end)}`;
   };
 
   return (
