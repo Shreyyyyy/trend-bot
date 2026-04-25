@@ -30,7 +30,7 @@ body {
   }
 
   .radar-scale {
-    transform: rotate(-90deg) scale(0.55);
+    transform: rotate(-90deg) scale(0.48);
   }
 }
 

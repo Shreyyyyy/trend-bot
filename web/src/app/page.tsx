@@ -89,12 +89,12 @@ export default function Home() {
       localStorage.setItem("trendbot_projects", JSON.stringify(parsed));
       
       // Trigger Success Toast
-      setShowToast({ show: true, message: "INTELLIGENCE SYNC COMPLETED", type: 'success' });
-      setTimeout(() => setShowToast(prev => ({ ...prev, show: false })), 3000);
+      setShowToast({ show: true, message: "SYNC SUCCESSFUL: HUB UPDATED", type: 'success' });
+      setTimeout(() => setShowToast(prev => ({ ...prev, show: false })), 4000);
       
     } catch (e: any) {
       setShowToast({ show: true, message: `SYNC FAILED: ${e.message}`, type: 'error' });
-      setTimeout(() => setShowToast(prev => ({ ...prev, show: false })), 4000);
+      setTimeout(() => setShowToast(prev => ({ ...prev, show: false })), 6000);
     } finally {
       setRefreshing(false);
     }
@@ -159,7 +159,7 @@ export default function Home() {
         <div className={`${chatOpen ? "hidden md:flex md:w-[58%]" : "w-full"} h-full flex flex-col items-center justify-center transition-all duration-500 ease-in-out overflow-hidden px-4 md:px-10`}>
 
           {/* Header (Minimal) */}
-          <div className="absolute top-6 left-6 right-6 md:top-10 md:left-10 md:right-auto flex flex-row items-center justify-between md:items-center gap-4 md:gap-10 z-50 border-b border-white/5 pb-4 md:border-none md:pb-0">
+          <div className="absolute top-4 left-4 right-4 md:top-10 md:left-10 md:right-auto flex flex-row items-center justify-between md:items-center gap-2 md:gap-10 z-50 border-b border-white/5 pb-3 md:border-none md:pb-0">
             <div>
               <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} className="text-blue-500 font-black tracking-[0.4em] text-[8px] md:text-[10px] uppercase mb-1 flex items-center gap-2">
                 <div className="w-1 h-1 bg-blue-500 rounded-full animate-pulse" />
@@ -266,7 +266,7 @@ export default function Home() {
                     width={size} 
                     height={size} 
                     viewBox={`0 0 ${size} ${size}`} 
-                    className="transform -rotate-90 max-w-none drop-shadow-[0_0_30px_rgba(59,130,246,0.1)] overflow-visible transition-transform duration-1000 radar-scale"
+                    className="max-w-none drop-shadow-[0_0_30px_rgba(59,130,246,0.1)] overflow-visible transition-transform duration-1000 radar-scale"
                   >
                     <g className="transition-transform duration-1000">
                       {projects.map((p, i) => {
