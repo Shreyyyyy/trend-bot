@@ -322,21 +322,24 @@ export default function Home() {
                     )}
                   </AnimatePresence>
                 </div>
-              </div>
 
-                {/* External Labels for Pie */}
+                {/* External Labels for Pie - Shared coordinate space */}
                 {projects.map((p, i) => {
                   const sliceSize = 1 / projects.length;
                   const angle = (i * sliceSize + sliceSize / 2) * 2 * Math.PI - Math.PI / 2;
                   const labelRadius = radius + 130;
-                  const x = centerX + Math.cos(angle) * labelRadius;
-                  const y = centerY + Math.sin(angle) * labelRadius;
+                  const xOffset = Math.cos(angle) * labelRadius;
+                  const yOffset = Math.sin(angle) * labelRadius;
                   
                   return (
                     <motion.div
                       key={i}
                       className="absolute text-[10px] md:text-[12px] font-black uppercase tracking-[0.2em] text-center whitespace-nowrap pointer-events-none hidden md:block"
-                      style={{ left: x, top: y, transform: 'translate(-50%, -50%)' }}
+                      style={{ 
+                        left: `calc(50% + ${xOffset}px)`,
+                        top: `calc(50% + ${yOffset}px)`,
+                        transform: 'translate(-50%, -50%)' 
+                      }}
                       animate={{ 
                         color: hoveredIndex === i ? colors[i % colors.length] : "#4b5563",
                         scale: hoveredIndex === i ? 1.3 : 1,
@@ -349,7 +352,7 @@ export default function Home() {
                   );
                 })}
               </div>
-            )}
+            </div>
           </div>
         </div>
 
