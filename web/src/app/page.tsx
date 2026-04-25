@@ -281,27 +281,49 @@ export default function Home() {
                   </AnimatePresence>
                 </div>
                 
-                {/* External Labels for Pie */}
+                {/* External Labels for Pie - Quadrant Aware Alignment */}
                 {projects.map((p, i) => {
                   const sliceSize = 1 / projects.length;
                   const angle = (i * sliceSize + sliceSize / 2) * 2 * Math.PI - Math.PI / 2;
-                  const labelRadius = radius + 130;
+                  const labelRadius = radius + 100;
                   const x = centerX + Math.cos(angle) * labelRadius;
                   const y = centerY + Math.sin(angle) * labelRadius;
                   
+                  // Quadrant-based alignment
+                  const cos = Math.cos(angle);
+                  const sin = Math.sin(angle);
+                  
+                  // Determine text alignment based on horizontal position
+                  let textAlign: "left" | "right" | "center" = "center";
+                  if (cos > 0.3) textAlign = "left";
+                  if (cos < -0.3) textAlign = "right";
+                  
+                  // Adjust transform to prevent jumping
+                  const translateX = cos > 0.3 ? "0%" : cos < -0.3 ? "-100%" : "-50%";
+                  const translateY = "-50%";
+
                   return (
                     <motion.div
                       key={i}
-                      className="absolute text-[12px] font-black uppercase tracking-[0.2em] text-center whitespace-nowrap pointer-events-none"
-                      style={{ left: x, top: y, transform: 'translate(-50%, -50%)' }}
+                      className="absolute text-[11px] font-black uppercase tracking-[0.2em] whitespace-nowrap pointer-events-none"
+                      style={{ 
+                        left: x, 
+                        top: y, 
+                        transform: `translate(${translateX}, ${translateY})`,
+                        textAlign: textAlign,
+                        width: "180px", // Fixed width to allow alignment
+                      }}
                       animate={{ 
                         color: hoveredIndex === i ? colors[i % colors.length] : "#4b5563",
-                        scale: hoveredIndex === i ? 1.3 : 1,
+                        scale: hoveredIndex === i ? 1.15 : 1,
                         opacity: hoveredIndex === i || hoveredIndex === null ? 1 : 0.2,
-                        filter: hoveredIndex === i ? `drop-shadow(0 0 10px ${colors[i % colors.length]}50)` : "none"
+                        filter: hoveredIndex === i ? `drop-shadow(0 0 12px ${colors[i % colors.length]}80)` : "none"
                       }}
                     >
-                      {p.name.split(" ").slice(0, 2).join(" ")}
+                      <div className="flex flex-col">
+                        <span className="opacity-40 text-[8px] mb-0.5">Signal 0{i+1}</span>
+                        <span className="block">{p.name}</span>
+                      </div>
                     </motion.div>
                   );
                 })}
