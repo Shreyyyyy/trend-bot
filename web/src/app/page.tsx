@@ -257,7 +257,7 @@ export default function Home() {
             ) : (
               <div className="relative flex items-center justify-center w-full h-full">
                 {/* SVG Pie Chart */}
-                <div className="scale-[0.65] sm:scale-[0.8] md:scale-100 transition-transform duration-1000 flex items-center justify-center">
+                <div className="scale-[0.55] sm:scale-[0.75] md:scale-100 transition-transform duration-1000 flex items-center justify-center">
                   <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} className="transform -rotate-90 max-w-none drop-shadow-[0_0_30px_rgba(59,130,246,0.1)]">
                     {projects.map((p, i) => {
                       const sliceSize = 1 / projects.length;
