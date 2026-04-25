@@ -3,8 +3,8 @@ name: Weekly Trend Bot (Mon 09:30 IST)
 on:
   workflow_dispatch: {}
   schedule:
-    # 09:30 Asia/Kolkata = 04:00 UTC
-    - cron: "0 4 * * 1"
+    # Daily at 09:30 Asia/Kolkata = 04:00 UTC
+    - cron: "0 4 * * *"
 
 jobs:
   run:
