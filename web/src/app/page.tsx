@@ -125,104 +125,100 @@ export default function Home() {
 
       <div className="flex-grow flex overflow-hidden relative z-10">
         {/* Main Feed Section */}
-        <div className={`${chatOpen ? "w-[58%]" : "w-full"} flex flex-col items-center justify-start py-12 px-8 transition-all duration-500 ease-in-out overflow-y-auto`}>
-          <div className="w-full max-w-2xl">
+        <div className={`${chatOpen ? "w-[58%]" : "w-full"} flex flex-col items-center justify-start pt-8 pb-4 px-8 transition-all duration-500 ease-in-out overflow-hidden`}>
+          <div className="w-full max-w-2xl h-full flex flex-col">
             {/* Header Area */}
-            <div className="flex items-end justify-between mb-10 border-b border-white/5 pb-6">
+            <div className="flex-none flex items-end justify-between mb-6 border-b border-white/5 pb-4">
               <div className="space-y-1">
                 <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="flex items-center gap-2 text-blue-400 font-bold tracking-widest text-[10px] uppercase">
                   <Sparkles className="w-3 h-3" />
                   Weekly Intel
                 </motion.div>
-                <motion.h1 initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-3xl font-extrabold tracking-tight bg-gradient-to-r from-white to-white/60 bg-clip-text text-transparent">
+                <motion.h1 initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-white to-white/60 bg-clip-text text-transparent">
                   Market Signals
                 </motion.h1>
-                {dateRange && <p className="text-xs text-gray-500 font-medium">{dateRange}</p>}
+                {dateRange && <p className="text-[10px] text-gray-500 font-medium">{dateRange}</p>}
               </div>
 
               <button
                 onClick={handleRefresh}
                 disabled={refreshing}
-                className="group relative flex items-center gap-2 text-xs font-semibold text-white/70 hover:text-white bg-white/5 hover:bg-white/10 border border-white/10 rounded-full px-5 py-2.5 transition-all active:scale-95 disabled:opacity-50 overflow-hidden"
+                className="group relative flex items-center gap-2 text-[10px] font-bold text-white/70 hover:text-white bg-white/5 hover:bg-white/10 border border-white/10 rounded-full px-4 py-2 transition-all active:scale-95 disabled:opacity-50 overflow-hidden"
               >
-                <RefreshCw className={`w-3.5 h-3.5 transition-transform duration-700 ${refreshing ? "animate-spin" : "group-hover:rotate-180"}`} />
+                <RefreshCw className={`w-3 h-3 transition-transform duration-700 ${refreshing ? "animate-spin" : "group-hover:rotate-180"}`} />
                 {refreshing ? "Scanning..." : "Update Feed"}
               </button>
             </div>
 
-            {/* Content Area */}
-            {loading ? (
-              <div className="space-y-4 w-full">
-                {Array(5).fill(0).map((_, i) => (
-                  <div key={i} className="h-32 bg-white/[0.02] border border-white/5 rounded-3xl animate-pulse" />
-                ))}
-              </div>
-            ) : projects.length === 0 ? (
-              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center py-20 bg-white/[0.02] border border-dashed border-white/10 rounded-3xl">
-                <div className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Zap className="w-6 h-6 text-gray-600" />
-                </div>
-                <h3 className="text-sm font-bold text-white/80">No trends detected</h3>
-                <p className="text-xs text-gray-500 mt-1">Ready for your first weekly scan?</p>
-              </motion.div>
-            ) : (
-              <AnimatePresence mode="wait">
-                <motion.div key={dateRange} className="space-y-5">
-                  {projects.map((p, i) => (
-                    <motion.div
-                      key={i}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: i * 0.1 }}
-                      className="group relative"
-                      onClick={() => handleSend(`Deep dive on "${p.name}". What is the technical implementation?`)}
-                    >
-                      <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-[2rem] opacity-0 group-hover:opacity-100 transition duration-500 blur-sm" />
-                      <div className="relative bg-[#0d1117]/80 backdrop-blur-xl border border-white/10 group-hover:border-white/20 p-6 rounded-[1.8rem] transition-all duration-300 cursor-pointer">
-                        <div className="flex items-start justify-between mb-4">
-                          <div className="flex items-center gap-4">
-                            <span className="flex items-center justify-center w-8 h-8 rounded-xl bg-blue-500/10 text-blue-400 text-xs font-black border border-blue-500/20">
-                              {p.id}
-                            </span>
-                            <h2 className="text-lg font-bold text-white/90 group-hover:text-white transition-colors">{p.name}</h2>
-                          </div>
-                          {p.url && (
-                            <a href={p.url} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()} className="p-2 rounded-lg bg-white/5 text-gray-500 hover:text-blue-400 hover:bg-blue-400/10 transition-all">
-                              <ExternalLink className="w-4 h-4" />
-                            </a>
-                          )}
-                        </div>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                          <div className="space-y-1">
-                            <div className="flex items-center gap-1.5 text-[10px] font-bold text-blue-400 uppercase tracking-wider">
-                              <Target className="w-3 h-3" />
-                              The Why
-                            </div>
-                            <p className="text-xs text-gray-400 leading-relaxed font-medium">{p.why}</p>
-                          </div>
-                          <div className="space-y-1">
-                            <div className="flex items-center gap-1.5 text-[10px] font-bold text-purple-400 uppercase tracking-wider">
-                              <Zap className="w-3 h-3" />
-                              The Build
-                            </div>
-                            <p className="text-xs text-gray-400 leading-relaxed font-medium">{p.build}</p>
-                          </div>
-                        </div>
-
-                        {p.market && (
-                          <div className="mt-4 flex items-center gap-2">
-                            <div className="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[9px] font-bold text-gray-500 flex items-center gap-1.5 uppercase tracking-tight">
-                              <Globe className="w-2.5 h-2.5" />
-                              {p.market}
-                            </div>
-                          </div>
-                        )}
-                      </div>
-                    </motion.div>
+            {/* Scrollable Cards Area */}
+            <div className="flex-grow overflow-y-auto pr-2 space-y-3 custom-scrollbar">
+              {loading ? (
+                <div className="space-y-3 w-full">
+                  {Array(5).fill(0).map((_, i) => (
+                    <div key={i} className="h-24 bg-white/[0.02] border border-white/5 rounded-2xl animate-pulse" />
                   ))}
+                </div>
+              ) : projects.length === 0 ? (
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center py-12 bg-white/[0.02] border border-dashed border-white/10 rounded-3xl">
+                  <div className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <Zap className="w-5 h-5 text-gray-600" />
+                  </div>
+                  <h3 className="text-xs font-bold text-white/80">No trends detected</h3>
+                  <p className="text-[10px] text-gray-500 mt-1">Ready for your first weekly scan?</p>
                 </motion.div>
-              </AnimatePresence>
+              ) : (
+                <AnimatePresence mode="wait">
+                  <motion.div key={dateRange} className="space-y-3 pb-4">
+                    {projects.map((p, i) => (
+                      <motion.div
+                        key={i}
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: i * 0.05 }}
+                        className="group relative"
+                        onClick={() => handleSend(`Deep dive on "${p.name}". What is the technical implementation?`)}
+                      >
+                        <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-[1.4rem] opacity-0 group-hover:opacity-100 transition duration-500 blur-sm" />
+                        <div className="relative bg-[#0d1117]/60 backdrop-blur-xl border border-white/5 group-hover:border-white/10 p-4 rounded-[1.2rem] transition-all duration-300 cursor-pointer">
+                          <div className="flex items-start justify-between mb-2">
+                            <div className="flex items-center gap-3">
+                              <span className="flex items-center justify-center w-6 h-6 rounded-lg bg-blue-500/10 text-blue-400 text-[10px] font-black border border-blue-500/10">
+                                {p.id}
+                              </span>
+                              <h2 className="text-[15px] font-bold text-white/90 group-hover:text-white transition-colors">{p.name}</h2>
+                            </div>
+                            {p.url && (
+                              <a href={p.url} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()} className="p-1.5 rounded-md bg-white/5 text-gray-600 hover:text-blue-400 hover:bg-blue-400/10 transition-all">
+                                <ExternalLink className="w-3 h-3" />
+                              </a>
+                            )}
+                          </div>
+
+                          <div className="grid grid-cols-2 gap-4">
+                            <div className="space-y-0.5">
+                              <div className="flex items-center gap-1.5 text-[8px] font-bold text-blue-400/70 uppercase tracking-wider">
+                                <Target className="w-2.5 h-2.5" />
+                                Why
+                              </div>
+                              <p className="text-[11px] text-gray-500 leading-snug font-medium line-clamp-2">{p.why}</p>
+                            </div>
+                            <div className="space-y-0.5">
+                              <div className="flex items-center gap-1.5 text-[8px] font-bold text-purple-400/70 uppercase tracking-wider">
+                                <Zap className="w-2.5 h-2.5" />
+                                Build
+                              </div>
+                              <p className="text-[11px] text-gray-500 leading-snug font-medium line-clamp-2">{p.build}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </motion.div>
+                    ))}
+                  </motion.div>
+                </AnimatePresence>
+              )}
+            </div>
+            {!loading && projects.length > 0 && (
+              <p className="flex-none text-[9px] text-gray-700 py-3 text-center border-t border-white/5 mt-2">Click any idea for strategic analysis.</p>
             )}
           </div>
         </div>
