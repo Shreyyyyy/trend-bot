@@ -221,7 +221,7 @@ export default function Home() {
                 </svg>
 
                 {/* Central Intelligence HUD */}
-                <div className="absolute pointer-events-none flex flex-col items-center justify-center text-center max-w-[320px]">
+                <div className="absolute pointer-events-none flex flex-col items-center justify-center text-center max-w-[420px]">
                   <AnimatePresence mode="wait">
                     {hoveredIndex === null ? (
                       <motion.div
@@ -229,13 +229,13 @@ export default function Home() {
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 1.1 }}
-                        className="space-y-2"
+                        className="space-y-4"
                       >
-                        <div className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-4 border border-white/10">
-                          <Bot className="w-6 h-6 text-blue-500" />
+                        <div className="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-4 border border-white/10 shadow-2xl">
+                          <Bot className="w-8 h-8 text-blue-500" />
                         </div>
-                        <h4 className="text-[10px] font-black text-blue-400 uppercase tracking-[0.4em]">Signal Lab</h4>
-                        <p className="text-xs text-gray-500 font-medium">Hover a segment to decode<br/>market intelligence</p>
+                        <h4 className="text-xs font-black text-blue-400 uppercase tracking-[0.4em]">Signal Lab</h4>
+                        <p className="text-sm text-gray-500 font-bold leading-relaxed">Hover a segment to decode<br/>market intelligence</p>
                       </motion.div>
                     ) : (
                       <motion.div
@@ -243,33 +243,33 @@ export default function Home() {
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
-                        className="space-y-6"
+                        className="space-y-8"
                       >
-                        <div className="space-y-1">
-                          <span className="text-[10px] font-black text-blue-400 uppercase tracking-widest">Signal 0{hoveredIndex + 1}</span>
-                          <h2 className="text-2xl font-black tracking-tight leading-none">{projects[hoveredIndex].name}</h2>
-                          <div className="flex items-center justify-center gap-2 text-[9px] text-gray-600 font-bold uppercase mt-2">
-                             <Globe className="w-2.5 h-2.5" /> {projects[hoveredIndex].market}
+                        <div className="space-y-2">
+                          <span className="text-xs font-black text-blue-400 uppercase tracking-[0.2em]">Signal 0{hoveredIndex + 1}</span>
+                          <h2 className="text-4xl font-black tracking-tighter leading-none text-white">{projects[hoveredIndex].name}</h2>
+                          <div className="flex items-center justify-center gap-2 text-[10px] text-gray-500 font-black uppercase mt-3 tracking-widest border border-white/5 bg-white/5 py-1 px-3 rounded-full w-fit mx-auto">
+                             <Globe className="w-3 h-3" /> {projects[hoveredIndex].market}
                           </div>
                         </div>
 
-                        <div className="grid grid-cols-1 gap-5 px-4 text-left">
-                          <div className="space-y-1">
-                            <div className="flex items-center gap-1.5 text-[8px] font-black text-blue-400/80 uppercase tracking-[0.2em]">
-                              <Target className="w-3 h-3" /> Why
+                        <div className="grid grid-cols-1 gap-6 px-6 text-left">
+                          <div className="space-y-2">
+                            <div className="flex items-center gap-2 text-[10px] font-black text-blue-400 uppercase tracking-[0.2em]">
+                              <Target className="w-4 h-4" /> Why
                             </div>
-                            <p className="text-[11px] text-gray-400 font-medium leading-relaxed italic">{projects[hoveredIndex].why}</p>
+                            <p className="text-sm text-gray-400 font-semibold leading-relaxed italic">{projects[hoveredIndex].why}</p>
                           </div>
-                          <div className="space-y-1">
-                            <div className="flex items-center gap-1.5 text-[8px] font-black text-purple-400/80 uppercase tracking-[0.2em]">
-                              <Zap className="w-3 h-3" /> Build
+                          <div className="space-y-2">
+                            <div className="flex items-center gap-2 text-[10px] font-black text-purple-400 uppercase tracking-[0.2em]">
+                              <Zap className="w-4 h-4" /> Build
                             </div>
-                            <p className="text-[11px] text-gray-300 font-bold leading-relaxed">{projects[hoveredIndex].build}</p>
+                            <p className="text-base text-gray-200 font-black leading-tight tracking-tight">{projects[hoveredIndex].build}</p>
                           </div>
                         </div>
                         
-                        <div className="pt-2 text-[8px] font-black text-white/20 uppercase tracking-widest animate-pulse">
-                          Click to analyze in detail
+                        <div className="pt-4 text-[10px] font-black text-white/30 uppercase tracking-[0.3em] animate-pulse">
+                          Click to analyze
                         </div>
                       </motion.div>
                     )}
@@ -280,18 +280,19 @@ export default function Home() {
                 {projects.map((p, i) => {
                   const sliceSize = 1 / projects.length;
                   const angle = (i * sliceSize + sliceSize / 2) * 2 * Math.PI - Math.PI / 2;
-                  const labelRadius = radius + 80;
+                  const labelRadius = radius + 110;
                   const x = centerX + Math.cos(angle) * labelRadius;
                   const y = centerY + Math.sin(angle) * labelRadius;
                   
                   return (
                     <motion.div
                       key={i}
-                      className="absolute text-[9px] font-black text-gray-500 uppercase tracking-widest text-center whitespace-nowrap pointer-events-none"
+                      className="absolute text-[11px] font-black uppercase tracking-[0.15em] text-center whitespace-nowrap pointer-events-none"
                       style={{ left: x, top: y, transform: 'translate(-50%, -50%)' }}
                       animate={{ 
                         color: hoveredIndex === i ? "#fff" : "#4b5563",
-                        scale: hoveredIndex === i ? 1.1 : 1
+                        scale: hoveredIndex === i ? 1.2 : 1,
+                        opacity: hoveredIndex === i || hoveredIndex === null ? 1 : 0.4
                       }}
                     >
                       {p.name.split(" ").slice(0, 2).join(" ")}
