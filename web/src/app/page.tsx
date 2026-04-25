@@ -209,16 +209,19 @@ export default function Home() {
                       <motion.path
                         key={i}
                         d={pathData}
-                        fill={isHovered ? colors[i % colors.length] : `${colors[i % colors.length]}15`}
-                        stroke={isHovered ? colors[i % colors.length] : `${colors[i % colors.length]}30`}
-                        strokeWidth="2"
+                        fill={isHovered ? `${colors[i % colors.length]}10` : `${colors[i % colors.length]}25`}
+                        stroke={isHovered ? colors[i % colors.length] : `${colors[i % colors.length]}40`}
+                        strokeWidth={isHovered ? "3" : "1.5"}
                         onMouseEnter={() => setHoveredIndex(i)}
                         onMouseLeave={() => setHoveredIndex(null)}
                         onClick={() => handleSend(`Strategic breakdown of ${p.name}`)}
                         initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: isHovered ? 1.05 : 1 }}
-                        transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                        className="cursor-pointer transition-all duration-300"
+                        animate={{ 
+                          opacity: hoveredIndex !== null && !isHovered ? 0.3 : 1,
+                          scale: isHovered ? 1.02 : 1 
+                        }}
+                        transition={{ type: "spring", stiffness: 300, damping: 25 }}
+                        className="cursor-pointer transition-all duration-500"
                       />
                     );
                   })}
@@ -281,79 +284,28 @@ export default function Home() {
                   </AnimatePresence>
                 </div>
                 
-                {/* External Labels & Connectors - High Distance */}
+                {/* External Labels for Pie */}
                 {projects.map((p, i) => {
                   const sliceSize = 1 / projects.length;
                   const angle = (i * sliceSize + sliceSize / 2) * 2 * Math.PI - Math.PI / 2;
-                  const labelRadius = radius + 150; // Increased distance
+                  const labelRadius = radius + 130;
                   const x = centerX + Math.cos(angle) * labelRadius;
                   const y = centerY + Math.sin(angle) * labelRadius;
                   
-                  // Quadrant-based alignment
-                  const cos = Math.cos(angle);
-                  const sin = Math.sin(angle);
-                  
-                  // Determine text alignment based on horizontal position
-                  let textAlign: "left" | "right" | "center" = "center";
-                  if (cos > 0.3) textAlign = "left";
-                  if (cos < -0.3) textAlign = "right";
-                  
-                  // Adjust transform to prevent jumping
-                  const translateX = cos > 0.3 ? "15px" : cos < -0.3 ? "calc(-100% - 15px)" : "-50%";
-                  const translateY = "-50%";
-
-                  // Connector line points
-                  const lineStartX = centerX + cos * (radius + 10);
-                  const lineStartY = centerY + sin * (radius + 10);
-                  const lineEndX = centerX + cos * (labelRadius - 20);
-                  const lineEndY = centerY + sin * (labelRadius - 20);
-
                   return (
-                    <div key={i}>
-                      {/* Connector Line */}
-                      <svg className="absolute inset-0 pointer-events-none" width={size} height={size}>
-                        <motion.line
-                          x1={lineStartX}
-                          y1={lineStartY}
-                          x2={lineEndX}
-                          y2={lineEndY}
-                          stroke={hoveredIndex === i ? colors[i % colors.length] : "rgba(255,255,255,0.1)"}
-                          strokeWidth="1"
-                          strokeDasharray="4 4"
-                          initial={{ pathLength: 0 }}
-                          animate={{ pathLength: 1 }}
-                        />
-                        <motion.circle
-                          cx={lineStartX}
-                          cy={lineStartY}
-                          r="2"
-                          fill={hoveredIndex === i ? colors[i % colors.length] : "rgba(255,255,255,0.2)"}
-                        />
-                      </svg>
-
-                      {/* Label */}
-                      <motion.div
-                        className="absolute text-[11px] font-black uppercase tracking-[0.2em] whitespace-nowrap pointer-events-none"
-                        style={{ 
-                          left: x, 
-                          top: y, 
-                          transform: `translate(${translateX}, ${translateY})`,
-                          textAlign: textAlign,
-                          width: "200px",
-                        }}
-                        animate={{ 
-                          color: hoveredIndex === i ? colors[i % colors.length] : "#4b5563",
-                          scale: hoveredIndex === i ? 1.1 : 1,
-                          opacity: hoveredIndex === i || hoveredIndex === null ? 1 : 0.2,
-                          filter: hoveredIndex === i ? `drop-shadow(0 0 15px ${colors[i % colors.length]}80)` : "none"
-                        }}
-                      >
-                        <div className="flex flex-col">
-                          <span className="opacity-30 text-[8px] mb-1 font-black">Segment {i+1}</span>
-                          <span className="block text-white/90">{p.name}</span>
-                        </div>
-                      </motion.div>
-                    </div>
+                    <motion.div
+                      key={i}
+                      className="absolute text-[12px] font-black uppercase tracking-[0.2em] text-center whitespace-nowrap pointer-events-none"
+                      style={{ left: x, top: y, transform: 'translate(-50%, -50%)' }}
+                      animate={{ 
+                        color: hoveredIndex === i ? colors[i % colors.length] : "#4b5563",
+                        scale: hoveredIndex === i ? 1.3 : 1,
+                        opacity: hoveredIndex === i || hoveredIndex === null ? 1 : 0.2,
+                        filter: hoveredIndex === i ? `drop-shadow(0 0 10px ${colors[i % colors.length]}50)` : "none"
+                      }}
+                    >
+                      {p.name.split(" ").slice(0, 2).join(" ")}
+                    </motion.div>
                   );
                 })}
               </div>
