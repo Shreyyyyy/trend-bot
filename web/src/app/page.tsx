@@ -245,7 +245,13 @@ export default function Home() {
                         strokeWidth={isHovered ? "3" : "1.5"}
                         onMouseEnter={() => setHoveredIndex(i)}
                         onMouseLeave={() => setHoveredIndex(null)}
-                        onClick={() => handleSend(`Strategic breakdown of ${p.name}`)}
+                        onClick={() => {
+                          if (typeof window !== "undefined" && window.innerWidth < 768) {
+                            setHoveredIndex(hoveredIndex === i ? null : i);
+                          } else {
+                            handleSend(`Strategic breakdown of ${p.name}`);
+                          }
+                        }}
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{
                           opacity: hoveredIndex !== null && !isHovered ? 0.3 : 1,
