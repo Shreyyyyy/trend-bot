@@ -42,44 +42,55 @@ def _collect_source_urls(trends: dict) -> list[str]:
 
 
 def _postprocess_ideas(raw: str) -> str:
-    """Ensure output is exactly 5 lines: 'n) Name — URL'."""
-    # 1. Break into segments that look like they start a new project
-    # Split by common project markers: "1.", "1)", "Project Name:", etc.
+    """Ensure output is exactly 5 lines with metadata: 'n) Name — URL | WHY: ...'."""
     import re
-    segments = re.split(r'\n(?=\s*(?:\d+[\.\)]|Project Name:))', raw)
+    # 1. Split into chunks by project numbering
+    segments = re.split(r'\n(?=\s*\d+[\.\)])', raw.strip())
     if len(segments) <= 1:
-        # Fallback: split by double newline if no markers found
-        segments = raw.split("\n\n")
-
-    out_lines: list[str] = []
+        segments = [s for s in raw.split("\n") if s.strip() and re.match(r'^\d+[\.\)]', s.strip())]
     
+    out_lines: list[str] = []
     for seg in segments:
         if len(out_lines) >= 5:
             break
+            
+        # Clean segment
+        text = seg.replace("\n", " ").strip()
         
-        # Try to find a project name
-        name = ""
-        name_match = re.search(r'(?:Project Name:\s*|(?:\d+[\.\)]\s*))([^\n—\-]+)', seg)
-        if name_match:
-            name = name_match.group(1).strip()
-        else:
-            # First non-empty line as name if no marker found
-            lines = [l.strip() for l in seg.splitlines() if l.strip()]
-            if lines:
-                name = lines[0]
-        
-        # Try to find a URL
-        url_match = re.search(r'https?://[^\s\)]+', seg)
+        # Extract components
+        url_match = re.search(r'https?://[^\s\|]+', text)
         url = url_match.group(0) if url_match else "https://github.com/trending"
         
-        if name:
-            # Clean up name (remove colon if it was "Project Name: ...")
-            name = re.sub(r'^Project Name:\s*', '', name, flags=re.IGNORECASE).strip()
-            out_lines.append(f"{len(out_lines)+1}) {name} — {url}")
+        # Remove numbering and URL from text to find name and metadata
+        clean_text = re.sub(r'^\d+[\.\)]\s*', '', text)
+        clean_text = clean_text.replace(url, "").strip()
+        # Remove common separators
+        clean_text = re.sub(r'^[\s—\-]+', '', clean_text)
+        
+        # If the LLM followed the | format, we have Name | WHY ...
+        # Otherwise we just have Name ... metadata ...
+        if "|" in clean_text:
+            # Reconstruct carefully
+            parts = clean_text.split("|", 1)
+            name = parts[0].strip()
+            metadata = f" | {parts[1].strip()}"
+        else:
+            # Heuristic: Name is usually the first part
+            name = clean_text.split("WHY:", 1)[0].split("BUILD:", 1)[0].split("MARKET:", 1)[0].strip()
+            metadata = clean_text[len(name):].strip()
+            if metadata:
+                # Ensure | before metadata if missing
+                if not metadata.startswith("|"):
+                    metadata = f" | {metadata}"
+        
+        if not name:
+            name = "Project Idea"
+            
+        out_lines.append(f"{len(out_lines)+1}) {name} — {url}{metadata}")
 
     # Fallback/Padding
     while len(out_lines) < 5:
-        out_lines.append(f"{len(out_lines)+1}) [Idea pending further research] — https://github.com/trending")
+        out_lines.append(f"{len(out_lines)+1}) [Idea pending] — https://github.com/trending | WHY: Scan failed | BUILD: Manual check | MARKET: General")
 
     return "\n".join(out_lines)
 
