@@ -33,6 +33,7 @@ def fetch_trends() -> dict[str, Any]:
     if extra:
         base_queries.extend([q.strip() for q in extra.split(",") if q.strip()])
 
+    results = []
     for i, q in enumerate(base_queries):
         # Use advanced search for the first few primary queries for a 'deep dive'
         depth = "advanced" if i < 3 else "basic"
