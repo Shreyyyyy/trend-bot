@@ -318,6 +318,13 @@ export default function Home() {
               </div>
             )}
           </div>
+          {/* Developer Credit */}
+          <div className="absolute bottom-6 right-8 pointer-events-none">
+            <div className="flex flex-col items-end opacity-20 hover:opacity-100 transition-opacity duration-500">
+              <span className="text-[8px] font-black tracking-[0.4em] text-white uppercase mb-1">Architect</span>
+              <span className="text-[10px] font-black tracking-widest text-blue-400 uppercase">Shreyans Jain</span>
+            </div>
+          </div>
         </div>
 
         {/* Chat Section */}
