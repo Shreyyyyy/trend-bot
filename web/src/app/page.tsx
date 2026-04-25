@@ -46,7 +46,10 @@ export default function Home() {
         const ideasRes = await fetch("/data/ideas.md");
         const ideasText = await ideasRes.text();
         const dateMatch = ideasText.match(/^DATE:\s*(.+)/m);
-        if (dateMatch) setDateRange(dateMatch[1].trim());
+        const rawDate = dateMatch ? dateMatch[1].trim() : "";
+        // Only show real dates (not the placeholder)
+        if (rawDate && rawDate !== "No data yet") setDateRange(rawDate);
+
         const lines = ideasText.split("\n").filter(l => l.trim() && /^\d+[\.\)]/.test(l.trim())).slice(0, 5);
         setProjects(lines.map(parseLine));
       } catch (e) {
@@ -132,7 +135,12 @@ export default function Home() {
             {/* Ideas list */}
             {loading ? (
               <div className="space-y-3">
-                {Array(5).fill(0).map((_, i) => <div key={i} className="h-10 bg-white/[0.03] rounded-xl animate-pulse" />)}
+                {Array(5).fill(0).map((_, i) => <div key={i} className="h-16 bg-white/[0.03] rounded-xl animate-pulse" />)}
+              </div>
+            ) : projects.length === 0 ? (
+              <div className="text-center py-16 space-y-4">
+                <p className="text-gray-600 text-sm">No trends fetched yet.</p>
+                <p className="text-gray-700 text-xs">Hit <span className="text-white/40 font-semibold">Refresh now</span> to scan this week's AI landscape.</p>
               </div>
             ) : (
               <AnimatePresence mode="wait">
