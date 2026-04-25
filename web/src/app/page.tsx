@@ -143,15 +143,45 @@ export default function Home() {
                       initial={{ opacity: 0, x: -8 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: i * 0.06 }}
-                      className="group flex items-center gap-3 px-4 py-3 rounded-xl bg-white/[0.03] border border-white/[0.05] hover:border-white/20 hover:bg-white/[0.06] transition-all cursor-pointer"
+                      className="group px-4 py-4 rounded-xl bg-white/[0.03] border border-white/[0.05] hover:border-white/15 hover:bg-white/[0.05] transition-all cursor-pointer"
                       onClick={() => handleSend(`Tell me more about: ${p.name}`)}
                     >
-                      <span className="flex-none text-xs font-mono text-gray-600 w-4">{p.id}.</span>
-                      <span className="flex-grow text-sm font-medium text-white/75 group-hover:text-white transition-colors truncate">{p.name}</span>
+                      {/* Row 1: Number + Name */}
+                      <div className="flex items-start gap-3">
+                        <span className="flex-none text-xs font-mono text-gray-600 mt-0.5 w-4">{p.id}.</span>
+                        <span className="flex-grow text-sm font-semibold text-white/85 group-hover:text-white transition-colors leading-snug">{p.name}</span>
+                      </div>
+
+                      {/* Row 2: WHY + PROBLEM */}
+                      {(p.why || p.build) && (
+                        <div className="mt-2 ml-7 space-y-1">
+                          {p.why && (
+                            <p className="text-xs text-gray-500 leading-relaxed">
+                              <span className="text-gray-600 font-semibold">Why: </span>{p.why}
+                            </p>
+                          )}
+                          {p.build && (
+                            <p className="text-xs text-gray-500 leading-relaxed">
+                              <span className="text-gray-600 font-semibold">Build: </span>{p.build}
+                            </p>
+                          )}
+                        </div>
+                      )}
+
+                      {/* Row 3: Source link */}
                       {p.url && (
-                        <a href={p.url} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()} className="flex-none text-gray-700 hover:text-blue-400 transition-colors">
-                          <ExternalLink className="w-3.5 h-3.5" />
-                        </a>
+                        <div className="mt-2 ml-7">
+                          <a
+                            href={p.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={e => e.stopPropagation()}
+                            className="inline-flex items-center gap-1 text-[11px] text-blue-500/60 hover:text-blue-400 transition-colors truncate max-w-full"
+                          >
+                            <ExternalLink className="w-3 h-3 flex-none" />
+                            <span className="truncate">{p.url.replace(/^https?:\/\//, "")}</span>
+                          </a>
+                        </div>
                       )}
                     </motion.li>
                   ))}
