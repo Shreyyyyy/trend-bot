@@ -28,4 +28,20 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+
+  .radar-scale {
+    transform: rotate(-90deg) scale(0.55);
+  }
+}
+
+@media (min-width: 640px) {
+  .radar-scale {
+    transform: rotate(-90deg) scale(0.75);
+  }
+}
+
+@media (min-width: 1024px) {
+  .radar-scale {
+    transform: rotate(-90deg) scale(1);
+  }
 }

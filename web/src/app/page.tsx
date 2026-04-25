@@ -223,9 +223,9 @@ export default function Home() {
                       ? "bg-blue-600/10 border-blue-500/30 shadow-[0_0_30px_rgba(59,130,246,0.1)]" 
                       : "bg-white/[0.02] border-white/5 hover:bg-white/[0.05] hover:border-white/10"
                   }`}
-                  onMouseEnter={() => setHoveredIndex(i)}
-                  onMouseLeave={() => setHoveredIndex(null)}
-                >
+                onMouseOver={() => setHoveredIndex(i)}
+                onMouseLeave={() => setHoveredIndex(null)}
+              >
                   <div className="flex flex-col gap-1 min-w-0">
                     <span className="text-[8px] lg:text-[9px] font-black text-blue-500/60 uppercase whitespace-nowrap">Signal 0{i + 1}</span>
                     <p className="text-[10px] lg:text-xs font-black text-gray-200 truncate group-hover:text-white transition-colors">{p.name}</p>
@@ -266,11 +266,7 @@ export default function Home() {
                     width={size} 
                     height={size} 
                     viewBox={`0 0 ${size} ${size}`} 
-                    className="transform -rotate-90 max-w-none drop-shadow-[0_0_30px_rgba(59,130,246,0.1)] overflow-visible"
-                    style={{ 
-                      transform: `rotate(-90deg) scale(${typeof window !== 'undefined' && window.innerWidth < 640 ? 0.55 : typeof window !== 'undefined' && window.innerWidth < 1024 ? 0.75 : 1})`,
-                      transformOrigin: 'center'
-                    }}
+                    className="transform -rotate-90 max-w-none drop-shadow-[0_0_30px_rgba(59,130,246,0.1)] overflow-visible transition-transform duration-1000 radar-scale"
                   >
                     <g className="transition-transform duration-1000">
                       {projects.map((p, i) => {
@@ -295,7 +291,7 @@ export default function Home() {
                             fill={isHovered ? `${colors[i % colors.length]}10` : `${colors[i % colors.length]}25`}
                             stroke={isHovered ? colors[i % colors.length] : `${colors[i % colors.length]}40`}
                             strokeWidth={isHovered ? "3" : "1.5"}
-                            onMouseEnter={() => setHoveredIndex(i)}
+                            onMouseOver={() => setHoveredIndex(i)}
                             onClick={() => {
                               if (typeof window !== "undefined" && window.innerWidth < 768) {
                                 setHoveredIndex(hoveredIndex === i ? null : i);
@@ -322,7 +318,7 @@ export default function Home() {
                 {/* Central Intelligence HUD */}
                 <div className="absolute inset-0 pointer-events-none flex flex-col items-center justify-center text-center p-6">
                   <div className="max-w-[320px] md:max-w-[450px] w-full">
-                    <AnimatePresence mode="wait">
+                    <AnimatePresence>
                       {hoveredIndex === null ? (
                         <motion.div key="idle" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 1.1 }} className="space-y-4">
                           <div className="w-12 h-12 md:w-20 md:h-20 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-4 border border-white/10 shadow-[0_0_50px_rgba(255,255,255,0.05)]">
