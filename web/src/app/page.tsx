@@ -56,7 +56,7 @@ export default function Home() {
         const dateMatch = ideasText.match(/^DATE:\s*(.+)/m);
         const rawDate = dateMatch ? dateMatch[1].trim() : "";
         const lines = ideasText.split("\n").filter(l => l.trim() && /^\d+[\.\)]/.test(l.trim())).slice(0, 5);
-        
+
         if (rawDate && rawDate !== "No data yet" && lines.length > 0) {
           const parsed = lines.map(parseLine);
           setDateRange(rawDate);
@@ -150,7 +150,7 @@ export default function Home() {
       <div className="flex-grow flex overflow-hidden relative z-10">
         {/* Main Section: Interactive Pie Chart */}
         <div className={`${chatOpen ? "w-[58%]" : "w-full"} h-full flex flex-col items-center justify-center transition-all duration-500 ease-in-out overflow-hidden px-10`}>
-          
+
           {/* Header (Minimal) */}
           <div className="absolute top-10 left-10 flex items-center gap-10 z-50">
             <div>
@@ -169,15 +169,32 @@ export default function Home() {
               </div>
             </div>
 
-            <button
-              onClick={handleRefresh}
-              disabled={refreshing}
-              className={`group relative flex items-center gap-3 text-[11px] font-black text-white bg-white/5 hover:bg-blue-600 border border-white/10 hover:border-blue-400 rounded-xl px-6 py-3 transition-all active:scale-95 shadow-2xl overflow-hidden ${refreshing ? "cursor-wait opacity-80" : "cursor-pointer"}`}
-            >
-              <RefreshCw className={`w-4 h-4 transition-transform duration-1000 ${refreshing ? "animate-spin" : "group-hover:rotate-180"}`} />
-              <span className="relative z-10">{refreshing ? "FETCHING TRENDS..." : "SYNC INTELLIGENCE"}</span>
-              {refreshing && <div className="absolute inset-0 bg-blue-500/20 animate-pulse" />}
-            </button>
+            <div className="relative group/sync">
+              <button
+                onClick={handleRefresh}
+                disabled={refreshing}
+                className={`group relative flex items-center gap-3 text-[11px] font-black text-white bg-white/5 hover:bg-blue-600 border border-white/10 hover:border-blue-400 rounded-xl px-6 py-3 transition-all active:scale-95 shadow-2xl overflow-hidden ${refreshing ? "cursor-wait opacity-80" : "cursor-pointer"}`}
+              >
+                <RefreshCw className={`w-4 h-4 transition-transform duration-1000 ${refreshing ? "animate-spin" : "group-hover:rotate-180"}`} />
+                <span className="relative z-10">{refreshing ? "FETCHING TRENDS..." : "SYNC INTELLIGENCE"}</span>
+                {refreshing && <div className="absolute inset-0 bg-blue-500/20 animate-pulse" />}
+              </button>
+              
+              {/* Sync One-Liner Tooltip */}
+              <div className="absolute top-full mt-3 left-0 w-max opacity-0 group-hover/sync:opacity-100 transition-opacity duration-300 pointer-events-none">
+                <div className="bg-blue-600/10 backdrop-blur-xl border border-blue-500/30 px-3 py-1.5 rounded-lg">
+                  <p className="text-[9px] font-black text-blue-400 uppercase tracking-widest">Perform live market scan for latest signals</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Developer Credit - Top Right */}
+          <div className="absolute top-10 right-10 z-50">
+            <div className="flex flex-col items-end opacity-40 hover:opacity-100 transition-all duration-500 group cursor-default">
+              <span className="text-[9px] font-black tracking-[0.4em] text-white/50 group-hover:text-blue-500 uppercase mb-1 transition-colors">Architect</span>
+              <span className="text-[11px] font-black tracking-widest text-white group-hover:text-white uppercase transition-colors">Shreyans Jain</span>
+            </div>
           </div>
 
           <div className="relative flex items-center justify-center w-full h-full">
@@ -201,7 +218,7 @@ export default function Home() {
                     const [startX, startY] = getCoordinatesForPercent(startPercent);
                     const [endX, endY] = getCoordinatesForPercent(endPercent);
                     const largeArcFlag = sliceSize > 0.5 ? 1 : 0;
-                    
+
                     const pathData = [
                       `M ${centerX + startX * radius} ${centerY + startY * radius}`,
                       `A ${radius} ${radius} 0 ${largeArcFlag} 1 ${centerX + endX * radius} ${centerY + endY * radius}`,
@@ -223,16 +240,16 @@ export default function Home() {
                         onMouseLeave={() => setHoveredIndex(null)}
                         onClick={() => handleSend(`Strategic breakdown of ${p.name}`)}
                         initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ 
+                        animate={{
                           opacity: hoveredIndex !== null && !isHovered ? 0.3 : 1,
-                          scale: isHovered ? 1.02 : 1 
+                          scale: isHovered ? 1.02 : 1
                         }}
                         transition={{ type: "spring", stiffness: 300, damping: 25 }}
                         className="cursor-pointer transition-all duration-500"
                       />
                     );
                   })}
-                  
+
                   {/* Decorative Outer Rings */}
                   <circle cx={centerX} cy={centerY} r={radius + 40} fill="none" stroke="rgba(255, 255, 255, 0.05)" strokeWidth="1" strokeDasharray="5 10" className="animate-[spin_80s_linear_infinite]" />
                 </svg>
@@ -252,7 +269,7 @@ export default function Home() {
                           <Bot className="w-10 h-10 text-white/20" />
                         </div>
                         <h4 className="text-sm font-black text-white/20 uppercase tracking-[0.5em]">System Idle</h4>
-                        <p className="text-sm text-gray-600 font-bold leading-relaxed">Select a segment to<br/>initiate data analysis</p>
+                        <p className="text-sm text-gray-600 font-bold leading-relaxed">Select a segment to<br />initiate data analysis</p>
                       </motion.div>
                     ) : (
                       <motion.div
@@ -268,7 +285,7 @@ export default function Home() {
                           </span>
                           <h2 className="text-5xl font-black tracking-tighter leading-none text-white">{projects[hoveredIndex].name}</h2>
                           <div className="flex items-center justify-center gap-2 text-[10px] text-gray-500 font-black uppercase mt-4 tracking-[0.2em] border border-white/5 bg-white/5 py-1.5 px-4 rounded-full w-fit mx-auto">
-                             <Globe className="w-3 h-3" /> {projects[hoveredIndex].market}
+                            <Globe className="w-3 h-3" /> {projects[hoveredIndex].market}
                           </div>
                         </div>
 
@@ -290,7 +307,7 @@ export default function Home() {
                     )}
                   </AnimatePresence>
                 </div>
-                
+
                 {/* External Labels for Pie */}
                 {projects.map((p, i) => {
                   const sliceSize = 1 / projects.length;
@@ -298,13 +315,13 @@ export default function Home() {
                   const labelRadius = radius + 130;
                   const x = centerX + Math.cos(angle) * labelRadius;
                   const y = centerY + Math.sin(angle) * labelRadius;
-                  
+
                   return (
                     <motion.div
                       key={i}
                       className="absolute text-[12px] font-black uppercase tracking-[0.2em] text-center whitespace-nowrap pointer-events-none"
                       style={{ left: x, top: y, transform: 'translate(-50%, -50%)' }}
-                      animate={{ 
+                      animate={{
                         color: hoveredIndex === i ? colors[i % colors.length] : "#4b5563",
                         scale: hoveredIndex === i ? 1.3 : 1,
                         opacity: hoveredIndex === i || hoveredIndex === null ? 1 : 0.2,
@@ -317,13 +334,6 @@ export default function Home() {
                 })}
               </div>
             )}
-          </div>
-          {/* Developer Credit */}
-          <div className="absolute bottom-6 right-8 pointer-events-none">
-            <div className="flex flex-col items-end opacity-20 hover:opacity-100 transition-opacity duration-500">
-              <span className="text-[8px] font-black tracking-[0.4em] text-white uppercase mb-1">Architect</span>
-              <span className="text-[10px] font-black tracking-widest text-blue-400 uppercase">Shreyans Jain</span>
-            </div>
           </div>
         </div>
 
@@ -356,9 +366,8 @@ export default function Home() {
               <div className="flex-grow overflow-y-auto px-6 py-6 space-y-4">
                 {messages.map((m, i) => (
                   <motion.div key={i} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}>
-                    <div className={`max-w-[85%] px-5 py-3.5 rounded-3xl text-sm leading-relaxed shadow-sm ${
-                      m.role === "user" ? "bg-blue-600 text-white font-medium rounded-tr-sm" : "bg-white/5 text-gray-200 border border-white/10 rounded-tl-sm"
-                    }`}>{m.content}</div>
+                    <div className={`max-w-[85%] px-5 py-3.5 rounded-3xl text-sm leading-relaxed shadow-sm ${m.role === "user" ? "bg-blue-600 text-white font-medium rounded-tr-sm" : "bg-white/5 text-gray-200 border border-white/10 rounded-tl-sm"
+                      }`}>{m.content}</div>
                   </motion.div>
                 ))}
                 {isTyping && (
