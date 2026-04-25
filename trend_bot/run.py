@@ -43,33 +43,39 @@ def _collect_source_urls(trends: dict) -> list[str]:
 
 def _postprocess_ideas(raw: str) -> str:
     """Ensure output is exactly 5 lines: 'n) Name — URL'."""
-    lines = [ln.strip() for ln in raw.splitlines() if ln.strip()]
-    out_lines: list[str] = []
+    # 1. Break into segments that look like they start a new project
+    # Split by common project markers: "1.", "1)", "Project Name:", etc.
+    import re
+    segments = re.split(r'\n(?=\s*(?:\d+[\.\)]|Project Name:))', raw)
+    if len(segments) <= 1:
+        # Fallback: split by double newline if no markers found
+        segments = raw.split("\n\n")
 
-    for ln in lines:
+    out_lines: list[str] = []
+    
+    for seg in segments:
         if len(out_lines) >= 5:
             break
-        # Look for the pattern "something - http" or "something — http"
-        if "http" in ln:
-            # Clean up the line to match "n) Name — URL"
-            # Remove existing numbering if present
-            content = ln.split(")", 1)[1].strip() if ")" in ln[:5] else ln
-            # Normalize separator to em-dash
-            if " — " in content:
-                pass
-            elif " - " in content:
-                content = content.replace(" - ", " — ")
-            elif " —" in content:
-                content = content.replace(" —", " — ")
-            elif "— " in content:
-                content = content.replace("— ", " — ")
-            
-            # If no separator found but URL exists, add one
-            if " — " not in content:
-                parts = content.split("http", 1)
-                content = f"{parts[0].strip()} — http{parts[1].strip()}"
-            
-            out_lines.append(f"{len(out_lines)+1}) {content}")
+        
+        # Try to find a project name
+        name = ""
+        name_match = re.search(r'(?:Project Name:\s*|(?:\d+[\.\)]\s*))([^\n—\-]+)', seg)
+        if name_match:
+            name = name_match.group(1).strip()
+        else:
+            # First non-empty line as name if no marker found
+            lines = [l.strip() for l in seg.splitlines() if l.strip()]
+            if lines:
+                name = lines[0]
+        
+        # Try to find a URL
+        url_match = re.search(r'https?://[^\s\)]+', seg)
+        url = url_match.group(0) if url_match else "https://github.com/trending"
+        
+        if name:
+            # Clean up name (remove colon if it was "Project Name: ...")
+            name = re.sub(r'^Project Name:\s*', '', name, flags=re.IGNORECASE).strip()
+            out_lines.append(f"{len(out_lines)+1}) {name} — {url}")
 
     # Fallback/Padding
     while len(out_lines) < 5:
