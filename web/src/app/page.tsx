@@ -207,7 +207,7 @@ export default function Home() {
 
           {/* Intelligence Index - Responsive Fixed Access */}
           {!chatOpen && (
-            <div className="absolute lg:left-10 lg:top-1/2 lg:-translate-y-1/2 left-0 right-0 bottom-6 lg:bottom-auto z-50 flex lg:flex-col flex-row gap-3 px-6 lg:px-0 overflow-x-auto lg:overflow-x-visible no-scrollbar">
+            <div className="absolute lg:left-10 lg:top-1/2 lg:-translate-y-1/2 left-0 right-0 bottom-6 lg:bottom-auto z-50 flex lg:flex-col flex-row gap-3 px-6 lg:px-0 overflow-x-auto lg:overflow-x-visible no-scrollbar pointer-events-none">
               <div className="hidden lg:flex items-center gap-3 mb-2">
                 <div className="w-1.5 h-6 bg-blue-600 rounded-full" />
                 <span className="text-[10px] font-black uppercase tracking-[0.4em] text-white/40">Active Signals</span>
@@ -218,12 +218,12 @@ export default function Home() {
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: i * 0.1 }}
-                  className={`group relative flex items-center justify-between gap-4 lg:gap-6 p-3 lg:p-4 rounded-2xl border transition-all duration-300 w-[180px] lg:w-64 flex-none lg:flex-auto ${
+                  className={`group relative flex items-center justify-between gap-4 lg:gap-6 p-3 lg:p-4 rounded-2xl border transition-all duration-300 w-[180px] lg:w-64 flex-none lg:flex-auto pointer-events-auto ${
                     hoveredIndex === i 
                       ? "bg-blue-600/10 border-blue-500/30 shadow-[0_0_30px_rgba(59,130,246,0.1)]" 
                       : "bg-white/[0.02] border-white/5 hover:bg-white/[0.05] hover:border-white/10"
                   }`}
-                onMouseOver={() => setHoveredIndex(i)}
+                onMouseEnter={() => setHoveredIndex(i)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
                   <div className="flex flex-col gap-1 min-w-0">
@@ -266,10 +266,10 @@ export default function Home() {
                     width={size} 
                     height={size} 
                     viewBox={`0 0 ${size} ${size}`} 
-                    className="max-w-none drop-shadow-[0_0_30px_rgba(59,130,246,0.1)] overflow-visible transition-transform duration-1000 radar-scale outline-none"
+                    className="max-w-none drop-shadow-[0_0_30px_rgba(59,130,246,0.1)] overflow-visible transition-transform duration-1000 outline-none"
                     onMouseLeave={() => setHoveredIndex(null)}
                   >
-                    <g className="transition-transform duration-1000">
+                    <g className="transition-transform duration-1000 radar-scale origin-center">
                       {projects.map((p, i) => {
                         const sliceSize = 1 / projects.length;
                         const startPercent = i * sliceSize;
