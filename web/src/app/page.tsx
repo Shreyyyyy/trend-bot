@@ -266,7 +266,8 @@ export default function Home() {
                     width={size} 
                     height={size} 
                     viewBox={`0 0 ${size} ${size}`} 
-                    className="max-w-none drop-shadow-[0_0_30px_rgba(59,130,246,0.1)] overflow-visible transition-transform duration-1000 radar-scale"
+                    className="max-w-none drop-shadow-[0_0_30px_rgba(59,130,246,0.1)] overflow-visible transition-transform duration-1000 radar-scale outline-none"
+                    onMouseLeave={() => setHoveredIndex(null)}
                   >
                     <g className="transition-transform duration-1000">
                       {projects.map((p, i) => {
@@ -290,8 +291,7 @@ export default function Home() {
                             d={pathData}
                             fill={isHovered ? `${colors[i % colors.length]}10` : `${colors[i % colors.length]}25`}
                             stroke={isHovered ? colors[i % colors.length] : `${colors[i % colors.length]}40`}
-                            strokeWidth={isHovered ? "3" : "1.5"}
-                            onMouseOver={() => setHoveredIndex(i)}
+                            onMouseEnter={() => setHoveredIndex(i)}
                             onClick={() => {
                               if (typeof window !== "undefined" && window.innerWidth < 768) {
                                 setHoveredIndex(hoveredIndex === i ? null : i);
@@ -302,11 +302,11 @@ export default function Home() {
                             initial={{ opacity: 0, scale: 0.8 }}
                             animate={{
                               opacity: hoveredIndex !== null && !isHovered ? 0.3 : 1,
-                              scale: isHovered ? 1.02 : 1
+                              scale: isHovered ? 1.02 : 1,
+                              strokeWidth: isHovered ? 3 : 1.5
                             }}
-                            transition={{ type: "spring", stiffness: 300, damping: 25 }}
-                            className="cursor-pointer transition-all duration-500"
-                            pointerEvents="auto"
+                            transition={{ type: "spring", stiffness: 200, damping: 30, mass: 0.5 }}
+                            className="cursor-pointer"
                           />
                         );
                       })}
