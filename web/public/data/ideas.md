@@ -1,1 +1,6 @@
-DATE: No data yet
+DATE: 19th Apr 2026 to 26th Apr 2026
+1) Local LLM Debugger — https://www.reddit.com/r/LocalLLM/comments/1styzqh/severe_instability_and_looping_issues_with_local/ | WHY: Local LLMs are unstable | BUILD: Automated testing suite | MARKET: Local AI developers
+2) RAG PDF Parser — https://arxiv.org/html/2512.20626v2 | WHY: RAG struggles with PDFs | BUILD: Multimodal document parser | MARKET: Enterprise document processing
+3) AI Agent Monitor — https://www.reddit.com/r/AI_Agents/comments/1srau4n/hot_take_the_biggest_bottleneck_in_ai_agents/ | WHY: AI agents are hard to evaluate | BUILD: Real-time agent monitoring tool | MARKET: AI agent developers
+4) LLM Security Scanner — https://github.com/praetorian-inc/augustus | WHY: LLMs are vulnerable to attacks | BUILD: Automated security scanner | MARKET: AI security teams
+5) Multimodal RAG — https://www.facebook.com/groups/githubcopilot/posts/1558784832919017/ | WHY: RAG is limited to text | BUILD: Multimodal RAG system | MARKET: Multimodal AI applications
