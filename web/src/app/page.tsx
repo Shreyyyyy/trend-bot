@@ -331,7 +331,13 @@ export default function Home() {
                           <p className="text-[10px] md:text-sm text-gray-600 font-bold leading-relaxed">Select a segment to<br/>initiate data analysis</p>
                         </motion.div>
                       ) : (
-                        <motion.div key={hoveredIndex} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="space-y-6 md:space-y-10">
+                        <motion.div
+                          key="hover"
+                          initial={{ opacity: 0, scale: 0.8 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          exit={{ opacity: 0, scale: 1.2 }}
+                          className="space-y-6 md:space-y-10"
+                        >
                           <div className="space-y-2 md:space-y-4">
                             <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.3em]" style={{ color: colors[hoveredIndex % colors.length] }}>Signal 0{hoveredIndex + 1}</span>
                             <h2 className="text-3xl md:text-6xl font-black tracking-tighter leading-tight text-white drop-shadow-2xl">{projects[hoveredIndex].name}</h2>
