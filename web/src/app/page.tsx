@@ -284,6 +284,8 @@ export default function Home() {
                           `A ${innerRadius} ${innerRadius} 0 ${largeArcFlag} 0 ${centerX + startX * innerRadius} ${centerY + startY * innerRadius}`,
                           "Z",
                         ].join(" ");
+                        const midPercent = (startPercent + endPercent) / 2;
+                        const [midX, midY] = getCoordinatesForPercent(midPercent);
                         const isHovered = hoveredIndex === i;
                         return (
                           <motion.path
@@ -299,13 +301,14 @@ export default function Home() {
                                 handleSend(`Strategic breakdown of ${p.name}`);
                               }
                             }}
-                            initial={{ opacity: 0, scale: 0.8 }}
+                            initial={{ opacity: 0, x: 0, y: 0 }}
                             animate={{
                               opacity: hoveredIndex !== null && !isHovered ? 0.3 : 1,
-                              scale: isHovered ? 1.02 : 1,
+                              x: isHovered ? midX * 15 : 0,
+                              y: isHovered ? midY * 15 : 0,
                               strokeWidth: isHovered ? 3 : 1.5
                             }}
-                            transition={{ type: "spring", stiffness: 200, damping: 30, mass: 0.5 }}
+                            transition={{ type: "spring", stiffness: 200, damping: 25, mass: 0.5 }}
                             className="cursor-pointer"
                           />
                         );
