@@ -1,6 +1,6 @@
-DATE: 22nd Apr 2026 to 29th Apr 2026
-1) Agent Replay Harness — https://www.reddit.com/r/LocalLLM/comments/1sxgb33/why_is_this_so_hard_ive_been_stuck_for_like_4/ | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+DATE: 23rd Apr 2026 to 30th Apr 2026
+1) Agent Replay Harness — https://www.reddit.com/r/LocalLLM/comments/1styzqh/severe_instability_and_looping_issues_with_local/ | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
 2) PDF Table Extractor — https://arxiv.org/html/2604.23276v1 | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
 3) Local LLM Optimizer — https://www.bentoml.com/blog/navigating-the-world-of-open-source-large-language-models | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-4) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1k6p59i/any_good_and_easy_tutorial_on_how_to_build_a_rag/ | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-5) Multi-modal Router — https://medium.com/@codebob75/azure-agentic-retrieval-a-deep-dive-into-rag-with-ai-search-and-foundry-1f6318d031a2 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+4) RAG Debugger — https://github.com/praetorian-inc/augustus | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
+5) Multi-modal Router — https://medium.com/@rfazul/yes-another-rag-post-but-this-time-lets-open-the-box-a-little-bit-4929b5d9ccbe | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
