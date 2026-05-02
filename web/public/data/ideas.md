@@ -1,6 +1,6 @@
-DATE: 24th Apr 2026 to 1st May 2026
-1) Agent Replay Harness — https://www.reddit.com/r/MachineLearning/comments/1sx3p40/how_do_you_test_ai_agents_in_production_the/ | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-2) PDF Table Extractor — https://www.reddit.com/r/LangChain/comments/1syu7vg/pdf_parsing_for_rag_is_still_a_mess_in_2026_whats/ | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
-3) Local LLM Optimizer — https://github.com/vllm-project/semantic-router | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-4) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1swwn0d/i_built_a_runtime_that_makes_llm_guardrails/ | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-5) Multi-modal Router — https://arxiv.org/html/2604.23276v1 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+DATE: 25th Apr 2026 to 2nd May 2026
+1) RAG PDF Parser — https://www.reddit.com/r/LangChain/comments/1syu7vg/pdf_parsing_for_rag_is_still_a_mess_in_2026_whats/ | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+2) Agent Test Suite — https://www.reddit.com/r/MachineLearning/comments/1sx3p40/how_do_you_test_ai_agents_in_production_the/ | WHY: Unpredictability is a problem | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+3) LLM Power Optimizer — https://www.technewsworld.com/story/ais-real-bottleneck-is-power-not-compute-180313.html | WHY: Power is a bottleneck | BUILD: Power-aware LLM wrapper | MARKET: Data centers
+4) Multimodal RAG — https://arxiv.org/html/2604.23276v1 | WHY: Images are high cost | BUILD: Image-aware RAG pipeline | MARKET: Content platforms
+5) AI Agent Debugger — https://www.reddit.com/r/AI_Agents/comments/1sz61jg/building_practical_ai_agentsautomations_what_use/ | WHY: Debugging is hard | BUILD: Trace visualizer for AI agents | MARKET: DevTools
