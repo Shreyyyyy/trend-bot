@@ -1,6 +1,6 @@
-DATE: 26th Apr 2026 to 3rd May 2026
-1) RAG PDF Parser — https://www.reddit.com/r/LangChain/comments/1syu7vg/pdf_parsing_for_rag_is_still_a_mess_in_2026_whats/ | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
-2) LLM Agent Tester — https://www.reddit.com/r/MachineLearning/comments/1sx3p40/how_do_you_test_ai_agents_in_production_the/ | WHY: Non-determinism stops being the problem once you're testing robustness | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-3) Multimodal RAG — https://medium.com/@alain-airom/inside-docling-factory-building-a-multimodal-rag-powerhouse-2dc3d218492b | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-4) AI Agent Debugger — https://www.reddit.com/r/LangChain/comments/1t1cyog/why_langgraph_cycles_are_hard_to_debug_with/ | WHY: LangGraph cycles are hard to debug | BUILD: Trace visualizer | MARKET: DevTools
-5) Local LLM Optimizer — https://github.com/vllm-project/semantic-router | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+DATE: 27th Apr 2026 to 4th May 2026
+1) Agent Replay Harness — https://www.reddit.com/r/MachineLearning/comments/1sx3p40/how_do_you_test_ai_agents_in_production_the/ | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+2) PDF Table Extractor — https://www.reddit.com/r/LangChain/comments/1syu7vg/pdf_parsing_for_rag_is_still_a_mess_in_2026_whats/ | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+3) Local LLM Optimizer — https://github.com/EvolvingAgentsLabs/evolving-memory | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+4) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1sx39tr/langchain_made_it_much_easier_to_build_agent/ | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
+5) Multi-modal Router — https://medium.com/@alain-airom/inside-docling-factory-building-a-multimodal-rag-powerhouse-2dc3d218492b | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
