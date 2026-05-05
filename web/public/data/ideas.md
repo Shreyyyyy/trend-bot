@@ -1,6 +1,6 @@
-DATE: 27th Apr 2026 to 4th May 2026
-1) Agent Replay Harness — https://www.reddit.com/r/MachineLearning/comments/1sx3p40/how_do_you_test_ai_agents_in_production_the/ | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-2) PDF Table Extractor — https://www.reddit.com/r/LangChain/comments/1syu7vg/pdf_parsing_for_rag_is_still_a_mess_in_2026_whats/ | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
-3) Local LLM Optimizer — https://github.com/EvolvingAgentsLabs/evolving-memory | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-4) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1sx39tr/langchain_made_it_much_easier_to_build_agent/ | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-5) Multi-modal Router — https://medium.com/@alain-airom/inside-docling-factory-building-a-multimodal-rag-powerhouse-2dc3d218492b | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+DATE: 28th Apr 2026 to 5th May 2026
+1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1t3oaxg/i_got_stuck_debugging_rag_every_week_turns_out_i/ | WHY: RAG hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
+2) Local LLM Optimizer — https://github.com/IAAR-Shanghai/Awesome-AI-Memory | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+3) PDF Table Extractor — https://www.reddit.com/r/LangChain/comments/1syu7vg/pdf_parsing_for_rag_is_still_a_mess_in_2026_whats/ | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+4) Multi-modal Router — https://medium.com/@alain-airom/inside-docling-factory-building-a-multimodal-rag-powerhouse-2dc3d218492b | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+5) Agent Replay Harness — https://www.reddit.com/r/LocalLLM/comments/1szeghg/qwen_36_35b_a3b_is_insane_even_for/ | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams

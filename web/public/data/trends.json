@@ -1,50 +1,50 @@
 {
-  "timestamp": "2026-05-04T06:37:15.582514",
+  "timestamp": "2026-05-05T06:13:33.226805",
   "trends": {
     "queries": [
       {
         "query": "site:reddit.com/r/MachineLearning OR site:reddit.com/r/LocalLLM latest AI problems frustrations",
         "results": [
           {
-            "url": "https://www.reddit.com/r/MachineLearning/comments/1sx3p40/how_do_you_test_ai_agents_in_production_the/",
-            "title": "How do you test AI agents in production? The unpredictability is ...",
-            "content": "Many of us are frustrated with false flags from Ai detectors. Here we ... Stay up to date with the latest news, packages, and meta information relating to the",
-            "score": 0.27309963,
-            "raw_content": null
-          },
-          {
-            "url": "https://www.reddit.com/r/LocalLLM/comments/1sxgb33/why_is_this_so_hard_ive_been_stuck_for_like_4/",
-            "title": "Why is this so hard? I've been stuck for like 4 full days now... - Reddit",
-            "content": "That's part of the frustration, there are like 12 logging and debugging systems per service, and none of them seem to show what you're looking for. What's the",
-            "score": 0.06797248,
-            "raw_content": null
-          },
-          {
-            "url": "https://www.reddit.com/r/LocalLLM/comments/1t0wk0v/the_retrievalaugmented_generation_pipeline_end_to/",
-            "title": "The retrieval-augmented generation pipeline, end to end. Full Guide ...",
-            "content": "Most artificial intelligence agents fail in production because the model has no access to your data. Not your products, your documentation, your customer",
-            "score": 0.05299517,
-            "raw_content": null
-          },
-          {
             "url": "https://www.reddit.com/r/LocalLLM/comments/1szeghg/qwen_36_35b_a3b_is_insane_even_for/",
             "title": "Qwen 3.6 35b a3b is INSANE even for VRAM-constrained systems",
             "content": "Over the past month, I created a web scraper app designed to extract images from ad-heavy websites that are otherwise frustrating to navigate. The project was",
-            "score": 0.030309225,
+            "score": 0.22541662,
             "raw_content": null
           },
           {
             "url": "https://www.reddit.com/r/LocalLLM/comments/1szr161/neounify_rethinking_multimodal_architectures_from/",
             "title": "NEO-Unify: Rethinking multimodal architectures from the ground up ...",
             "content": "Challenges in running LLMs on local hardware ... You cannot tell anymore which is a human made footage and which is artificial intelligence generated content.",
-            "score": 0.024574842,
+            "score": 0.064653486,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.reddit.com/r/LocalLLM/comments/1t1jsl2/local_llm_interaction_problem/",
+            "title": "Local LLM interaction problem : r/LocalLLM - Reddit",
+            "content": "Hey all, i'm designing a home lab that will run LLM localy. i have installed ollama on my 8Gb RAM and 4vRAM computer and currently running\u2026",
+            "score": 0.06052939,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.reddit.com/r/LocalLLM/comments/1t0wk0v/the_retrievalaugmented_generation_pipeline_end_to/",
+            "title": "The retrieval-augmented generation pipeline, end to end. Full Guide ...",
+            "content": "Most artificial intelligence agents fail in production because the model has no access to your data. Not your products, your documentation, your customer",
+            "score": 0.039342504,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.reddit.com/r/LocalLLM/comments/1t32qb3/lmstudio_gemma4_crashes/",
+            "title": "LM-Studio / Gemma4 crashes? : r/LocalLLM - Reddit",
+            "content": "Since Gemma4 launched ive had regular crashes every few messages. kept my runtimes and lm-studio releases (betas too) at their most recent versions.",
+            "score": 0.008711384,
             "raw_content": null
           },
           {
             "url": "https://www.reddit.com/r/LocalLLM/comments/1t2jp4y/a_local_lab_for_ai_agents_simple_to_start_built/",
             "title": "A local lab for AI agents \u2014 simple to start, built to stay on ... - Reddit",
             "content": "I built this as my own local lab for AI agents: A place where I can create, run, and manage small autonomous helpers \u2014 all on my laptop, no cloud needed.",
-            "score": 0.018196153,
+            "score": 0.0071491017,
             "raw_content": null
           }
         ]
@@ -53,45 +53,45 @@
         "query": "site:reddit.com/r/OpenAI OR site:reddit.com/r/LangChain 'how to' solve RAG issues",
         "results": [
           {
-            "url": "https://www.reddit.com/r/LangChain/comments/1syu7vg/pdf_parsing_for_rag_is_still_a_mess_in_2026_whats/",
-            "title": "PDF parsing for RAG is still a mess in 2026. What's your current setup?",
-            "content": "You could consider supplying multiple parser outputs to the LLM and instructing it to make sense of them. There are many potential approaches. It's not a \u201c",
-            "score": 0.98667485,
+            "url": "https://www.reddit.com/r/LangChain/comments/1t3oaxg/i_got_stuck_debugging_rag_every_week_turns_out_i/",
+            "title": "I got stuck debugging RAG every week. Turns out I just didn ... - Reddit",
+            "content": "Problem: Every time I hit a RAG issue (hallucination, slow retrieval, irrelevant chunks), I'd Google the fix and find 10 different solutions. Hybrid RAG.",
+            "score": 0.35595453,
             "raw_content": null
           },
           {
-            "url": "https://www.reddit.com/r/LangChain/comments/1t2zbrw/langchain_retrieval_without_pinecone_500k_chunks/",
-            "title": "500K chunks, 64MB, 48\u00d7 smaller, pure CPU, offline : r/LangChain",
-            "content": "Been working on an alternative to float32 vector databases for RAG pipelines. The core problem: standard RAG expands your documents 10\u00d7 in size and needs.",
-            "score": 0.91730267,
+            "url": "https://www.reddit.com/r/LangChain/comments/1t3d3eb/caught_my_rag_agent_fabricating_allergensafe/",
+            "title": "Caught my RAG agent fabricating \"allergen-safe\" recommendations ...",
+            "content": "i solved it with my reasoning tool through ejentum logic api on anti-deception mode, a harness that scaffolds my agents during complex task and boost llm",
+            "score": 0.31157395,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.reddit.com/r/LangChain/comments/1syu7vg/pdf_parsing_for_rag_is_still_a_mess_in_2026_whats/",
+            "title": "PDF parsing for RAG is still a mess in 2026. What's your current setup?",
+            "content": "You could consider supplying multiple parser outputs to the LLM and instructing it to make sense of them. There are many potential approaches. It's not a \u201c",
+            "score": 0.28361812,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.reddit.com/r/LangChain/comments/1t36n4l/we_stresstested_our_llm_runtime_with_1000000/",
+            "title": "r/LangChain on Reddit: We stress-tested our LLM runtime with ...",
+            "content": "We've been taking it one step further by moving not just RAG logic, but also action selection into a deterministic state transition layer (FSM), where the LLM",
+            "score": 0.14746949,
             "raw_content": null
           },
           {
             "url": "https://www.reddit.com/r/OpenAI/comments/1sz039k/run_learn_and_test_agentic_ai_for_free_on_your/",
             "title": "Run, Learn and test Agentic AI for free, on your browser! (Open AI ...",
             "content": "There are a million theoretical blog posts and dense whitepapers on RAG, tool calling, and swarms, but almost nowhere to just sit down, run an agent, break it,",
-            "score": 0.6531269,
+            "score": 0.109753676,
             "raw_content": null
           },
           {
-            "url": "https://www.reddit.com/r/LangChain/comments/1sxx4hh/tested_all_four_agent_frameworks_this_week/",
-            "title": "tested all four agent frameworks this week : r/LangChain - Reddit",
-            "content": "# tested all four agent frameworks this week : r/LangChain\nSkip to main contenttested all four agent frameworks this week : r/LangChain\n\nOpen menu Open navigation and their Discord community answers questions in minutes, not days. Sarah from my team got her first multi-agent setup running in under an hour.\n\nLangGraph handles the messy stuff. When you need RAG pipelines or complex tool chains, it doesn't fall apart like the others do. More setup work upfront but it scales without crying.\n\nSwarm just dropped and honestly it's beautiful code but feels like a tech demo. OpenAI's calling it experimental for good reason (translation: don't bet your startup on it yet). Though knowing them, could be production-ready by next Thursday. [...] Anyone can view, post, and comment to this community\n\n0 0\n\nReddit RulesPrivacy PolicyUser AgreementYour Privacy ChoicesAccessibilityReddit, Inc. \u00a9 2026. All rights reserved.\n\nExpand Navigation Collapse Navigation\n\n   &nbsp; \n   &nbsp; \n   &nbsp; \n\n  \n\n  \n\n   RESOURCES \n\n   About Reddit\n   Advertise\n   Developer Platform\n   Reddit Pro BETA\n   Help\n   Blog\n   Careers\n   Press\n\n  \n\n   Best of Reddit\n\n  \n\n   Reddit Rules\n   Privacy Policy\n   User Agreement\n   Your Privacy Choices\n   Accessibility\n\nReddit, Inc. \u00a9 2026. All rights reserved.\n\nImage 2 [...] Tested each one on the same customer service automation project. Results were... interesting. But which one would you actually deploy with real users watching?\n\n Share \n\nNew to Reddit? \nCreate your account and connect with a world of communities.\n\n Continue with Email \n\n Continue With Phone Number \n\nBy continuing, you agree to ourUser Agreementand acknowledge that you understand thePrivacy Policy. \n\n# Related Answers Section\n\n Related Answers \n\nBest practices for deploying LLM applications\n\nCommon pitfalls in LangChain development\n\nIntegrating LangChain with existing projects\n\nReal-world use cases of LangChain\n\nComparing LangChain with other frameworks\n\n Public \n\nAnyone can view, post, and comment to this community\n\n0 0",
-            "score": 0.24364243,
-            "raw_content": null
-          },
-          {
-            "url": "https://www.reddit.com/r/LangChain/comments/1syxlbd/structured_output_is_the_real_production_killer/",
-            "title": "Structured output is the real production killer : r/LangChain - Reddit",
-            "content": "LLM calls are fast. Parsing them is the real drag. Everyone obsesses over token throughput. Nobody talks about the fragile validation layer.",
-            "score": 0.004962942,
-            "raw_content": null
-          },
-          {
-            "url": "https://www.reddit.com/r/LangChain/comments/1sx39tr/langchain_made_it_much_easier_to_build_agent/",
-            "title": "LangChain made it much easier to build agent workflows, but ... - Reddit",
-            "content": "Anyone can view, post, and comment to this community\n\n0 0\n\nReddit RulesPrivacy PolicyUser AgreementYour Privacy ChoicesAccessibilityReddit, Inc. \u00a9 2026. All rights reserved.\n\nExpand Navigation Collapse Navigation\n\n   &nbsp; \n   &nbsp; \n   &nbsp; \n\n  \n\n  \n\n   RESOURCES \n\n   About Reddit\n   Advertise\n   Developer Platform\n   Reddit Pro BETA\n   Help\n   Blog\n   Careers\n   Press\n\n  \n\n   Best of Reddit\n\n  \n\n   Reddit Rules\n   Privacy Policy\n   User Agreement\n   Your Privacy Choices\n   Accessibility\n\nReddit, Inc. \u00a9 2026. All rights reserved.\n\nImage 5 [...] Carefully consider continued pretraining versus fine-tuning: For domain-specific applications, fine-tuning with instruct data is generally more effective than continued pretraining on raw text, which can lead to models \"forgetting\" how to answer questions. \"of course it did, you need to include instruct data for it to remember how to be an instruct model\"\n\nAre you interested in learning more about specific tools or frameworks for LLM deployment?\n\nSee Answer\n\nCommon pitfalls in LangChain development\n\nIntegrating LangChain with existing projects\n\nReal-world use cases of LangChain\n\nComparing LangChain with other frameworks\n\n Public \n\nAnyone can view, post, and comment to this community\n\n0 0 [...] ### Performance Optimization and Model Selection\n\n   Optimize for latency by selecting appropriate models: To reduce latency, use smaller, faster models for simpler queries and scale to larger models only when necessary. \"One thing that helped me was mixing smaller/faster models for easy queries and only scaling to the big ones when needed.\"\n\n   Evaluate model performance on specific data: For on-premise deployments, it is crucial to evaluate open-source LLMs like Qwen3 and Gemma3 at different sizes against your specific documents and queries. \"You're going to need to evaluate model performance on _your_ documents and your queries, start with qwen3 vs gemma3 at different sizes.\"",
-            "score": 0.0043823365,
+            "url": "https://www.reddit.com/r/LangChain/comments/1t3or38/improving_citation_accuracy_and_reducing/",
+            "title": "Improving citation accuracy and reducing hallucinations in custom ...",
+            "content": "I'd start by separating two problems that are currently coupled: retrieval quality and citation contract. From what you described, the biggest weakness is",
+            "score": 0.03379624,
             "raw_content": null
           }
         ]
@@ -100,45 +100,45 @@
         "query": "GitHub engineering blog latest LLM infrastructure scaling",
         "results": [
           {
-            "url": "https://github.com/Agent-Field/agentfield",
-            "title": "GitHub - Agent-Field/agentfield: Build, run and scale AI agents like API and microservices - observable,auditable and identity-aware from day one. \u00b7 GitHub",
-            "content": "|  |  |\n --- |\n| Autonomous Engineering Team   Autonomous Engineering Team   One API call spins up PM, architect, coders, QA, reviewers - hundreds of coordinated agents that plan, build, test, and ship.    View project \u2192 | Deep Research Engine   Deep Research Engine   Recursive research backend. Spawns parallel agents, evaluates quality, generates deeper agents, and recurses -10,000+ agents per query.    View project \u2192 | [...] AgentField is an open-source control plane that makes AI agents callable by any service in your stack - frontends, backends, other agents, cron jobs - just like any other API. You write agent logic in Python, Go, or TypeScript. AgentField turns it into production infrastructure: routing, coordination, memory, async execution, and cryptographic audit trails. Every function becomes a REST endpoint. Every agent gets a cryptographic identity. Every decision is traceable.\n\nWhat you just saw: `app.ai()` calls an LLM and returns structured output. `app.pause()` suspends for human approval. `app.call()` routes to other agents through the control plane. `app.run()` auto-exposes everything as REST. Read the full docs \u2192\n\n`app.ai()`\n`app.pause()`\n`app.call()`\n`app.run()` [...] #### \u25bc Click to expand full capabilities\n\n#### AI & LLM\n\n| Feature | How |\n --- |\n| Structured output (Pydantic/Zod) | `app.ai(schema=MyModel)` |\n| Multi-turn coding agents | `app.harness(\"task\", provider=\"claude-code\")` |\n| LLM auto-discovers agents and tools | `app.ai(tools=\"discover\")` |\n| Multimodal (text, image, audio) | `app.ai(\"Describe\", image_url=\"...\")` |\n| Streaming responses | `app.ai(\"...\", stream=True)` |\n| 100+ LLMs via LiteLLM | `AIConfig(model=\"anthropic/claude-sonnet-4-20250514\")` |\n| Temperature, max tokens, format | `app.ai(..., temperature=0.2)` |",
-            "score": 0.99783427,
-            "raw_content": null
-          },
-          {
-            "url": "https://news.ycombinator.com/item?id=47947719",
-            "title": "Serious question, have you been part of an org that had to scale orders of magni... | Hacker News",
-            "content": "So no - the question isn't whether GitHub's problem is hard. Every scaling problem looks hard from inside. The question is whether the operational discipline that solved this class of problem in the 2000s and 2010s is still being practised, or whether the industry has quietly decided \"it's complicated\" is sufficient cover.\n\nreply [...] - you and your team did the work. The point is GitHub, a decade later, with Microsoft's resources and thirty times the headcount, is putting out post-mortems that read like undergraduate distributed systems coursework. So no - the question isn't whether GitHub's problem is hard. Every scaling problem looks hard from inside. The question is whether the operational discipline that solved this class of problem in the 2000s and 2010s is still being practised, or whether the industry has quietly decided \"it's complicated\" is sufficient cover.  reply | | | |  |  |  |  ---  |  |  | keeda 4 days ago  | root | parent | next (javascript:void(0))   Agreed, the techniques in general (caching, backpressure, exponential backoffs, etc.) are well-known, but a couple of things: 1) The general cause of [...] same login-queue routine Diablo's done at every launch in living memory. If those are your \"two decades of solved problems\", the bar is on the floor. Your 100x rearchitecture story actually argues my position, by the way. You described tight coupling causing cascading failures across services, and the fix was to decouple. That is the boring operational discipline I'm saying has atrophied - you and your team did the work. The point is GitHub, a decade later, with Microsoft's resources and thirty times the headcount, is putting out post-mortems that read like undergraduate distributed systems coursework. So no - the question isn't whether GitHub's problem is hard. Every scaling problem looks hard from inside. The question is whether the operational discipline that solved this class of",
-            "score": 0.9905874,
-            "raw_content": null
-          },
-          {
-            "url": "https://github.com/EvolvingAgentsLabs/evolving-memory",
-            "title": "GitHub - EvolvingAgentsLabs/evolving-memory \u00b7 GitHub",
-            "content": "context.py # VMContext (execution state), VMResult\nhandlers.py # 16 handler functions, $LAST_PARENT resolution\nmachine.py # CognitiveVM dispatch loop\nllm/ # LLM provider abstraction\nbase.py # BaseLLMProvider (complete, complete_json, emit_program)\ntypes.py # Typed responses (LLMResponse, LLMJsonResponse, LLMProgramResponse)\ngemini_provider.py # Gemini via OpenAI-compatible endpoint\nanthropic_provider.py\nopenai_provider.py\nprompts.py # ISA instruction templates\ndream/ # 5-phase memory consolidation (Phase 0 + 4 processing phases)\ncurator.py # Phase 1 SWS: failure analysis, critical path\nchunker.py # Phase 2 REM: hierarchical node creation\nconnector.py # Phase 3: edges, embeddings, merge detection\ncompactor.py # Phase 4: LLM-powered memory node summarization [...] Result: The dream engine produced valid consolidated memory for every domain. The LLM (Gemini 2.5 Flash) correctly emitted `MARK_CRITICAL`, `BUILD_PARENT`, and `BUILD_CHILD` ISA opcodes for software, math, literature, and science traces alike. Query confidence ranged from 0.805 (creative writing) to 0.897 (software engineering), all well above the 0.4 router threshold. All traces and nodes were correctly stamped with `isa_version: \"1.0\"`.\n\n`MARK_CRITICAL`\n`BUILD_PARENT`\n`BUILD_CHILD`\n`isa_version: \"1.0\"`\n\nDetailed Software Engineering traversal (JWT authentication): [...] `AA 01 64 64 CB FF`\n\nAll three share the same principle: LLM as CPU, structured instructions as the interface, Python/firmware as the VM/executor. The ISA is text-assembly instead of hex bytecode because Python has no hardware memory constraints \u2014 but the architecture is identical.\n\n## License\n\nApache 2.0 -- see LICENSE\n\n## About\n\n### Resources\n\n### License\n\n### Uh oh!\n\nThere was an error while loading. Please reload this page.\n\nThere was an error while loading. Please reload this page.\n\n### Stars\n\n### Watchers\n\n### Forks\n\n## Releases\n\n## Packages 0\n\n### Uh oh!\n\nThere was an error while loading. Please reload this page.\n\nThere was an error while loading. Please reload this page.\n\n## Contributors\n\n### Uh oh!\n\nThere was an error while loading. Please reload this page.",
-            "score": 0.98421544,
-            "raw_content": null
-          },
-          {
-            "url": "https://arxiv.org/html/2604.26590v1",
-            "title": "Recommendations for Efficient and Responsible LLM Adoption within Industrial Software Development",
-            "content": "We conducted two individual semi-structured interviews with the participants from this case company. The tools used and the LLM-based use cases at this case company are presented in Table 3.\n\n| Roles | Use cases | LLM tools used |\n --- \n| Developer and Scrum Master, Solution Architect | Coding Assistance, Unit Tests Generation, Cloud Infrastructure Management, Documentation | GitHub Copilot, Amazon Q developer, ChatGPT |\n\n### 4.3 Data Collection [...] | Roles | Use cases | LLM tools used |\n --- \n| System Manager, Product Owner, Developer and Scrum Master, Customer Product Information (CPI) Architect | Software documentation, coding assistance, information search and retrieval, brainstorming and ideation, scrum activity support | GitHub Copilot, Codeium, Internal LLM tool, ChatGPT |\n\n#### 4.2.3 Case 3\n\nCase company 3 is a Europe-headquartered multinational organisation in transportation and infrastructure. It develops and delivers digital services, focusing on connectivity, data analytics, and fleet management to enhance vehicle performance and operational efficiency. [...] ## 3 Related Work\n\nIn this section, we provide a brief summary of the state-of-the-art literature relevant to our study, particularly looking at empirical studies applying LLMs in SE contexts.\n\nPereira et al. (2024) conducted an industrial case study with a large media group that has recently begun to adopt OpenAI ChatGPT and GitHub Copilot for software development activities and provide early insights into potential benefits and concerns in the form of eight initial lessons learnt. These eight lessons are centred around aspects such as generative AI\u2019s impact on a user\u2019s learning, improving unit testing, the importance of context and the user\u2019s domain expertise when using LLMs and other potential benefits and challenges surrounding the usage of LLMs within SE.",
-            "score": 0.97090924,
-            "raw_content": null
-          },
-          {
-            "url": "https://news.ycombinator.com/item?id=47947626",
-            "title": "They're claiming a huge increase in traffic due to vibe coded projects. It might... | Hacker News",
-            "content": "So no - the question isn't whether GitHub's problem is hard. Every scaling problem looks hard from inside. The question is whether the operational discipline that solved this class of problem in the 2000s and 2010s is still being practised, or whether the industry has quietly decided \"it's complicated\" is sufficient cover.\n\nreply [...] Your 100x rearchitecture story actually argues my position, by the way. You described tight coupling causing cascading failures across services, and the fix was to decouple. That is the boring operational discipline I'm saying has atrophied - you and your team did the work. The point is GitHub, a decade later, with Microsoft's resources and thirty times the headcount, is putting out post-mortems that read like undergraduate distributed systems coursework.\n\nSo no - the question isn't whether GitHub's problem is hard. Every scaling problem looks hard from inside. The question is whether the operational discipline that solved this class of problem in the 2000s and 2010s is still being practised, or whether the industry has quietly decided \"it's complicated\" is sufficient cover. [...] Your 100x rearchitecture story actually argues my position, by the way. You described tight coupling causing cascading failures across services, and the fix was to decouple. That is the boring operational discipline I'm saying has atrophied - you and your team did the work. The point is GitHub, a decade later, with Microsoft's resources and thirty times the headcount, is putting out post-mortems that read like undergraduate distributed systems coursework.\n\nSo no - the question isn't whether GitHub's problem is hard. Every scaling problem looks hard from inside. The question is whether the operational discipline that solved this class of problem in the 2000s and 2010s is still being practised, or whether the industry has quietly decided \"it's complicated\" is sufficient cover.",
-            "score": 0.94891727,
-            "raw_content": null
-          },
-          {
             "url": "https://aimultiple.com/future-of-large-language-models",
             "title": "The Future of Large Language Models",
-            "content": "### 7- Domain-Specific Fine-Tuned Models\n\nModels trained on specialized data for specific industries instead of general-purpose training.  \nGoogle, Microsoft, and Meta have all released major proprietary domain-specific and fine-tuned models targeting enterprise-specific use cases in addition to their general-purpose offerings.  \nThese specialized LLMs can result in fewer hallucinations and higher accuracy by leveraging domain-specific pre-training, model alignment, and supervised fine-tuning.\n\nCoding\n\nGitHub Copilot: Fine-tuned on code repositories. As of July 2025, 20 million developers use GitHub Copilot, a 400% year-over-year increase, and 90% of Fortune 100 companies use it. It autocompletes code, generates functions, and suggests bug fixes.14\n\nFinance [...] Source: \u201cLarge Language Models Can Self-Improve\u201d\n\nA March 2026 survey found that 76% of AI researchers believe the gains from scaling compute and data have plateaued, with major labs reporting diminishing returns despite massive investments. The finding suggests the next leap in LLM capability is more likely to come from architectural innovation, such as improved training efficiency, sparse architectures, or reasoning improvements, than from simply scaling existing approaches further.3\n\n### 3- Sparse Expert Models (Mixture of Experts)\n\nInstead of activating the entire neural network for every input, only a relevant subset of parameters activates, depending on the task. The model routes input to specialized \u201cexperts\u201d within the network. Only activated experts process the query.",
-            "score": 0.81167597,
+            "content": "Most recent context windows:\n\n Llama 4 Scout (Meta): 10M tokens (~7.5M words) the largest production-verified context window among leading models.23  In practice, this means loading entire codebases, legal archives, or multi-day conversation histories without chunking.\n Gemini 2.5 Pro: 1,048,576 tokens (~780,000 words), with native multimodal input across text, audio, images, and video within the same window. Recall holds at 100% up to 530,000 tokens and 99.7% at the full 1 million token limit\n Claude Sonnet 4.6: 1M tokens (~750,000 words) at standard pricing, available without beta headers or special configuration.24\n GPT-5.5: 1M token context window at API level.25 [...] Source: \u201cLarge Language Models Can Self-Improve\u201d\n\nA March 2026 survey found that 76% of AI researchers believe the gains from scaling compute and data have plateaued, with major labs reporting diminishing returns despite massive investments. The finding suggests the next leap in LLM capability is more likely to come from architectural innovation, such as improved training efficiency, sparse architectures, or reasoning improvements, than from simply scaling existing approaches further.3\n\n### 3- Sparse Expert Models (Mixture of Experts)\n\nInstead of activating the entire neural network for every input, only a relevant subset of parameters activates, depending on the task. The model routes input to specialized \u201cexperts\u201d within the network. Only activated experts process the query. [...] Introducing Sonnet 4.6 \\ Anthropic14.\n\nGitHub Copilot crosses 20M all-time users | TechCrunch\n\nTechCrunch[15.\n\n[2303.17564] BloombergGPT: A Large Language Model for Finance](\n\nSharing Google\u2019s Med-PaLM 2 medical large language model, or LLM | Google Cloud Blog\n\nGoogle Cloud[17.\n\n[2306.16092] Chatlaw: A Multi-Agent Collaborative Legal Assistant with Knowledge Graph Enhanced Mixture-of-Experts Large Language Model](\n\nClaude (language model) - Wikipedia\n\nContributors to Wikimedia projects)19.\n\nGitHub - vectara/hallucination-leaderboard: Leaderboard Comparing LLM Performance at Producing Hallucinations when Summarizing Short Documents \u00b7 GitHub20.\n\nIntroducing the Next Generation of Vectara's Hallucination Leaderboard21.",
+            "score": 0.36100754,
+            "raw_content": null
+          },
+          {
+            "url": "https://github.com/IAAR-Shanghai/Awesome-AI-Memory",
+            "title": "GitHub - IAAR-Shanghai/Awesome-AI-Memory: Awesome AI Memory | LLM Memory | A curated knowledge base on AI memory for LLMs and agents, covering long-term memory, reasoning, retrieval, and memory-native system design.  Awesome-AI-Memory \u662f\u4e00\u4e2a \u96c6\u4e2d\u5f0f\u3001\u6301\u7eed\u66f4\u65b0\u7684 AI \u8bb0\u5fc6\u77e5\u8bc6\u5e93\uff0c\u7cfb\u7edf\u6027\u6574\u7406\u4e86\u4e0e \u5927\u6a21\u578b\u8bb0\u5fc6\uff08LLM Memory\uff09\u4e0e\u667a\u80fd\u4f53\u8bb0\u5fc6\uff08Agent Memory\uff09 \u76f8\u5173\u7684\u524d\u6cbf\u7814\u7a76\u3001\u5de5\u7a0b\u6846\u67b6\u3001\u7cfb\u7edf\u8bbe\u8ba1\u3001\u8bc4\u6d4b\u57fa\u51c6\u4e0e\u771f\u5b9e\u5e94\u7528\u5b9e\u8df5\u3002 \u00b7 GitHub",
+            "content": "## Navigation Menu\n\n# Search code, repositories, users, issues, pull requests...\n\n# Provide feedback\n\nWe read every piece of feedback, and take your input very seriously.\n\n# Saved searches\n\n## Use saved searches to filter your results more quickly\n\nTo see all available qualifiers, see our documentation.\n\n# IAAR-Shanghai/Awesome-AI-Memory\n\n## Folders and files\n\n| Name | | Name | Last commit message | Last commit date |\n ---  --- \n| Latest commit   History175 Commits   175 Commits | | |\n| assets | | assets |  |  |\n| scripts | | scripts |  |  |\n| LICENSE | | LICENSE |  |  |\n| README.md | | README.md |  |  |\n| README\\_cn.md | | README\\_cn.md |  |  |\n| View all files | | |\n\n## Latest commit\n\n## History\n\n## Repository files navigation\n\n## About [...] ## Contributors\n\n### Uh oh!\n\nThere was an error while loading. Please reload this page.\n\nThere was an error while loading. Please reload this page.\n\n## Languages\n\n## Footer\n\n### Footer navigation [...] ## History\n\n## Repository files navigation\n\n## About\n\nAwesome AI Memory | LLM Memory | A curated knowledge base on AI memory for LLMs and agents, covering long-term memory, reasoning, retrieval, and memory-native system design. Awesome-AI-Memory \u662f\u4e00\u4e2a \u96c6\u4e2d\u5f0f\u3001\u6301\u7eed\u66f4\u65b0\u7684 AI \u8bb0\u5fc6\u77e5\u8bc6\u5e93\uff0c\u7cfb\u7edf\u6027\u6574\u7406\u4e86\u4e0e \u5927\u6a21\u578b\u8bb0\u5fc6\uff08LLM Memory\uff09\u4e0e\u667a\u80fd\u4f53\u8bb0\u5fc6\uff08Agent Memory\uff09 \u76f8\u5173\u7684\u524d\u6cbf\u7814\u7a76\u3001\u5de5\u7a0b\u6846\u67b6\u3001\u7cfb\u7edf\u8bbe\u8ba1\u3001\u8bc4\u6d4b\u57fa\u51c6\u4e0e\u771f\u5b9e\u5e94\u7528\u5b9e\u8df5\u3002\n\n### Topics\n\n### Resources\n\n### License\n\n### Uh oh!\n\nThere was an error while loading. Please reload this page.\n\nThere was an error while loading. Please reload this page.\n\n### Stars\n\n### Watchers\n\n### Forks\n\n## Releases\n\n## Packages 0\n\n### Uh oh!\n\nThere was an error while loading. Please reload this page.\n\nThere was an error while loading. Please reload this page.\n\n## Contributors\n\n### Uh oh!",
+            "score": 0.29936165,
+            "raw_content": null
+          },
+          {
+            "url": "https://devops.com/github-faces-scaling-issues-as-ai-development-surges/",
+            "title": "GitHub Faces Scaling Issues as AI Development Surges",
+            "content": "Now GitHub is confronting still more infrastructure challenges as it deals with the rapid growth in AI-driven software development.",
+            "score": 0.285751,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.port.io/blog/hidden-technical-debt-of-agentic-engineering",
+            "title": "The Hidden Technical Debt Of Agentic Engineering",
+            "content": "An agent that resolved 50 incidents has seen patterns a new agent hasn't, like which fixes worked, which ones caused regressions, and which services are fragile after deploys. Without traces, that knowledge disappears after every run. When multiple agents operate on the same systems, they can't see each other's history.\n\nLLM providers are starting to address this with `memory.md` files that can be shared across teams. But the debt still shows up when you have dozens of agents operating. You need to find a way to reliably serve that memory (or just the right parts of it) to specific agents.\n\nHidden tech debt in context lake looks like:\n\n## 3. Agent registry\n\nGaining visibility into what agents exist [...] Another aspect of governance is cost governance. Agents tend to keep working despite the costs they are racking up. When an engineer creates an agent locally, they probably won\u2019t think about setting a cost limit.\n\nAn agent stuck in a retry loop or reasoning in circles will keep burning tokens for hours until someone manually kills it or until the monthly invoice shows the damage. Most teams can tell you their total LLM spend, but almost none can break it down by agent, by team, or by use case. Teams should also be able to easily see where their costs stand. Because when leadership asks what agents cost to run, engineering will need an answer.\n\nHidden tech debt in governance looks like:\n\n## 7. Orchestration [...] Get all your questions answered\n\nLet Port show you what developer portals are all about.\n\n# The hidden technical debt of agentic engineering\n\nAgents are easy to build but hard to run in production. At Port, we mapped seven blocks of hidden infrastructure debt surrounding AI agents in enterprise systems.\n\nZohar Einy\nZohar Einy\n\nThe hidden technical debt of agentic engineering\n\nAnyone today can build an agent locally with minimal effort. With some LLM calls, a prompt, and a few tool definitions, that agent will be doing real work for them within minutes. But what happens when that agent needs to get into production and be used by the entire engineering department, with real data and real consequences?",
+            "score": 0.1276855,
+            "raw_content": null
+          },
+          {
+            "url": "https://news.ycombinator.com/item?id=48010604",
+            "title": "Github has published some incredible usage rate increase numbers ...",
+            "content": "So we're pushing incredibly hard on more CPUs, scaling services, and strengthening GitHub's core features. https://x.com/kdaigle/status/2040164759836778878.",
+            "score": 0.12312317,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.instagram.com/reel/DX5s-EIOL5Q/",
+            "title": "Instagram",
+            "content": "Github is dying. Over the past few months the reliability of the platform has been decreasing at a rapid rate, with some services dipping below 90% uptime",
+            "score": 0.019903112,
             "raw_content": null
           }
         ]
@@ -147,45 +147,45 @@
         "query": "GitHub trending AI projects problem solving tools",
         "results": [
           {
-            "url": "https://github.com/topics/artificial-intelligence",
-            "title": "artificial-intelligence \u00b7 GitHub Topics",
-            "content": "[Skip to content](https://github.com/topics/artificial-intelligence#start-of-content). *   [GitHub Copilot Write better code with AI](https://github.com/features/copilot). *   [Why GitHub](https://github.com/why-github). *   [Documentation](https://docs.github.com/). *   [Marketplace](https://github.com/marketplace). *   [Enterprises](https://github.com/enterprise). [View all solutions](https://github.com/solutions). *   [AI](https://github.com/resources/articles?topic=ai). *   [View all topics](https://github.com/resources/articles). *   [Documentation](https://docs.github.com/). *   [Partners](https://github.com/partners). *   [Accelerator](https://github.com/accelerator). *   [GitHub Stars](https://stars.github.com/). *   [Topics](https://github.com/topics). *   [Trending](https://github.com/trending). *   [Collections](https://github.com/collections). *   [Pricing](https://github.com/pricing). [Reload](https://github.com/topics/artificial-intelligence) to refresh your session.You signed out in another tab or window. [Reload](https://github.com/topics/artificial-intelligence) to refresh your session.You switched accounts on another tab or window. [Star](https://github.com/login?return_to=%2Ftopic.artificial-intelligence). *   [Code](https://github.com/Significant-Gravitas/AutoGPT). [Sponsor](https://github.com/sponsors/f). *   [Code](https://github.com/f/prompts.chat). *   [Issues](https://github.com/f/prompts.chat/issues). *   [Pull requests](https://github.com/f/prompts.chat/pulls). *   [Code](https://github.com/hacksider/Deep-Live-Cam). [Star 91.8k](https://github.com/login?return_to=%2Frasbt%2FLLMs-from-scratch). *   [Code](https://github.com/rasbt/LLMs-from-scratch). *   [Code](https://github.com/OpenHands/OpenHands). *   [Code](https://github.com/thedotmack/claude-mem). *   [Code](https://github.com/FlowiseAI/Flowise). *   [Code](https://github.com/jingyaogong/minimind). *   [Code](https://github.com/microsoft/AI-For-Beginners). *   [Issues](https://github.com/microsoft/AI-For-Beginners/issues). *   [Pull requests](https://github.com/microsoft/AI-For-Beginners/pulls). *   [Discussions](https://github.com/microsoft/AI-For-Beginners/discussions). *   [Code](https://github.com/Kong/kong). *   [Code](https://github.com/XingangPan/DragGAN). *   [Code](https://github.com/ItzCrazyKns/Vane). *   [Code](https://github.com/explosion/spaCy). [Star 33.4k](https://github.com/login?return_to=%2Fashishpatel26%2F500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code). *   [Code](https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code). *   [Issues](https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code/issues). *   [Pull requests](https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code/pulls). *   [Code](https://github.com/facebookresearch/fairseq). [Star 31.1k](https://github.com/login?return_to=%2FLightning-AI%2Fpytorch-lightning). *   [Code](https://github.com/Lightning-AI/pytorch-lightning). *   [Issues](https://github.com/Lightning-AI/pytorch-lightning/issues). *   [Pull requests](https://github.com/Lightning-AI/pytorch-lightning/pulls). *   [Discussions](https://github.com/Lightning-AI/pytorch-lightning/discussions). *   [Code](https://github.com/AMAI-GmbH/AI-Expert-Roadmap). *   [Issues](https://github.com/AMAI-GmbH/AI-Expert-Roadmap/issues). *   [Pull requests](https://github.com/AMAI-GmbH/AI-Expert-Roadmap/pulls). [Star 29.7k](https://github.com/login?return_to=%2Ffeder-cr%2FJobs_Applier_AI_Agent_AIHawk). *   [Code](https://github.com/feder-cr/Jobs_Applier_AI_Agent_AIHawk). *   [Issues](https://github.com/feder-cr/Jobs_Applier_AI_Agent_AIHawk/issues). *   [Pull requests](https://github.com/feder-cr/Jobs_Applier_AI_Agent_AIHawk/pulls). *   [Code](https://github.com/ZuzooVn/machine-learning-for-software-engineers). *   [Code](https://github.com/simstudioai/sim). [](https://github.com/) \u00a9 2026 GitHub,Inc. *   [Security](https://github.com/security). *   [Docs](https://docs.github.com/). *   [Contact](https://support.github.com/?tags=dotcom-footer).",
-            "score": 0.7001783,
+            "url": "https://github.com/orgs/community/discussions/187143",
+            "title": "Best AI Tools for Developers in 2026: What Are Your Must-Have Tools?",
+            "content": "*   [GitHub Copilot Write better code with AI](https://github.com/features/copilot). *   [Code Review Manage code changes](https://github.com/features/code-review). *   [AI](https://github.com/resources/articles?topic=ai). *   [Enterprise platform AI-powered developer platform](https://github.com/enterprise). [Search syntax tips](https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax). [Reload](https://github.com/orgs/community/discussions/187143) to refresh your session.You signed out in another tab or window. *   [Discussions](https://github.com/orgs/community/discussions). *   [Discussions](https://github.com/orgs/community/discussions). [\ud83e\udd16 Best AI Tools for Developers in 2026: What Are Your Must-Have Tools?](https://github.com/orgs/community/discussions/187143#top)#187143. [Return to top](https://github.com/orgs/community/discussions/187143#top). [Please reload this page](https://github.com/orgs/community/discussions/187143). [Please reload this page](https://github.com/orgs/community/discussions/187143). Beta Was this translation helpful?[Give feedback.](https://github.com/orgs/community/discussions/187143#). *   [Top](https://github.com/orgs/community/discussions/187143?sort=top). [Please reload this page](https://github.com/orgs/community/discussions/187143). [Please reload this page](https://github.com/orgs/community/discussions/187143). Beta Was this translation helpful?[Give feedback.](https://github.com/orgs/community/discussions/187143#). [Please reload this page](https://github.com/orgs/community/discussions/187143). [Please reload this page](https://github.com/orgs/community/discussions/187143). Beta Was this translation helpful?[Give feedback.](https://github.com/orgs/community/discussions/187143#). [Please reload this page](https://github.com/orgs/community/discussions/187143). [Please reload this page](https://github.com/orgs/community/discussions/187143). [Please reload this page](https://github.com/orgs/community/discussions/187143). [Please reload this page](https://github.com/orgs/community/discussions/187143). [Please reload this page](https://github.com/orgs/community/discussions/187143). [Please reload this page](https://github.com/orgs/community/discussions/187143). [cloud.google](https://cloud.google.com/use-cases/free-ai-tools). [cursorcopilot](https://cursorcopilot.com/blog/best-free-ai-coding-tools-2026). [cursorcopilot](https://cursorcopilot.com/blog/best-free-ai-coding-tools-2026). [cursorcopilot](https://cursorcopilot.com/blog/best-free-ai-coding-tools-2026). [Please reload this page](https://github.com/orgs/community/discussions/187143). [Please reload this page](https://github.com/orgs/community/discussions/187143). [Please reload this page](https://github.com/orgs/community/discussions/187143). [Please reload this page](https://github.com/orgs/community/discussions/187143). [Please reload this page](https://github.com/orgs/community/discussions/187143). [Please reload this page](https://github.com/orgs/community/discussions/187143). [Please reload this page](https://github.com/orgs/community/discussions/187143). *   [Contact](https://support.github.com/?tags=dotcom-footer).",
+            "score": 0.9969722,
             "raw_content": null
           },
           {
             "url": "https://www.analyticsvidhya.com/blog/2026/05/solved-agentic-ai-projects-with-github-links/",
             "title": "15+ Solved Agentic AI Projects with Github Links - Analytics Vidhya",
             "content": "Master Generative AI with 10+ Real-world Projects in 2026! ##### Data analyst Learning Path. ##### Tableau Learning Path. ##### NLP Learning Path. ##### Data Scientist Learning Path. ##### AI Engineer Learning Path. ##### Generative AI Learning Path. ##### Generative AI Roadmap for Enterprises. # 15+ Solved Agentic AI Projects with Github Links. Projects are the bridge between understanding AI and actually building with it. While the last couple of years were dominated by generative models, the shift now is toward systems that can think in steps, use tools, and act with a clear objective. Each project highlights what makes it \u201cagentic,\u201d along with source code and implementation direction, so you can move beyond prompt-based work and start building systems that reason, plan, and execute tasks end to end. This project would require \u201cactive learning\u201d to query the user or explore new categories when it detects a shift in user intent, rather than relying on static historical data. **Source Code:** github.com/AleksNeStu/ai-real-estate-assistant. **Source Code:** github.com/ahmadvh/AI-Agents-for-Medical-Diagnostics.",
-            "score": 0.6675167,
+            "score": 0.99553156,
             "raw_content": null
           },
           {
             "url": "https://github.com/garylab/MakeMoneyWithAI",
             "title": "GitHub - garylab/MakeMoneyWithAI: A list of open-source AI projects ...",
             "content": "**[OpenManus](https://github.com/FoundationAgents/OpenManus)** | \u260650.1k | Open-source multi-agent AI toolkit enabling rapid development of autonomous content, automation, and SaaS products for monetization through **APIs**, **plugins**, **workflows**, **scalable**, **cloud****integrations** to monetize. **[openclaude](https://github.com/Gitlawb/openclaude)** | \u260625.1k | Open-source platform enabling **multi-model** integration, **toolchain** automation, and **scalable** deployment, rapid customization for building monetizable AI products, white-label APIs, enterprise integrations, and subscription revenue streams. **[suna](https://github.com/kortix-ai/suna)** | \u260618.2k | Open-source platform to build, manage and train **AI agents** enabling rapid **automation**, bespoke workflows and scalable **SaaS** products for monetization, consulting, enterprise integrations and deployment. **[ai-chatbot](https://github.com/vercel/ai-chatbot)** | \u260618.2k | Deployable, **hackable** Next.js AI chatbot enabling rapid white-labeling, automated **customer-support**, scalable **lead-generation**, subscription monetization, API integrations, analytics, SaaS packaging, self-hosting options, and customizable enterprise workflows. **[DB-GPT](https://github.com/eosphoros-ai/DB-GPT)** | \u260617.4k | Rapidly build revenue-generating AI data apps with **AWEL** agentic workflows, **Agents**, scalable **data integration**, automated **querying**, **analytics**, subscription-ready **monetization**, enterprise-ready deployment, secure low-code prototyping tools. **[leon](https://github.com/leon-ai/leon)** | \u260616.7k | Self-hosted open-source assistant powering custom chatbots, voice UIs, automation and integrations, enabling monetization through paid SaaS, enterprise deployments, white-label products, subscriptions, and support, consulting services.",
-            "score": 0.6202772,
+            "score": 0.9950563,
             "raw_content": null
           },
           {
             "url": "https://github.com/alvinreal/awesome-opensource-ai",
             "title": "GitHub - alvinreal/awesome-opensource-ai: Curated list of the best ...",
-            "content": "[Sign in](/login?return_to=https%3A%2F%2Fgithub.com%2Falvinreal%2Fawesome-opensource-ai). [Sign in](/login?return_to=https%3A%2F%2Fgithub.com%2Falvinreal%2Fawesome-opensource-ai). [alvinreal](/alvinreal)   /  **[awesome-opensource-ai](/alvinreal/awesome-opensource-ai)**  Public. * [Fork 367](/login?return_to=%2Falvinreal%2Fawesome-opensource-ai). * [Star  3.4k](/login?return_to=%2Falvinreal%2Fawesome-opensource-ai). # alvinreal/awesome-opensource-ai. [Branches](/alvinreal/awesome-opensource-ai/branches)[Tags](/alvinreal/awesome-opensource-ai/tags). | Latest commit   History[550 Commits](/alvinreal/awesome-opensource-ai/commits/main/) 550 Commits |. | [.github/workflows](/alvinreal/awesome-opensource-ai/tree/main/.github/workflows \"This path skips through empty directories\") | [.github/workflows](/alvinreal/awesome-opensource-ai/tree/main/.github/workflows \"This path skips through empty directories\") |  |  |. | [.moltfounders](/alvinreal/awesome-opensource-ai/tree/main/.moltfounders \".moltfounders\") | [.moltfounders](/alvinreal/awesome-opensource-ai/tree/main/.moltfounders \".moltfounders\") |  |  |. | [assets](/alvinreal/awesome-opensource-ai/tree/main/assets \"assets\") | [assets](/alvinreal/awesome-opensource-ai/tree/main/assets \"assets\") |  |  |. | [tools](/alvinreal/awesome-opensource-ai/tree/main/tools \"tools\") | [tools](/alvinreal/awesome-opensource-ai/tree/main/tools \"tools\") |  |  |. | [.gitignore](/alvinreal/awesome-opensource-ai/blob/main/.gitignore \".gitignore\") | [.gitignore](/alvinreal/awesome-opensource-ai/blob/main/.gitignore \".gitignore\") |  |  |. | [.ignore](/alvinreal/awesome-opensource-ai/blob/main/.ignore \".ignore\") | [.ignore](/alvinreal/awesome-opensource-ai/blob/main/.ignore \".ignore\") |  |  |. | [.pr-body.md](/alvinreal/awesome-opensource-ai/blob/main/.pr-body.md \".pr-body.md\") | [.pr-body.md](/alvinreal/awesome-opensource-ai/blob/main/.pr-body.md \".pr-body.md\") |  |  |. | [CONTRIBUTING.md](/alvinreal/awesome-opensource-ai/blob/main/CONTRIBUTING.md \"CONTRIBUTING.md\") | [CONTRIBUTING.md](/alvinreal/awesome-opensource-ai/blob/main/CONTRIBUTING.md \"CONTRIBUTING.md\") |  |  |. | [EMERGING.md](/alvinreal/awesome-opensource-ai/blob/main/EMERGING.md \"EMERGING.md\") | [EMERGING.md](/alvinreal/awesome-opensource-ai/blob/main/EMERGING.md \"EMERGING.md\") |  |  |. | [LICENSE](/alvinreal/awesome-opensource-ai/blob/main/LICENSE \"LICENSE\") | [LICENSE](/alvinreal/awesome-opensource-ai/blob/main/LICENSE \"LICENSE\") |  |  |. | [README.md](/alvinreal/awesome-opensource-ai/blob/main/README.md \"README.md\") | [README.md](/alvinreal/awesome-opensource-ai/blob/main/README.md \"README.md\") |  |  |. | [ci\\_health\\_report.md](/alvinreal/awesome-opensource-ai/blob/main/ci_health_report.md \"ci_health_report.md\") | [ci\\_health\\_report.md](/alvinreal/awesome-opensource-ai/blob/main/ci_health_report.md \"ci_health_report.md\") |  |  |. [**3.4k** stars](/alvinreal/awesome-opensource-ai/stargazers). [**31** watching](/alvinreal/awesome-opensource-ai/watchers). [**367** forks](/alvinreal/awesome-opensource-ai/forks). [Report repository](/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Falvinreal%2Fawesome-opensource-ai&report=alvinreal+%28user%29). ## [Releases](/alvinreal/awesome-opensource-ai/releases). ## [Packages 0](/users/alvinreal/packages?repo_name=awesome-opensource-ai). ## [Contributors](/alvinreal/awesome-opensource-ai/graphs/contributors). * [Python 100.0%](/alvinreal/awesome-opensource-ai/search?l=python).",
-            "score": 0.57637566,
+            "content": "*   **[Mage.ai](https://github.com/mage-ai/mage-ai)**[![Image 73: GitHub stars](https://camo.githubusercontent.com/d9f81af1311595ec3d5780cada44b6504e430395c701369041eb4928f26afcbd/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f6d6167652d61692f6d6167652d61693f7374796c653d736f6369616c)](https://camo.githubusercontent.com/d9f81af1311595ec3d5780cada44b6504e430395c701369041eb4928f26afcbd/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f6d6167652d61692f6d6167652d61693f7374796c653d736f6369616c) - Modern open-source data pipeline tool for integrating and transforming data. *   **[Void Editor](https://github.com/voideditor/void)**[![Image 755: GitHub stars](https://camo.githubusercontent.com/9601b50012976a7ac2e55320d4ee5f0cb0dd9270f4053ece5158bda4bd308fa8/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f766f6964656469746f722f766f69643f7374796c653d736f6369616c)](https://camo.githubusercontent.com/9601b50012976a7ac2e55320d4ee5f0cb0dd9270f4053ece5158bda4bd308fa8/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f766f6964656469746f722f766f69643f7374796c653d736f6369616c) - Open-source AI-native code editor forked from VS Code. *   **[Cline](https://github.com/cline/cline)**[![Image 762: GitHub stars](https://camo.githubusercontent.com/9cff8a076ed8d676b26296335bdc193355229db5f47f5d80940b19a65b1131bb/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f636c696e652f636c696e653f7374796c653d736f6369616c)](https://camo.githubusercontent.com/9cff8a076ed8d676b26296335bdc193355229db5f47f5d80940b19a65b1131bb/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f636c696e652f636c696e653f7374796c653d736f6369616c) - Open-source IDE coding agent that can edit files, run commands, and use tools with user approval. *   **[Qwen Code](https://github.com/QwenLM/qwen-code)**[![Image 768: GitHub stars](https://camo.githubusercontent.com/60e0e38afce086dd18b3d6713aa6cc24fceadd137400360d496f9d708dcab802/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f5177656e4c4d2f7177656e2d636f64653f7374796c653d736f6369616c)](https://camo.githubusercontent.com/60e0e38afce086dd18b3d6713aa6cc24fceadd137400360d496f9d708dcab802/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f5177656e4c4d2f7177656e2d636f64653f7374796c653d736f6369616c) - Open-source AI agent for the terminal, optimized for Qwen series models. *   **[Deta Surf](https://github.com/deta/surf)**[![Image 771: GitHub stars](https://camo.githubusercontent.com/5f3d1a2a16645e5a65e5c6037aec56404d6420a84e3699d86cc71918f5f3efd3/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f646574612f737572663f7374796c653d736f6369616c)](https://camo.githubusercontent.com/5f3d1a2a16645e5a65e5c6037aec56404d6420a84e3699d86cc71918f5f3efd3/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f646574612f737572663f7374796c653d736f6369616c) - Personal AI notebook for organizing files and webpages with AI-generated notes. *   **[Continue VS Code / JetBrains](https://github.com/continuedev/continue)**[![Image 775: GitHub stars](https://camo.githubusercontent.com/1a3c3d8d1fa665dd964d37388cddab1e1f72eac4bc16b20d45be0f4b6ace4b2e/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f636f6e74696e75656465762f636f6e74696e75653f7374796c653d736f6369616c)](https://camo.githubusercontent.com/1a3c3d8d1fa665dd964d37388cddab1e1f72eac4bc16b20d45be0f4b6ace4b2e/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f636f6e74696e75656465762f636f6e74696e75653f7374796c653d736f6369616c) - Most installed open-source AI extension. *   **[avante.nvim](https://github.com/yetone/avante.nvim)**[![Image 777: GitHub stars](https://camo.githubusercontent.com/c9fa15b0d12fec722a6aaf5de14075e7ef6a47b29b9e3bfa608a89b3652d23f6/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f7965746f6e652f6176616e74652e6e76696d3f7374796c653d736f6369616c)](https://camo.githubusercontent.com/c9fa15b0d12fec722a6aaf5de14075e7ef6a47b29b9e3bfa608a89b3652d23f6/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f7965746f6e652f6176616e74652e6e76696d3f7374796c653d736f6369616c) - Neovim plugin that brings Cursor-like AI IDE features to Vim. Edit code with natural language, generate code from context, and chat with AI about your codebase. *   **[Agenta](https://github.com/Agenta-AI/agenta)**[![Image 806: GitHub stars](https://camo.githubusercontent.com/0cfe96a7121d64ec8fcaa886dac9b22cd3703693de7784d562148c8063af0d3f/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f4167656e74612d41492f6167656e74613f7374796c653d736f6369616c)](https://camo.githubusercontent.com/0cfe96a7121d64ec8fcaa886dac9b22cd3703693de7784d562148c8063af0d3f/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f4167656e74612d41492f6167656e74613f7374796c653d736f6369616c) - Open-source LLMOps platform with integrated prompt playground, management, evaluation, and observability. [**30** watching](https://github.com/alvinreal/awesome-opensource-ai/watchers).",
+            "score": 0.99187535,
             "raw_content": null
           },
           {
-            "url": "https://github.com/Marktechpost/AI-Agents-Projects-Tutorials",
-            "title": "GitHub - Marktechpost/AI-Agents-Projects ...",
-            "content": "Build a Multi-Agent AI Workflow for Biological Network Modeling, Protein Interactions, Metabolism, and Cell Signaling Simulation Codes Tutorial.",
-            "score": 0.41321722,
+            "url": "https://plugins.jetbrains.com/plugin/17718-github-copilot--your-ai-pair-programmer",
+            "title": "GitHub Copilot - Your AI Pair Programmer Plugin for JetBrains IDEs",
+            "content": "Research has found GitHub Copilot helps developers code faster, focus on solving bigger problems, stay in the flow longer, and feel more fulfilled with their",
+            "score": 0.9801293,
             "raw_content": null
           },
           {
             "url": "https://www.reddit.com/r/coolgithubprojects/comments/1t1l5an/from_ai_chat_to_clean_notes_built_a_tool_that/",
-            "title": "built a tool that properly renders math, code, and tables from AI responses",
-            "content": "From AI chat to clean notes \u2013 built a tool that properly renders math, code, and tables from AI responses \u00b7 LaTeX math equations (via KaTeX \u2014 matrices, integrals",
-            "score": 0.35320562,
+            "title": "From AI chat to clean notes \u2013 built a tool that properly renders math ...",
+            "content": "From AI chat to clean notes \u2013 built a tool that properly renders math, code, and tables from AI responses.",
+            "score": 0.96432143,
             "raw_content": null
           }
         ]
@@ -201,38 +201,38 @@
             "raw_content": null
           },
           {
-            "url": "https://news.ycombinator.com/item?id=47998225",
-            "title": "For thirty years I programmed with Phish on, every day - Hacker News",
-            "content": "The AI tools are another colleague. They work incredibly fast, and I do less coding myself now, but my goal was always to solve the problem, not the code itself",
-            "score": 0.28174686,
+            "url": "https://news.ycombinator.com/item?id=47957294",
+            "title": "The Zig project's rationale for their anti-AI contribution policy",
+            "content": "I suspect the people who claim that AI works by only giving it high-level instructions are mostly working on \"mindless\" projects where a developer in the weeds",
+            "score": 0.11276631,
             "raw_content": null
           },
           {
-            "url": "https://news.ycombinator.com/item?id=48000028",
-            "title": "Why TUIs Are Back - Hacker News",
-            "content": "In contrast, most TUI toolkits generally require the developer to wire things up manually. Maximum developer flexibility, but with a decent learning curve.",
-            "score": 0.17579293,
+            "url": "https://news.ycombinator.com/item?id=48002607",
+            "title": "The 'Hidden' Costs of Great Abstractions - Hacker News",
+            "content": "But ultimately business reality has changed, largely because achieving business goals is dramatically easier with AI tools. This undercuts a lot of the focus on",
+            "score": 0.1002869,
             "raw_content": null
           },
           {
-            "url": "https://news.ycombinator.com/item?id=47988268",
-            "title": "Ask HN: Is the Job Market Actually Bad? - Hacker News",
-            "content": "Startups and the AI shops can't hire fast enough, but also seem to be looking at different candidate profiles. reply \u00b7 Aurornis 1 day ago | prev | next",
-            "score": 0.14131722,
+            "url": "https://news.ycombinator.com/item?id=48011184",
+            "title": "I am worried about Bun | Hacker News",
+            "content": "We understood (and knew for a long time) that the large AI labs are not monetarily profiting from subscription users that make heavy use of their subscription.",
+            "score": 0.09194332,
             "raw_content": null
           },
           {
-            "url": "https://www.reddit.com/r/indiehackers/comments/1t1df2g/i_thought_ai_agents_would_make_solo_building/",
-            "title": "I thought AI agents would make solo building easier. They did. Then ...",
-            "content": "AI can definitely create a false sense of progress. It is easy to keep generating code, ideas, and fixes without asking whether the product is actually getting",
-            "score": 0.065995164,
+            "url": "https://www.instagram.com/reel/DX3BixruFQq/",
+            "title": "The real trap of #AI #coding isn't bad #code #agenticengineering",
+            "content": "If F can generate features. What creates real competitive advantage for individuals or for companies? What are the new building blocks of software when agents",
+            "score": 0.033719793,
             "raw_content": null
           },
           {
-            "url": "https://news.ycombinator.com/item?id=47973376",
-            "title": "Your website is not for you - Hacker News",
-            "content": "The only problem with this analysis is that in practice a lot of the designers don't understand the customer and don't understand the business.",
-            "score": 0.0552139,
+            "url": "https://news.ycombinator.com/item?id=48000472",
+            "title": "I'd be very very hesitant to trust studies like this. It's very easy to ...",
+            "content": "I'd be very very hesitant to trust studies like this. It's very easy to mess up these benchmarks. See for example this recent paper where AI managed to beat",
+            "score": 0.03233523,
             "raw_content": null
           }
         ]
@@ -241,45 +241,45 @@
         "query": "Reddit threads 'unsolved' AI agent reliability issues",
         "results": [
           {
-            "url": "https://www.reddit.com/r/SideProject/comments/1t1onas/ai_agents_can_now_buy_and_sell_from_each_other/",
-            "title": "ai agents can now buy and sell from each other : r/SideProject - Reddit",
-            "content": "for fully autonomous verification where no human is in the loop? yeah that's unsolved. we've talked about a few ideas. structured output schemas where the",
-            "score": 0.67063034,
-            "raw_content": null
-          },
-          {
-            "url": "https://www.reddit.com/r/AI_Agents/comments/1t0fwo8/stripe_sessions_2026_got_me_thinking_are_payments/",
-            "title": "Stripe Sessions 2026 got me thinking: are payments ready for AI ...",
-            "content": "The harder unsolved layer is execution. Actually getting an agent through a real merchant checkout, reliably, legally, and at a cost structure that makes sense,",
-            "score": 0.59089786,
-            "raw_content": null
-          },
-          {
             "url": "https://www.reddit.com/r/devops/comments/1t2gadk/devopssre_autonomous_agent_permissions/",
             "title": "DevOps/SRE autonomous agent permissions - Reddit",
             "content": "With current models hallucinations are an unsolved problem. AI can be a great tool for cutting through logs, prototypes, preliminary RCA etc but I would be",
-            "score": 0.5585443,
+            "score": 0.99877447,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.reddit.com/r/SideProject/comments/1t1onas/ai_agents_can_now_buy_and_sell_from_each_other/",
+            "title": "ai agents can now buy and sell from each other : r/SideProject - Reddit",
+            "content": "for fully autonomous verification where no human is in the loop? yeah that's unsolved. we've talked about a few ideas. structured output schemas where the",
+            "score": 0.9977482,
             "raw_content": null
           },
           {
             "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1szr3vp/agent_systems_are_improving_fast_but_auditability/",
             "title": "Agent systems are improving fast, but auditability is still fragile. A ...",
             "content": "Most agent stacks are still optimized for capability demos, not operational accountability. In practice, that means we can often get useful outputs\u2026",
-            "score": 0.46584973,
+            "score": 0.9970879,
             "raw_content": null
           },
           {
-            "url": "https://www.reddit.com/r/SideProject/comments/1t2f7wc/i_built_a_3line_fix_for_ai_agent_billing_after/",
-            "title": "I built a 3-line fix for AI agent billing after Stripe's metered ... - Reddit",
-            "content": "Been building AI agents for clients for the past few months. The billing was a mess. Same agent, same customer, completely different costs: Fast run\u2026",
-            "score": 0.40782914,
+            "url": "https://www.reddit.com/r/HeavenGF/comments/1sz3li9/whats_one_ai_feature_you_instantly_ignore_when_a/",
+            "title": "Whats one AI feature you instantly ignore when a platform markets it ...",
+            "content": "The best AI agents I've used do 3 things well, not 100 things poorly. Is \"knowing when to stop\" the real unsolved problem?",
+            "score": 0.99701905,
             "raw_content": null
           },
           {
-            "url": "https://www.facebook.com/HotHardware/posts/the-ai-agent-essentially-eviscerated-itself-it-outlined-the-very-safety-rules-it/1550249550433935/",
-            "title": "The AI agent essentially eviscerated itself; it outlined the very safety ...",
-            "content": "The AI agent essentially eviscerated itself; it outlined the very safety rules it had been programmed to follow, then admitted to violating every one of them.",
-            "score": 0.25951397,
+            "url": "https://www.reddit.com/r/dropshipping/comments/1t0skvb/whats_the_hardest_part_you_think_ai_is_solving_in/",
+            "title": "What's the hardest part you think ai is solving in dropshipping?",
+            "content": "But I agree on the unsolved parts - supplier reliability and creative strategy still feel very human. AI can generate options, but picking the right angle",
+            "score": 0.99361163,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1sz61jg/building_practical_ai_agentsautomations_what_use/",
+            "title": "Building practical AI agents/automations \u2014 what use cases ... - Reddit",
+            "content": "I'm working with production AI-agent and automation workflows and want to compare notes with people who are actually shipping them.",
+            "score": 0.99253935,
             "raw_content": null
           }
         ]
@@ -288,45 +288,45 @@
         "query": "GitHub issues 'help wanted' trending LLM frameworks",
         "results": [
           {
-            "url": "https://github.com/OpenBMB/ChatDev",
-            "title": "GitHub - OpenBMB/ChatDev: ChatDev 2.0: Dev All through LLM-powered Multi-Agent Collaboration \u00b7 GitHub",
-            "content": "*   [Code](https://github.com/OpenBMB/ChatDev). *   [Projects](https://github.com/OpenBMB/ChatDev/projects). *   [Code](https://github.com/OpenBMB/ChatDev). *   [Projects](https://github.com/OpenBMB/ChatDev/projects). [](https://github.com/OpenBMB/ChatDev). Fixes #569\")[#569](https://github.com/OpenBMB/ChatDev/issues/569)[)](https://github.com/OpenBMB/ChatDev/commit/7c69226bcf7cba186b901b797803e78befc875a9 \"fix(server): scope --reload watching to source dirs (#569) When ``python server_main.py --reload`` was used, uvicorn's default reload_dirs is the current working directory and StatReload walks the whole tree for ``*.py`` files. Fixes #569\")[#569](https://github.com/OpenBMB/ChatDev/issues/569)[)](https://github.com/OpenBMB/ChatDev/commit/7c69226bcf7cba186b901b797803e78befc875a9 \"fix(server): scope --reload watching to source dirs (#569) When ``python server_main.py --reload`` was used, uvicorn's default reload_dirs is the current working directory and StatReload walks the whole tree for ``*.py`` files. *   [README](https://github.com/OpenBMB/ChatDev#). *   [Apache-2.0 license](https://github.com/OpenBMB/ChatDev#). [](https://github.com/OpenBMB/ChatDev#-overview). *   [**ChatDev 2.0 (DevAll)**](https://github.com/OpenBMB/ChatDev/tree/main) is a **Zero-Code Multi-Agent Platform** for \"Developing Everything\". [](https://github.com/OpenBMB/ChatDev#-news). Please see [Docker Start Guide](https://github.com/OpenBMB/ChatDev/blob/main/wiki.md#docker-start). See [guide](https://github.com/OpenBMB/ChatDev/blob/main/wiki.md#git-mode). You can activate the designer agent [![Image 16](https://github.com/OpenBMB/ChatDev/raw/main/visualizer/static/figures/designer.png)](https://github.com/OpenBMB/ChatDev/blob/main/visualizer/static/figures/designer.png) to generate images used in the software; try `python3 run.py --task [description_of_your_idea] --config \"Art\"`. [](https://github.com/OpenBMB/ChatDev#-quick-start). [](https://github.com/OpenBMB/ChatDev#-prerequisites). [](https://github.com/OpenBMB/ChatDev#-installation). [](https://github.com/OpenBMB/ChatDev#-configuration). [](https://github.com/OpenBMB/ChatDev#using-makefile-recommended). [](https://github.com/OpenBMB/ChatDev#manual-commands). [](https://github.com/OpenBMB/ChatDev#utility-commands). [](https://github.com/OpenBMB/ChatDev#-run-with-openclaw). [](https://github.com/OpenBMB/ChatDev#-run-with-docker). [](https://github.com/OpenBMB/ChatDev#-how-to-use). [](https://github.com/OpenBMB/ChatDev#%EF%B8%8F-web-console). [](https://github.com/OpenBMB/ChatDev#-python-sdk). [](https://github.com/OpenBMB/ChatDev). [](https://github.com/OpenBMB/ChatDev#-featured-workflows). [](https://github.com/OpenBMB/ChatDev#-workflow-collection). [](https://github.com/OpenBMB/ChatDev#-contributing). Check out our [Developer Guide](https://github.com/OpenBMB/ChatDev#developers) to get started! [](https://github.com/OpenBMB/ChatDev#-contributors). [](https://github.com/OpenBMB/ChatDev#primary-contributors). [](https://github.com/OpenBMB/ChatDev#contributors). [](https://github.com/OpenBMB/ChatDev#-acknowledgments). [](https://github.com/OpenBMB/ChatDev#-citation). [](https://github.com/OpenBMB/ChatDev#-contact). [Please reload this page](https://github.com/OpenBMB/ChatDev). [**355** watching](https://github.com/OpenBMB/ChatDev/watchers). [Please reload this page](https://github.com/OpenBMB/ChatDev).",
-            "score": 0.68763,
+            "url": "https://github.com/alvinreal/awesome-opensource-ai",
+            "title": "GitHub - alvinreal/awesome-opensource-ai: Curated list of the best ...",
+            "content": "*   **[Mage.ai](https://github.com/mage-ai/mage-ai)**[![Image 73: GitHub stars](https://camo.githubusercontent.com/d9f81af1311595ec3d5780cada44b6504e430395c701369041eb4928f26afcbd/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f6d6167652d61692f6d6167652d61693f7374796c653d736f6369616c)](https://camo.githubusercontent.com/d9f81af1311595ec3d5780cada44b6504e430395c701369041eb4928f26afcbd/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f6d6167652d61692f6d6167652d61693f7374796c653d736f6369616c) - Modern open-source data pipeline tool for integrating and transforming data. *   **[Void Editor](https://github.com/voideditor/void)**[![Image 755: GitHub stars](https://camo.githubusercontent.com/9601b50012976a7ac2e55320d4ee5f0cb0dd9270f4053ece5158bda4bd308fa8/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f766f6964656469746f722f766f69643f7374796c653d736f6369616c)](https://camo.githubusercontent.com/9601b50012976a7ac2e55320d4ee5f0cb0dd9270f4053ece5158bda4bd308fa8/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f766f6964656469746f722f766f69643f7374796c653d736f6369616c) - Open-source AI-native code editor forked from VS Code. *   **[Cline](https://github.com/cline/cline)**[![Image 762: GitHub stars](https://camo.githubusercontent.com/9cff8a076ed8d676b26296335bdc193355229db5f47f5d80940b19a65b1131bb/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f636c696e652f636c696e653f7374796c653d736f6369616c)](https://camo.githubusercontent.com/9cff8a076ed8d676b26296335bdc193355229db5f47f5d80940b19a65b1131bb/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f636c696e652f636c696e653f7374796c653d736f6369616c) - Open-source IDE coding agent that can edit files, run commands, and use tools with user approval. *   **[Qwen Code](https://github.com/QwenLM/qwen-code)**[![Image 768: GitHub stars](https://camo.githubusercontent.com/60e0e38afce086dd18b3d6713aa6cc24fceadd137400360d496f9d708dcab802/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f5177656e4c4d2f7177656e2d636f64653f7374796c653d736f6369616c)](https://camo.githubusercontent.com/60e0e38afce086dd18b3d6713aa6cc24fceadd137400360d496f9d708dcab802/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f5177656e4c4d2f7177656e2d636f64653f7374796c653d736f6369616c) - Open-source AI agent for the terminal, optimized for Qwen series models. *   **[Deta Surf](https://github.com/deta/surf)**[![Image 771: GitHub stars](https://camo.githubusercontent.com/5f3d1a2a16645e5a65e5c6037aec56404d6420a84e3699d86cc71918f5f3efd3/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f646574612f737572663f7374796c653d736f6369616c)](https://camo.githubusercontent.com/5f3d1a2a16645e5a65e5c6037aec56404d6420a84e3699d86cc71918f5f3efd3/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f646574612f737572663f7374796c653d736f6369616c) - Personal AI notebook for organizing files and webpages with AI-generated notes. *   **[Continue VS Code / JetBrains](https://github.com/continuedev/continue)**[![Image 775: GitHub stars](https://camo.githubusercontent.com/1a3c3d8d1fa665dd964d37388cddab1e1f72eac4bc16b20d45be0f4b6ace4b2e/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f636f6e74696e75656465762f636f6e74696e75653f7374796c653d736f6369616c)](https://camo.githubusercontent.com/1a3c3d8d1fa665dd964d37388cddab1e1f72eac4bc16b20d45be0f4b6ace4b2e/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f636f6e74696e75656465762f636f6e74696e75653f7374796c653d736f6369616c) - Most installed open-source AI extension. *   **[avante.nvim](https://github.com/yetone/avante.nvim)**[![Image 777: GitHub stars](https://camo.githubusercontent.com/c9fa15b0d12fec722a6aaf5de14075e7ef6a47b29b9e3bfa608a89b3652d23f6/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f7965746f6e652f6176616e74652e6e76696d3f7374796c653d736f6369616c)](https://camo.githubusercontent.com/c9fa15b0d12fec722a6aaf5de14075e7ef6a47b29b9e3bfa608a89b3652d23f6/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f7965746f6e652f6176616e74652e6e76696d3f7374796c653d736f6369616c) - Neovim plugin that brings Cursor-like AI IDE features to Vim. Edit code with natural language, generate code from context, and chat with AI about your codebase. *   **[Agenta](https://github.com/Agenta-AI/agenta)**[![Image 806: GitHub stars](https://camo.githubusercontent.com/0cfe96a7121d64ec8fcaa886dac9b22cd3703693de7784d562148c8063af0d3f/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f4167656e74612d41492f6167656e74613f7374796c653d736f6369616c)](https://camo.githubusercontent.com/0cfe96a7121d64ec8fcaa886dac9b22cd3703693de7784d562148c8063af0d3f/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f4167656e74612d41492f6167656e74613f7374796c653d736f6369616c) - Open-source LLMOps platform with integrated prompt playground, management, evaluation, and observability. [**30** watching](https://github.com/alvinreal/awesome-opensource-ai/watchers).",
+            "score": 0.36181894,
             "raw_content": null
           },
           {
             "url": "https://github.com/AlexsJones/llmfit",
             "title": "GitHub - AlexsJones/llmfit: Hundreds of models & providers. One ...",
             "content": "| [.gitattributes](https://github.com/AlexsJones/llmfit/blob/main/.gitattributes \".gitattributes\") | [.gitattributes](https://github.com/AlexsJones/llmfit/blob/main/.gitattributes \".gitattributes\") | [fix: MoE GPU-mode TPS uses full model size + expert-count-scaled over\u2026](https://github.com/AlexsJones/llmfit/commit/e1f32459ee6d2f486064cbda045b9a4faaabbc69 \"fix: MoE GPU-mode TPS uses full model size + expert-count-scaled overhead (#464) * fix: MoE offload speed estimate accounts for DDR bandwidth bottleneck Previously, MoE offload speed was estimated using GPU VRAM bandwidth divided by active parameters with a flat 0.8 factor. | [API.md](https://github.com/AlexsJones/llmfit/blob/main/API.md \"API.md\") | [API.md](https://github.com/AlexsJones/llmfit/blob/main/API.md \"API.md\") | [feat: hardware simulation mode and CLI hardware overrides](https://github.com/AlexsJones/llmfit/commit/002eeff6acf61970c2d3bf471a3b2a1afc3f82ba \"feat: hardware simulation mode and CLI hardware overrides Add interactive hardware simulation to the TUI (press S) \u2014 override RAM, VRAM, and CPU cores to instantly see which models fit on target hardware. This panel lets you tune the parameters behind TPS estimation, run mode penalties, and composite scoring \u2014 addressing [issue #449](https://github.com/AlexsJones/llmfit/issues/449) where tok/s was overestimated for certain models (e.g., Qwen3 30B).",
-            "score": 0.41111085,
+            "score": 0.35857818,
             "raw_content": null
           },
           {
-            "url": "https://www.askglitch.com/blog/top-5-trending-ai-github-repos-may-2026",
-            "title": "Top 5 Trending AI GitHub Repos \u2014 May 2026 (Week 18)",
-            "content": "Home \u203a Blog \u203a Top 5 Trending AI GitHub Repos \u2014 May 2026 (Week 18). # Top 5 Trending AI GitHub Repos \u2014 May 2026 (Week 18). Five AI repos blew up on GitHub this week, and the pattern is unmissable. Semantic codebase search, an open-source ML engineer that ships, a multi-agent trading firm, an AI video pipeline, and a unified agent toolkit. Here's what each one does, what to actually run, and where it fits. Five AI repos broke out on GitHub this week. They look unrelated: semantic codebase search, an autonomous ML engineer, a multi-agent trading firm, a video generation pipeline, an agent toolkit. What actually moved on GitHub, why it moved, and what's worth your time to clone. The pitch in one line: a **semantic code search MCP server** that lets any coding agent (Claude Code, Cursor, Windsurf, Cline, VS Code, Codex CLI, Gemini CLI, Qwen Code, and basically every other MCP-compatible client) query your entire codebase as context.",
-            "score": 0.34687307,
-            "raw_content": null
-          },
-          {
-            "url": "https://www.facebook.com/groups/aiprompthouse/posts/2151191545701976/",
-            "title": "Building AI agents with GitHub repos - Facebook",
-            "content": "The future of AI Agents is here. These 10 GitHub repos teach you exactly how to build them ------- 1. Hands\u2011On Large Language Models \u2192 Learn LLMs through",
-            "score": 0.28776783,
+            "url": "https://github.com/OpenBMB/ChatDev",
+            "title": "ChatDev 2.0: Dev All through LLM-powered Multi-Agent Collaboration",
+            "content": "*   [Code](https://github.com/OpenBMB/ChatDev). *   [Projects](https://github.com/OpenBMB/ChatDev/projects). *   [Code](https://github.com/OpenBMB/ChatDev). *   [Projects](https://github.com/OpenBMB/ChatDev/projects). [](https://github.com/OpenBMB/ChatDev). Fixes #569\")[#569](https://github.com/OpenBMB/ChatDev/issues/569)[)](https://github.com/OpenBMB/ChatDev/commit/7c69226bcf7cba186b901b797803e78befc875a9 \"fix(server): scope --reload watching to source dirs (#569) When ``python server_main.py --reload`` was used, uvicorn's default reload_dirs is the current working directory and StatReload walks the whole tree for ``*.py`` files. Fixes #569\")[#569](https://github.com/OpenBMB/ChatDev/issues/569)[)](https://github.com/OpenBMB/ChatDev/commit/7c69226bcf7cba186b901b797803e78befc875a9 \"fix(server): scope --reload watching to source dirs (#569) When ``python server_main.py --reload`` was used, uvicorn's default reload_dirs is the current working directory and StatReload walks the whole tree for ``*.py`` files. *   [README](https://github.com/OpenBMB/ChatDev#). *   [Apache-2.0 license](https://github.com/OpenBMB/ChatDev#). [](https://github.com/OpenBMB/ChatDev#-overview). *   [**ChatDev 2.0 (DevAll)**](https://github.com/OpenBMB/ChatDev/tree/main) is a **Zero-Code Multi-Agent Platform** for \"Developing Everything\". [](https://github.com/OpenBMB/ChatDev#-news). Please see [Docker Start Guide](https://github.com/OpenBMB/ChatDev/blob/main/wiki.md#docker-start). See [guide](https://github.com/OpenBMB/ChatDev/blob/main/wiki.md#git-mode). You can activate the designer agent [![Image 16](https://github.com/OpenBMB/ChatDev/raw/main/visualizer/static/figures/designer.png)](https://github.com/OpenBMB/ChatDev/blob/main/visualizer/static/figures/designer.png) to generate images used in the software; try `python3 run.py --task [description_of_your_idea] --config \"Art\"`. [](https://github.com/OpenBMB/ChatDev#-quick-start). [](https://github.com/OpenBMB/ChatDev#-prerequisites). [](https://github.com/OpenBMB/ChatDev#-installation). [](https://github.com/OpenBMB/ChatDev#-configuration). [](https://github.com/OpenBMB/ChatDev#using-makefile-recommended). [](https://github.com/OpenBMB/ChatDev#manual-commands). [](https://github.com/OpenBMB/ChatDev#utility-commands). [](https://github.com/OpenBMB/ChatDev#-run-with-openclaw). [](https://github.com/OpenBMB/ChatDev#-run-with-docker). [](https://github.com/OpenBMB/ChatDev#-how-to-use). [](https://github.com/OpenBMB/ChatDev#%EF%B8%8F-web-console). [](https://github.com/OpenBMB/ChatDev#-python-sdk). [](https://github.com/OpenBMB/ChatDev). [](https://github.com/OpenBMB/ChatDev#-featured-workflows). [](https://github.com/OpenBMB/ChatDev#-workflow-collection). [](https://github.com/OpenBMB/ChatDev#-contributing). Check out our [Developer Guide](https://github.com/OpenBMB/ChatDev#developers) to get started! [](https://github.com/OpenBMB/ChatDev#-contributors). [](https://github.com/OpenBMB/ChatDev#primary-contributors). [](https://github.com/OpenBMB/ChatDev#contributors). [](https://github.com/OpenBMB/ChatDev#-acknowledgments). [](https://github.com/OpenBMB/ChatDev#-citation). [](https://github.com/OpenBMB/ChatDev#-contact). [Please reload this page](https://github.com/OpenBMB/ChatDev). [**355** watching](https://github.com/OpenBMB/ChatDev/watchers). [Please reload this page](https://github.com/OpenBMB/ChatDev).",
+            "score": 0.29603875,
             "raw_content": null
           },
           {
             "url": "https://github.com/EvolvingAgentsLabs/evolving-memory",
             "title": "EvolvingAgentsLabs/evolving-memory - GitHub",
             "content": "Current LLM agents have strong semantic memory (pre-training) and weak, volatile episodic memory (context window). They have no procedural memory at all. Every",
-            "score": 0.117572136,
+            "score": 0.24584508,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.facebook.com/groups/aiprompthouse/posts/2151191545701976/",
+            "title": "Building AI agents with GitHub repos - Facebook",
+            "content": "The future of AI Agents is here. These 10 GitHub repos teach you exactly how to build them ------- 1. Hands\u2011On Large Language Models \u2192 Learn LLMs through",
+            "score": 0.16426189,
             "raw_content": null
           },
           {
             "url": "https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents",
             "title": "Awesome AI Agents for 2026 - GitHub",
             "content": "[Skip to content](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#start-of-content). [Reload](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents) to refresh your session.You signed out in another tab or window. *   [Code](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026). *   [Issues 1](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/issues). *   [Pull requests 2](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/pulls). *   [Discussions](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/discussions). *   [Actions](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/actions). *   [Projects](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/projects). *   [Security and quality 0](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/security). *   [Insights](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/pulse). *   [Code](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026). *   [Issues](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/issues). *   [Pull requests](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/pulls). *   [Discussions](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/discussions). *   [Actions](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/actions). *   [Projects](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/projects). *   [Security and quality](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/security). *   [Insights](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/pulse). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026). *   [README](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#). *   [Code of conduct](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#). *   [Contributing](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#). *   [License](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#awesome-ai-agents-2026). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#contents). *   [Orchestration Frameworks](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#orchestration-frameworks). *   [Coding Agents](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#coding-agents). *   [Memory and Context](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#memory-and-context). *   [Low and No-Code Builders](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#low-and-no-code-builders). *   [Learning Resources](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#learning-resources). *   [Agent Communication](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#agent-communication). *   [Data Pipeline and Workflow](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#data-pipeline-and-workflow). *   [Secure Execution Environments](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#secure-execution-environments). *   [Changelog](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#changelog). *   [Star History](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#star-history). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#orchestration-frameworks). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#coding-agents). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#memory-and-context). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#multi-agent-systems). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#agent-communication-protocols). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#mcp-model-context-protocol). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#a2a-agent-to-agent-protocol). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#browser-and-computer-use-agents). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#agent-tooling-and-infrastructure). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#low-and-no-code-builders). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#voice-and-multimodal-agents). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#safety-guardrails-and-observability). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#agent-interfaces-and-uis). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#agent-deployment-and-hosting). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#agent-evaluation-and-benchmarks). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#learning-resources). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#agent-communication). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#data-pipeline-and-workflow). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#secure-execution-environments). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#changelog). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#contributing). [](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#star-history). [Readme](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#readme-ov-file). [View license](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#License-1-ov-file). [Code of conduct](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#coc-ov-file). [Contributing](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents#contributing-ov-file). [Please reload this page](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents). [Activity](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/activity). [**48** stars](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/stargazers). [**1** watching](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/watchers). [**18** forks](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/forks). ## [Releases](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/releases). ## [Packages 0](https://github.com/users/ARUNAGIRINATHAN-K/packages?repo_name=awesome-ai-agents-2026). [Please reload this page](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents). ## [Contributors](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/graphs/contributors). [Please reload this page](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents).",
-            "score": 0.043365803,
+            "score": 0.061182514,
             "raw_content": null
           }
         ]
@@ -335,45 +335,45 @@
         "query": "latest engineering blogs AI infrastructure bottlenecks",
         "results": [
           {
-            "url": "https://www.reddit.com/r/investing/comments/1szemcc/i_tried_to_find_which_ai_infrastructure_sector/",
-            "title": "I tried to find which AI infrastructure sector hasn't already been fully ...",
-            "content": "The AI trade has already aggressively repriced the obvious infrastructure bottlenecks: networking, cooling, and data center buildout. But the power side still",
-            "score": 0.61779,
+            "url": "https://www.pietschsoft.com/post/2026/04/30/ai-is-changing-the-infrastructure-economics-of-software-engineering",
+            "title": "AI Is Changing the Infrastructure Economics of Software Engineering",
+            "content": "The bottleneck does not disappear. It moves. And when it moves to shared infrastructure that millions of developers depend on, the consequences become visible",
+            "score": 0.9998523,
+            "raw_content": null
+          },
+          {
+            "url": "https://onesourcecloud.net/blog/scale-ai-infrastructure-without-rebuilding",
+            "title": "How to scale AI infrastructure without rebuilding from scratch",
+            "content": "Scaling AI infrastructure without a full rebuild is achievable for most enterprises. The key is identifying which layer is creating the bottleneck and expanding",
+            "score": 0.9997284,
             "raw_content": null
           },
           {
             "url": "https://www.amd.com/en/blogs/2026/7-questions-to-ask-before-building-your-ai-infrastructure.html",
             "title": "7 Questions to Ask Before Building Your AI Infrastructure - AMD",
             "content": "The core bottleneck for deploying massive AI models is often the network. As you design systems to support up to tens of thousands of GPUs,",
-            "score": 0.60805947,
-            "raw_content": null
-          },
-          {
-            "url": "https://www.technewsworld.com/story/ais-real-bottleneck-is-power-not-compute-180313.html",
-            "title": "AI's Real Bottleneck Is Power, Not Compute - TechNewsWorld",
-            "content": "AI's rapid growth is reshaping data center infrastructure needs. While many assume chips are the main bottleneck, supply is not the primary constraint.",
-            "score": 0.52334785,
+            "score": 0.9997198,
             "raw_content": null
           },
           {
             "url": "https://letsdatascience.com/news/ai-data-center-growth-creates-power-infrastructure-bottlenec-62e8607e",
             "title": "AI Data Center Growth Creates Power Infrastructure Bottleneck",
             "content": "The coverage highlights several infrastructure factors that practitioners should treat as cross-functional constraints rather than purely construction problems.",
-            "score": 0.5101799,
+            "score": 0.9997154,
             "raw_content": null
           },
           {
-            "url": "https://www.thefastmode.com/expert-opinion/48271-navigating-the-connectivity-bottleneck-in-ai-infrastructure",
-            "title": "Navigating the Connectivity Bottleneck in AI Infrastructure",
-            "content": "The race to deploy AI infrastructure is accelerating, with many hyperscalers pouring massive investments into data center buildouts.",
-            "score": 0.49523994,
+            "url": "https://konghq.com/blog/engineering/ai-infrastructure-with-kong-and-akamai",
+            "title": "Building a Secure, Scalable AI Infrastructure with Kong and Akamai",
+            "content": "This blog post describes how Kong and Akamai are providing a new combined offering to build a modern AI-based infrastructure for new agents. ## The platform.",
+            "score": 0.99967504,
             "raw_content": null
           },
           {
-            "url": "https://huggingface.co/blog/evaleval/eval-costs-bottleneck",
-            "title": "AI evals are becoming the new compute bottleneck - Hugging Face",
-            "content": "AI evaluation has crossed a cost threshold that changes who can do it. The Holistic Agent Leaderboard (HAL) recently spent about $40,000 to run 21,730 agent",
-            "score": 0.49113917,
+            "url": "https://www.technewsworld.com/story/ais-real-bottleneck-is-power-not-compute-180313.html",
+            "title": "AI's Real Bottleneck Is Power, Not Compute - TechNewsWorld",
+            "content": "AI's rapid growth is reshaping data center infrastructure needs. While many assume chips are the main bottleneck, supply is not the primary constraint.",
+            "score": 0.99916387,
             "raw_content": null
           }
         ]
@@ -385,42 +385,42 @@
             "url": "https://medium.com/@alain-airom/inside-docling-factory-building-a-multimodal-rag-powerhouse-2dc3d218492b",
             "title": "Inside Docling Factory: Building a Multimodal RAG Powerhouse",
             "content": "It identifies headers, tables, and even those tricky images. Using the docling library, the user can convert a complex PDF into clean Markdown while keeping",
-            "score": 0.57437146,
+            "score": 0.9996724,
             "raw_content": null
           },
           {
             "url": "https://towardsdatascience.com/proxy-pointer-rag-multimodal-answers-without-multimodal-embeddings/",
-            "title": "Proxy-Pointer RAG: Multimodal Answers ... - Towards Data Science",
+            "title": "Proxy-Pointer RAG: Multimodal Answers Without Multimodal Embeddings | Towards Data Science",
             "content": "The reason is that although this would be a significant enhancement from the text-only user experience, it is difficult to do reliably and consistently. In this article, I will present an **open-source MultiModal Proxy-Pointer RAG pipeline**, that can achieve this, primarily, because it looks at a document as a hierarchical tree of semantic blocks, rather than a bag-of-words that needs to be shredded blindly into chunks to answer a query. Run a OCR/Vision model on the images, turn the image into a paragraph of text, and index it into a chunk along with other text. When a chunk is retrieved, the LLM may only see a partial caption `(e.g., for Figure 5),` making it difficult to determine whether the image is actually relevant to this chunk or to an adjacent one that was not retrieved. This makes it difficult for the LLM to reliably decide which, if any, of the images are relevant to the user\u2019s query.",
-            "score": 0.48630774,
+            "score": 0.99936384,
+            "raw_content": null
+          },
+          {
+            "url": "https://arxiv.org/html/2604.27600v1",
+            "title": "Purifying Multimodal Retrieval: Fragment-Level Evidence Selection for RAG",
+            "content": "# Purifying Multimodal Retrieval: Fragment-Level Evidence Selection for RAG. We propose Fragment-level Evidence Selection for RAG (FES-RAG), a framework that selects atomic multimodal fragments rather than entire documents as grounding evidence. FES-RAG decomposes retrieved multimodal documents into sentence-level textual fragments and region-level visual fragments, enabling precise identification of evidence that directly supports generation. To guide fragment selection, we introduce Fragment Information Gain (FIG), a principled metric that measures the marginal contribution of each fragment to the MLLM\u2019s generation confidence. Experiments on the M2M^{2}RAG benchmark show that FES-RAG consistently outperforms state-of-the-art document-level MRAG methods, achieving up to 27% relative improvement in CIDEr. By selecting fewer yet more informative fragments, our approach substantially reduces context length while improving factual accuracy and generation coherence. By retrieving relevant external multimodal evidence, such as specific text documents or visual images, MRAG can enhance the accuracy and reliability of the MLLM\u2019s generation (Abootorabi et\u00a0al., 2025; Wang et\u00a0al., 2026b).",
+            "score": 0.99821776,
             "raw_content": null
           },
           {
             "url": "https://medium.com/@gkrvkoushik/i-built-a-chat-with-pdf-app-heres-how-rag-actually-works-explained-simply-bb1095af4fe8",
             "title": "I Built a Chat-with-PDF App \u2014 Here's How RAG Actually Works ... - Medium",
             "content": "This article walks through the core problem RAG solves, how it works ... Tables and structured data are poorly handled by text-extraction-based RAG.",
-            "score": 0.35716435,
+            "score": 0.998103,
+            "raw_content": null
+          },
+          {
+            "url": "https://github.com/amitshekhariitbhu/ai-engineering-interview-questions/blob/main/README.md",
+            "title": "AI Engineering Interview Questions and Answers - GitHub",
+            "content": "Your RAG system struggles with PDF documents containing tables and layouts. How do you fix PDF parsing? AI Agents and Agentic Systems. What is an AI agent",
+            "score": 0.9972638,
             "raw_content": null
           },
           {
             "url": "https://arxiv.org/html/2604.27724v1",
-            "title": "Iterative Multimodal Retrieval-Augmented Generation for Medical Question Answering",
+            "title": "Iterative Multimodal Retrieval-Augmented Generation for Medical ...",
             "content": "The system pairs ColQwen2.5 patch-level page embeddings with a sharded MapReduce LLM filter, scaling to \u223c\\sim350K pages while keeping Stage-1 retrieval under 30\u2009ms via an offline coarse-to-fine index (C=8C{=}8 centroids per page, ANN over centroids, exact two-way scoring on the top-RR shortlist). A vision-language model (VLM) then iteratively refines its query and accumulates evidence in a memory bank across \u2264\\leq3 reasoning rounds, with a single iteration costing \u223c\\sim15.9\u2009s and the full three-round pipeline \u223c\\sim47.8\u2009s on 4\u00d7\\timesA100. Under controlled comparison with the same Qwen2.5-VL-32B backbone, retrieval contributes a +5.8+5.8-point gain over the no-retrieval baseline; we also note a +1.8+1.8-point edge over MedRAG\u2009+\u2009GPT-4 (76.8%), with the caveat that this is a cross-paper rather than head-to-head comparison. text-chunk retrieval, +1.5+1.5 from iteration, and +1.0+1.0 from the memory bank. To our knowledge MedVRAG is among the first multimodal RAG frameworks for biomedical multiple-choice QA operating on PMC page images with iterative VLM reasoning\u2014general-domain page-image RAG\u00a0(Faysse et al., 2024) targets document VQA, and the medical RAG systems above operate on text.",
-            "score": 0.286499,
-            "raw_content": null
-          },
-          {
-            "url": "https://www.reddit.com/r/Rag/comments/1t0i8o4/fresh_grad_solo_project_am_i_overengineering_my/",
-            "title": "Fresh Grad Solo Project: Am I over-engineering my RAG pipeline ...",
-            "content": "Latex formulas and tables next then images. You will get different results for each type of data in the document and you can focus on what works for the types.",
-            "score": 0.2830381,
-            "raw_content": null
-          },
-          {
-            "url": "https://www.instagram.com/p/DXtv_X6FJeQ/",
-            "title": "Do you really understand what problem RAG solves?\u200b There's still ...",
-            "content": "Retrieval-augmented generation (RAG) pipelines are getting a major upgrade in 2026: add a cross-encoder reranker as a second pass and your results become",
-            "score": 0.18418019,
+            "score": 0.99036634,
             "raw_content": null
           }
         ]
