@@ -1,6 +1,6 @@
-DATE: 28th Apr 2026 to 5th May 2026
-1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1t3oaxg/i_got_stuck_debugging_rag_every_week_turns_out_i/ | WHY: RAG hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-2) Local LLM Optimizer — https://github.com/IAAR-Shanghai/Awesome-AI-Memory | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-3) PDF Table Extractor — https://www.reddit.com/r/LangChain/comments/1syu7vg/pdf_parsing_for_rag_is_still_a_mess_in_2026_whats/ | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
-4) Multi-modal Router — https://medium.com/@alain-airom/inside-docling-factory-building-a-multimodal-rag-powerhouse-2dc3d218492b | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-5) Agent Replay Harness — https://www.reddit.com/r/LocalLLM/comments/1szeghg/qwen_36_35b_a3b_is_insane_even_for/ | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+DATE: 29th Apr 2026 to 6th May 2026
+1) RAG PDF Parser — https://www.reddit.com/r/LangChain/comments/1syu7vg/pdf_parsing_for_rag_is_still_a_mess_in_2026_whats | WHY: PDFs are hard to parse | BUILD: Table-aware PDF parser | MARKET: RAG developers
+2) LLM Power Optimizer — https://www.amd.com/en/blogs/2026/7-questions-to-ask-before-building-your-ai-infrastructure.html | WHY: Power is a bottleneck | BUILD: Dynamic voltage scaling for LLMs | MARKET: AI data centers
+3) Agent Billing Fix — https://www.reddit.com/r/SideProject/comments/1t2f7wc/i_built_a_3line_fix_for_ai_agent_billing_after/ | WHY: Billing is broken | BUILD: Simple billing API | MARKET: AI agent developers
+4) Multimodal RAG — https://towardsdatascience.com/proxy-pointer-rag-multimodal-answers-without-multimodal-embeddings/ | WHY: Multimodal inputs are hard | BUILD: Proxy-pointer RAG pipeline | MARKET: Multimodal AI applications
+5) AI Infrastructure Planner — https://ciq.com/blog/the-ai-engineer-era-is-here | WHY: AI infrastructure is complex | BUILD: AI infrastructure planning tool | MARKET: AI engineers and architects
