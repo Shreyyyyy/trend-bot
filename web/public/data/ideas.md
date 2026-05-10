@@ -1,6 +1,6 @@
-DATE: 2nd May 2026 to 9th May 2026
-1) Agent Replay Harness — https://www.reddit.com/r/LocalLLM/comments/1t614xu/i_feel_left_behind_where_are_these_advanced/ | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-2) PDF Table Extractor — https://arxiv.org/html/2601.17644v3 | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
-3) Local LLM Optimizer — https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows/ | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-4) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1t52vls/wrote_up_the_failure_modes_that_kept_breaking_my/ | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-5) Multi-modal Router — https://www.instagram.com/reel/DX648KnDDjm/ | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+DATE: 3rd May 2026 to 10th May 2026
+1) RAG Repair Layer — https://www.reddit.com/r/LangChain/comments/1t8tn1v/most_rag_failures_dont_crash_they_silently_return/ | WHY: Silent RAG failures | BUILD: Error detection and correction | MARKET: Enterprise AI teams
+2) LLM Inference Optimizer — https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows/ | WHY: Inefficient LLM inference | BUILD: Token-efficient LLM serving | MARKET: Cloud providers
+3) AI Agent Monitor — https://www.reddit.com/r/dataengineering/comments/1t6ttuz/how_are_you_centralizing_knowledgecontext_from_ai/ | WHY: Lack of agent visibility | BUILD: Real-time agent monitoring | MARKET: DevOps teams
+4) Multimodal RAG — https://www.instagram.com/p/DYAz8oNDtWK/ | WHY: Limited RAG capabilities | BUILD: Multimodal RAG pipeline | MARKET: Content platforms
+5) Edge LLM — https://www.linkedin.com/posts/alexfrances_the-latest-insights-on-ai-infrastructure-activity-7457075896559034368-3HAT | WHY: Cloud latency issues | BUILD: Edge-based LLM deployment | MARKET: Real-time applications
