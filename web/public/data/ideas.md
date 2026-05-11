@@ -1,6 +1,6 @@
-DATE: 3rd May 2026 to 10th May 2026
-1) RAG Repair Layer — https://www.reddit.com/r/LangChain/comments/1t8tn1v/most_rag_failures_dont_crash_they_silently_return/ | WHY: Silent RAG failures | BUILD: Error detection and correction | MARKET: Enterprise AI teams
-2) LLM Inference Optimizer — https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows/ | WHY: Inefficient LLM inference | BUILD: Token-efficient LLM serving | MARKET: Cloud providers
-3) AI Agent Monitor — https://www.reddit.com/r/dataengineering/comments/1t6ttuz/how_are_you_centralizing_knowledgecontext_from_ai/ | WHY: Lack of agent visibility | BUILD: Real-time agent monitoring | MARKET: DevOps teams
-4) Multimodal RAG — https://www.instagram.com/p/DYAz8oNDtWK/ | WHY: Limited RAG capabilities | BUILD: Multimodal RAG pipeline | MARKET: Content platforms
-5) Edge LLM — https://www.linkedin.com/posts/alexfrances_the-latest-insights-on-ai-infrastructure-activity-7457075896559034368-3HAT | WHY: Cloud latency issues | BUILD: Edge-based LLM deployment | MARKET: Real-time applications
+DATE: 4th May 2026 to 11st May 2026
+1) Agent Replay Harness — https://www.reddit.com/r/LocalLLM/comments/1t7a651/infinite_loop_confusion_llm_went_to_coma_when_cot/ | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+2) PDF Table Extractor — https://github.com/erickyegon/multimodal-pdf-rag-system | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+3) Local LLM Optimizer — https://github.com/agentscope-ai/Trinity-RFT | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+4) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1t3oaxg/i_got_stuck_debugging_rag_every_week_turns_out_i/ | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
+5) Multi-modal Router — https://github.com/AhmedAl93/multimodal-semantic-RAG | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
