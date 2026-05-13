@@ -1,6 +1,6 @@
-DATE: 5th May 2026 to 12nd May 2026
-1) Agent Replay Harness — https://www.reddit.com/r/MachineLearning/comments/ieo3aw/d_too_many_ai_researchers_think_realworld | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-2) PDF Table Extractor — https://www.reddit.com/r/LangChain/comments/1t561ms/building_a_voice_rag_pipeline_and_hitting_two | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
-3) Local LLM Optimizer — https://github.blog/tag/llm/ | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-4) RAG Debugger — https://github.com/praetorian-inc/augustus | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-5) Multi-modal Router — https://www.instagram.com/reel/DYBqPq1o9vr/ | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+DATE: 6th May 2026 to 13rd May 2026
+1) Agent Replay Harness — https://www.reddit.com/r/LocalLLM/comments/1t597lt/local_ai_is_having_a_moment_and_we_should_stop/ | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+2) PDF Table Extractor — https://arxiv.org/html/2605.10807v1 | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+3) Local LLM Optimizer — https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows/ | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+4) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1t65pot/building_a_voice_rag_pipeline_and_hitting_two/ | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
+5) Multi-modal Router — https://www.facebook.com/0xSojalSec/posts/alibaba-a-multimodal-llm-that-understands-documents-without-ocrjust-point-it-at-/1514331350221263/ | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
