@@ -1,6 +1,6 @@
-DATE: 6th May 2026 to 13rd May 2026
-1) Agent Replay Harness — https://www.reddit.com/r/LocalLLM/comments/1t597lt/local_ai_is_having_a_moment_and_we_should_stop/ | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-2) PDF Table Extractor — https://arxiv.org/html/2605.10807v1 | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
-3) Local LLM Optimizer — https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows/ | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-4) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1t65pot/building_a_voice_rag_pipeline_and_hitting_two/ | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-5) Multi-modal Router — https://www.facebook.com/0xSojalSec/posts/alibaba-a-multimodal-llm-that-understands-documents-without-ocrjust-point-it-at-/1514331350221263/ | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+DATE: 7th May 2026 to 14th May 2026
+1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1t65pot/building_a_voice_rag_pipeline_and_hitting_two/ | WHY: RAG apps are confidently wrong | BUILD: Trace visualizer for RAG pipelines | MARKET: DevTools
+2) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1t7a651/infinite_loop_confusion_llm_went_to_coma_when_cot/ | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+3) Multimodal RAG — https://www.linkedin.com/posts/jimi-vaubien_194k-stars-multimodal-rag-that-handles-activity-7460252771238420480-gfm1 | WHY: Images are high cost | BUILD: Multimodal RAG for PDFs and images | MARKET: Content platforms
+4) Agent Reliability Toolkit — https://www.reddit.com/r/AI_Agents/comments/1ta20ot/how_many_ai_assistants_actually_work_across/ | WHY: Agent reliability is unsolved | BUILD: Toolkit for agent reliability | MARKET: Enterprise AI teams
+5) AI Infrastructure Scalability — https://www.networkworld.com/article/4168926/openai-led-consortium-seeks-to-address-ai-processing-bottlenecks.html | WHY: AI processing is bottlenecked | BUILD: Scalable AI infrastructure | MARKET: Cloud providers
