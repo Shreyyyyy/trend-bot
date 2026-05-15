@@ -1,22 +1,15 @@
 {
-  "timestamp": "2026-05-14T06:44:12.836272",
+  "timestamp": "2026-05-15T06:53:29.023538",
   "trends": {
     "queries": [
       {
         "query": "site:reddit.com/r/MachineLearning OR site:reddit.com/r/LocalLLM latest AI problems frustrations",
         "results": [
           {
-            "url": "https://www.reddit.com/r/MachineLearning/comments/woclze/dwhat_are_some_important_problems_in_machine",
-            "title": "[D]What are some \"important\" problems in machine learning/AI? : r/MachineLearning",
-            "content": "# [D]What are some \"important\" problems in machine learning/AI? Skip to main content[D]What are some \"important\" problems in machine learning/AI? Open menu Open navigationGo to Reddit Home. Get App Get the Reddit app Log InLog in to Reddit. Expand user menu Open settings menu. # [D]What are some \"important\" problems in machine learning/AI? I am not talking about \"hot stuff\" like self driving cars or anything, but topics important to the field( like maybe interpretability of machine learning? ) which is fundamental to the advancement of the field. # Related Answers Section. Important problems in machine learning and AI. Open problems in machine learning. Machine learning examples in real life. Best resources for mastering deep learning. Create your account and connect with a world of communities. By continuing, you agree to ourUser Agreementand acknowledge that you understand thePrivacy Policy. Anyone can view, post, and comment to this community. ## Top Posts. * Reddit reReddit: Top posts of August 14, 2022 * * *. * Reddit reReddit: Top posts of August 2022 * * *. * Reddit reReddit: Top posts of 2022 * * *. Reddit RulesPrivacy PolicyUser AgreementYour Privacy ChoicesAccessibilityReddit, Inc.",
-            "score": 0.94853723,
-            "raw_content": null
-          },
-          {
-            "url": "https://www.reddit.com/r/MachineLearning/comments/ieo3aw/d_too_many_ai_researchers_think_realworld",
-            "title": "[D] Too many AI researchers think real-world problems are not relevant : r/MachineLearning",
-            "content": "Title: [D] Too many AI researchers think real-world problems are not relevant : r/MachineLearning\n# [D] Too many AI researchers think real-world problems are not relevant : r/MachineLearning. Skip to main content[D] Too many AI researchers think real-world problems are not relevant : r/MachineLearning. Open menu Open navigationGo to Reddit Home. Get App Get the Reddit app Log InLog in to Reddit. Expand user menu Open settings menu. Image 1 Go to MachineLearning. # [D] Too many AI researchers think real-world problems are not relevant. [![Image 2: r/MachineLearning - [D] Too many AI researchers think real-world problems are not relevant](https://external-preview.redd.it/d-too-many-ai-researchers-think-real-world-problems-are-not-v0-x1JOsS9AytNRj39Wm5JrXNCpUfhfQ0m2LNbEbsJWpeY.jpg? width=640&crop=smart&auto=webp&s=9484d23a496a19889987a18338be8c73f6c39370)](https://www.technologyreview.com/2020/08/18/1007196/ai-research-machine-learning-applications-problems-opinion)[![Image 3: r/MachineLearning - [D] Too many AI researchers think real-world problems are not relevant](https://external-preview.redd.it/d-too-many-ai-researchers-think-real-world-problems-are-not-v0-x1JOsS9AytNRj39Wm5JrXNCpUfhfQ0m2LNbEbsJWpeY.jpg? width=640&crop=smart&auto=webp&s=9484d23a496a19889987a18338be8c73f6c39370)](https://www.technologyreview.com/2020/08/18/1007196/ai-research-machine-learning-applications-problems-opinion). Create your account and connect with a world of communities. By continuing, you agree to ourUser Agreementand acknowledge that you understand thePrivacy Policy. Anyone can view, post, and comment to this community. ## Top Posts. *   Reddit reReddit: Top posts of August 22, 2020 * * *. *   Reddit reReddit: Top posts of August 2020 * * *. *   Reddit reReddit: Top posts of 2020 * * *. Reddit RulesPrivacy PolicyUser AgreementYour Privacy ChoicesAccessibilityReddit, Inc.",
-            "score": 0.56025267,
+            "url": "https://www.reddit.com/r/LocalLLM/comments/1t9d18z/local_ai_cannot_stay_just_a_model_picker_the_next/",
+            "title": "Local AI cannot stay just a model picker. The next step is teach ...",
+            "content": "The issue is the internal training of info that constantly changes. Instead of proper referencing and checks and use of system. We want ai to act like human and",
+            "score": 0.2043419,
             "raw_content": null
           },
           {
@@ -34,6 +27,13 @@
             "raw_content": null
           },
           {
+            "url": "https://www.reddit.com/r/LocalLLM/comments/1t9gs6i/i_tried_hard_to_replace_frontier_coding_models/",
+            "title": "I tried hard to replace frontier coding models with local LLMs. The ...",
+            "content": "I tried hard to replace frontier coding models with local LLMs. The biggest problem wasn't quality - it was time. Discussion.",
+            "score": 0.04177388,
+            "raw_content": null
+          },
+          {
             "url": "https://www.reddit.com/r/LocalLLM/comments/1tbj9sk/builders/",
             "title": "Builders ! : r/LocalLLM - Reddit",
             "content": "AI native health care solutions present a whole new level of compliance challenges (AI agent boogie man). Users/Customers/Regulators very focused on",
@@ -41,10 +41,10 @@
             "raw_content": null
           },
           {
-            "url": "https://www.reddit.com/r/LocalLLM/comments/1t9d18z/local_ai_cannot_stay_just_a_model_picker_the_next/",
-            "title": "Local AI cannot stay just a model picker. The next step is teach ...",
-            "content": "Local AI cannot stay just a model picker. The next step is teach, correct, train. Local AI has crossed the first big line: normal people can run useful",
-            "score": 0.02145073,
+            "url": "https://www.reddit.com/r/LocalLLM/comments/1tai1ew/lm_studio_or_driver_bug/",
+            "title": "LM studio or driver bug : r/LocalLLM - Reddit",
+            "content": "I just bought bought 2 9060xt today. When I load a model into lm studio, the drivers would crash and suddenly windows would only detect 1 gpu. Wonder if it's",
+            "score": 0.0025409926,
             "raw_content": null
           }
         ]
@@ -53,45 +53,45 @@
         "query": "site:reddit.com/r/OpenAI OR site:reddit.com/r/LangChain 'how to' solve RAG issues",
         "results": [
           {
-            "url": "https://www.reddit.com/r/LangChain/comments/1t65pot/building_a_voice_rag_pipeline_and_hitting_two/",
-            "title": "Building a voice RAG pipeline and hitting two specific eval problems",
-            "content": "sub-question decomposition before retrieval is likely the cleanest fix here, especially for voice RAG where you need tighter context and lower latency.",
-            "score": 0.37100044,
+            "url": "https://www.reddit.com/r/LangChain/comments/1t8tn1v/most_rag_failures_dont_crash_they_silently_return/",
+            "title": "Most RAG failures don't crash. They silently return bad answers. I ...",
+            "content": "Most RAG failures don't crash. They silently return bad answers. I built a repair layer for that. Most RAG tooling provides a score but fails to specify what",
+            "score": 0.99014014,
             "raw_content": null
           },
           {
-            "url": "https://www.reddit.com/r/LangChain/comments/1tarier/most_rag_apps_in_production_are_confidently_wrong/",
-            "title": "Most RAG apps in production are confidently wrong and nobody ...",
-            "content": "Version metadata on chunks is the fix. Tag each chunk with document version and last-modified timestamp at ingest \u2014 then filter retrieval to the most recent",
-            "score": 0.33131495,
+            "url": "https://www.reddit.com/r/OpenAI/comments/1tdgrtq/the_gap_between_chatgpt_drafting_an_email_and/",
+            "title": "r/OpenAI on Reddit: the gap between chatgpt drafting an email and ...",
+            "content": "the memory part is real but the usual fix misses. most attempts treat it as recall over past sessions, embed the transcripts and rag over them, which fails",
+            "score": 0.1710612,
             "raw_content": null
           },
           {
-            "url": "https://www.reddit.com/r/LangChain/comments/1ta6yg2/every_mcp_server_you_add_makes_your_agent/",
-            "title": "Every MCP server you add makes your agent slightly dumber. Here ...",
-            "content": "Please advise an optimal way to solve issues with HP Microserver Gen8. 4 ... The boring metadata layer is the most valuable part of my RAG system and I almost",
-            "score": 0.29042256,
+            "url": "https://www.reddit.com/r/LangChain/comments/1taodz1/better_math_problem_generator_architecture/",
+            "title": "Better math problem generator architecture : r/LangChain - Reddit",
+            "content": "one improvement is to separate concerns more clearly, for example by using a structured problem schema with hard constraints enforced programmatically, and only",
+            "score": 0.006097562,
             "raw_content": null
           },
           {
-            "url": "https://www.reddit.com/r/LangChain/comments/1t6w7t3/serverless_rag_p99_latency_on_vercel_connection/",
-            "title": "Serverless RAG p99 latency on Vercel, connection setup is wrecking ...",
-            "content": "It's the connection setup. On a cold function instance, the first request has to do TLS handshake to Pinecone, pull index metadata, run the embedding call to",
-            "score": 0.16313887,
+            "url": "https://www.reddit.com/r/LangChain/comments/1t7v92i/suggest_me_relivent_portfolio_projects/",
+            "title": "Suggest me relivent portfolio projects : r/LangChain - Reddit",
+            "content": "\"Agent with evals\" project: pick one workflow (support triage, doc Q&A, meeting followups) and build it with a simple harness, success metrics, and regression",
+            "score": 0.004182494,
             "raw_content": null
           },
           {
-            "url": "https://www.reddit.com/r/LangChain/comments/1ta70vi/anyone_else_spending_more_time_debugging_agent/",
-            "title": "Anyone else spending more time debugging agent workflows than ...",
-            "content": "What's helped me: logging every tool call with input/output, not just the final result. When an agent fails, the issue is usually 3 steps before the actual",
-            "score": 0.039627768,
+            "url": "https://www.reddit.com/r/LangChain/comments/1tcrc52/anyone_else_feel_like_langchain_became_way_more/",
+            "title": "Anyone else feel like LangChain became way more complicated ...",
+            "content": "I've had the same feeling for a long time honestly. Sometimes it feels like I spend more time dealing with abstractions, memory layers, orchestration, tracing,",
+            "score": 0.0036358088,
             "raw_content": null
           },
           {
-            "url": "https://www.reddit.com/r/LangChain/best/",
-            "title": "LangChain",
-            "content": "Image 3: u/Long_Umpire_9746 avataru/Long_Umpire_9746\n\n\u20222 hr. agoShow r/Python: agent-lens \u2014 pause a live LLM agent, fork with a hypothesis, diff the runsBuilt a local-first debugger for LLM agents that makes prompt iteration structural. Pause at any LLM call \u2192 fork with a written hypothesis \u2192 GET /diff \u2192 verdict: improved/regressed with exact latency/token/cost numbers. pip install agentlens-tracer GitHub: [ Launched on PH today: \n\n  \n\nImage 4: u/LegalZoom avataru/LegalZoom\u2022Promoted\n\n\ud83d\udce3 PSA \ud83d\udce3 Filing your LLC is FREE with LegalZoom, you just pay state filing fees.\n\nImage 5: \ud83d\udce3 PSA \ud83d\udce3 Filing your LLC is FREE with LegalZoom, you just pay state filing fees.Image 6: \ud83d\udce3 PSA \ud83d\udce3 Filing your LLC is FREE with LegalZoom, you just pay state filing fees.\n\n  \n\n legalzoom.com \n\nShop Now [...] Why is useStream so opinionated?\n\nImage 19: u/eyueldk avataru/eyueldk\n\n\u202210 hr. agoWhy is useStream so opinionated?DiscussionIntegrating langchain to frontend is so hard for no good reason. I've read documentation and it keeps insinuating that the user needs a langgraph server - which I don't want. I want to simply embed my langchain agent into an endpoint and stream messages + values to my react frontend. The current solution I'm pursuing is to use ai-sdk's langchain adapter and using their ui friendly sdk. Langchain shouldn't be so opinionated about the useStream's server architecture - it's such a bad design and IMO another LCEL moment. What solutions have you used to implement streaming agents/models to frontends?\n\n  \n\n Created Jan 26, 2023 \n\n3 years ago\n\n Public [...] # LangChain\nSkip to main contentLangChain\n\nOpen menu Open navigation[]( to Reddit Home\n\nr/LangChain\n\nSign UpSign up for RedditLog InLog in to Reddit\n\nExpand user menu Open settings menu\n\nImage 1Image 2\n\n# r/LangChain\n\nCreate Post\n\nFeedAbout\n\nBest\n\n Open sort options \n\n   Best\n   Hot\n   New\n   Top\n   Rising\n\n Change post view \n\n   Card\n   Compact\n\n  \n\nShow r/Python: agent-lens \u2014 pause a live LLM agent, fork with a hypothesis, diff the runs\n\nImage 3: u/Long_Umpire_9746 avataru/Long_Umpire_9746",
-            "score": 0.027546074,
+            "url": "https://www.reddit.com/r/LangChain/comments/1t75smg/i_dumped_3000_pages_of_firmware_docs_is_it_even/",
+            "title": "I Dumped 3,000 Pages of Firmware Docs\u2026 Is It Even Possible to ...",
+            "content": "I'm trying to figure out if this idea is actually doable or just looks good in YouTube demos. I have around 7 firmware architecture/spec documents\u2026",
+            "score": 0.000345654,
             "raw_content": null
           }
         ]
@@ -121,6 +121,13 @@
             "raw_content": null
           },
           {
+            "url": "https://github.com/AgenticHealthAI/Awesome-AI-Agents-for-Healthcare",
+            "title": "GitHub - AgenticHealthAI/Awesome-AI-Agents-for-Healthcare: Latest Advances on Agentic AI & AI Agents for Healthcare \u00b7 GitHub",
+            "content": "| RE-MCDF: Closed-Loop Multi-Expert LLM Reasoning for Knowledge-Grounded Clinical Diagnosis | arXiv | 2026.02 | Paper | Not Available |\n| Agentic Reasoning for Large Language Models | arXiv | 2026.01 | Paper | Star   GitHub |\n| EvoClinician: A Self-Evolving Agent for Multi-Turn Medical Diagnosis | arXiv | 2026.01 | Paper | Star   GitHub |\n| Scaling Medical Reasoning Verification via Tool-Integrated Reinforcement Learning | arXiv | 2026.01 | Paper | Not Available |\n| DEEPMED: Building a Medical DeepResearch Agent via Multi-hop Med-Search Data | arXiv | 2026.01 | Paper | Not Available |\n| Multi-Aspect Knowledge-Enhanced Medical Vision-Language Pretraining with Multi-Agent Data Generation | arXiv | 2025.12 | Paper | Not Available | [...] | Infherno: End-to-end agent-based FHIR resource synthesis from free-form clinical notes | arXiv | 2025.07 | Paper | Star   GitHub |\n| From EHRs to Patient Pathways: Scalable Modeling of Longitudinal Health Trajectories with LLMs | arXiv | 2025.6 | Paper | Not Available |\n| CARE-AD: a multi-agent large language model framework for Alzheimer\u2019s disease prediction | npj Digital Medicine | 2025 | Paper | Star   GitHub |\n| Colacare: Enhancing electronic health record modeling through large language model-driven multi-agent collaboration | arXiv | 2024.10 | Paper | ( |\n| EHRFlow: A Large Language Model-Driven Iterative Multi-Agent Electronic Health Record Data Analysis Workflow | KDD'24 Workshop | 2024.06 | Paper | Star   GitHub | [...] | Can LLM Agents Generate Real-World Evidence? Evaluating Observational Studies in Medical Databases | arXiv | 2026.03 | Paper | Star   GitHub |\n| LiveMedBench: A Contamination-Free Medical Benchmark for LLMs with Automated Rubric Evaluation | arXiv | 2026.02 | Paper | Not Available |\n| Do Mixed-Vendor Multi-Agent LLMs Improve Clinical Diagnosis? | EACL Workshop | 2026.03 | Paper | Not Available |\n| MEDVISTAGYM: A Scalable Training Environment for Thinking with Medical Images | arXiv | 2026.01 | Paper | Not Available |\n| MedConsultBench: A Full-Cycle, Fine-Grained, Process-Aware Benchmark for Medical Consultation | arXiv | 2026.01 | Paper | Not Available |\n| MedEinst: Benchmarking the Einstellung Effect in Medical LLMs | arXiv | 2026.01 | Paper | Not Available |",
+            "score": 0.5101799,
+            "raw_content": null
+          },
+          {
             "url": "https://engineering.01cloud.com/2024/05/23/scaling-ai-ml-infrastructure-at-uber/",
             "title": "Scaling AI/ML Infrastructure at Uber - Engineering Blog",
             "content": "Conclusion\n\nThe blog concludes with three key takeaways:\n\nThis blog post offers valuable insights for companies building and scaling their AI/ML infrastructure. By employing a combination of optimization techniques, workload-specific solutions, and collaborative design principles, organizations can ensure efficient and adaptable infrastructure to support the ever-growing demands of AI applications.\n\nReference to the Article- Uber\n\n### Follow us for more updates!\n\n01 Engineer\n\n### \n\nBreaking the Bottleneck: TorchSpec and the Future of Disaggregated Speculative Decoding\nAnthropic\u2019s 33-Page Guide to Building Claude Skills: Everything You Need to Know\nLinux kernel 7.0 supports net namespace in AF_VSOCK.\n\n### You May Also Like [...] Engineering Blog\n\nMediamodifier-Design-Template\n\n# Scaling AI/ML Infrastructure at Uber\n\n## Scaling AI/ML Infrastructure at Uber: Optimizing for Efficiency and Growth\n\nThis blog post explores Uber\u2019s journey in scaling its AI/ML infrastructure to support a rapidly evolving landscape of applications. As Uber\u2019s models have grown in complexity, from XGBoost to deep learning and generative AI, the need for efficient and adaptable infrastructure has become crucial.\n\nOptimizing Existing Infrastructure\n\nThe blog details several initiatives undertaken to maximize the utilization of existing on-premise infrastructure:\n\nBuilding New Infrastructure\n\nThe blog also highlights Uber\u2019s approach to building new cloud-based infrastructure:\n\nConclusion\n\nThe blog concludes with three key takeaways: [...] ## Categories\n\nOptimized by NitroPack.io\n\nAutomated page speed optimizations for fast site performance",
@@ -128,17 +135,10 @@
             "raw_content": null
           },
           {
-            "url": "https://www.instagram.com/p/DYNc0NejPm3/",
-            "title": "Instagram",
-            "content": "\u2192 Explore LLM serving, RAG pipelines, vector databases & inference optimization \u2192 Understand how modern AI infrastructure is designed at scale 3. Kubernetes",
-            "score": 0.27001366,
-            "raw_content": null
-          },
-          {
-            "url": "https://engineering.fb.com/",
-            "title": "Engineering at Meta - Engineering at Meta Blog",
-            "content": "# Engineering at Meta\n\nEngineering at Meta\n\n###### The Latest\n\n### Available Positions\n\n### Technology at Meta\n\nfooter-fb-engineering\nfooter-AI\nfooter-developers\nfooter-developers\nfooter-bug-bounty\nfooter-rss\n\n### Open Source\n\nMeta believes in building community through open source technology. Explore our latest projects in Artificial Intelligence, Data Infrastructure, Development Tools, Front End, Languages, Platforms, Security, Virtual Reality, and more.\n\nandroid\nios\nweb\nbackend\nhardware\nMeta\n\nEngineering at Meta is a technical news resource for engineers interested in how we solve large-scale technical challenges at Meta. [...] To help personalize content, tailor and measure ads and provide a safer experience, we use cookies. By clicking or navigating the site, you agree to allow our collection of information on and off Facebook through cookies. Learn more, including about available controls: Cookie Policy",
-            "score": 0.07727375,
+            "url": "https://dev.to/kanywst/what-11-big-tech-companies-actually-do-with-ai-in-2026-a-layered-numbers-first-breakdown-h58",
+            "title": "What 11 big tech companies actually do with AI in 2026 - DEV Community",
+            "content": "`npm install`\n\nA real example: in January 2026, Aikido Security researcher Charlie Eriksen registered an LLM-hallucinated npm package named `react-codeshift` (for research). It propagated into 237 GitHub repositories. CSO Online has also called out the practice of copy-pasting MCP server configs from READMEs as a new attack vector (\"MCP tool poisoning\").\n\n`react-codeshift`\n\n### 8.2 When the model vendor breaks, prod breaks\n\nAnthropic's postmortem on April 23, 2026 (`anthropic.com/engineering/april-23-postmortem`) was a big talking point among teams that depend on Claude Code in production:\n\n`anthropic.com/engineering/april-23-postmortem` [...] The most successful business application has been bolting LLMs onto an existing AI product: their ad-effectiveness prediction system \"Kyoku-Yosoku AI\" got an LLM upgrade for accuracy. It wasn't \"use LLMs from scratch.\" It was \"use LLMs to extend an existing AI asset\", which is generally the realistic order.\n\n## 7. The whole map: 11 companies plotted on the four layers\n\nPulling back: L1 AI-generated-code share has settled into 50\u201375% as the new floor. L2 is producing real numbers in the thousands-of-person-years range. L3 is moving from \"augment\" to \"replace\": existing product features are being rebuilt on LLMs. L4 is still rare (Shopify, Meta, Mercari) but spreading. [...] The org structure is the unusual part. The \"AI Task Force\" they kicked off in July 2025 is staffed across 33 domains (legal, finance, HR, and more), with engineers and PMs assigned per domain. Internal operations (L2) are being rebuilt by full-time engineers, one domain at a time.\n\nThe piece that's distinctly Mercari is Agent-Spec Driven Development (ASDD), published in December 2025. Three points:\n\nIt's not \"make coding faster.\" It's rewriting the way design and specs are written so that agents can drive them, which is the L1-through-L4 move.\n\n### 6.2 CyberAgent: in-house Japanese LLM and the AI Operations Office\n\nLayer focus: L2 and L3\n\nCyberAgent is unusual for being in on LLM development itself.",
+            "score": 0.16012181,
             "raw_content": null
           }
         ]
@@ -147,10 +147,10 @@
         "query": "GitHub trending AI projects problem solving tools",
         "results": [
           {
-            "url": "https://www.linkedin.com/posts/pullrepo_ai-opensource-github-activity-7458433026574958592-TacF",
-            "title": "Fastest-growing AI projects on GitHub | PullRepo posted on the topic",
-            "content": "Fastest-growing AI projects today Here are a few developer tools gaining traction right now: 1. Ridha61's Lossless Scaling Upscaler FPS \u2192 a tool that",
-            "score": 0.9998977,
+            "url": "https://www.linkedin.com/posts/pullrepo_ai-opensource-github-activity-7458614223632465921-jIFe",
+            "title": "Fastest-growing AI projects on GitHub today | PullRepo posted on the topic",
+            "content": "Fastest-growing AI projects today Here are a few developer tools gaining traction right now: 1. The trend suggests that developers increasingly seeking",
+            "score": 0.9997527,
             "raw_content": null
           },
           {
@@ -161,31 +161,31 @@
             "raw_content": null
           },
           {
-            "url": "https://github.com/ai-boost/awesome-harness-engineering",
-            "title": "ai-boost/awesome-harness-engineering - GitHub",
-            "content": "## Use saved searches to filter your results more quickly. # ai-boost/awesome-harness-engineering. # Awesome Harness Engineering. Curated resources, patterns, and templates for building reliable AI agent harnesses. **Harness engineering** is the discipline of designing the scaffolding \u2014 context delivery, tool interfaces, planning artifacts, verification loops, memory systems, and sandboxes \u2014 that surrounds an AI agent and determines whether it succeeds or fails on real tasks. This list focuses on the *harness*, not the model. Every component here exists because the model can't do it alone \u2014 and the best harnesses are designed knowing those components will become unnecessary as models improve. Canonical essays that define what harness engineering is and why it matters. | `templates/PLAN.md` | Task planning artifact with milestones and verification gates |. **What belongs here:** Resources that address a specific harness engineering problem (context, tools, planning, permissions, memory, verification, sandboxing). Awesome list for AI agent harness engineering: tools, patterns, evals, memory, MCP, permissions, observability, and orchestration.",
-            "score": 0.98667485,
+            "url": "https://medium.com/lets-code-future/top-ai-github-repositories-that-are-dominating-2026-and-you-also-need-to-know-about-that-970ce6a61b96",
+            "title": "Top AI GitHub Repositories That Are Dominating 2026 and You Also ...",
+            "content": "These open-source AI repos are not just getting stars they are also shaping how devs build apps, agents, workflows, and local AI tools in 2026.",
+            "score": 0.99680245,
             "raw_content": null
           },
           {
-            "url": "https://github.com/alvinreal/awesome-opensource-ai",
-            "title": "GitHub - alvinreal/awesome-opensource-ai: Curated list of the best ...",
-            "content": "[alvinreal](/alvinreal)   /  **[awesome-opensource-ai](/alvinreal/awesome-opensource-ai)**  Public. # alvinreal/awesome-opensource-ai. [Branches](/alvinreal/awesome-opensource-ai/branches)[Tags](/alvinreal/awesome-opensource-ai/tags). | Latest commit   History[654 Commits](/alvinreal/awesome-opensource-ai/commits/main/) 654 Commits |. | [.github/workflows](/alvinreal/awesome-opensource-ai/tree/main/.github/workflows \"This path skips through empty directories\") | [.github/workflows](/alvinreal/awesome-opensource-ai/tree/main/.github/workflows \"This path skips through empty directories\") |  |  |. | [.moltfounders](/alvinreal/awesome-opensource-ai/tree/main/.moltfounders \".moltfounders\") | [.moltfounders](/alvinreal/awesome-opensource-ai/tree/main/.moltfounders \".moltfounders\") |  |  |. | [assets](/alvinreal/awesome-opensource-ai/tree/main/assets \"assets\") | [assets](/alvinreal/awesome-opensource-ai/tree/main/assets \"assets\") |  |  |. | [tools](/alvinreal/awesome-opensource-ai/tree/main/tools \"tools\") | [tools](/alvinreal/awesome-opensource-ai/tree/main/tools \"tools\") |  |  |. | [.gitignore](/alvinreal/awesome-opensource-ai/blob/main/.gitignore \".gitignore\") | [.gitignore](/alvinreal/awesome-opensource-ai/blob/main/.gitignore \".gitignore\") |  |  |. | [.ignore](/alvinreal/awesome-opensource-ai/blob/main/.ignore \".ignore\") | [.ignore](/alvinreal/awesome-opensource-ai/blob/main/.ignore \".ignore\") |  |  |. | [.pr-body.md](/alvinreal/awesome-opensource-ai/blob/main/.pr-body.md \".pr-body.md\") | [.pr-body.md](/alvinreal/awesome-opensource-ai/blob/main/.pr-body.md \".pr-body.md\") |  |  |. | [CONTRIBUTING.md](/alvinreal/awesome-opensource-ai/blob/main/CONTRIBUTING.md \"CONTRIBUTING.md\") | [CONTRIBUTING.md](/alvinreal/awesome-opensource-ai/blob/main/CONTRIBUTING.md \"CONTRIBUTING.md\") |  |  |. | [EMERGING.md](/alvinreal/awesome-opensource-ai/blob/main/EMERGING.md \"EMERGING.md\") | [EMERGING.md](/alvinreal/awesome-opensource-ai/blob/main/EMERGING.md \"EMERGING.md\") |  |  |. | [LICENSE](/alvinreal/awesome-opensource-ai/blob/main/LICENSE \"LICENSE\") | [LICENSE](/alvinreal/awesome-opensource-ai/blob/main/LICENSE \"LICENSE\") |  |  |. | [README.md](/alvinreal/awesome-opensource-ai/blob/main/README.md \"README.md\") | [README.md](/alvinreal/awesome-opensource-ai/blob/main/README.md \"README.md\") |  |  |. | [RESEARCH\\_PR.md](/alvinreal/awesome-opensource-ai/blob/main/RESEARCH_PR.md \"RESEARCH_PR.md\") | [RESEARCH\\_PR.md](/alvinreal/awesome-opensource-ai/blob/main/RESEARCH_PR.md \"RESEARCH_PR.md\") |  |  |. | [ci\\_health\\_report.md](/alvinreal/awesome-opensource-ai/blob/main/ci_health_report.md \"ci_health_report.md\") | [ci\\_health\\_report.md](/alvinreal/awesome-opensource-ai/blob/main/ci_health_report.md \"ci_health_report.md\") |  |  |. [**3.6k** stars](/alvinreal/awesome-opensource-ai/stargazers). [**33** watching](/alvinreal/awesome-opensource-ai/watchers). [**395** forks](/alvinreal/awesome-opensource-ai/forks). [Report repository](/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Falvinreal%2Fawesome-opensource-ai&report=alvinreal+%28user%29). ## [Releases](/alvinreal/awesome-opensource-ai/releases). ## [Packages 0](/users/alvinreal/packages?repo_name=awesome-opensource-ai). ## [Contributors](/alvinreal/awesome-opensource-ai/graphs/contributors). * [Python 100.0%](/alvinreal/awesome-opensource-ai/search?l=python).",
-            "score": 0.9850429,
+            "url": "https://github.com/mb-mal/awesome-ai-agents-frameworks",
+            "title": "Awesome AI Agents Frameworks - GitHub",
+            "content": "HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilot, etc.) autonomously run 150+ cybersecurity tools for automated",
+            "score": 0.9918121,
             "raw_content": null
           },
           {
-            "url": "https://github.com/massgen/massgen",
-            "title": "discord.massgen.ai \u00b7 GitHub",
-            "content": "To see all available qualifiers, see our documentation. # massgen/MassGen. # \ud83d\ude80 MassGen: Multi-Agent Scaling System for GenAI. *MassGen is a cutting-edge multi-agent system that leverages the power of collaborative AI to solve complex tasks.*. MassGen is a cutting-edge multi-agent framework that coordinates AI agents to solve complex tasks through redundancy and iterative refinement. This approach to parallel refinement and collective validation lays the groundwork for principled multi-agent scaling, where the system continuously improves its outputs by leveraging diverse agent perspectives and enforcing quality through consensus. This project started with the \"threads of thought\" and \"iterative refinement\" ideas presented in The Myth of Reasoning, and extends the classic \"multi-agent conversation\" idea in AG2. **\ud83e\udde9 Use MassGen as a Skill:** `npx skills add massgen/skills --all` \u2014 then type invoke the skill in Claude Code, Cursor, Copilot, or 40+ other agents. Install the MassGen skill to invoke MassGen directly from Claude Code, OpenAI Codex, GitHub Copilot, Cursor, and 40+ other agents that support the Agent Skills standard:.",
-            "score": 0.98102194,
+            "url": "https://www.reddit.com/r/GithubCopilot/comments/1t903vw/why_ai_struggles_to_solve_coding_problems/",
+            "title": "Why AI struggles to solve coding problems : r/GithubCopilot",
+            "content": "[Skip to main content](https://www.reddit.com/r/GithubCopilot/comments/1t903vw/why_ai_struggles_to_solve_coding_problems/#main-content)Why AI struggles to solve coding problems : r/GithubCopilot. Open menu Open navigation[](https://www.reddit.com/)Go to Reddit Home. [Sign Up](https://www.reddit.com/register/)Sign up for Reddit[Log In](https://www.reddit.com/login/)Log in to Reddit. [![Image 1](https://styles.redditmedia.com/t5_4ppi6b/styles/communityIcon_wzronurvr7hf1.png?width=96&height=96&frame=1&auto=webp&crop=96%3A96%2Csmart&s=ab64411c16f6943ca633c69b15834df12aabdab7) Go to GithubCopilot](https://www.reddit.com/r/GithubCopilot/). [r/GithubCopilot](https://www.reddit.com/r/GithubCopilot/)\u20222h ago. [Puzzleheaded-Lock825](https://www.reddit.com/user/Puzzleheaded-Lock825/). [General](https://www.reddit.com/r/GithubCopilot/?f=flair_name%3A%22General%22). By continuing, you agree to our[User Agreement](https://www.redditinc.com/policies/user-agreement)and acknowledge that you understand the[Privacy Policy](https://www.redditinc.com/policies/privacy-policy). How GitHub Copilot improves coding efficiency. GitHub Copilot **significantly enhances coding efficiency, especially for boilerplate and repetitive tasks**, though its overall impact varies based on user experience and how it's integrated into the workflow. [See Answer](https://www.reddit.com/answers/eb84d0b2-5e3b-4958-b34b-e232a3a68bca/?q=How+GitHub+Copilot+improves+coding+efficiency&source=PDP). [Best practices for using GitHub Copilot](https://www.reddit.com/answers/22fbc6f9-be2b-41ca-82af-e75a79f78d9d/?q=Best+practices+for+using+GitHub+Copilot&source=PDP). [Common pitfalls when using AI coding tools](https://www.reddit.com/answers/a552f7b0-a422-4fd8-b697-286aed2848a0/?q=Common+pitfalls+when+using+AI+coding+tools&source=PDP). [Integrating GitHub Copilot with popular IDEs](https://www.reddit.com/answers/0b30f45a-c365-4a11-a8b8-5a24f0df3b1f/?q=Integrating+GitHub+Copilot+with+popular+IDEs&source=PDP). [Maximizing GitHub Copilot's suggestions](https://www.reddit.com/answers/9d7f1420-9bcb-4041-bf64-28ccfc576931/?q=Maximizing+GitHub+Copilot%27s+suggestions&source=PDP). ![Image 2: Copilot](https://emoji.redditmedia.com/770ilmsys8hf1_t5_4ppi6b/Copilot). ![Image 3: Copilot](https://emoji.redditmedia.com/770ilmsys8hf1_t5_4ppi6b/Copilot). [Reddit Rules](https://www.redditinc.com/policies/content-policy)[Privacy Policy](https://www.reddit.com/policies/privacy-policy)[User Agreement](https://www.redditinc.com/policies/user-agreement)[Your Privacy Choices](https://support.reddithelp.com/hc/articles/43980704794004)[Accessibility](https://support.reddithelp.com/hc/sections/38303584022676-Accessibility)[Reddit, Inc. All rights reserved.](https://redditinc.com/). *   [About Reddit](https://www.redditinc.com/). *   [Advertise](https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta). *   [Developer Platform](https://developers.reddit.com/?utm_source=reddit&utm_medium=left_nav_resources). *   [Reddit Pro BETA](https://www.reddit.com/reddit-pro?utm_source=reddit&utm_medium=left_nav_resources). *   [Help](https://support.reddithelp.com/hc?utm_source=reddit&utm_medium=footer&utm_campaign=evergreen). *   [Careers](https://www.redditinc.com/careers). *   [Press](https://www.redditinc.com/press). *   [Best of Reddit](https://www.reddit.com/posts/2026/global/). *   [Reddit Rules](https://www.redditinc.com/policies/content-policy). *   [Privacy Policy](https://www.reddit.com/policies/privacy-policy). *   [User Agreement](https://www.redditinc.com/policies/user-agreement).",
+            "score": 0.97090924,
             "raw_content": null
           },
           {
-            "url": "https://builtin.com/articles/claude-code-codex-cursor-github-copilot-comparison",
-            "title": "Claude Code vs. Codex vs. Cursor vs. GitHub Copilot | Built In",
-            "content": "# Claude Code vs. GitHub Copilot: Which AI Coding Tool Is Best? Logos for Cursor, Codex, Github Copilot and Claude Code. Summary:  An analysis of Claude Code, Cursor, Codex and GitHub Copilot found that AI tools often over-engineer and require expert oversight. more   An analysis of Claude Code, Cursor, Codex and GitHub Copilot found that AI tools often over-engineer and require expert oversight. After six months of testing four of them across the same workflow, we\u2019ve found that only one of those three words is true. Four tools dominate the conversation right now: Claude Code, Cursor, Codex and GitHub Copilot. One recent analysis estimates that\u00a0Claude Code alone is writing roughly four percent of new code on GitHub, with projections of 20 percent by year\u2019s end. What matters is how a company\u2019s developers actually work and whether they know good code when they see it. ## Claude Code, Codex, Cursor, Github Copilot: Which Is Best? GitHub Copilot is GitHub\u2019s AI coding tool.",
-            "score": 0.950411,
+            "url": "https://github.com/moonshotai",
+            "title": "Moonshot AI - GitHub",
+            "content": "[MoonshotAI](https://github.com/MoonshotAI). *   [Overview](https://github.com/MoonshotAI). *   [Repositories](https://github.com/orgs/MoonshotAI/repositories). *   [Projects](https://github.com/orgs/MoonshotAI/projects). *   [Packages](https://github.com/orgs/MoonshotAI/packages). *   [People](https://github.com/orgs/MoonshotAI/people). *   [Overview](https://github.com/MoonshotAI). *   [Repositories](https://github.com/orgs/MoonshotAI/repositories). *   [Projects](https://github.com/orgs/MoonshotAI/projects). *   [Packages](https://github.com/orgs/MoonshotAI/packages). *   [People](https://github.com/orgs/MoonshotAI/people). [](https://github.com/moonshotai#welcome-to-moonshot-ai). [](https://github.com/moonshotai#research). *   [Kimi K2.5](https://github.com/MoonshotAI/Kimi-K2.5): our most powerful open-source multimodal agentic model designed to advance general agentic intelligence. *   [Kimi K2](https://github.com/MoonshotAI/Kimi-K2): an open-source Mixture-of-Experts model with 32B activated parameters and 1T total parameters. *   [Kimi-VL](https://github.com/MoonshotAI/Kimi-VL): Mixture-of-Experts Vision-Language Model for Multimodal Reasoning, Long-Context Understanding, and Strong Agent Capabilities. *   [Kimi-Dev](https://github.com/MoonshotAI/Kimi-Dev): A Strong and Open-source Coding LLM for Issue Resolution. [](https://github.com/moonshotai#service-and-infra). *   [checkpoint-engine](https://github.com/MoonshotAI/checkpoint-engine): efficiently update model weights in LLM serving. [](https://github.com/moonshotai#community). 1.   [Kimi-K2.5](https://github.com/MoonshotAI/Kimi-K2.5)Kimi-K2.5 Public. 2.   [kimi-cli](https://github.com/MoonshotAI/kimi-cli)kimi-cli Public. 3.   [Kimi-Linear](https://github.com/MoonshotAI/Kimi-Linear)Kimi-Linear Public. 4.   [Kimi-K2](https://github.com/MoonshotAI/Kimi-K2)Kimi-K2 Public. 6.   [MoBA](https://github.com/MoonshotAI/MoBA)MoBA Public. *   [kimi-cli](https://github.com/MoonshotAI/kimi-cli) Public. *   [walle](https://github.com/MoonshotAI/walle) Public  ### [Uh oh! *   [kimi-help-center](https://github.com/MoonshotAI/kimi-help-center) Public. *   [kosong](https://github.com/MoonshotAI/kosong) Public. *   [FlashKDA](https://github.com/MoonshotAI/FlashKDA) Public. *   [kimi-agent-sdk](https://github.com/MoonshotAI/kimi-agent-sdk) Public. *   [.github](https://github.com/MoonshotAI/.github) Public  ### [Uh oh! *   [Attention-Residuals](https://github.com/MoonshotAI/Attention-Residuals) Public  ### [Uh oh! *   [Branding-Guide](https://github.com/MoonshotAI/Branding-Guide) Public  ### [Uh oh! *   [checkpoint-engine](https://github.com/MoonshotAI/checkpoint-engine) Public. [View all repositories](https://github.com/orgs/MoonshotAI/repositories?type=all). [Please reload this page](https://github.com/moonshotai). [Please reload this page](https://github.com/moonshotai). *   [Contact](https://support.github.com/?tags=dotcom-footer).",
+            "score": 0.96909106,
             "raw_content": null
           }
         ]
@@ -194,45 +194,45 @@
         "query": "Hacker News latest AI startups solving developer pain points",
         "results": [
           {
-            "url": "https://dev.to/digitalwareshub/i-built-trendingtide-hacker-news-trends-with-ai-key-takeaways-51ic",
-            "title": "I built TrendingTide: Hacker News trends with AI key takeaways",
-            "content": "Sometimes a thread is not just \u201cnews.\u201d It contains: founder pain points; developer tool complaints; AI workflow debates; security concerns; pricing lessons",
-            "score": 0.5315261,
-            "raw_content": null
-          },
-          {
-            "url": "https://news.ycombinator.com/item?id=48121717",
-            "title": "Software Developers Say AI Is Rotting Their Brains | Hacker News",
-            "content": "\"Developers talk not just about how the AI output is often flawed, but that using AI to get the job done is often a more time consuming, harder, and more",
-            "score": 0.3013934,
+            "url": "https://www.instagram.com/reel/DYM8GMsx57T/",
+            "title": "So you want to use AI to give you ideas, build startups ... - Instagram",
+            "content": "One: Launch on Product Hunt and Hacker News. That's where Indie ... Pain points, quotes, and what users actually want. It even plugs into tools",
+            "score": 0.37524903,
             "raw_content": null
           },
           {
             "url": "https://news.ycombinator.com/item?id=48090029",
             "title": "I'm going back to writing code by hand - Hacker News",
             "content": "Obviously AI is at a point where the developer has to do the architecture. Or at least be in control of what kinda of architecture the AI is implementing.",
-            "score": 0.29894704,
+            "score": 0.29900846,
             "raw_content": null
           },
           {
-            "url": "https://news.ycombinator.com/item?id=48095550",
-            "title": "Software engineering may no longer be a lifetime career | Hacker News",
-            "content": "I've used AI to accomplish front end development and reverse engineer proprietary USB hardware dongles in C, then rewriting the C into Rust to get easy desktop",
-            "score": 0.22512728,
-            "raw_content": null
-          },
-          {
-            "url": "https://news.ycombinator.com/item?id=48089289",
-            "title": "An AI coding agent, used to write code, needs to reduce ... - Hacker News",
-            "content": "I agree - AI makes it easier to wrangle legacy code. I think the author's point is that if you lose access to the AI tools, everything becomes more daunting --",
-            "score": 0.1912827,
+            "url": "https://news.ycombinator.com/item?id=48081469",
+            "title": "Task Paralysis and AI - Hacker News",
+            "content": ">The novelty is gone, dealing with AI now feels frustrating and boring, I miss engaging deeply with the actual lower level technical challenges. Honestly I've",
+            "score": 0.19710459,
             "raw_content": null
           },
           {
             "url": "https://news.ycombinator.com/item?id=48046436",
             "title": "Mythical Man Month - Hacker News",
             "content": "AI is not delivering 10x shareholder value, anywhere. Software developers have quite the level of hubris about how important they are to companies. Yes our work",
-            "score": 0.1649064,
+            "score": 0.16506785,
+            "raw_content": null
+          },
+          {
+            "url": "https://news.ycombinator.com/item?id=48139148",
+            "title": "AI is making me dumb | Hacker News",
+            "content": "The AI's max cognitive load C is larger than a human's, but if codebase size grows unbounded the minimum context needed for a change will eventually surpass C.",
+            "score": 0.123820715,
+            "raw_content": null
+          },
+          {
+            "url": "https://news.ycombinator.com/item?id=48095550",
+            "title": "Software engineering may no longer be a lifetime career",
+            "content": "Feels like lately most of the time is spent arguing about or at least worrying about whether or not AI is going to replace all software developers. reply",
+            "score": 0.09819187,
             "raw_content": null
           }
         ]
@@ -240,6 +240,13 @@
       {
         "query": "Reddit threads 'unsolved' AI agent reliability issues",
         "results": [
+          {
+            "url": "https://www.reddit.com/r/LLMDevs/comments/1t9jhgb/i_deployed_an_llm_agent_as_a_guest_concierge_for/",
+            "title": "I deployed an LLM agent as a guest concierge for my 300-person ...",
+            "content": "Trust calibration is an unsolved UX problem. The AI was mostly accurate. Didn't matter. Guests constantly asked me to verify what it told them. I tried two",
+            "score": 0.71758664,
+            "raw_content": null
+          },
           {
             "url": "https://www.instagram.com/reel/DYFIu4nqD4Q/",
             "title": "The #reviewer #agent are bullying your #code #ai ... - Instagram",
@@ -251,7 +258,7 @@
             "url": "https://www.reddit.com/r/AI_Agents/comments/1ta20ot/how_many_ai_assistants_actually_work_across/",
             "title": "How many AI assistants actually work across multiple tools/apps?",
             "content": "Sirius and OpenCLAW both solve the model cost problem, but the integration reliability problem is still unsolved for most real workflows. The moment you",
-            "score": 0.7101667,
+            "score": 0.7099254,
             "raw_content": null
           },
           {
@@ -262,24 +269,17 @@
             "raw_content": null
           },
           {
-            "url": "https://www.reddit.com/r/LLMDevs/comments/1t9jhgb/i_deployed_an_llm_agent_as_a_guest_concierge_for/",
-            "title": "I deployed an LLM agent as a guest concierge for my 300-person ...",
-            "content": "Here's what I learned that I haven't seen discussed much in this space. Trust calibration is an unsolved UX problem. The AI was mostly accurate. Didn't",
-            "score": 0.6445166,
-            "raw_content": null
-          },
-          {
             "url": "https://www.reddit.com/r/openclaw/comments/1t9wi5x/sub_agent_to_main_agent_communication_is_very/",
             "title": "Sub agent to main agent communication is very unreliable! How are ...",
             "content": "A search on openclaw's GitHub shows that the sessions_yield tools has issues which have remained unsolved for months! But I don't see the community talking much",
-            "score": 0.58237284,
+            "score": 0.5826579,
             "raw_content": null
           },
           {
-            "url": "https://www.reddit.com/r/Entrepreneurs/comments/1t8nrx2/the_execution_gap_is_the_only_startup_killer/",
-            "title": "the execution gap is the only startup killer nobody talks ... - Reddit",
-            "content": "the judgment problem is the thing we have not fully solved. getting the AI to recognize when it is operating outside expected conditions and respond with",
-            "score": 0.43079433,
+            "url": "https://www.reddit.com/r/ZentechAI/comments/1tasb9d/how_ai_voice_workflow_agents_are_replacing_missed/",
+            "title": "How AI Voice & Workflow Agents Are Replacing Missed Calls ...",
+            "content": "Handling interruptions in voice AI is an unsolved problem. How are you dealing with it? ... This subreddit is for people who work in call centers. Share your",
+            "score": 0.5737984,
             "raw_content": null
           }
         ]
@@ -288,45 +288,45 @@
         "query": "GitHub issues 'help wanted' trending LLM frameworks",
         "results": [
           {
-            "url": "https://www.instagram.com/reel/DYDKRDrSoc7/",
-            "title": "open-source AI coding agent for your terminal, IDE, or ... - Instagram",
-            "content": "GITHUB TRENDING Hmbown DeepSeek-TUI ISSUES STARS 3.5k . WHAT IT DOES 02/05 ... README Free LLM api GitHub \u0433\u0435\u0440\u043e Nebrush \ub0c9\ub9c8\ub124\uc2dc\uc73c\ud2b8 MP Allbesar",
-            "score": 0.6783488,
+            "url": "https://github.com/langfuse/langfuse?ref=blog.premai.io",
+            "title": "langfuse/langfuse at blog.premai.io - GitHub",
+            "content": "Langfuse is an open source LLM engineering platform. It helps teams collaboratively develop, monitor, evaluate, and debug AI applications. Langfuse can be self-",
+            "score": 0.41933936,
             "raw_content": null
           },
           {
-            "url": "https://www.instagram.com/reel/DYO530NsOU7/",
-            "title": "Vicky Kumar | Today I installed Coral locally and tried my first GitHub ...",
-            "content": "Here are 12 powerful GitHub AI repositories you should know. From agents \u2192 automation \u2192 LLM frameworks. Some highlights: \u2022 OpenClaw \u2013 personal AI agent",
-            "score": 0.44463772,
+            "url": "https://github.com/praetorian-inc/augustus",
+            "title": "GitHub - praetorian-inc/augustus: LLM security testing framework for ...",
+            "content": "Augustus is a Go-based LLM vulnerability scanner for security professionals. It tests large language models against a wide range of adversarial attacks,",
+            "score": 0.38964,
             "raw_content": null
           },
           {
-            "url": "https://www.facebook.com/groups/2933790363468211/posts/3344558669058043/",
-            "title": "40 useful GitHub repositories for developers and AI enthusiasts",
-            "content": "LangChain The LLM application framework on almost every AI engineer JD. If you want to build production LLM apps, start here. repo \u2192 [https://github.com",
-            "score": 0.38110495,
+            "url": "https://www.linkedin.com/posts/khushboo-alvi-87a29a134_15-must-know-github-repositories-if-youre-activity-7458478311825121281-CcVn",
+            "title": "15 GitHub Repos for Optimizing LLMs and AI Infrastructure - LinkedIn",
+            "content": "15 Must-Know GitHub Repositories If you're working with LLMs, Generative AI, NLP or AI infrastructure, these open-source repositories can help optimize",
+            "score": 0.2733978,
             "raw_content": null
           },
           {
-            "url": "https://www.instagram.com/reel/DYJ51tcAV7O/",
-            "title": "GitHub is cooked - daily.dev show (S1E2) Watch the full ... - Instagram",
-            "content": "GITHUB TRENDING Hmbown DeepSeek-TUI ISSUES STARS 3.5k . WHAT IT DOES 02/05 ... Top Open Source Tools & Framework Version Control Git SVN P FOSSIL",
-            "score": 0.30616438,
+            "url": "https://github.com/openonion/connectonion",
+            "title": "GitHub - openonion/connectonion: The Best AI Agent Framework for ...",
+            "content": "Full Python REPL: Run any code to explore agent behavior; See next action: Preview what the LLM plans to do next. Perfect for: Understanding why agents make",
+            "score": 0.15399423,
             "raw_content": null
           },
           {
-            "url": "https://github.com/walkinglabs/hands-on-modern-rl",
-            "title": "walkinglabs/hands-on-modern-rl - GitHub",
-            "content": "An open-source, hands-on curriculum bridging the gap from basic RL concepts to LLM alignment, RLVR, and advanced Agentic systems.",
-            "score": 0.16644524,
+            "url": "https://github.com/memorilabs/memori",
+            "title": "Memori is agent-native memory infrastructure. A LLM-agnostic layer ...",
+            "content": "## Use saved searches to filter your results more quickly. *Memori plugs into the software and infrastructure you already use. It is LLM, datastore and framework agnostic and seamlessly integrates into the architecture you've already designed.*. Sign up at app.memorilabs.ai, get a Memori API key, and start building. The plugin hooks into OpenClaw's lifecycle, so you get structured memory, agent-controlled recall, and Advanced Augmentation with a drop-in plugin. For setup and configuration, see the OpenClaw Quickstart. For architecture and lifecycle details, see the OpenClaw Overview. For setup and configuration, see the Hermes Quickstart. For architecture and lifecycle details, see the Hermes Overview. To get the most out of Memori, you want to attribute your LLM interactions to an entity (think person, place or thing; like a user) and a process (think your agent, LLM interaction or program). The Memori CLI is the unified tool for managing your account, keys, and quotas across all SDKs. To use it, execute the following from the command line:.",
+            "score": 0.093620166,
             "raw_content": null
           },
           {
-            "url": "https://github.com/padmarajnidagundi/Playwright-AI-Agent-POM-MCP-Server",
-            "title": "GitHub - padmarajnidagundi/Playwright-AI-Agent-POM-MCP-Server ...",
-            "content": "No problem! Look for issues tagged with good-first-issue or help-wanted . We provide mentorship and guidance to help you succeed.",
-            "score": 0.15414697,
+            "url": "https://github.com/nousresearch/hermes-agent",
+            "title": "NousResearch/hermes-agent: The agent that grows with you - GitHub",
+            "content": "| [website](https://github.com/NousResearch/hermes-agent/tree/main/website \"website\") | [website](https://github.com/NousResearch/hermes-agent/tree/main/website \"website\") | [chore: remove Atropos RL environments and tinker-atropos integration (](https://github.com/NousResearch/hermes-agent/commit/5af672c7530263544a9f5e2479f3853d83b3b798 \"chore: remove Atropos RL environments and tinker-atropos integration (#26106) * chore: remove Atropos RL environments, tools, tests, skill, and tinker-atropos submodule Delete: - environments/ (43 files \u2014 base env, agent loop, tool call parsers, benchmarks) - rl_cli.py (standalone RL training CLI) - tools/rl_training_tool.py (all 10 rl_* tools) - tests: test_rl_training_tool, test_tool_call_parsers, test_managed_server_tool_support, test_agent_loop, test_agent_loop_vllm, test_agent_loop_tool_calling, test_terminalbench2_env_security - optional-skills/mlops/hermes-atropos-environments/ - tinker-atropos git submodule + .gitmodules * chore: remove RL/Atropos references from Python source - toolsets.py: remove rl toolset block + update comment - model_tools.py: remove rl_tools group + update async bridging comment - hermes_cli/tools_config.py: remove RL display entry, _DEFAULT_OFF_TOOLSETS, setup block, and rl_training post-setup handler - tools/budget_config.py: remove RL environment reference in docstring - tests/test_model_tools.py: remove rl_tools from expected groups - tests/run_agent/test_streaming_tool_call_repair.py: fix stale cross-reference * chore: remove rl/yc-bench extras and tinker-atropos refs from pyproject.toml - Remove rl extra (atroposlib, tinker, fastapi, uvicorn, wandb) - Remove yc-bench extra - Remove rl_cli from py-modules - Remove [tool.ty.src] exclude for tinker-atropos - Remove [tool.ruff] exclude for tinker-atropos - Regenerate uv.lock * chore: remove tinker-atropos from install/setup scripts - setup-hermes.sh: remove entire tinker-atropos submodule install block - scripts/install.sh: remove both tinker-atropos blocks (Termux + standard) - scripts/install.ps1: remove tinker-atropos block - nix/hermes-agent.nix: remove tinker-atropos pip install line * chore: remove RL references from cli-config.yaml.example * docs: remove Atropos/RL references from README, CONTRIBUTING, AGENTS.md * docs: remove RL/Atropos references from website - Delete: environments.md, rl-training.md, mlops-hermes-atropos-environments.md - sidebars.ts: remove rl-training and environments sidebar entries - optional-skills-catalog.md: remove hermes-atropos-environments row - tools-reference.md: remove entire rl toolset section - toolsets-reference.md: remove rl row + update example - integrations/index.md: remove RL Training bullet - architecture.md: remove environments/ from tree + RL section - contributing.md: remove tinker-atropos setup - updating.md: remove tinker-atropos install + stale submodule update * chore: remove remaining RL/Atropos stragglers - hermes_cli/config.py: remove TINKER_API_KEY + WANDB_API_KEY env var defs -",
+            "score": 0.08007663,
             "raw_content": null
           }
         ]
@@ -335,95 +335,52 @@
         "query": "latest engineering blogs AI infrastructure bottlenecks",
         "results": [
           {
-            "url": "https://www.networkworld.com/article/4168926/openai-led-consortium-seeks-to-address-ai-processing-bottlenecks.html",
-            "title": "OpenAI-led consortium seeks to address AI processing bottlenecks",
-            "content": "\u201cNetwork congestion, link, and device failures are the most common sources of delay and jitter in transfers,\u201d OpenAI wrote in a blog post announcing the project",
-            "score": 0.6044228,
+            "url": "https://leetcode.com/discuss/post/8175010/mastering-the-silicon-frontier-the-defin-4rgb/",
+            "title": "Mastering the Silicon Frontier: The Definitive Guide to AI Infrastructure ...",
+            "content": "Don't let your AI initiatives stall due to technical debt or infrastructure bottlenecks. Build a foundation that scales with your ambition. Contact",
+            "score": 0.47767657,
             "raw_content": null
           },
           {
-            "url": "https://www.datacenters.com/news/how-ai-networking-is-becoming-the-bottleneck-inside-modern-data-centers",
-            "title": "AI Networking Is Becoming the Bottleneck in Modern Data Centers",
-            "content": "AI workloads are pushing networking to the forefront of data center design. Explore how latency, GPU fabrics, and AI traffic are reshaping infrastructure.",
-            "score": 0.56200886,
+            "url": "https://www.instagram.com/p/DYUiTVlCpli/",
+            "title": "Three ETFs Targeting the Next AI Infrastructure Bottlenecks The first ...",
+            "content": "Three ETFs map this idea clearly: DRAM, EUV, and SMH. DRAM is the memory bottleneck trade. It targets companies tied to HBM, DRAM, NAND, and storage demand,",
+            "score": 0.47694567,
             "raw_content": null
           },
           {
-            "url": "https://blogs.cisco.com/datacenter/benchmarking-scale-out-ai-fabrics-with-cisco-n9000-amd-pensando-pollara-400-nics",
-            "title": "Benchmarking scale-out AI fabrics with Cisco N9000 + AMD ...",
-            "content": "We've partnered with AMD to deliver a validated, end-to-end AI infrastructure that eliminates these bottlenecks and transforms the network into a high-",
-            "score": 0.55998856,
+            "url": "https://blogs.oracle.com/ai-data-platform/you-didnt-sign-up-to-be-an-infrastructure-engineer",
+            "title": "You Didn't Sign Up to Be an Infrastructure Engineer - Oracle Blogs",
+            "content": "A practical look at why building AI agents becomes an infrastructure problem faster than most teams expect. The piece argues that the real challenge in",
+            "score": 0.4473884,
             "raw_content": null
           },
           {
-            "url": "https://www.citrix.com/blogs/2026/05/08/ai-is-moving-fast-your-infrastructure-needs-to-keep-up/?srsltid=AfmBOooMu6fCdJe8XFqMyD84T4sbCdXPVdL8bFjw1VeZae1YzWZmwT7j",
-            "title": "AI is moving fast. Your infrastructure needs to keep up. \u2013 Citrix Blogs",
-            "content": "AI is moving fast. Your infrastructure needs to keep up. \u00b7 The real challenge isn't the AI \u2014 it's the environment around it \u00b7 AI governance starts at the",
-            "score": 0.52510154,
+            "url": "https://siliconangle.com/2026/05/13/enterprise-ai-infrastructure-modernization-now-urgent-rhsummit/",
+            "title": "Enterprise AI infrastructure modernization is now urgent",
+            "content": "Enterprise AI infrastructure modernization requires returning to basics in patching, maintenance and simplicity before scaling production AI.",
+            "score": 0.37168434,
             "raw_content": null
           },
           {
-            "url": "https://www.facebook.com/MechanicalEngineersRocks/posts/the-rapid-expansion-of-artificial-intelligence-has-triggered-an-unprecedented-de/1456492423181562/",
-            "title": "The rapid expansion of artificial intelligence has triggered an ...",
-            "content": "Can the U.S. accelerate infrastructure fast enough to stay competitive in the AI race? Follow MediaBlizz for the latest AI, tech & infrastructure insights.",
-            "score": 0.43828082,
+            "url": "https://www.facebook.com/groups/280585088026735/posts/982143724537531/",
+            "title": "Transmission delays impact AI data center projects - Facebook",
+            "content": "AI infrastructure projects entering service in 2025 took an average of more than seven years to reach operational status, according to PJM Interconnection data.",
+            "score": 0.3549477,
             "raw_content": null
           },
           {
-            "url": "https://dev.to/leonidbugaev/what-is-the-new-engineering-bottleneck-3p4g",
-            "title": "What is the new engineering bottleneck? - DEV Community",
-            "content": "We talk about AI like the bottleneck is still writing code. But honestly, writing code has not been the hard part for a long time. The hard part is all the",
-            "score": 0.40683898,
+            "url": "https://www.finout.io/blog/ai-infrastructure-management-a-complete-guide",
+            "title": "AI Infrastructure Management: A Complete Guide - Finout",
+            "content": "This guide covers the core components of an AI infrastructure stack, the challenges teams face when managing it, and practical strategies for bringing financial",
+            "score": 0.3416489,
             "raw_content": null
           }
         ]
       },
       {
         "query": "multimodal RAG PDF image table problem solving",
-        "results": [
-          {
-            "url": "https://www.linkedin.com/posts/jimi-vaubien_194k-stars-multimodal-rag-that-handles-activity-7460252771238420480-gfm1",
-            "title": "Jimi Vaubien's Post - LinkedIn",
-            "content": "Multimodal RAG that handles PDFs, images, tables, equations, and charts in one pipeline. RAG-Anything from HKUDS just flew past 19k stars on GitHub. It's built",
-            "score": 0.6745014,
-            "raw_content": null
-          },
-          {
-            "url": "https://www.facebook.com/0xSojalSec/posts/alibaba-a-multimodal-llm-that-understands-documents-without-ocrjust-point-it-at-/1514331350221263/",
-            "title": "Alibaba a multimodal LLM that understands documents without OCR ...",
-            "content": "Ever wondered how few LLMs or some tools process and understand your PDFs that consist of multiple tables and images? ... problem-solving, mathematical reasoning,",
-            "score": 0.40867847,
-            "raw_content": null
-          },
-          {
-            "url": "https://dev.to/gde/gemini-api-file-search-enhanced-multimodal-capabilities-with-embedding-2-including-open-source-g72",
-            "title": "Gemini API File Search: Enhanced Multimodal Capabilities with Embedding 2, Including Open-Source LINE Bot Implementation - DEV Community",
-            "content": "# Gemini API File Search: Enhanced Multimodal Capabilities with Embedding 2, Including Open-Source LINE Bot Implementation. (Image source: Google Blog - Gemini API File Search is now multimodal: build efficient, verifiable RAG). Do you need to split two stores, one for text and one for images? Recently, Google released Expanded Gemini API File Search for multimodal RAG on the developer blog, turning the long pipeline above into \" **calling a managed API** \", and **images are natively supported**. Now you can **directly put images into the File Search Store**, and index them together with text. The engine behind it is **Gemini Embedding 2** \u2014 text, images, videos, audio, and documents **share the same vector space**, so you can \"find text with images\", \"find images with text\", or \"find images with images\" without having to align the spaces yourself. The core of the new feature is this Gemini Embedding 2 model.",
-            "score": 0.25430563,
-            "raw_content": null
-          },
-          {
-            "url": "https://arxiv.org/html/2605.10616v1",
-            "title": "MulTaBench: Benchmarking Multimodal Tabular Learning with Text and Image",
-            "content": "# MulTaBench: Benchmarking Multimodal Tabular Learning with Text and Image. Tabular Foundation Models have recently established the state of the art in supervised tabular learning, by leveraging pretraining to learn generalizable representations of numerical and categorical structured data. However, they lack native support for unstructured modalities such as text and image, and rely on frozen, pretrained embeddings to process them. On established Multimodal Tabular Learning benchmarks, we show that tuning the embeddings to the task improves performance. To address this gap, we introduce MulTaBench, a benchmark of 40 datasets, split equally between image-tabular and text-tabular tasks. Our experimental results demonstrate that the gains from target-aware representation tuning generalize across both text and image modalities, several tabular learners, encoder scales, and embedding dimensions. It is designed to enable the research of novel architectures which incorporate joint modeling and target-aware representations, paving the way for the development of novel Multimodal Tabular Foundation Models.111.",
-            "score": 0.20074598,
-            "raw_content": null
-          },
-          {
-            "url": "https://arxiv.org/html/2605.13277v1",
-            "title": "Utility-Oriented Visual Evidence Selection for Multimodal Retrieval-Augmented Generation",
-            "content": "# Utility-Oriented Visual Evidence Selection for Multimodal Retrieval-Augmented Generation. Visual evidence selection is a critical component of multimodal retrieval-augmented generation (RAG), yet existing methods typically rely on semantic relevance or surface-level similarity, which are often misaligned with the actual utility of visual evidence for downstream reasoning. We reformulate multimodal evidence selection from an information-theoretic perspective by defining evidence utility as the information gain induced on a model\u2019s output distribution. To overcome the intractability of answer-space optimization, we introduce a latent notion of evidence helpfulness and theoretically show that, under mild assumptions, ranking evidence by information gain on this latent variable is equivalent to answer-space utility. Experiments on MRAG-Bench and Visual-RAG across multiple model families demonstrate that our method consistently outperforms state-of-the-art RAG baselines while achieving substantial reductions in computational cost. Under mild assumptions, we theoretically show that ranking evidence by information gain on this latent helpfulness variable is equivalent to ranking evidence in the full answer space, providing a principled alternative to relevance-based selection (Sections\u00a03.2 and 3.3).",
-            "score": 0.17380677,
-            "raw_content": null
-          },
-          {
-            "url": "https://www.instagram.com/p/DYGrrGhuWIZ/?hl=bg",
-            "title": "This is episode 9 of learning advanced RAG concepts in ... - Instagram",
-            "content": "The fix is dockling, an open source document passer built by IBM. It can messy documents into clean mark down text adjacent ready for rack or AI agents. Here's",
-            "score": 0.07193612,
-            "raw_content": null
-          }
-        ]
+        "results": []
       }
     ]
   }
