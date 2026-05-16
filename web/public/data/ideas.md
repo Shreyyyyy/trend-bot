@@ -1,6 +1,6 @@
-DATE: 8th May 2026 to 15th May 2026
-1) RAG Repair Layer — https://www.reddit.com/r/LangChain/comments/1t8tn1v/most_rag_failures_dont_crash_they_silently_return/ | WHY: RAG failures are silent | BUILD: Error detection for RAG | MARKET: AI developers
-2) LLM Studio Optimizer — https://www.reddit.com/r/LocalLLM/comments/1tai1ew/lm_studio_or_driver_bug/ | WHY: LLM studio is buggy | BUILD: Bug fix and optimization toolkit | MARKET: Local LLM users
-3) Agent Communication Framework — https://www.reddit.com/r/openclaw/comments/1t9wi5x/sub_agent_to_main_agent_communication_is_very/ | WHY: Agent communication is unreliable | BUILD: Standardized communication protocol | MARKET: AI agent developers
-4) AI Infrastructure Manager — https://www.finout.io/blog/ai-infrastructure-management-a-complete-guide | WHY: AI infrastructure is complex | BUILD: AI infrastructure management platform | MARKET: Enterprise AI teams
-5) Multimodal RAG Solver — https://github.com/mb-mal/awesome-ai-agents-frameworks | WHY: RAG struggles with multimodal input | BUILD: Multimodal RAG solver | MARKET: AI researchers
+DATE: 9th May 2026 to 16th May 2026
+1) Local LLM Optimizer — https://github.com/zai-org/GLM-5 | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tarier/most_rag_apps_in_production_are_confidently_wrong/ | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
+3) Multi-modal Router — https://vectara.com/blog/open-rag-benchmark-a-new-frontier-for-multimodal-pdf-understanding-in-rag | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+4) Agent Replay Harness — https://github.com/Agent-Field/agentfield | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+5) PDF Table Extractor — https://github.com/AhmedAl93/multimodal-semantic-RAG | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
