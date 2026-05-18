@@ -1,6 +1,6 @@
-DATE: 10th May 2026 to 17th May 2026
-1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tarier/most_rag_apps_in_production_are_confidently_wrong/ | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-2) Local LLM Optimizer — https://www.amazon.science/blog/making-llms-faster-without-sacrificing-accuracy | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+DATE: 11st May 2026 to 18th May 2026
+1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tarier/most_rag_apps_in_production_are_confidently_wrong/ | WHY: RAG apps are confidently wrong | BUILD: Trace visualizer for RAG | MARKET: DevTools
+2) Local LLM Optimizer — https://github.com/techiescamp/mlops-for-devops | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
 3) Multimodal RAG — https://www.linkedin.com/posts/jimi-vaubien_194k-stars-multimodal-rag-that-handles-activity-7460252771238420480-gfm1 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-4) Agent Replay Harness — https://www.reddit.com/r/LocalLLM/comments/1te8l9w/did_ai_kill_the_fun_of_learning/ | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-5) PDF Table Extractor — https://github.com/Yigtwxx/Awesome-RAG-Production | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+4) AI Agent Reliability Toolkit — https://www.reddit.com/r/AgentCommons/comments/1tboz6e/what_is_an_ai_agent_what_it_is_not_what_is_worth/ | WHY: Reliability is unsolved | BUILD: Toolkit for agent reliability | MARKET: Enterprise AI teams
+5) LLM Infrastructure Manager — https://www.tipranks.com/news/private-companies/hammerspace-highlights-ai-infrastructure-and-data-bottlenecks-in-enterprise-strategies | WHY: Infrastructure is a bottleneck | BUILD: Manager for LLM infrastructure | MARKET: AI infrastructure providers
