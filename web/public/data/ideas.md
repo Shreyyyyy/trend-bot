@@ -1,6 +1,6 @@
-DATE: 11st May 2026 to 18th May 2026
-1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tarier/most_rag_apps_in_production_are_confidently_wrong/ | WHY: RAG apps are confidently wrong | BUILD: Trace visualizer for RAG | MARKET: DevTools
-2) Local LLM Optimizer — https://github.com/techiescamp/mlops-for-devops | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-3) Multimodal RAG — https://www.linkedin.com/posts/jimi-vaubien_194k-stars-multimodal-rag-that-handles-activity-7460252771238420480-gfm1 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-4) AI Agent Reliability Toolkit — https://www.reddit.com/r/AgentCommons/comments/1tboz6e/what_is_an_ai_agent_what_it_is_not_what_is_worth/ | WHY: Reliability is unsolved | BUILD: Toolkit for agent reliability | MARKET: Enterprise AI teams
-5) LLM Infrastructure Manager — https://www.tipranks.com/news/private-companies/hammerspace-highlights-ai-infrastructure-and-data-bottlenecks-in-enterprise-strategies | WHY: Infrastructure is a bottleneck | BUILD: Manager for LLM infrastructure | MARKET: AI infrastructure providers
+DATE: 12nd May 2026 to 19th May 2026
+1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tgsdqd/rag_pipeline_observability_debug_for_free/ | WHY: RAG issues are hard to debug | BUILD: Visualize RAG pipeline | MARKET: LLM developers
+2) AI Agent Reliability Toolkit — https://www.reddit.com/r/LLMDevs/comments/1tg8ce1/i_solved_personal_siri/ | WHY: AI agents are unreliable | BUILD: Reliability metrics and monitoring | MARKET: Enterprise AI teams
+3) Multimodal RAG — https://github.com/Yigtwxx/Awesome-RAG-Production | WHY: RAG struggles with multimodal data | BUILD: Integrate image and table support | MARKET: Content platforms
+4) LLM Cost Optimizer — https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows/ | WHY: LLMs are costly | BUILD: Token efficiency optimization | MARKET: Cloud infrastructure providers
+5) PDF Table Extractor — https://www.reddit.com/r/LangChain/comments/1tgcldy/why_does_everyone_skip_the_chunking_part/ | WHY: Table extraction is challenging | BUILD: Docling-based PDF parser | MARKET: Finance and legal automation
