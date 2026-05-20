@@ -1,6 +1,6 @@
-DATE: 12nd May 2026 to 19th May 2026
-1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tgsdqd/rag_pipeline_observability_debug_for_free/ | WHY: RAG issues are hard to debug | BUILD: Visualize RAG pipeline | MARKET: LLM developers
-2) AI Agent Reliability Toolkit — https://www.reddit.com/r/LLMDevs/comments/1tg8ce1/i_solved_personal_siri/ | WHY: AI agents are unreliable | BUILD: Reliability metrics and monitoring | MARKET: Enterprise AI teams
-3) Multimodal RAG — https://github.com/Yigtwxx/Awesome-RAG-Production | WHY: RAG struggles with multimodal data | BUILD: Integrate image and table support | MARKET: Content platforms
-4) LLM Cost Optimizer — https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows/ | WHY: LLMs are costly | BUILD: Token efficiency optimization | MARKET: Cloud infrastructure providers
-5) PDF Table Extractor — https://www.reddit.com/r/LangChain/comments/1tgcldy/why_does_everyone_skip_the_chunking_part/ | WHY: Table extraction is challenging | BUILD: Docling-based PDF parser | MARKET: Finance and legal automation
+DATE: 13rd May 2026 to 20th May 2026
+1) Multimodal RAG Builder — https://github.com/erickyegon/multimodal-pdf-rag-system | WHY: PDF tables are hard to extract | BUILD: AI-powered document intelligence | MARKET: Enterprise document processing
+2) AI Agent Debugger — https://www.reddit.com/r/LangChain/comments/1tgsdqd/rag_pipeline_observability_debug_for_free/ | WHY: RAG issues are opaque | BUILD: Free tool for RAG pipeline debugging | MARKET: AI developers
+3) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1te8l9w/did_ai_kill_the_fun_of_learning/ | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+4) RAG Pipeline Observability — https://github.com/Yigtwxx/Awesome-RAG-Production | WHY: RAG pipelines are complex | BUILD: Tools for RAG pipeline observability | MARKET: Enterprise AI teams
+5) AI Document Intelligence — https://github.com/revoker3661/AI-Document-Intelligence-Pipeline-PDF-Structured-JSONL-for-Multimodal-RAG- | WHY: PDFs are hard to process | BUILD: Pipeline for PDF document intelligence | MARKET: Document-heavy industries
