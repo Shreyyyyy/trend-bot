@@ -1,6 +1,6 @@
-DATE: 13rd May 2026 to 20th May 2026
-1) Multimodal RAG Builder — https://github.com/erickyegon/multimodal-pdf-rag-system | WHY: PDF tables are hard to extract | BUILD: AI-powered document intelligence | MARKET: Enterprise document processing
-2) AI Agent Debugger — https://www.reddit.com/r/LangChain/comments/1tgsdqd/rag_pipeline_observability_debug_for_free/ | WHY: RAG issues are opaque | BUILD: Free tool for RAG pipeline debugging | MARKET: AI developers
-3) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1te8l9w/did_ai_kill_the_fun_of_learning/ | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-4) RAG Pipeline Observability — https://github.com/Yigtwxx/Awesome-RAG-Production | WHY: RAG pipelines are complex | BUILD: Tools for RAG pipeline observability | MARKET: Enterprise AI teams
-5) AI Document Intelligence — https://github.com/revoker3661/AI-Document-Intelligence-Pipeline-PDF-Structured-JSONL-for-Multimodal-RAG- | WHY: PDFs are hard to process | BUILD: Pipeline for PDF document intelligence | MARKET: Document-heavy industries
+DATE: 14th May 2026 to 21st May 2026
+1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tic4nz/rag_kept_breaking_on_me_and_i_kept_fixing_the | WHY: RAG issues are opaque | BUILD: Trace visualizer | MARKET: DevTools
+2) Local LLM Optimizer — https://github.com/YennNing/Awesome-Code-as-Agent-Harness-Papers | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+3) Multi-modal Router — https://www.linkedin.com/posts/simon-veitner-174a681b6_tile-scheduling-in-cutedsl-activity-7461150118461775873-e85S | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+4) AI Agent Reliability Toolkit — https://www.reddit.com/r/AI_Agents/comments/1tiq0rx/weekly_thread_project_display | WHY: Agents are unreliable | BUILD: Reliability testing suite | MARKET: Enterprise AI teams
+5) LLM Infrastructure Analyzer — https://www.linkedin.com/posts/nazninpmp_ai-gpu-sdc-activity-7461102229417283584-uOH7 | WHY: Infrastructure is a bottleneck | BUILD: Bottleneck identifier | MARKET: AI infrastructure providers
