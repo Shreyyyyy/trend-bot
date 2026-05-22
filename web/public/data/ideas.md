@@ -1,6 +1,6 @@
-DATE: 14th May 2026 to 21st May 2026
-1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tic4nz/rag_kept_breaking_on_me_and_i_kept_fixing_the | WHY: RAG issues are opaque | BUILD: Trace visualizer | MARKET: DevTools
-2) Local LLM Optimizer — https://github.com/YennNing/Awesome-Code-as-Agent-Harness-Papers | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-3) Multi-modal Router — https://www.linkedin.com/posts/simon-veitner-174a681b6_tile-scheduling-in-cutedsl-activity-7461150118461775873-e85S | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-4) AI Agent Reliability Toolkit — https://www.reddit.com/r/AI_Agents/comments/1tiq0rx/weekly_thread_project_display | WHY: Agents are unreliable | BUILD: Reliability testing suite | MARKET: Enterprise AI teams
-5) LLM Infrastructure Analyzer — https://www.linkedin.com/posts/nazninpmp_ai-gpu-sdc-activity-7461102229417283584-uOH7 | WHY: Infrastructure is a bottleneck | BUILD: Bottleneck identifier | MARKET: AI infrastructure providers
+DATE: 15th May 2026 to 22nd May 2026
+1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tic4nz/rag_kept_breaking_on_me_and_i_kept_fixing_the | WHY: RAG issues are hard to identify | BUILD: Visual debugger for RAG | MARKET: AI developers
+2) AI Table Extractor — https://www.reddit.com/r/MachineLearning/comments/1ebyx03/n_ai_achieves_silvermedal_standard_solving | WHY: Table extraction is a pain | BUILD: AI-powered table extraction tool | MARKET: Data scientists
+3) LLM Optimizer — https://github.com/volcengine/verl?ref=www.awesomepython.org | WHY: LLMs are computationally expensive | BUILD: Optimizer for LLMs | MARKET: AI startups
+4) Multimodal RAG — https://www.instagram.com/p/DYjIFL6lJa2 | WHY: RAGs struggle with multimodal data | BUILD: Multimodal RAG framework | MARKET: Content creators
+5) Agent Reliability Toolkit — https://www.reddit.com/r/AI_Agents/comments/1tg3i11/in_18_months_billing_for_ai_agents_will_look_like | WHY: Agent reliability is a major concern | BUILD: Toolkit for ensuring agent reliability | MARKET: Enterprise AI teams
