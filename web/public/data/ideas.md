@@ -1,6 +1,6 @@
-DATE: 16th May 2026 to 23rd May 2026
-1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tic4nz/rag_kept_breaking_on_me_and_i_kept_fixing_the | WHY: RAG issues are opaque | BUILD: Trace visualizer for RAG | MARKET: DevTools
-2) Multimodal RAG — https://www.instagram.com/p/DYeEpljvauN | WHY: RAG fails on multimodal data | BUILD: Multimodal document parser | MARKET: Enterprises with complex documents
-3) LLM Optimizer — https://github.com/akrisanov/llm-scaling-week | WHY: Cloud costs are high | BUILD: vLLM wrapper for edge devices | MARKET: Privacy-first startups
-4) AI Agent Harness — https://github.com/RyanAlberts/best-of-Agent-Harnesses | WHY: Agent reliability is a problem | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-5) Document Understanding — https://www.llamaindex.ai/glossary/document-understanding-for-rag | WHY: RAG struggles with document understanding | BUILD: Multimodal document parsing for RAG | MARKET: Financial and legal automation
+DATE: 17th May 2026 to 24th May 2026
+1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tic4nz/rag_kept_breaking_on_me_and_i_kept_fixing_the | WHY: RAG issues are opaque | BUILD: Trace visualizer | MARKET: DevTools
+2) Multimodal RAG — https://github.com/AhmedAl93/multimodal-semantic-RAG | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+3) AI Agent Reliability — https://www.reddit.com/r/AI_Agents/comments/1tiq0rx/weekly_thread_project_display | WHY: Agents fail in production | BUILD: Monitoring toolkit | MARKET: Enterprise AI
+4) LLM Infrastructure — https://www.linkedin.com/posts/anneliesgamble_most-of-the-ai-infrastructure-conversation-activity-7462533692259872770-lWyO | WHY: Bottlenecks hinder growth | BUILD: Scalable LLM architecture | MARKET: Cloud providers
+5) PDF Table Extractor — https://vectara.com/blog/open-rag-benchmark-a-new-frontier-for-multimodal-pdf-understanding-in-rag | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
