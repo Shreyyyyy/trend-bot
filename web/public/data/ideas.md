@@ -1,6 +1,6 @@
-DATE: 17th May 2026 to 24th May 2026
-1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tic4nz/rag_kept_breaking_on_me_and_i_kept_fixing_the | WHY: RAG issues are opaque | BUILD: Trace visualizer | MARKET: DevTools
-2) Multimodal RAG — https://github.com/AhmedAl93/multimodal-semantic-RAG | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-3) AI Agent Reliability — https://www.reddit.com/r/AI_Agents/comments/1tiq0rx/weekly_thread_project_display | WHY: Agents fail in production | BUILD: Monitoring toolkit | MARKET: Enterprise AI
-4) LLM Infrastructure — https://www.linkedin.com/posts/anneliesgamble_most-of-the-ai-infrastructure-conversation-activity-7462533692259872770-lWyO | WHY: Bottlenecks hinder growth | BUILD: Scalable LLM architecture | MARKET: Cloud providers
-5) PDF Table Extractor — https://vectara.com/blog/open-rag-benchmark-a-new-frontier-for-multimodal-pdf-understanding-in-rag | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+DATE: 18th May 2026 to 25th May 2026
+1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tic4nz/rag_kept_breaking_on_me_and_i_kept_fixing_the | WHY: RAG hallucinations | BUILD: Trace visualizer | MARKET: DevTools
+2) Local LLM Optimizer — https://ibl.ai/blog/category/llm-infrastructure | WHY: Cloud costs | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+3) Multimodal RAG — https://vectara.com/blog/open-rag-benchmark-a-new-frontier-for-multimodal-pdf-understanding-in-rag | WHY: PDF tables | BUILD: Image-aware RAG | MARKET: Content platforms
+4) AI Agent Reliability — https://www.reddit.com/r/ArtificialInteligence/comments/1tkaiq1/what_8_months_of_running_voice_agents_across_4 | WHY: Voice agent failures | BUILD: Agent monitoring | MARKET: Enterprise AI
+5) LLM Infrastructure — https://github.com/ai-infra-curriculum | WHY: AI scaling | BUILD: Model evaluation framework | MARKET: AI engineering teams
