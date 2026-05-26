@@ -1,6 +1,6 @@
-DATE: 18th May 2026 to 25th May 2026
-1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tic4nz/rag_kept_breaking_on_me_and_i_kept_fixing_the | WHY: RAG hallucinations | BUILD: Trace visualizer | MARKET: DevTools
-2) Local LLM Optimizer — https://ibl.ai/blog/category/llm-infrastructure | WHY: Cloud costs | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-3) Multimodal RAG — https://vectara.com/blog/open-rag-benchmark-a-new-frontier-for-multimodal-pdf-understanding-in-rag | WHY: PDF tables | BUILD: Image-aware RAG | MARKET: Content platforms
-4) AI Agent Reliability — https://www.reddit.com/r/ArtificialInteligence/comments/1tkaiq1/what_8_months_of_running_voice_agents_across_4 | WHY: Voice agent failures | BUILD: Agent monitoring | MARKET: Enterprise AI
-5) LLM Infrastructure — https://github.com/ai-infra-curriculum | WHY: AI scaling | BUILD: Model evaluation framework | MARKET: AI engineering teams
+DATE: 19th May 2026 to 26th May 2026
+1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tk8jcw/nobody_tells_you_that_rag_in_production_is_mostly | WHY: RAG issues are opaque | BUILD: Trace visualizer | MARKET: DevTools
+2) Personalized AI Memory — https://www.reddit.com/r/MachineLearning/comments/1tl9y7h/is_personalized_ai_memory_actually_a_problem | WHY: Industry labs lack resources | BUILD: Custom copy of AI models | MARKET: Enterprise AI teams
+3) Multimodal RAG — https://www.instagram.com/reel/DYpi9mYTRpy | WHY: Real-world data is multimodal | BUILD: Image-aware RAG | MARKET: Content platforms
+4) AI Infrastructure Optimizer — https://www.facebook.com/groups/dsbkkgroup/posts/3173220452849940 | WHY: AI infrastructure is bottlenecked | BUILD: Energy and compute optimizer | MARKET: Enterprise AI
+5) LLM Reliability Toolkit — https://www.reddit.com/r/ArtificialInteligence/comments/1tkaiq1/what_8_months_of_running_voice_agents_across_4 | WHY: LLMs fail catastrophically | BUILD: Reliability testing framework | MARKET: AI startups
