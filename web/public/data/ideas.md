@@ -1,6 +1,6 @@
-DATE: 19th May 2026 to 26th May 2026
-1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tk8jcw/nobody_tells_you_that_rag_in_production_is_mostly | WHY: RAG issues are opaque | BUILD: Trace visualizer | MARKET: DevTools
-2) Personalized AI Memory — https://www.reddit.com/r/MachineLearning/comments/1tl9y7h/is_personalized_ai_memory_actually_a_problem | WHY: Industry labs lack resources | BUILD: Custom copy of AI models | MARKET: Enterprise AI teams
-3) Multimodal RAG — https://www.instagram.com/reel/DYpi9mYTRpy | WHY: Real-world data is multimodal | BUILD: Image-aware RAG | MARKET: Content platforms
-4) AI Infrastructure Optimizer — https://www.facebook.com/groups/dsbkkgroup/posts/3173220452849940 | WHY: AI infrastructure is bottlenecked | BUILD: Energy and compute optimizer | MARKET: Enterprise AI
-5) LLM Reliability Toolkit — https://www.reddit.com/r/ArtificialInteligence/comments/1tkaiq1/what_8_months_of_running_voice_agents_across_4 | WHY: LLMs fail catastrophically | BUILD: Reliability testing framework | MARKET: AI startups
+DATE: 20th May 2026 to 27th May 2026
+1) RAG Reliability Toolkit — https://www.reddit.com/r/LangChain/comments/1tk8jcw/nobody_tells_you_that_rag_in_production_is_mostly | WHY: RAG reliability issues | BUILD: Toolkit for RAG validation | MARKET: Enterprise AI teams
+2) LLM Optimizer — https://ibl.ai/blog/category/llm-infrastructure | WHY: Cloud costs are high | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+3) AI Agent Harness — https://github.com/ai-boost/awesome-harness-engineering | WHY: Agent orchestration is hard | BUILD: Framework for agent management | MARKET: DevTools
+4) Multimodal RAG — https://www.reddit.com/r/MachineLearning/comments/1tl9y7h/is_personalized_ai_memory_actually_a_problem | WHY: RAG struggles with multimodal data | BUILD: Multimodal RAG framework | MARKET: Content platforms
+5) Conversational Analytics — https://www.reddit.com/r/BusinessIntelligence/comments/1tnemny/is_conversational_analytics_actually_a_solved | WHY: Conversational analytics is unsolved | BUILD: Conversational analytics platform | MARKET: Business intelligence teams
