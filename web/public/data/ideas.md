@@ -1,6 +1,6 @@
-DATE: 20th May 2026 to 27th May 2026
-1) RAG Reliability Toolkit — https://www.reddit.com/r/LangChain/comments/1tk8jcw/nobody_tells_you_that_rag_in_production_is_mostly | WHY: RAG reliability issues | BUILD: Toolkit for RAG validation | MARKET: Enterprise AI teams
-2) LLM Optimizer — https://ibl.ai/blog/category/llm-infrastructure | WHY: Cloud costs are high | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-3) AI Agent Harness — https://github.com/ai-boost/awesome-harness-engineering | WHY: Agent orchestration is hard | BUILD: Framework for agent management | MARKET: DevTools
-4) Multimodal RAG — https://www.reddit.com/r/MachineLearning/comments/1tl9y7h/is_personalized_ai_memory_actually_a_problem | WHY: RAG struggles with multimodal data | BUILD: Multimodal RAG framework | MARKET: Content platforms
-5) Conversational Analytics — https://www.reddit.com/r/BusinessIntelligence/comments/1tnemny/is_conversational_analytics_actually_a_solved | WHY: Conversational analytics is unsolved | BUILD: Conversational analytics platform | MARKET: Business intelligence teams
+DATE: 21st May 2026 to 28th May 2026
+1) Agent Replay Harness — https://www.reddit.com/r/LocalLLM/comments/1tlee5m/one_thing_ive_started_valuing_more_in_ai_systems | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+2) PDF Table Extractor — https://www.linkedin.com/pulse/2026-rag-stack-why-your-2024-vector-search-already-mani-tripathi-cwluc | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+3) Local LLM Optimizer — https://github.com/ai-infra-curriculum | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+4) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tk8jcw/nobody_tells_you_that_rag_in_production_is_mostly | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
+5) Multi-modal Router — https://www.instagram.com/reel/DYpi9mYTRpy | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
