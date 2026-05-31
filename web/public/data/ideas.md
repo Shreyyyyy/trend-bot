@@ -1,6 +1,6 @@
-DATE: 23rd May 2026 to 30th May 2026
-1) Agent Replay Harness — https://www.reddit.com/r/LocalLLM/comments/1tlee5m/one_thing_ive_started_valuing_more_in_ai_systems | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-2) PDF Table Extractor — https://www.llamaindex.ai/insights/best-table-parsing-ai | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
-3) Local LLM Optimizer — https://github.com/Andyyyy64/whichllm | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-4) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tq6pth/wanted_to_share_how_we_evaluated_langgraph_agent | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-5) Multi-modal Router — https://www.instagram.com/p/DY7lAMVT2Vf | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+DATE: 24th May 2026 to 31st May 2026
+1) Agent Replay Harness — https://www.reddit.com/r/LocalLLM/comments/1tosfql/if_youre_giving_local_models_filesystem_access | WHY: Malicious packages compromise AI agents | BUILD: Secure filesystem access for local LLMs | MARKET: Enterprise AI security
+2) Local LLM Optimizer — https://github.com/ai-infra-curriculum | WHY: Cloud costs are high for LLMs | BUILD: Optimized LLM deployment for edge devices | MARKET: Edge AI applications
+3) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1toj078/whats_everyone_actually_using_for_llm | WHY: RAG issues are hard to debug | BUILD: Visual debugger for RAG pipelines | MARKET: LLM developers
+4) Multi-modal Router — https://arxiv.org/html/2605.29606v1 | WHY: Multimodal data is hard to process | BUILD: Router for multimodal data processing | MARKET: Multimodal AI applications
+5) AI Infrastructure Monitor — https://www.mindstudio.ai/blog/ai-infrastructure-constraint-microsoft-capex | WHY: AI infrastructure bottlenecks are common | BUILD: Monitoring tool for AI infrastructure | MARKET: AI infrastructure providers
