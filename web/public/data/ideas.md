@@ -1,6 +1,6 @@
-DATE: 25th May 2026 to 1st Jun 2026
-1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tskru6/spent_way_too_long_debugging_rag_before_realizing | WHY: RAG issues are opaque | BUILD: Trace visualizer | MARKET: DevTools
-2) Local LLM Optimizer — https://github.com/AlexsJones/llmfit | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-3) PDF Table Extractor — https://www.facebook.com/100057410380953/posts/baseline-enterprise-rag-from-pdf-to-highlighted-answerenterprise-document-intell/1473127304610935 | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
-4) Multi-modal Router — https://arxiv.org/html/2605.29606v1 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-5) Agent Replay Harness — https://github.com/Agent-Field/agentfield | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+DATE: 26th May 2026 to 2nd Jun 2026
+1) RAG PDF Parser — https://www.aibuilderclub.com/blog/markitdown-microsoft-convert-files-markdown-llm | WHY: RAG struggles with PDFs | BUILD: PDF to Markdown converter | MARKET: Enterprise document intelligence
+2) AI Agent Debugger — https://www.reddit.com/r/LangChain/comments/1tszr5d/my_llm_keeps_hallucinating_line_numbers_in_code | WHY: Hallucinations are opaque | BUILD: LangGraph state machine | MARKET: DevTools
+3) Multimodal RAG — https://www.rstjournal.com/article/21.2026 | WHY: RAG loses context in documents | BUILD: Multi-format document retrieval system | MARKET: Document-level summarization
+4) LLM Bottleneck Solver — https://www.akamai.com/blog/cloud/distributed-ai-inference-why-placement-new-bottleneck | WHY: Inference placement is a bottleneck | BUILD: Distributed AI inference optimizer | MARKET: AI infrastructure
+5) AI Infrastructure Curriculum — https://github.com/ai-infra-curriculum | WHY: AI engineers lack skills | BUILD: Comprehensive AI infrastructure curriculum | MARKET: AI engineering education
