@@ -1,6 +1,6 @@
-DATE: 26th May 2026 to 2nd Jun 2026
-1) RAG PDF Parser — https://www.aibuilderclub.com/blog/markitdown-microsoft-convert-files-markdown-llm | WHY: RAG struggles with PDFs | BUILD: PDF to Markdown converter | MARKET: Enterprise document intelligence
-2) AI Agent Debugger — https://www.reddit.com/r/LangChain/comments/1tszr5d/my_llm_keeps_hallucinating_line_numbers_in_code | WHY: Hallucinations are opaque | BUILD: LangGraph state machine | MARKET: DevTools
-3) Multimodal RAG — https://www.rstjournal.com/article/21.2026 | WHY: RAG loses context in documents | BUILD: Multi-format document retrieval system | MARKET: Document-level summarization
-4) LLM Bottleneck Solver — https://www.akamai.com/blog/cloud/distributed-ai-inference-why-placement-new-bottleneck | WHY: Inference placement is a bottleneck | BUILD: Distributed AI inference optimizer | MARKET: AI infrastructure
-5) AI Infrastructure Curriculum — https://github.com/ai-infra-curriculum | WHY: AI engineers lack skills | BUILD: Comprehensive AI infrastructure curriculum | MARKET: AI engineering education
+DATE: 27th May 2026 to 3rd Jun 2026
+1) RAG PDF Extractor — https://www.youtube.com/watch?v=T8pLii4bqy0 | WHY: RAG fails on PDFs | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+2) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1tp8zpr/r9700_and_b70_is_a_proof_that_coding_llms_are_not | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+3) AI Bullshit Detector — https://www.reddit.com/r/LocalLLM/comments/1tq3p0x/heres_an_ai_bullshit_detector_i_use_it_daily_and | WHY: AI bias is a problem | BUILD: Emotional bias detector | MARKET: Enterprise decision-making
+4) Multi-modal RAG — https://arxiv.org/html/2605.29606v1 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+5) Agent State Sync — https://www.reddit.com/r/LangChain/comments/1ttj4m7/how_are_people_handling_runtimestate_sync_between | WHY: Agents forget context | BUILD: State management framework | MARKET: DevTools
