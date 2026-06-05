@@ -1,6 +1,6 @@
-DATE: 27th May 2026 to 3rd Jun 2026
-1) RAG PDF Extractor — https://www.youtube.com/watch?v=T8pLii4bqy0 | WHY: RAG fails on PDFs | BUILD: Docling-based parser | MARKET: Finance/Legal automation
-2) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1tp8zpr/r9700_and_b70_is_a_proof_that_coding_llms_are_not | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-3) AI Bullshit Detector — https://www.reddit.com/r/LocalLLM/comments/1tq3p0x/heres_an_ai_bullshit_detector_i_use_it_daily_and | WHY: AI bias is a problem | BUILD: Emotional bias detector | MARKET: Enterprise decision-making
-4) Multi-modal RAG — https://arxiv.org/html/2605.29606v1 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-5) Agent State Sync — https://www.reddit.com/r/LangChain/comments/1ttj4m7/how_are_people_handling_runtimestate_sync_between | WHY: Agents forget context | BUILD: State management framework | MARKET: DevTools
+DATE: 29th May 2026 to 5th Jun 2026
+1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tw0nak/everyones_obsessing_over_evals_nobodys_looking_at | WHY: RAG issues are opaque | BUILD: Trace visualizer | MARKET: DevTools
+2) PDF Table Extractor — https://www.youtube.com/watch?v=T8pLii4bqy0 | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+3) Local LLM Optimizer — https://github.com/ai-infra-curriculum | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+4) Multi-modal Router — https://www.facebook.com/aliansari0/posts/20-advanced-rag-types-to-know-in-2026-mindscape-aware-rag-mia-rag-multi-step-rag/27318978507741621 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+5) Agent Replay Harness — https://www.reddit.com/r/AI_Agents/comments/1tvpxu4/ive_shipped_30_mcp_integrations_for_clients_heres | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
