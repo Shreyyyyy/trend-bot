@@ -1,6 +1,6 @@
-DATE: 29th May 2026 to 5th Jun 2026
-1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tw0nak/everyones_obsessing_over_evals_nobodys_looking_at | WHY: RAG issues are opaque | BUILD: Trace visualizer | MARKET: DevTools
-2) PDF Table Extractor — https://www.youtube.com/watch?v=T8pLii4bqy0 | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
-3) Local LLM Optimizer — https://github.com/ai-infra-curriculum | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-4) Multi-modal Router — https://www.facebook.com/aliansari0/posts/20-advanced-rag-types-to-know-in-2026-mindscape-aware-rag-mia-rag-multi-step-rag/27318978507741621 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-5) Agent Replay Harness — https://www.reddit.com/r/AI_Agents/comments/1tvpxu4/ive_shipped_30_mcp_integrations_for_clients_heres | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+DATE: 30th May 2026 to 6th Jun 2026
+1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1twdqvq/most_rag_apps_in_production_are_confidently_wrong | WHY: RAG apps are confidently wrong | BUILD: Trace visualizer for RAG | MARKET: Enterprise AI teams
+2) LLM Cost Optimizer — https://www.develeap.com/news/your-ai-bill-is-out-of-control-cloudflare-can-fix-it-now-f3182ee8 | WHY: AI bills are out of control | BUILD: Cost optimization tool for LLMs | MARKET: Cloud AI users
+3) Agent Skills Refinery — https://www.reddit.com/r/LocalLLM/comments/1ttpp93/the_biggest_agents_have_got_skills_all_wrong | WHY: Agent skills are flawed | BUILD: Skill refinement platform for AI agents | MARKET: AI agent developers
+4) Multimodal RAG — https://github.com/Yigtwxx/Awesome-RAG-Production | WHY: RAG struggles with multimodal data | BUILD: Multimodal RAG framework | MARKET: Data-intensive AI applications
+5) AI Infrastructure Auditor — https://www.facebook.com/Keysight/posts/signal-01-ai-infrastructure-is-entering-a-new-scaling-era-as-ai-workloads-grow-m/1014070244304353 | WHY: AI infrastructure is a bottleneck | BUILD: AI infrastructure auditing tool | MARKET: AI infrastructure providers
