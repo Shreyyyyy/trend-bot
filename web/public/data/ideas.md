@@ -1,6 +1,6 @@
-DATE: 30th May 2026 to 6th Jun 2026
-1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1twdqvq/most_rag_apps_in_production_are_confidently_wrong | WHY: RAG apps are confidently wrong | BUILD: Trace visualizer for RAG | MARKET: Enterprise AI teams
-2) LLM Cost Optimizer — https://www.develeap.com/news/your-ai-bill-is-out-of-control-cloudflare-can-fix-it-now-f3182ee8 | WHY: AI bills are out of control | BUILD: Cost optimization tool for LLMs | MARKET: Cloud AI users
-3) Agent Skills Refinery — https://www.reddit.com/r/LocalLLM/comments/1ttpp93/the_biggest_agents_have_got_skills_all_wrong | WHY: Agent skills are flawed | BUILD: Skill refinement platform for AI agents | MARKET: AI agent developers
-4) Multimodal RAG — https://github.com/Yigtwxx/Awesome-RAG-Production | WHY: RAG struggles with multimodal data | BUILD: Multimodal RAG framework | MARKET: Data-intensive AI applications
-5) AI Infrastructure Auditor — https://www.facebook.com/Keysight/posts/signal-01-ai-infrastructure-is-entering-a-new-scaling-era-as-ai-workloads-grow-m/1014070244304353 | WHY: AI infrastructure is a bottleneck | BUILD: AI infrastructure auditing tool | MARKET: AI infrastructure providers
+DATE: 31st May 2026 to 7th Jun 2026
+1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1twdqvq/most_rag_apps_in_production_are_confidently_wrong | WHY: RAG apps are confidently wrong | BUILD: Trace visualizer for RAG | MARKET: DevTools
+2) Local LLM Optimizer — https://github.com/ai-infra-curriculum | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+3) Multi-modal Router — https://github.com/Yigtwxx/Awesome-RAG-Production | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+4) Agent Replay Harness — https://www.reddit.com/r/LocalLLM/comments/1txa2x7/which_mac_book_pro_to_buy_as_a_hobbyist_ai | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+5) PDF Table Extractor — https://www.reddit.com/r/Rag/comments/1ttbavs/whats_currently_considered_the_best_pdfdocument | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
