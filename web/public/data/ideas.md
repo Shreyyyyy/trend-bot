@@ -1,6 +1,6 @@
-DATE: 1st Jun 2026 to 8th Jun 2026
-1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tz45o2/your_rag_app_isnt_broken_because_of_the_model | WHY: RAG apps fail due to poor query design | BUILD: Query analysis toolkit | MARKET: DevTools for RAG developers
-2) Local LLM Optimizer — https://github.com/ai-infra-curriculum | WHY: Cloud costs are high for LLMs | BUILD: vLLM wrapper for edge devices | MARKET: Privacy-first startups
-3) Multimodal RAG — https://medium.com/@reenbit/what-is-rag-real-world-use-cases-how-it-works-and-how-to-implement-it-efbf03953348 | WHY: RAG struggles with images and tables | BUILD: Multimodal retriever for text, images, and tables | MARKET: Enterprises with complex data
-4) Agent Reliability Toolkit — https://www.reddit.com/r/artificial/comments/1tuqkp0/the_ai_bottleneck_has_shifted_and_most_people | WHY: AI agents are unreliable | BUILD: Toolkit for agent reliability and recovery | MARKET: AI teams struggling with agent drift
-5) AI Infrastructure Cost Estimator — https://www.paralleliq.ai/blog | WHY: AI infrastructure costs are unpredictable | BUILD: Cost estimation tool for AI workloads | MARKET: Companies scaling AI infrastructure
+DATE: 2nd Jun 2026 to 9th Jun 2026
+1) Local LLM Optimizer — https://github.com/louisfb01/start-ai-engineering | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tz45o2/your_rag_app_isnt_broken_because_of_the_model | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
+3) Multi-modal Router — https://www.reddit.com/r/LocalLLM/comments/1ty9qbl/i_built_a_small_windows_tool_to_monitor_and | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+4) Agent Context Manager — https://www.reddit.com/r/LangChain/comments/1tz4wby/how_do_you_handle_agent_context_after_10s_of | WHY: Context loss is common | BUILD: Session-based context manager | MARKET: Enterprise chatbots
+5) AI Agent Reliability Toolkit — https://www.reddit.com/r/artificial/comments/1tuqkp0/the_ai_bottleneck_has_shifted_and_most_people | WHY: Reliability is a bottleneck | BUILD: Toolkit for reliability testing | MARKET: AI development teams
