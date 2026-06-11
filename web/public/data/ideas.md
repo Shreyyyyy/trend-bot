@@ -1,6 +1,6 @@
-DATE: 3rd Jun 2026 to 10th Jun 2026
-1) AI Detector Evasion — https://www.reddit.com/r/MachineLearning/comments/1twtpmb/how_do_ml_researchers_actually_use_ai_tools_to | WHY: False flags hinder progress | BUILD: AI detector auditing tool | MARKET: Academic research
-2) Local LLM Optimizer — https://github.com/louisfb01/start-ai-engineering | WHY: Cloud costs are high | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-3) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1tz45o2/your_rag_app_isnt_broken_because_of_the_model | WHY: RAG issues are opaque | BUILD: Trace visualizer | MARKET: DevTools
-4) PDF Table Extractor — https://www.reddit.com/r/LangChain/comments/1tvvu3d/built_an_open_source_human_verification_layer_for | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
-5) Multi-modal Router — https://www.instagram.com/p/DZUO_IZjOfM | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+DATE: 4th Jun 2026 to 11st Jun 2026
+1) RAG PDF Parser — https://towardsdatascience.com/beyond-extract_text-the-two-layers-of-a-pdf-that-drive-rag-quality | WHY: RAG fails on PDFs | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+2) Local LLM Optimizer — https://github.com/louisfb01/start-ai-engineering | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+3) Multimodal RAG — https://www.instagram.com/p/DZZ9Q6xmny6 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+4) AI Agent Debugger — https://www.reddit.com/r/LangChain/comments/1u0f6a8/for_teams_building_ai_agents_what_failures_are | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
+5) LLM Infrastructure Monitor — https://www.hyperglance.com/blog/find-waste-ai-infrastructure | WHY: AI waste is hidden | BUILD: Waste detector for GPU instances | MARKET: Cloud cost optimization
