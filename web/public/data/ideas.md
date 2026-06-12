@@ -1,6 +1,6 @@
-DATE: 4th Jun 2026 to 11st Jun 2026
-1) RAG PDF Parser — https://towardsdatascience.com/beyond-extract_text-the-two-layers-of-a-pdf-that-drive-rag-quality | WHY: RAG fails on PDFs | BUILD: Docling-based parser | MARKET: Finance/Legal automation
-2) Local LLM Optimizer — https://github.com/louisfb01/start-ai-engineering | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-3) Multimodal RAG — https://www.instagram.com/p/DZZ9Q6xmny6 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-4) AI Agent Debugger — https://www.reddit.com/r/LangChain/comments/1u0f6a8/for_teams_building_ai_agents_what_failures_are | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-5) LLM Infrastructure Monitor — https://www.hyperglance.com/blog/find-waste-ai-infrastructure | WHY: AI waste is hidden | BUILD: Waste detector for GPU instances | MARKET: Cloud cost optimization
+DATE: 5th Jun 2026 to 12nd Jun 2026
+1) RAG PDF Cleaner — https://www.reddit.com/r/Rag/comments/1u261uk/what_are_you_using_to_clean_pdfs_before_putting | WHY: PDFs are hard to parse | BUILD: PDF to Markdown converter | MARKET: RAG developers
+2) LLM Hardware Optimizer — https://www.reddit.com/r/LocalLLM/comments/1tzcm2n/nvidia_card_is_dying_should_i_switch_to_amd | WHY: LLMs are hardware-intensive | BUILD: Hardware benchmarking tool | MARKET: Local LLM users
+3) Multimodal RAG — https://www.instagram.com/p/DZZ9Q6xmny6 | WHY: RAGs are limited to text | BUILD: Multimodal RAG framework | MARKET: Enterprise AI teams
+4) AI Infrastructure Monitor — https://www.facebook.com/investorsbusinessdaily/posts/ai-infrastructure-short-circuits-but-now-sparks-not-one-but-two-buy-points/1365861598748755 | WHY: AI infrastructure is prone to bottlenecks | BUILD: Infrastructure monitoring tool | MARKET: AI infrastructure providers
+5) Temporal Memory Layer — https://www.reddit.com/r/LangChain/comments/1u12j2k/built_a_temporal_memory_layer_for_agents_after | WHY: Agents struggle with temporal context | BUILD: Temporal memory layer for agents | MARKET: LangChain developers
