@@ -1,6 +1,6 @@
-DATE: 12nd Jun 2026 to 19th Jun 2026
-1) Agent Replay Harness — https://www.reddit.com/r/LocalLLM/comments/1u82wyn/sharing_my_diy_ai_memory_framework_giving_llms | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-2) PDF Table Extractor — https://arxiv.org/html/2606.15906v1 | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
-3) Local LLM Optimizer — https://github.com/HKUDS/nanobot/discussions/431 | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-4) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1u8tkkg/p_a_fromscratch_react_agent_runtime_in_pure | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-5) Multi-modal Router — https://towardsdatascience.com/vision-llms-are-pdf-parsers-too-reading-charts-and-diagrams-for-rag | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+DATE: 13rd Jun 2026 to 20th Jun 2026
+1) RAG PDF Parser — https://vivedhaelango.substack.com/p/lesson-91-how-do-you-build-a-rag | WHY: Images are high cost | BUILD: Multimodal RAG system | MARKET: Enterprise document intelligence
+2) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1u81szm/corpo_ais_will_not_teach_you_how_to_run_local_ai | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+3) Agent Loop Debugger — https://www.remio.ai/post/what-is-loop-engineering-the-complete-guide | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+4) Multimodal Embeddings — https://medium.com/@milind-divre/multimodal-embeddings-are-here-because-text-search-was-getting-too-comfortable-d651cfa36cf2 | WHY: Text search is limited | BUILD: Multimodal embeddings for search | MARKET: Content platforms
+5) AI Infrastructure Monitor — https://stackoverflow.blog/2026/06/18/the-new-bottleneck | WHY: AI infrastructure is a bottleneck | BUILD: Monitoring tool for AI infrastructure | MARKET: AI development teams
