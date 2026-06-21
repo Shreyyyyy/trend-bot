@@ -1,6 +1,6 @@
-DATE: 13rd Jun 2026 to 20th Jun 2026
-1) RAG PDF Parser — https://vivedhaelango.substack.com/p/lesson-91-how-do-you-build-a-rag | WHY: Images are high cost | BUILD: Multimodal RAG system | MARKET: Enterprise document intelligence
-2) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1u81szm/corpo_ais_will_not_teach_you_how_to_run_local_ai | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-3) Agent Loop Debugger — https://www.remio.ai/post/what-is-loop-engineering-the-complete-guide | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-4) Multimodal Embeddings — https://medium.com/@milind-divre/multimodal-embeddings-are-here-because-text-search-was-getting-too-comfortable-d651cfa36cf2 | WHY: Text search is limited | BUILD: Multimodal embeddings for search | MARKET: Content platforms
-5) AI Infrastructure Monitor — https://stackoverflow.blog/2026/06/18/the-new-bottleneck | WHY: AI infrastructure is a bottleneck | BUILD: Monitoring tool for AI infrastructure | MARKET: AI development teams
+DATE: 14th Jun 2026 to 21st Jun 2026
+1) Local LLM Optimizer — https://github.com/alvinreal/awesome-opensource-ai | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1u8tkkg/p_a_fromscratch_react_agent_runtime_in_pure | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
+3) Multi-modal RAG — https://vivedhaelango.substack.com/p/lesson-91-how-do-you-build-a-rag | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+4) Agent Harness — https://github.com/ai-boost/awesome-harness-engineering | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+5) PDF Table Extractor — https://docs.cloud.google.com/bigquery/docs/rag-pipeline-pdf | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
