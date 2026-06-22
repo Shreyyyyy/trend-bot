@@ -1,6 +1,6 @@
-DATE: 14th Jun 2026 to 21st Jun 2026
-1) Local LLM Optimizer — https://github.com/alvinreal/awesome-opensource-ai | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1u8tkkg/p_a_fromscratch_react_agent_runtime_in_pure | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-3) Multi-modal RAG — https://vivedhaelango.substack.com/p/lesson-91-how-do-you-build-a-rag | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-4) Agent Harness — https://github.com/ai-boost/awesome-harness-engineering | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-5) PDF Table Extractor — https://docs.cloud.google.com/bigquery/docs/rag-pipeline-pdf | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+DATE: 15th Jun 2026 to 22nd Jun 2026
+1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1u6lqmb/tired_of_rebuilding_the_same_rag_infrastructure | WHY: RAG issues are opaque | BUILD: Trace visualizer | MARKET: DevTools
+2) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1ubsxn1/unlimited_budget | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+3) Multi-modal Router — https://vivedhaelango.substack.com/p/lesson-91-how-do-you-build-a-rag | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+4) PDF Table Extractor — https://github.com/Yigtwxx/Awesome-RAG-Production | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+5) Agent Replay Harness — https://www.linkedin.com/posts/ramdani-khaled-80347830a_i-built-a-tool-to-help-solve-a-problem-every-activity-7473137391134928896-KRQ8 | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
