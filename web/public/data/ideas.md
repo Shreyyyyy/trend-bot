@@ -1,6 +1,6 @@
-DATE: 16th Jun 2026 to 23rd Jun 2026
-1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1u8tkkg/p_a_fromscratch_react_agent_runtime_in_pure | WHY: RAG apps are confidently wrong | BUILD: Trace visualizer for RAG | MARKET: DevTools
-2) Local LLM Optimizer — https://github.com/Yigtwxx/Awesome-RAG-Production | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-3) PDF Table Extractor — https://docs.cloud.google.com/bigquery/docs/rag-pipeline-pdf | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
-4) Multi-modal Router — https://www.instagram.com/p/DZpNGc4OvIh | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-5) Agent Replay Harness — https://www.reddit.com/r/LocalLLM/comments/1ubt653/lm_studio_hermes_4_glitch | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+DATE: 17th Jun 2026 to 24th Jun 2026
+1) Adaptive Model Optimizer — https://www.reddit.com/r/MachineLearning/comments/1u8jyat/is_foundational_ai_research_still_something_that | WHY: Low SNR data | BUILD: Data-efficient model | MARKET: Research institutions
+2) Conversation Debugger — https://www.reddit.com/r/MachineLearning/comments/1u99fe5/voice_debugging_at_the_conversation_level_seems | WHY: Timing mistakes | BUILD: Turn-taking analysis | MARKET: Voice assistant devs
+3) Local LLM Deployer — https://www.reddit.com/r/LocalLLM/comments/1u9o25h/glm52_now_more_than_10_points_above_opus_48_in_aa | WHY: Deployment challenges | BUILD: Model serving platform | MARKET: Edge AI devs
+4) RAG PDF Parser — https://docs.cloud.google.com/bigquery/docs/rag-pipeline-pdf | WHY: PDF parsing issues | BUILD: PDF parsing library | MARKET: Document analysis
+5) Multimodal RAG — https://www.sciencedirect.com/science/article/pii/S2352492826009402 | WHY: Multimodal understanding | BUILD: Multimodal fusion | MARKET: Content platforms
