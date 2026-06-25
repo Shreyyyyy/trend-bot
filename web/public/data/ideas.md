@@ -1,6 +1,6 @@
-DATE: 17th Jun 2026 to 24th Jun 2026
-1) Adaptive Model Optimizer — https://www.reddit.com/r/MachineLearning/comments/1u8jyat/is_foundational_ai_research_still_something_that | WHY: Low SNR data | BUILD: Data-efficient model | MARKET: Research institutions
-2) Conversation Debugger — https://www.reddit.com/r/MachineLearning/comments/1u99fe5/voice_debugging_at_the_conversation_level_seems | WHY: Timing mistakes | BUILD: Turn-taking analysis | MARKET: Voice assistant devs
-3) Local LLM Deployer — https://www.reddit.com/r/LocalLLM/comments/1u9o25h/glm52_now_more_than_10_points_above_opus_48_in_aa | WHY: Deployment challenges | BUILD: Model serving platform | MARKET: Edge AI devs
-4) RAG PDF Parser — https://docs.cloud.google.com/bigquery/docs/rag-pipeline-pdf | WHY: PDF parsing issues | BUILD: PDF parsing library | MARKET: Document analysis
-5) Multimodal RAG — https://www.sciencedirect.com/science/article/pii/S2352492826009402 | WHY: Multimodal understanding | BUILD: Multimodal fusion | MARKET: Content platforms
+DATE: 18th Jun 2026 to 25th Jun 2026
+1) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1udvzhn/what_do_you_guys_even_do_hosting_multiple_llm | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1uayuwx/my_rag_setup_kept_missing_the_bug_so_i_asked_m3 | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
+3) Multi-modal Router — https://medium.com/@pranjalisr25/building-5-practical-rag-systems-in-python-from-scratch-to-agentic-multimodal-and-real-time-rag-df157d3a14d9 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+4) Agent Replay Harness — https://www.reddit.com/r/AI_Agents/comments/1udbbe3/most_ai_agents_fail_because_people_build_them | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+5) PDF Table Extractor — https://eliteaiadvantage.com/blog/rag-pdfs-charts-images | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
