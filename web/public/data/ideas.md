@@ -1,6 +1,6 @@
-DATE: 18th Jun 2026 to 25th Jun 2026
-1) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1udvzhn/what_do_you_guys_even_do_hosting_multiple_llm | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1uayuwx/my_rag_setup_kept_missing_the_bug_so_i_asked_m3 | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-3) Multi-modal Router — https://medium.com/@pranjalisr25/building-5-practical-rag-systems-in-python-from-scratch-to-agentic-multimodal-and-real-time-rag-df157d3a14d9 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-4) Agent Replay Harness — https://www.reddit.com/r/AI_Agents/comments/1udbbe3/most_ai_agents_fail_because_people_build_them | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-5) PDF Table Extractor — https://eliteaiadvantage.com/blog/rag-pdfs-charts-images | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+DATE: 19th Jun 2026 to 26th Jun 2026
+1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1uddvxa/how_to_protect_enterprise_ai_systems_from_prompt | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
+2) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1uacsil/is_local_ai_actually_worth_investing_in_now_or | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+3) Multi-modal Router — https://www.reddit.com/r/LangChain/comments/1ueakoz/subgraphs_interruption_handling | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+4) Agent Replay Harness — https://www.reddit.com/r/LocalLLM/comments/1ud6o13/what_ive_noticed_about_running_gemma_4_12b_unified | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+5) PDF Table Extractor — https://www.reddit.com/r/MachineLearning/comments/1ucm508/some_new_updates_to_papers_with_code_p | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
