@@ -1,6 +1,6 @@
-DATE: 19th Jun 2026 to 26th Jun 2026
-1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1uddvxa/how_to_protect_enterprise_ai_systems_from_prompt | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-2) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1uacsil/is_local_ai_actually_worth_investing_in_now_or | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-3) Multi-modal Router — https://www.reddit.com/r/LangChain/comments/1ueakoz/subgraphs_interruption_handling | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-4) Agent Replay Harness — https://www.reddit.com/r/LocalLLM/comments/1ud6o13/what_ive_noticed_about_running_gemma_4_12b_unified | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-5) PDF Table Extractor — https://www.reddit.com/r/MachineLearning/comments/1ucm508/some_new_updates_to_papers_with_code_p | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+DATE: 20th Jun 2026 to 27th Jun 2026
+1) RAG PDF Extractor — https://www.reddit.com/r/LangChain/comments/1ucr09g/slicing_the_complex_plane_a_firstprinciples_guide | WHY: RAG fails on PDF tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+2) Local LLM Optimizer — https://github.com/ai-infra-curriculum/ai-infra-performance-learning | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+3) Agent Reliability Monitor — https://www.reddit.com/r/AI_Agents/comments/1uf8oui/ive_killed_more_agents_than_ive_kept_sharing_the | WHY: Agent failures are common | BUILD: Real-time monitoring tool | MARKET: DevTools
+4) Multimodal RAG — https://www.linkedin.com/posts/davilagrau_how-we-built-an-internal-data-analytics-agent-activity-7474133327252340736-F5sb | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+5) LLM Bottleneck Solver — https://x.com/netcreat/status/2070064153813721095 | WHY: AI infrastructure is bottlenecked | BUILD: Memory optimization framework | MARKET: AI infrastructure providers
