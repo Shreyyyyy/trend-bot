@@ -1,6 +1,6 @@
-DATE: 20th Jun 2026 to 27th Jun 2026
-1) RAG PDF Extractor — https://www.reddit.com/r/LangChain/comments/1ucr09g/slicing_the_complex_plane_a_firstprinciples_guide | WHY: RAG fails on PDF tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
-2) Local LLM Optimizer — https://github.com/ai-infra-curriculum/ai-infra-performance-learning | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-3) Agent Reliability Monitor — https://www.reddit.com/r/AI_Agents/comments/1uf8oui/ive_killed_more_agents_than_ive_kept_sharing_the | WHY: Agent failures are common | BUILD: Real-time monitoring tool | MARKET: DevTools
-4) Multimodal RAG — https://www.linkedin.com/posts/davilagrau_how-we-built-an-internal-data-analytics-agent-activity-7474133327252340736-F5sb | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-5) LLM Bottleneck Solver — https://x.com/netcreat/status/2070064153813721095 | WHY: AI infrastructure is bottlenecked | BUILD: Memory optimization framework | MARKET: AI infrastructure providers
+DATE: 21st Jun 2026 to 28th Jun 2026
+1) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1udvzhn/what_do_you_guys_even_do_hosting_multiple_llm | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1uf4igr/how_do_you_actually_debug_a_langgraph_agent_that | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
+3) Multi-modal Router — https://www.linkedin.com/posts/jbellsolutions_the-infrastructure-question-nobody-is-asking-activity-7474853818581684224-xh-T | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+4) Agent Replay Harness — https://www.reddit.com/r/AI_Agents/comments/1uf8oui/ive_killed_more_agents_than_ive_kept_sharing_the | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+5) PDF Table Extractor — https://www.reddit.com/r/LangChain/comments/1ufruw8/how_are_you_handling_context_bloat_when_mcp_tools | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
