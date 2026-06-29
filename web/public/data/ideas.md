@@ -1,6 +1,6 @@
-DATE: 21st Jun 2026 to 28th Jun 2026
-1) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1udvzhn/what_do_you_guys_even_do_hosting_multiple_llm | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1uf4igr/how_do_you_actually_debug_a_langgraph_agent_that | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-3) Multi-modal Router — https://www.linkedin.com/posts/jbellsolutions_the-infrastructure-question-nobody-is-asking-activity-7474853818581684224-xh-T | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-4) Agent Replay Harness — https://www.reddit.com/r/AI_Agents/comments/1uf8oui/ive_killed_more_agents_than_ive_kept_sharing_the | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-5) PDF Table Extractor — https://www.reddit.com/r/LangChain/comments/1ufruw8/how_are_you_handling_context_bloat_when_mcp_tools | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+DATE: 22nd Jun 2026 to 29th Jun 2026
+1) RAG PDF Parser — https://eliteaiadvantage.com/blog/rag-pdfs-charts-images | WHY: Visual data problem | BUILD: Multimodal RAG pipeline | MARKET: Enterprise document analysis
+2) LLM Agent Reliability Toolkit — https://www.reddit.com/r/AI_Agents/comments/1ui0fxx/getting_an_llm_agent_to_actually_stay_in | WHY: Character drift | BUILD: Agent monitoring system | MARKET: AI developer teams
+3) AI Infrastructure Cost Estimator — https://www.linkedin.com/posts/jbellsolutions_the-infrastructure-question-nobody-is-asking-activity-7474853818581684224-xh-T | WHY: Hidden infrastructure costs | BUILD: Cost forecasting model | MARKET: Cloud service providers
+4) Multimodal Table Format — https://www.lancedb.com/blog/designing-a-table-format-for-ml-workloads | WHY: Inefficient data storage | BUILD: Flexible table format | MARKET: Data engineering teams
+5) Open-Source LLM Aggregator — https://github.com/Jenqyang/Awesome-AI-Agents | WHY: Proprietary LLM dominance | BUILD: Community-driven LLM aggregator | MARKET: Open-source AI community
