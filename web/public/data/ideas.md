@@ -1,6 +1,6 @@
-DATE: 23rd Jun 2026 to 30th Jun 2026
-1) Local LLM Optimizer — https://github.com/harshuljain13/llm-inference-at-scale | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1uhxn9z/building_an_ai_agent_debugger_would_this_actually | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-3) PDF Table Extractor — https://www.reddit.com/r/MachineLearning/comments/1uf8thw/calhippo_mapping_neurons_and_glial_cells_in_the | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
-4) Multi-modal Router — https://www.linkedin.com/posts/gerritforge_gerritmeets-is-back-and-this-ones-all-about-activity-7475173989620015105-pK7m | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-5) Agent Replay Harness — https://www.reddit.com/r/AI_Agents/comments/1ui0fxx/getting_an_llm_agent_to_actually_stay_in | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+DATE: 24th Jun 2026 to 1st Jul 2026
+1) RAG PDF Parser — https://www.reddit.com/r/LangChain/comments/1uhthok/pypdfloader_unstructured_custom_regex_i_tried | WHY: RAG fails on PDFs | BUILD: Layout-aware PDF chunker | MARKET: Finance/Legal automation
+2) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1uizif2/got_frustrated_with_downtimes_with_claude_i_set | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+3) Multi-modal RAG — https://www.instagram.com/reel/DaKN_rJuxyM | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+4) LLM Training Framework — https://www.reddit.com/r/MachineLearning/comments/1uh7ib3/built_an_llm_training_framework_that_actually | WHY: Older GPUs struggle | BUILD: Framework for older GPUs | MARKET: Researchers/Developers
+5) Agent Reliability Toolkit — https://www.reddit.com/r/AI_Agents/comments/1ui0fxx/getting_an_llm_agent_to_actually_stay_in | WHY: Agents drift over time | BUILD: Character drift mitigation | MARKET: Enterprise AI teams
