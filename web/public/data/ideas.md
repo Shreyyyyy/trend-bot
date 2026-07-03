@@ -1,6 +1,6 @@
-DATE: 25th Jun 2026 to 2nd Jul 2026
-1) Local LLM Optimizer — https://github.com/harshuljain13/llm-inference-at-scale | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1uhthok/pypdfloader_unstructured_custom_regex_i_tried | WHY: RAG hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
+DATE: 26th Jun 2026 to 3rd Jul 2026
+1) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1uizif2/got_frustrated_with_downtimes_with_claude_i_set | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1ukmffb/i_fixed_rag_hallucinations_on_a_400page_legal_pdf | WHY: RAG hallucinations | BUILD: Trace visualizer | MARKET: DevTools
 3) Multi-modal Router — https://www.blog.brightcoding.dev/2026/07/01/rag-anything-the-revolutionary-multimodal-rag-framework | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-4) Agent Replay Harness — https://www.reddit.com/r/AI_Agents/comments/1ui0fxx/getting_an_llm_agent_to_actually_stay_in | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-5) PDF Table Extractor — https://www.reddit.com/r/LangChain/comments/1uinryt/stop_standard_token_splitters_from_destroying | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+4) Agent Memory Manager — https://www.reddit.com/r/AIMemory/comments/1uilrxb/i_thought_agent_memory_meant_chat_history_now_im | WHY: Agent memory issues | BUILD: Memory management system | MARKET: AI agent developers
+5) AI Infrastructure Monitor — https://www.linkedin.com/posts/ahmedsabdullah_jude-edwards-latest-blog-at-block-is-worth-activity-7476701232384856064-RXtN | WHY: AI infrastructure bottlenecks | BUILD: Real-time monitoring tool | MARKET: AI engineering teams
