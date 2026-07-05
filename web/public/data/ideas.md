@@ -1,6 +1,6 @@
-DATE: 27th Jun 2026 to 4th Jul 2026
-1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1ukmffb/i_fixed_rag_hallucinations_on_a_400page_legal_pdf | WHY: RAG hallucinations | BUILD: Custom ingestion pipeline | MARKET: Legal automation
-2) Local LLM Optimizer — https://github.com/harshuljain13/llm-inference-at-scale | WHY: Cloud costs | BUILD: LLM serving infrastructure | MARKET: Enterprise AI
-3) AI Gateway — https://www.reddit.com/r/LangChain/comments/1umtol0/building_an_ai_gateway_because_production_llm | WHY: LLM app reliability | BUILD: AI gateway | MARKET: DevTools
-4) PDF Table Extractor — https://www.reddit.com/r/LangChain/comments/1umbfaf/how_many_hours_have_bad_pdfs_cost_you_in_your_rag | WHY: PDF parsing issues | BUILD: Custom PDF parser | MARKET: Finance/Legal automation
-5) Agent Memory Manager — https://www.reddit.com/r/AIMemory/comments/1uilrxb/i_thought_agent_memory_meant_chat_history_now_im | WHY: Agent memory issues | BUILD: Agent memory framework | MARKET: AI agent developers
+DATE: 28th Jun 2026 to 5th Jul 2026
+1) Local LLM Optimizer — https://github.com/benchflow-ai/awesome-evals | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1ukmffb/i_fixed_rag_hallucinations_on_a_400page_legal_pdf | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
+3) PDF Table Extractor — https://www.reddit.com/r/LangChain/comments/1umbfaf/how_many_hours_have_bad_pdfs_cost_you_in_your_rag | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+4) Agent Replay Harness — https://www.reddit.com/r/AI_Agents/comments/1ujigq2/a_lot_of_conversation_around_harness_engineering | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+5) Multi-modal Router — https://www.reddit.com/r/LocalLLM/comments/1umkuov/open_benchmark_how_well_can_multimodal_llms_read | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
