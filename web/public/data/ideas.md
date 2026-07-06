@@ -1,6 +1,6 @@
-DATE: 28th Jun 2026 to 5th Jul 2026
-1) Local LLM Optimizer — https://github.com/benchflow-ai/awesome-evals | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+DATE: 29th Jun 2026 to 6th Jul 2026
+1) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1uj0i26/byte_local_ai_interface | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
 2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1ukmffb/i_fixed_rag_hallucinations_on_a_400page_legal_pdf | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-3) PDF Table Extractor — https://www.reddit.com/r/LangChain/comments/1umbfaf/how_many_hours_have_bad_pdfs_cost_you_in_your_rag | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
-4) Agent Replay Harness — https://www.reddit.com/r/AI_Agents/comments/1ujigq2/a_lot_of_conversation_around_harness_engineering | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-5) Multi-modal Router — https://www.reddit.com/r/LocalLLM/comments/1umkuov/open_benchmark_how_well_can_multimodal_llms_read | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+3) Multimodal RAG — https://www.marktechpost.com/2026/07/02/rag-anything-tutorial-build-a-multimodal-retrieval-pipeline-for-text-tables-equations-and-images-in-colab | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+4) AI Agent Phone — https://blog.balakumar.dev/2026/07/05/openai-is-building-a-phone-and-the-reason-isnt-the-phone | WHY: Security risks | BUILD: Secure AI agent phone | MARKET: Enterprise security
+5) Data Reliability — https://www.reddit.com/r/BusinessIntelligence/comments/1ulft63/proactive_solutions_for_ensuring_data_reliability | WHY: Data quality issues | BUILD: Data validation toolkit | MARKET: Business intelligence
