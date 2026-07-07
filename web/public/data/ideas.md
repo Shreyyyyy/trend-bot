@@ -1,6 +1,6 @@
-DATE: 29th Jun 2026 to 6th Jul 2026
-1) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1uj0i26/byte_local_ai_interface | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1ukmffb/i_fixed_rag_hallucinations_on_a_400page_legal_pdf | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-3) Multimodal RAG — https://www.marktechpost.com/2026/07/02/rag-anything-tutorial-build-a-multimodal-retrieval-pipeline-for-text-tables-equations-and-images-in-colab | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-4) AI Agent Phone — https://blog.balakumar.dev/2026/07/05/openai-is-building-a-phone-and-the-reason-isnt-the-phone | WHY: Security risks | BUILD: Secure AI agent phone | MARKET: Enterprise security
-5) Data Reliability — https://www.reddit.com/r/BusinessIntelligence/comments/1ulft63/proactive_solutions_for_ensuring_data_reliability | WHY: Data quality issues | BUILD: Data validation toolkit | MARKET: Business intelligence
+DATE: 30th Jun 2026 to 7th Jul 2026
+1) RAG Hallucination Fixer — https://www.reddit.com/r/LangChain/comments/1ukmffb/i_fixed_rag_hallucinations_on_a_400page_legal_pdf | WHY: RAG hallucinations hurt accuracy | BUILD: Custom metadata filtering tool | MARKET: Legal document automation
+2) Local AI Silo Buster — https://www.reddit.com/r/LocalLLM/comments/1umro9r/aravind_srinivis_ceo_of_perplexity_ai_said_this | WHY: Organisational silos hinder AI adoption | BUILD: Inter-silo knowledge sharing platform | MARKET: Enterprise AI teams
+3) Multimodal RAG Pipeline — https://www.marktechpost.com/2026/07/02/rag-anything-tutorial-build-a-multimodal-retrieval-pipeline-for-text-tables-equations-and-images-in-colab | WHY: Multimodal data is hard to process | BUILD: Multimodal retrieval pipeline | MARKET: Data-intensive applications
+4) AI Agent Reliability Checker — https://www.reddit.com/r/SideProject/comments/1uob1x3/built_a_voice_ai_for_practising_sales_calls | WHY: AI agent reliability is a concern | BUILD: Agent reliability testing framework | MARKET: AI-powered customer service
+5) LLM Infrastructure Optimizer — https://github.com/Andyyyy64/whichllm | WHY: LLM infrastructure is costly | BUILD: LLM performance optimization tool | MARKET: AI startups and enterprises
