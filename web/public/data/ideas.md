@@ -1,6 +1,6 @@
-DATE: 30th Jun 2026 to 7th Jul 2026
-1) RAG Hallucination Fixer — https://www.reddit.com/r/LangChain/comments/1ukmffb/i_fixed_rag_hallucinations_on_a_400page_legal_pdf | WHY: RAG hallucinations hurt accuracy | BUILD: Custom metadata filtering tool | MARKET: Legal document automation
-2) Local AI Silo Buster — https://www.reddit.com/r/LocalLLM/comments/1umro9r/aravind_srinivis_ceo_of_perplexity_ai_said_this | WHY: Organisational silos hinder AI adoption | BUILD: Inter-silo knowledge sharing platform | MARKET: Enterprise AI teams
-3) Multimodal RAG Pipeline — https://www.marktechpost.com/2026/07/02/rag-anything-tutorial-build-a-multimodal-retrieval-pipeline-for-text-tables-equations-and-images-in-colab | WHY: Multimodal data is hard to process | BUILD: Multimodal retrieval pipeline | MARKET: Data-intensive applications
-4) AI Agent Reliability Checker — https://www.reddit.com/r/SideProject/comments/1uob1x3/built_a_voice_ai_for_practising_sales_calls | WHY: AI agent reliability is a concern | BUILD: Agent reliability testing framework | MARKET: AI-powered customer service
-5) LLM Infrastructure Optimizer — https://github.com/Andyyyy64/whichllm | WHY: LLM infrastructure is costly | BUILD: LLM performance optimization tool | MARKET: AI startups and enterprises
+DATE: 1st Jul 2026 to 8th Jul 2026
+1) Local LLM Optimizer — https://github.com/antoinezambelli/forge | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+2) Multimodal RAG — https://www.marktechpost.com/2026/07/02/rag-anything-tutorial-build-a-multimodal-retrieval-pipeline-for-text-tables-equations-and-images-in-colab | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+3) AI Agent Harness — https://github.com/ai-boost/awesome-harness-engineering | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+4) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1ukmffb/i_fixed_rag_hallucinations_on_a_400page_legal_pdf | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+5) LLM Infrastructure — https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero | WHY: Secret scanning is key | BUILD: Secret scanning for LLM | MARKET: Secure AI development
