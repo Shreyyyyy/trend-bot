@@ -1,6 +1,6 @@
-DATE: 1st Jul 2026 to 8th Jul 2026
-1) Local LLM Optimizer — https://github.com/antoinezambelli/forge | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-2) Multimodal RAG — https://www.marktechpost.com/2026/07/02/rag-anything-tutorial-build-a-multimodal-retrieval-pipeline-for-text-tables-equations-and-images-in-colab | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-3) AI Agent Harness — https://github.com/ai-boost/awesome-harness-engineering | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-4) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1ukmffb/i_fixed_rag_hallucinations_on_a_400page_legal_pdf | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
-5) LLM Infrastructure — https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero | WHY: Secret scanning is key | BUILD: Secret scanning for LLM | MARKET: Secure AI development
+DATE: 2nd Jul 2026 to 9th Jul 2026
+1) RAG Pipeline Optimizer — https://www.reddit.com/r/LangChain/comments/1un4uv0/why_does_everyone_skip_the_chunking_part | WHY: RAG pipelines are slow | BUILD: Chunking-based pipeline accelerator | MARKET: Enterprise AI teams
+2) Local LLM Accelerator — https://www.reddit.com/r/LocalLLM/comments/1ur3042/anyone_else_frustrated_with_slow_llm_downloads | WHY: Local LLMs are slow | BUILD: Hardware-accelerated LLM inference | MARKET: Local AI developers
+3) Multimodal RAG — https://www.linkedin.com/posts/mounicat_rag-with-langgraph-cheat-sheet-activity-7479710677448949760-tZqv | WHY: RAG lacks multimodal support | BUILD: Multimodal RAG with image and table support | MARKET: Enterprise knowledge bases
+4) AI Agent Reliability Toolkit — https://www.reddit.com/r/hermesagent/comments/1uqr4kv/i_spent_months_building_ai_pipelines_that_dont | WHY: AI agents are unreliable | BUILD: Reliability toolkit for AI agents | MARKET: AI developers
+5) LLM Token Optimizer — https://github.com/pleasedodisturb/awesome-llm-token-optimization | WHY: LLM tokens are expensive | BUILD: Token optimization toolkit for LLMs | MARKET: LLM developers
