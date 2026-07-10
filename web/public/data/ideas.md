@@ -1,6 +1,6 @@
-DATE: 2nd Jul 2026 to 9th Jul 2026
-1) RAG Pipeline Optimizer — https://www.reddit.com/r/LangChain/comments/1un4uv0/why_does_everyone_skip_the_chunking_part | WHY: RAG pipelines are slow | BUILD: Chunking-based pipeline accelerator | MARKET: Enterprise AI teams
-2) Local LLM Accelerator — https://www.reddit.com/r/LocalLLM/comments/1ur3042/anyone_else_frustrated_with_slow_llm_downloads | WHY: Local LLMs are slow | BUILD: Hardware-accelerated LLM inference | MARKET: Local AI developers
-3) Multimodal RAG — https://www.linkedin.com/posts/mounicat_rag-with-langgraph-cheat-sheet-activity-7479710677448949760-tZqv | WHY: RAG lacks multimodal support | BUILD: Multimodal RAG with image and table support | MARKET: Enterprise knowledge bases
-4) AI Agent Reliability Toolkit — https://www.reddit.com/r/hermesagent/comments/1uqr4kv/i_spent_months_building_ai_pipelines_that_dont | WHY: AI agents are unreliable | BUILD: Reliability toolkit for AI agents | MARKET: AI developers
-5) LLM Token Optimizer — https://github.com/pleasedodisturb/awesome-llm-token-optimization | WHY: LLM tokens are expensive | BUILD: Token optimization toolkit for LLMs | MARKET: LLM developers
+DATE: 3rd Jul 2026 to 10th Jul 2026
+1) RAG Optimizer — https://www.reddit.com/r/LangChain/comments/1uqmfxr/ai_agents_gave_companies_a_cortex_but_nobody | WHY: RAG systems lack optimization | BUILD: Dynamic RAG for visually-rich documents | MARKET: Enterprise document understanding
+2) Local LLM Accelerator — https://www.reddit.com/r/LocalLLM/comments/1us6f84/if_you_spent_45k_on_a_local_ai_rig_would_you_do | WHY: Local LLMs are slow | BUILD: Hardware-accelerated LLM inference | MARKET: Local AI developers
+3) Multimodal RAG — https://www.instagram.com/reel/DajyTXrhED0 | WHY: RAG systems lack multimodality | BUILD: Indexing text, images, and tables | MARKET: Document understanding platforms
+4) AI Agent Reliability Toolkit — https://www.reddit.com/r/hermesagent/comments/1uqr4kv/i_spent_months_building_ai_pipelines_that_dont | WHY: AI agents are unreliable | BUILD: Pipeline testing and validation | MARKET: AI agent developers
+5) LLM Infrastructure Planner — https://www.wisdomtree.com/lu/insights/blog/europes-ai-sovereignty-needs-an-infrastructure-backbone | WHY: LLM infrastructure is inadequate | BUILD: AI infrastructure planning and deployment | MARKET: Cloud service providers
