@@ -1,6 +1,6 @@
-DATE: 3rd Jul 2026 to 10th Jul 2026
-1) RAG Optimizer — https://www.reddit.com/r/LangChain/comments/1uqmfxr/ai_agents_gave_companies_a_cortex_but_nobody | WHY: RAG systems lack optimization | BUILD: Dynamic RAG for visually-rich documents | MARKET: Enterprise document understanding
-2) Local LLM Accelerator — https://www.reddit.com/r/LocalLLM/comments/1us6f84/if_you_spent_45k_on_a_local_ai_rig_would_you_do | WHY: Local LLMs are slow | BUILD: Hardware-accelerated LLM inference | MARKET: Local AI developers
-3) Multimodal RAG — https://www.instagram.com/reel/DajyTXrhED0 | WHY: RAG systems lack multimodality | BUILD: Indexing text, images, and tables | MARKET: Document understanding platforms
-4) AI Agent Reliability Toolkit — https://www.reddit.com/r/hermesagent/comments/1uqr4kv/i_spent_months_building_ai_pipelines_that_dont | WHY: AI agents are unreliable | BUILD: Pipeline testing and validation | MARKET: AI agent developers
-5) LLM Infrastructure Planner — https://www.wisdomtree.com/lu/insights/blog/europes-ai-sovereignty-needs-an-infrastructure-backbone | WHY: LLM infrastructure is inadequate | BUILD: AI infrastructure planning and deployment | MARKET: Cloud service providers
+DATE: 4th Jul 2026 to 11st Jul 2026
+1) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1usi5md/help_me_pick_a_local_ai_setup_max_budget_1900_euro | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1upmivu/realworld_token_optimization_how_raw_pdfdoc | WHY: RAG issues are opaque | BUILD: Trace visualizer | MARKET: DevTools
+3) Multi-modal Router — https://www.reddit.com/r/LangChain/comments/1urhusb/how_would_you_design_an_enterprisegrade_rag | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+4) Agent Replay Harness — https://github.com/zai-org/GLM-5 | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+5) PDF Table Extractor — https://www.reddit.com/r/MachineLearning/comments/1uoejrl/best_models_for_generating_redteam_attacks_also | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
