@@ -1,6 +1,6 @@
-DATE: 4th Jul 2026 to 11st Jul 2026
-1) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1usi5md/help_me_pick_a_local_ai_setup_max_budget_1900_euro | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1upmivu/realworld_token_optimization_how_raw_pdfdoc | WHY: RAG issues are opaque | BUILD: Trace visualizer | MARKET: DevTools
-3) Multi-modal Router — https://www.reddit.com/r/LangChain/comments/1urhusb/how_would_you_design_an_enterprisegrade_rag | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-4) Agent Replay Harness — https://github.com/zai-org/GLM-5 | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-5) PDF Table Extractor — https://www.reddit.com/r/MachineLearning/comments/1uoejrl/best_models_for_generating_redteam_attacks_also | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+DATE: 5th Jul 2026 to 12nd Jul 2026
+1) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1uru7x5/honest_question_why_are_we_throwing | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1uppsgy/i_made_langgraph_agents_wake_themselves_up_on_a | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
+3) Multi-modal Router — https://github.com/HKUDS/LightRAG?ref=lumberjack.so | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+4) LLM Token Optimizer — https://github.com/pleasedodisturb/awesome-llm-token-optimization | WHY: Token limits are restrictive | BUILD: Auto KV cache reuse | MARKET: Large language model users
+5) AI Infrastructure Engineer — https://medium.com/@sridharcloud/becoming-an-ai-infrastructure-engineer-part-1-006fe7cf5d1c | WHY: VRAM is a bottleneck | BUILD: AI infrastructure course | MARKET: AI engineers and researchers
