@@ -1,6 +1,6 @@
-DATE: 5th Jul 2026 to 12nd Jul 2026
-1) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1uru7x5/honest_question_why_are_we_throwing | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1uppsgy/i_made_langgraph_agents_wake_themselves_up_on_a | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-3) Multi-modal Router — https://github.com/HKUDS/LightRAG?ref=lumberjack.so | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-4) LLM Token Optimizer — https://github.com/pleasedodisturb/awesome-llm-token-optimization | WHY: Token limits are restrictive | BUILD: Auto KV cache reuse | MARKET: Large language model users
-5) AI Infrastructure Engineer — https://medium.com/@sridharcloud/becoming-an-ai-infrastructure-engineer-part-1-006fe7cf5d1c | WHY: VRAM is a bottleneck | BUILD: AI infrastructure course | MARKET: AI engineers and researchers
+DATE: 6th Jul 2026 to 13rd Jul 2026
+1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1uukcbf/the_rag_citation_problem_why_i_ended_up_tracking | WHY: RAG issues are opaque | BUILD: Trace visualizer | MARKET: DevTools
+2) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1us6f84/if_you_spent_45k_on_a_local_ai_rig_would_you_do | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+3) PDF Table Extractor — https://www.linkedin.com/posts/rathanuday_your-rag-architecture-should-match-the-question-activity-7479965173592596480-wJoe | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+4) Agent Replay Harness — https://www.reddit.com/r/LangChain/comments/1uppsgy/i_made_langgraph_agents_wake_themselves_up_on_a | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+5) Multi-modal Router — https://github.com/HKUDS/LightRAG?ref=lumberjack.so | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
