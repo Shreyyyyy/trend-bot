@@ -1,6 +1,6 @@
-DATE: 6th Jul 2026 to 13rd Jul 2026
-1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1uukcbf/the_rag_citation_problem_why_i_ended_up_tracking | WHY: RAG issues are opaque | BUILD: Trace visualizer | MARKET: DevTools
+DATE: 7th Jul 2026 to 14th Jul 2026
+1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1uukcbf/the_rag_citation_problem_why_i_ended_up_tracking | WHY: RAG hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
 2) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1us6f84/if_you_spent_45k_on_a_local_ai_rig_would_you_do | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-3) PDF Table Extractor — https://www.linkedin.com/posts/rathanuday_your-rag-architecture-should-match-the-question-activity-7479965173592596480-wJoe | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
-4) Agent Replay Harness — https://www.reddit.com/r/LangChain/comments/1uppsgy/i_made_langgraph_agents_wake_themselves_up_on_a | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-5) Multi-modal Router — https://github.com/HKUDS/LightRAG?ref=lumberjack.so | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+3) PDF Table Extractor — https://vectara.com/blog/open-rag-benchmark-a-new-frontier-for-multimodal-pdf-understanding-in-rag | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+4) Multi-modal Router — https://github.com/AhmedAl93/multimodal-semantic-RAG | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+5) Agent Replay Harness — https://www.reddit.com/r/LangChain/comments/1ur5ekx/guidance_for_customer_facing_qna_rag_system | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
