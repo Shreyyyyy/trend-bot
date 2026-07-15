@@ -1,6 +1,6 @@
-DATE: 7th Jul 2026 to 14th Jul 2026
-1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1uukcbf/the_rag_citation_problem_why_i_ended_up_tracking | WHY: RAG hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-2) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1us6f84/if_you_spent_45k_on_a_local_ai_rig_would_you_do | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-3) PDF Table Extractor — https://vectara.com/blog/open-rag-benchmark-a-new-frontier-for-multimodal-pdf-understanding-in-rag | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
-4) Multi-modal Router — https://github.com/AhmedAl93/multimodal-semantic-RAG | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-5) Agent Replay Harness — https://www.reddit.com/r/LangChain/comments/1ur5ekx/guidance_for_customer_facing_qna_rag_system | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+DATE: 8th Jul 2026 to 15th Jul 2026
+1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1k6p59i/any_good_and_easy_tutorial_on_how_to_build_a_rag | WHY: RAG issues are opaque | BUILD: Trace visualizer | MARKET: DevTools
+2) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1uu3r0x/local_ai_machine_on_a_budget_in_this_economy | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+3) Multimodal RAG — https://www.slideshare.net/slideshow/deploying-a-multimodal-rag-system-using-open-source-milvus-llamaindex-and-vllm/275863395 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+4) AI Agent Reliability — https://www.reddit.com/r/AI_Agents/comments/1uv7hg1/maybe_the_reliability_problem_is_actually_a_scope | WHY: Agents are unreliable | BUILD: Scope-based reliability | MARKET: Enterprise AI teams
+5) LLM Infrastructure — https://www.tylsemi.ai/blog/the-bottleneck-isnt-compute-its-getting-the-chip-built | WHY: Compute is a bottleneck | BUILD: Chip-based infrastructure | MARKET: AI hardware manufacturers
