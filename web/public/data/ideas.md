@@ -1,6 +1,6 @@
-DATE: 8th Jul 2026 to 15th Jul 2026
-1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1k6p59i/any_good_and_easy_tutorial_on_how_to_build_a_rag | WHY: RAG issues are opaque | BUILD: Trace visualizer | MARKET: DevTools
-2) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1uu3r0x/local_ai_machine_on_a_budget_in_this_economy | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-3) Multimodal RAG — https://www.slideshare.net/slideshow/deploying-a-multimodal-rag-system-using-open-source-milvus-llamaindex-and-vllm/275863395 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-4) AI Agent Reliability — https://www.reddit.com/r/AI_Agents/comments/1uv7hg1/maybe_the_reliability_problem_is_actually_a_scope | WHY: Agents are unreliable | BUILD: Scope-based reliability | MARKET: Enterprise AI teams
-5) LLM Infrastructure — https://www.tylsemi.ai/blog/the-bottleneck-isnt-compute-its-getting-the-chip-built | WHY: Compute is a bottleneck | BUILD: Chip-based infrastructure | MARKET: AI hardware manufacturers
+DATE: 9th Jul 2026 to 16th Jul 2026
+1) RAG PDF Parser — https://www.instagram.com/reel/DakmiYNAX3w | WHY: RAG fails on PDF tables | BUILD: Multimodal pipeline for PDFs | MARKET: Financial/Legal automation
+2) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1us6f84/if_you_spent_45k_on_a_local_ai_rig_would_you_do | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+3) AI Agent Debugger — https://news.ycombinator.com/item?id=48897861 | WHY: AI agents are opaque | BUILD: Trace visualizer | MARKET: DevTools
+4) Multimodal RAG — https://arxiv.org/html/2604.04969v2 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+5) LLM Inference Solver — https://github.blog/ai-and-ml/llms/solving-the-inference-problem-for-open-source-ai-projects-with-github-models | WHY: Inference is a bottleneck | BUILD: Free inference API | MARKET: Open-source AI projects
