@@ -1,6 +1,6 @@
-DATE: 9th Jul 2026 to 16th Jul 2026
-1) RAG PDF Parser — https://www.instagram.com/reel/DakmiYNAX3w | WHY: RAG fails on PDF tables | BUILD: Multimodal pipeline for PDFs | MARKET: Financial/Legal automation
-2) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1us6f84/if_you_spent_45k_on_a_local_ai_rig_would_you_do | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-3) AI Agent Debugger — https://news.ycombinator.com/item?id=48897861 | WHY: AI agents are opaque | BUILD: Trace visualizer | MARKET: DevTools
-4) Multimodal RAG — https://arxiv.org/html/2604.04969v2 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-5) LLM Inference Solver — https://github.blog/ai-and-ml/llms/solving-the-inference-problem-for-open-source-ai-projects-with-github-models | WHY: Inference is a bottleneck | BUILD: Free inference API | MARKET: Open-source AI projects
+DATE: 10th Jul 2026 to 17th Jul 2026
+1) RAG Table Extractor — https://github.com/Mattral/RAG-Multimodal-Financial-Doc-Analysis-and-Recall | WHY: PDF tables are hard to parse | BUILD: Multimodal RAG for table understanding | MARKET: Financial document analysis
+2) LLM Optimizer — https://platformengineering.org/blog/unlocking-self-service-llm-deployment-with-platform-engineering | WHY: Cloud costs are high | BUILD: Self-service LLM deployment platform | MARKET: Enterprise AI teams
+3) AI Agent Debugger — https://www.reddit.com/r/LangChain/comments/1uxegg3/what_is_the_bottleneck_while_debugging_ai_agents | WHY: Debugging AI agents is hard | BUILD: AI agent debugging tool | MARKET: AI developer teams
+4) Multimodal RAG — https://www.linkedin.com/posts/thescholarbaniya_one-post-that-simplifies-modern-rag-ive-activity-7482275252408885248-I_sD | WHY: Unimodal RAG has limitations | BUILD: Multimodal RAG for text, image, and table understanding | MARKET: Content platforms
+5) Infrastructure Bottleneck Solver — https://www.keysight.com/blogs/en/inds/ai/tackling-ai-infrastructure-bottlenecks-executive-insights | WHY: AI infrastructure is a bottleneck | BUILD: AI infrastructure optimization tool | MARKET: Data centers and cloud providers
