@@ -1,6 +1,6 @@
-DATE: 10th Jul 2026 to 17th Jul 2026
-1) RAG Table Extractor — https://github.com/Mattral/RAG-Multimodal-Financial-Doc-Analysis-and-Recall | WHY: PDF tables are hard to parse | BUILD: Multimodal RAG for table understanding | MARKET: Financial document analysis
-2) LLM Optimizer — https://platformengineering.org/blog/unlocking-self-service-llm-deployment-with-platform-engineering | WHY: Cloud costs are high | BUILD: Self-service LLM deployment platform | MARKET: Enterprise AI teams
-3) AI Agent Debugger — https://www.reddit.com/r/LangChain/comments/1uxegg3/what_is_the_bottleneck_while_debugging_ai_agents | WHY: Debugging AI agents is hard | BUILD: AI agent debugging tool | MARKET: AI developer teams
-4) Multimodal RAG — https://www.linkedin.com/posts/thescholarbaniya_one-post-that-simplifies-modern-rag-ive-activity-7482275252408885248-I_sD | WHY: Unimodal RAG has limitations | BUILD: Multimodal RAG for text, image, and table understanding | MARKET: Content platforms
-5) Infrastructure Bottleneck Solver — https://www.keysight.com/blogs/en/inds/ai/tackling-ai-infrastructure-bottlenecks-executive-insights | WHY: AI infrastructure is a bottleneck | BUILD: AI infrastructure optimization tool | MARKET: Data centers and cloud providers
+DATE: 11st Jul 2026 to 18th Jul 2026
+1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1uxegg3/what_is_the_bottleneck_while_debugging_ai_agents | WHY: RAG hallucinations | BUILD: Trace visualizer | MARKET: DevTools
+2) Local LLM Optimizer — https://platformengineering.org/blog/unlocking-self-service-llm-deployment-with-platform-engineering | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+3) PDF Table Extractor — https://github.com/Mattral/RAG-Multimodal-Financial-Doc-Analysis-and-Recall | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+4) AI Agent Reliability Toolkit — https://www.reddit.com/r/AI_Agents/comments/1uv7hg1/maybe_the_reliability_problem_is_actually_a_scope | WHY: AI agents are unreliable | BUILD: Scope-aware agent testing | MARKET: Enterprise AI teams
+5) Multimodal RAG — https://arxiv.org/html/2604.04969v2 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
