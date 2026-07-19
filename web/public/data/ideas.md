@@ -1,6 +1,6 @@
-DATE: 11st Jul 2026 to 18th Jul 2026
-1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1uxegg3/what_is_the_bottleneck_while_debugging_ai_agents | WHY: RAG hallucinations | BUILD: Trace visualizer | MARKET: DevTools
-2) Local LLM Optimizer — https://platformengineering.org/blog/unlocking-self-service-llm-deployment-with-platform-engineering | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-3) PDF Table Extractor — https://github.com/Mattral/RAG-Multimodal-Financial-Doc-Analysis-and-Recall | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
-4) AI Agent Reliability Toolkit — https://www.reddit.com/r/AI_Agents/comments/1uv7hg1/maybe_the_reliability_problem_is_actually_a_scope | WHY: AI agents are unreliable | BUILD: Scope-aware agent testing | MARKET: Enterprise AI teams
-5) Multimodal RAG — https://arxiv.org/html/2604.04969v2 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+DATE: 12nd Jul 2026 to 19th Jul 2026
+1) RAG Reliability Toolkit — https://www.reddit.com/r/AI_Agents/comments/1uv7hg1/maybe_the_reliability_problem_is_actually_a_scope | WHY: RAG systems lack reliability | BUILD: Scope-aware RAG framework | MARKET: Enterprise AI teams
+2) Multimodal PDF Parser — https://vectara.com/blog/open-rag-benchmark-a-new-frontier-for-multimodal-pdf-understanding-in-rag | WHY: PDFs are hard to parse | BUILD: Multimodal RAG-based PDF parser | MARKET: Document-heavy industries
+3) AI Infrastructure Optimizer — https://blog.se.com/datacenter/2026/07/16/ai-power-infrastructure | WHY: AI infrastructure is power-hungry | BUILD: AI-powered infrastructure optimizer | MARKET: Cloud providers
+4) LLM Debugging Tool — https://www.reddit.com/r/MachineLearning/comments/1e9lfu3/d_what_are_the_problems_with_using_llama_in_a | WHY: LLMs are hard to debug | BUILD: LLM debugging toolkit | MARKET: AI developers
+5) Autonomous Agent Platform — https://github.com/erickyegon/multimodal-pdf-rag-system | WHY: Autonomous agents lack platforms | BUILD: Multimodal RAG-based agent platform | MARKET: Autonomous agent developers
