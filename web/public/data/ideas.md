@@ -1,6 +1,6 @@
-DATE: 12nd Jul 2026 to 19th Jul 2026
-1) RAG Reliability Toolkit — https://www.reddit.com/r/AI_Agents/comments/1uv7hg1/maybe_the_reliability_problem_is_actually_a_scope | WHY: RAG systems lack reliability | BUILD: Scope-aware RAG framework | MARKET: Enterprise AI teams
-2) Multimodal PDF Parser — https://vectara.com/blog/open-rag-benchmark-a-new-frontier-for-multimodal-pdf-understanding-in-rag | WHY: PDFs are hard to parse | BUILD: Multimodal RAG-based PDF parser | MARKET: Document-heavy industries
-3) AI Infrastructure Optimizer — https://blog.se.com/datacenter/2026/07/16/ai-power-infrastructure | WHY: AI infrastructure is power-hungry | BUILD: AI-powered infrastructure optimizer | MARKET: Cloud providers
-4) LLM Debugging Tool — https://www.reddit.com/r/MachineLearning/comments/1e9lfu3/d_what_are_the_problems_with_using_llama_in_a | WHY: LLMs are hard to debug | BUILD: LLM debugging toolkit | MARKET: AI developers
-5) Autonomous Agent Platform — https://github.com/erickyegon/multimodal-pdf-rag-system | WHY: Autonomous agents lack platforms | BUILD: Multimodal RAG-based agent platform | MARKET: Autonomous agent developers
+DATE: 13rd Jul 2026 to 20th Jul 2026
+1) RAG PDF Ingestor — https://www.reddit.com/r/Rag/comments/1ux7oxp/whats_your_pdfpptdocx_ingestion_process_look_like | WHY: PDF tables are hard to parse | BUILD: Table extraction API | MARKET: Document automation
+2) LLM Reliability Checker — https://www.reddit.com/r/MachineLearning/comments/1e9lfu3/d_what_are_the_problems_with_using_llama_in_a | WHY: LLMs can be unreliable | BUILD: Model validation framework | MARKET: AI development teams
+3) Multimodal RAG Engine — https://www.facebook.com/61573080077101/posts/retrieval-augmented-generation-rag-is-no-longer-limited-to-simple-vector-search-/122189063936769335 | WHY: RAG is limited to text | BUILD: Multimodal RAG architecture | MARKET: Enterprise AI
+4) AI Agent Debugger — https://www.reddit.com/r/AgentsOfAI/comments/1uvff3o/before_giving_an_ai_agent_more_autonomy_improve | WHY: AI agents can be opaque | BUILD: Agent debugging tool | MARKET: AI developers
+5) Vectorless RAG Navigator — https://www.instagram.com/reel/Dawn4Fvqfs0 | WHY: Traditional RAG is limited | BUILD: Vectorless RAG navigation system | MARKET: AI researchers
