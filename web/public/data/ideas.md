@@ -1,6 +1,6 @@
-DATE: 13rd Jul 2026 to 20th Jul 2026
-1) RAG PDF Ingestor — https://www.reddit.com/r/Rag/comments/1ux7oxp/whats_your_pdfpptdocx_ingestion_process_look_like | WHY: PDF tables are hard to parse | BUILD: Table extraction API | MARKET: Document automation
-2) LLM Reliability Checker — https://www.reddit.com/r/MachineLearning/comments/1e9lfu3/d_what_are_the_problems_with_using_llama_in_a | WHY: LLMs can be unreliable | BUILD: Model validation framework | MARKET: AI development teams
-3) Multimodal RAG Engine — https://www.facebook.com/61573080077101/posts/retrieval-augmented-generation-rag-is-no-longer-limited-to-simple-vector-search-/122189063936769335 | WHY: RAG is limited to text | BUILD: Multimodal RAG architecture | MARKET: Enterprise AI
-4) AI Agent Debugger — https://www.reddit.com/r/AgentsOfAI/comments/1uvff3o/before_giving_an_ai_agent_more_autonomy_improve | WHY: AI agents can be opaque | BUILD: Agent debugging tool | MARKET: AI developers
-5) Vectorless RAG Navigator — https://www.instagram.com/reel/Dawn4Fvqfs0 | WHY: Traditional RAG is limited | BUILD: Vectorless RAG navigation system | MARKET: AI researchers
+DATE: 14th Jul 2026 to 21st Jul 2026
+1) Multimodal RAG — https://medium.com/codetodeploy/building-multimodal-data-processing-projects-with-emerging-retrieval-augmented-generation-rag-9f8612005e4b | WHY: PDF image table problems | BUILD: Multimodal data processing | MARKET: Enterprise data integration
+2) AI Infrastructure Optimizer — https://www.moomoo.com/community/feed/the-compute-defensive-playbook-a-systems-engineering-framework-for-defeating-116938282631173 | WHY: AI infrastructure bottlenecks | BUILD: Compute defensive playbook | MARKET: Cloud service providers
+3) LLM Debugger — https://www.reddit.com/r/LLMDevs/new | WHY: LLM hallucinations | BUILD: LLM debugging tool | MARKET: AI developers
+4) RAG Workflow Orchestrator — https://www.reddit.com/r/AgentsOfAI/comments/1v0ysli/is_anyone_actually_orchestrating_multiagent | WHY: Multi-agent workflow issues | BUILD: RAG workflow orchestrator | MARKET: AI workflow managers
+5) AI Agent Reliability Toolkit — https://www.instagram.com/reel/Dax4N72Co04 | WHY: AI agent reliability issues | BUILD: AI agent reliability toolkit | MARKET: AI agent developers
