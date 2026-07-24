@@ -1,6 +1,6 @@
-DATE: 16th Jul 2026 to 23rd Jul 2026
-1) AutoGPT Optimizer — https://github.com/youssefHosni/Prompt-Engineering-for-Instruction-Tuned-LLM | WHY: AutoGPT needs better prompts | BUILD: Instruction-tuned LLM wrapper | MARKET: Enterprise AI teams
-2) LLM Debugger — https://www.reddit.com/r/MachineLearning/comments/1ebyx03/n_ai_achieves_silvermedal_standard_solving | WHY: LLMs are opaque | BUILD: Trace visualizer for LLMs | MARKET: DevTools
-3) Multimodal RAG — https://vectara.com/blog/open-rag-benchmark-a-new-frontier-for-multimodal-pdf-understanding-in-rag | WHY: RAG struggles with images | BUILD: Multimodal PDF understanding | MARKET: Content platforms
-4) AI Cost Analyzer — https://www.reddit.com/r/AI_Agents/comments/1uyoz6i/how_are_you_debugging_unexpected_cost_spikes_in | WHY: AI costs are unpredictable | BUILD: Cost spike debugger | MARKET: AI developers
-5) LangChain Builder — https://www.reddit.com/r/LangChain/comments/1uykd0i/langchain_builders_where_does_your_authorization | WHY: LangChain needs better auth | BUILD: Authorization framework | MARKET: LangChain developers
+DATE: 17th Jul 2026 to 24th Jul 2026
+1) RAG Table Extractor — https://vectara.com/blog/open-rag-benchmark-a-new-frontier-for-multimodal-pdf-understanding-in-rag | WHY: Tables are hard to parse | BUILD: PDF table parsing for RAG | MARKET: Enterprise document analysis
+2) LLM Hallucination Detector — https://www.reddit.com/r/MachineLearning/comments/1e9lfu3/d_what_are_the_problems_with_using_llama_in_a | WHY: LLMs hallucinate facts | BUILD: Fact-checking module for LLMs | MARKET: AI-powered content generation
+3) Multimodal RAG Chatbot — https://medium.com/@rajratangulab.more/building-a-multimodal-rag-chatbot-with-image-text-and-table-understanding-91946bc9c51c | WHY: Text-only RAG is limited | BUILD: Image, text, and table understanding for RAG | MARKET: Customer service automation
+4) AI Infrastructure Optimizer — https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd | WHY: AI infrastructure is costly | BUILD: AI-powered infrastructure optimization | MARKET: Cloud computing providers
+5) Local LLM Debugger — https://github.com/youssefHosni/Prompt-Engineering-for-Instruction-Tuned-LLM | WHY: Local LLMs are hard to debug | BUILD: Debugging tools for local LLMs | MARKET: AI developers and researchers
