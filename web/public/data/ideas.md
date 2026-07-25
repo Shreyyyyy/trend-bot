@@ -1,6 +1,6 @@
-DATE: 17th Jul 2026 to 24th Jul 2026
-1) RAG Table Extractor — https://vectara.com/blog/open-rag-benchmark-a-new-frontier-for-multimodal-pdf-understanding-in-rag | WHY: Tables are hard to parse | BUILD: PDF table parsing for RAG | MARKET: Enterprise document analysis
-2) LLM Hallucination Detector — https://www.reddit.com/r/MachineLearning/comments/1e9lfu3/d_what_are_the_problems_with_using_llama_in_a | WHY: LLMs hallucinate facts | BUILD: Fact-checking module for LLMs | MARKET: AI-powered content generation
-3) Multimodal RAG Chatbot — https://medium.com/@rajratangulab.more/building-a-multimodal-rag-chatbot-with-image-text-and-table-understanding-91946bc9c51c | WHY: Text-only RAG is limited | BUILD: Image, text, and table understanding for RAG | MARKET: Customer service automation
-4) AI Infrastructure Optimizer — https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd | WHY: AI infrastructure is costly | BUILD: AI-powered infrastructure optimization | MARKET: Cloud computing providers
-5) Local LLM Debugger — https://github.com/youssefHosni/Prompt-Engineering-for-Instruction-Tuned-LLM | WHY: Local LLMs are hard to debug | BUILD: Debugging tools for local LLMs | MARKET: AI developers and researchers
+DATE: 18th Jul 2026 to 25th Jul 2026
+1) RAG Optimizer — https://www.reddit.com/r/LangChain/comments/1amktb2/how_to_tackle_token_limit_issue_with_rag | WHY: RAG token limits hinder performance | BUILD: Dynamic token allocation system | MARKET: Enterprise AI teams
+2) LLM Debugger — https://www.reddit.com/r/MachineLearning/comments/1e9lfu3/d_what_are_the_problems_with_using_llama_in_a | WHY: LLMs are prone to hallucinations | BUILD: Model interpretability toolkit | MARKET: AI developer communities
+3) Multimodal RAG — https://stackoverflow.com/questions/79982053/how-do-production-rag-systems-reliably-retrieve-structured-document-sections-ru | WHY: RAG systems struggle with multimodal data | BUILD: Image-text retrieval pipeline | MARKET: Content platforms
+4) AI Agent Router — https://www.instagram.com/p/Da70OdgEbeJ | WHY: AI agents require efficient routing | BUILD: Adaptive routing algorithm | MARKET: AI-powered startups
+5) Local LLM — https://www.reddit.com/r/LocalLLM/comments/1v156dp/you_have_a_30k_budget_and_want_to_max_out_with | WHY: Cloud LLMs are expensive | BUILD: Edge-based LLM deployment | MARKET: Privacy-focused enterprises
