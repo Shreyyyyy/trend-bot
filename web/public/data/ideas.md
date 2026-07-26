@@ -1,6 +1,6 @@
-DATE: 18th Jul 2026 to 25th Jul 2026
-1) RAG Optimizer — https://www.reddit.com/r/LangChain/comments/1amktb2/how_to_tackle_token_limit_issue_with_rag | WHY: RAG token limits hinder performance | BUILD: Dynamic token allocation system | MARKET: Enterprise AI teams
-2) LLM Debugger — https://www.reddit.com/r/MachineLearning/comments/1e9lfu3/d_what_are_the_problems_with_using_llama_in_a | WHY: LLMs are prone to hallucinations | BUILD: Model interpretability toolkit | MARKET: AI developer communities
-3) Multimodal RAG — https://stackoverflow.com/questions/79982053/how-do-production-rag-systems-reliably-retrieve-structured-document-sections-ru | WHY: RAG systems struggle with multimodal data | BUILD: Image-text retrieval pipeline | MARKET: Content platforms
-4) AI Agent Router — https://www.instagram.com/p/Da70OdgEbeJ | WHY: AI agents require efficient routing | BUILD: Adaptive routing algorithm | MARKET: AI-powered startups
-5) Local LLM — https://www.reddit.com/r/LocalLLM/comments/1v156dp/you_have_a_30k_budget_and_want_to_max_out_with | WHY: Cloud LLMs are expensive | BUILD: Edge-based LLM deployment | MARKET: Privacy-focused enterprises
+DATE: 19th Jul 2026 to 26th Jul 2026
+1) Auto RAG Builder — https://www.reddit.com/r/LangChain/comments/1ihw6pk/issues_with_routing_in_my_rag_agent_any_advice | WHY: RAG routing issues | BUILD: Auto RAG builder tool | MARKET: AI developers
+2) LLM Optimizer — https://www.linkedin.com/posts/rohit-ghumare_ai-engineering-from-scratch-is-on-github-activity-7484890070777503744-4LiW | WHY: LLM optimization | BUILD: LLM optimization framework | MARKET: AI startups
+3) Multimodal RAG — https://www.projectpro.io/article/multimodal-rag/1104 | WHY: Multimodal data processing | BUILD: Multimodal RAG pipeline | MARKET: Data scientists
+4) AI Infrastructure Manager — https://northflank.com/blog/how-to-manage-enterprise-ai-infrastructure | WHY: AI infrastructure management | BUILD: AI infrastructure management platform | MARKET: Enterprises
+5) Agent Reliability Toolkit — https://news.ycombinator.com/item?id=49010345 | WHY: Agent reliability issues | BUILD: Agent reliability toolkit | MARKET: AI researchers
