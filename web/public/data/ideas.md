@@ -1,6 +1,6 @@
-DATE: 21st Jul 2026 to 28th Jul 2026
-1) ActiveVision Solver — https://www.reddit.com/r/MachineLearning/comments/1v4ns8l/gpt55_scores_106_on_activevision_humans_hit_961_r | WHY: Human-AI performance gap | BUILD: AI-assisted ActiveVision training | MARKET: Computer Vision Researchers
-2) RAG PDF Parser — https://www.instagram.com/p/DbSbuRNipr- | WHY: Multimodal RAG limitations | BUILD: PDF parsing for RAG pipelines | MARKET: Document Analysis
-3) Agent Reliability Toolkit — https://www.reddit.com/r/LangChain/comments/1v4t1xe/ai_agent_reliability_diagnostic_i_find_the_silent | WHY: Silent agent failures | BUILD: Diagnostic tools for AI agents | MARKET: AI DevOps Teams
-4) LLM Optimizer — https://emergedge.com/blog/ai-datacenter-power-bottleneck-2026 | WHY: AI infrastructure costs | BUILD: Efficient LLM optimization techniques | MARKET: Cloud Service Providers
-5) Multimodal RAG Framework — https://arxiv.org/html/2607.18917v1 | WHY: Limited RAG capabilities | BUILD: Multimodal RAG framework for various data types | MARKET: AI Researchers and Developers
+DATE: 22nd Jul 2026 to 29th Jul 2026
+1) Memory Optimizer — https://www.reddit.com/r/LocalLLM/comments/1v8zmot/i_opensourced_alwaysaccompany_an_ai_companion | WHY: Memory issues in AI contexts | BUILD: Multi-level memory framework | MARKET: Local LLM developers
+2) AI Companion — https://www.reddit.com/r/LocalLLM/comments/1v5hs9i/does_anyone_else_find_it_super_difficult_to_keep | WHY: Difficulty in keeping up with AI advancements | BUILD: AI companion app for updates and insights | MARKET: AI enthusiasts and professionals
+3) Data Labeling Tool — https://www.reddit.com/r/LocalLLM/comments/1v3ejgd/sto_scrivendo_la_mia_tesi_sulletichettatura_dei | WHY: Need for efficient data labeling | BUILD: AI-powered data labeling tool | MARKET: Researchers and data scientists
+4) Agent Harness — https://www.reddit.com/r/LocalLLM/comments/1v45jws/agent_harness_poll | WHY: Agent reliability issues | BUILD: Agent harness for improved reliability | MARKET: Enterprise AI teams
+5) Multimodal RAG — https://www.instagram.com/reel/DbNtnqQTi1Z | WHY: Limitations of text-only RAG | BUILD: Multimodal RAG for text, images, and tables | MARKET: Businesses with complex document processing needs
