@@ -1,6 +1,6 @@
-DATE: 22nd Jul 2026 to 29th Jul 2026
-1) Memory Optimizer — https://www.reddit.com/r/LocalLLM/comments/1v8zmot/i_opensourced_alwaysaccompany_an_ai_companion | WHY: Memory issues in AI contexts | BUILD: Multi-level memory framework | MARKET: Local LLM developers
-2) AI Companion — https://www.reddit.com/r/LocalLLM/comments/1v5hs9i/does_anyone_else_find_it_super_difficult_to_keep | WHY: Difficulty in keeping up with AI advancements | BUILD: AI companion app for updates and insights | MARKET: AI enthusiasts and professionals
-3) Data Labeling Tool — https://www.reddit.com/r/LocalLLM/comments/1v3ejgd/sto_scrivendo_la_mia_tesi_sulletichettatura_dei | WHY: Need for efficient data labeling | BUILD: AI-powered data labeling tool | MARKET: Researchers and data scientists
-4) Agent Harness — https://www.reddit.com/r/LocalLLM/comments/1v45jws/agent_harness_poll | WHY: Agent reliability issues | BUILD: Agent harness for improved reliability | MARKET: Enterprise AI teams
-5) Multimodal RAG — https://www.instagram.com/reel/DbNtnqQTi1Z | WHY: Limitations of text-only RAG | BUILD: Multimodal RAG for text, images, and tables | MARKET: Businesses with complex document processing needs
+DATE: 23rd Jul 2026 to 30th Jul 2026
+1) Multimodal RAG — https://www.vectara.com/blog/open-rag-benchmark-a-new-frontier-for-multimodal-pdf-understanding-in-rag | WHY: PDFs contain unstructured data | BUILD: Table and image extraction | MARKET: Document-heavy industries
+2) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1v5e1ns/built_a_file_browser_that_runs_embeddings | WHY: Cloud costs are high | BUILD: On-device LLM wrapper | MARKET: Privacy-focused companies
+3) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1amktb2/how_to_tackle_token_limit_issue_with_rag | WHY: RAG issues are hard to debug | BUILD: Visual debugger for RAG | MARKET: AI developers
+4) AI Agent Reliability — https://www.reddit.com/r/aiagents/comments/1v4e0aa/we_compressed_our_ai_agents_context_costs_fell | WHY: AI agents are unreliable | BUILD: Context compression for AI agents | MARKET: AI-powered businesses
+5) LLM Infrastructure — https://cloud.google.com/blog/topics/ai-infrastructure/state-of-ai-infrastructure-report-and-the-agentic-data-cloud | WHY: AI infrastructure is complex | BUILD: Scalable AI infrastructure | MARKET: Large enterprises
