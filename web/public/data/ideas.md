@@ -1,6 +1,6 @@
-DATE: 23rd Jul 2026 to 30th Jul 2026
-1) Multimodal RAG — https://www.vectara.com/blog/open-rag-benchmark-a-new-frontier-for-multimodal-pdf-understanding-in-rag | WHY: PDFs contain unstructured data | BUILD: Table and image extraction | MARKET: Document-heavy industries
-2) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1v5e1ns/built_a_file_browser_that_runs_embeddings | WHY: Cloud costs are high | BUILD: On-device LLM wrapper | MARKET: Privacy-focused companies
-3) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1amktb2/how_to_tackle_token_limit_issue_with_rag | WHY: RAG issues are hard to debug | BUILD: Visual debugger for RAG | MARKET: AI developers
-4) AI Agent Reliability — https://www.reddit.com/r/aiagents/comments/1v4e0aa/we_compressed_our_ai_agents_context_costs_fell | WHY: AI agents are unreliable | BUILD: Context compression for AI agents | MARKET: AI-powered businesses
-5) LLM Infrastructure — https://cloud.google.com/blog/topics/ai-infrastructure/state-of-ai-infrastructure-report-and-the-agentic-data-cloud | WHY: AI infrastructure is complex | BUILD: Scalable AI infrastructure | MARKET: Large enterprises
+DATE: 24th Jul 2026 to 31st Jul 2026
+1) RAG PDF Extractor — https://www.reddit.com/r/Rag/comments/1v9v7eq/i_cant_extract_the_tables_properly_from_pdfs | WHY: Tables are hard to extract | BUILD: PDF parsing with layout analysis | MARKET: Financial/Legal document processing
+2) Multimodal RAG — https://arxiv.org/html/2607.24861v1 | WHY: Text and image understanding is key | BUILD: Cross-modal embedding and retrieval | MARKET: E-commerce and media search
+3) Local LLM Optimizer — https://github.com/vince-lam/awesome-local-llms | WHY: Cloud costs are high | BUILD: Model pruning and quantization | MARKET: Edge AI and IoT devices
+4) AI Agent Debugger — https://www.reddit.com/r/AgentsOfAI/comments/1v9qe4p/1400_years_ago_scholars_solved_a_problem | WHY: Agent failures are opaque | BUILD: Step-by-step execution tracing | MARKET: AI developer tools
+5) Liquid Cooling Infrastructure — https://nautilusdt.com/blog/guide-to-designing-liquid-cooling-infrastructure-for-ai-data-centers | WHY: AI hardware is power-hungry | BUILD: Custom cooling systems for AI data centers | MARKET: Cloud and enterprise AI infrastructure
