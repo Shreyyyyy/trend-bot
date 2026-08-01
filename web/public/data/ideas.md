@@ -1,6 +1,6 @@
-DATE: 24th Jul 2026 to 31st Jul 2026
-1) RAG PDF Extractor — https://www.reddit.com/r/Rag/comments/1v9v7eq/i_cant_extract_the_tables_properly_from_pdfs | WHY: Tables are hard to extract | BUILD: PDF parsing with layout analysis | MARKET: Financial/Legal document processing
-2) Multimodal RAG — https://arxiv.org/html/2607.24861v1 | WHY: Text and image understanding is key | BUILD: Cross-modal embedding and retrieval | MARKET: E-commerce and media search
-3) Local LLM Optimizer — https://github.com/vince-lam/awesome-local-llms | WHY: Cloud costs are high | BUILD: Model pruning and quantization | MARKET: Edge AI and IoT devices
-4) AI Agent Debugger — https://www.reddit.com/r/AgentsOfAI/comments/1v9qe4p/1400_years_ago_scholars_solved_a_problem | WHY: Agent failures are opaque | BUILD: Step-by-step execution tracing | MARKET: AI developer tools
-5) Liquid Cooling Infrastructure — https://nautilusdt.com/blog/guide-to-designing-liquid-cooling-infrastructure-for-ai-data-centers | WHY: AI hardware is power-hungry | BUILD: Custom cooling systems for AI data centers | MARKET: Cloud and enterprise AI infrastructure
+DATE: 25th Jul 2026 to 1st Aug 2026
+1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1amktb2/how_to_tackle_token_limit_issue_with_rag | WHY: RAG hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
+2) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1v8jfo2/got_kimi_k3_running_on_my_macbook_its_painfully | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+3) Multimodal RAG — https://arxiv.org/html/2607.24861v1 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+4) Agent Replay Harness — https://www.reddit.com/r/MachineLearning/comments/1680vy3/d_10_hardearned_lessons_from_shipping_generative | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+5) PDF Table Extractor — https://www.sapotacorp.vn/blog/multimodal-rag-clip-embeddings-cross-modal-search | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
