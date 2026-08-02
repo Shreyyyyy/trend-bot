@@ -1,6 +1,6 @@
-DATE: 25th Jul 2026 to 1st Aug 2026
-1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1amktb2/how_to_tackle_token_limit_issue_with_rag | WHY: RAG hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-2) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1v8jfo2/got_kimi_k3_running_on_my_macbook_its_painfully | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-3) Multimodal RAG — https://arxiv.org/html/2607.24861v1 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-4) Agent Replay Harness — https://www.reddit.com/r/MachineLearning/comments/1680vy3/d_10_hardearned_lessons_from_shipping_generative | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-5) PDF Table Extractor — https://www.sapotacorp.vn/blog/multimodal-rag-clip-embeddings-cross-modal-search | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+DATE: 26th Jul 2026 to 2nd Aug 2026
+1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1s7lhm1/people_working_with_rag_what_changed_in_the_last | WHY: RAG hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
+2) LLM Optimizer — https://github.com/ai-infra-curriculum/ai-infra-engineer-learning/blob/main/lessons/mod-110-llm-infrastructure/README.md | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+3) Multimodal RAG — https://www.youtube.com/watch?v=dHgvDTXVvPA | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+4) AI Agent Reliability — https://www.linkedin.com/pulse/ai-agent-reliability-systems-problem-intelligence-mike-molinet-thswc | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+5) PDF Table Extractor — https://www.reddit.com/r/MachineLearning/comments/1dmak2a/d_what_are_open_unsolved_interesting_problems_in | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
