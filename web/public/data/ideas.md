@@ -1,6 +1,6 @@
-DATE: 26th Jul 2026 to 2nd Aug 2026
-1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1s7lhm1/people_working_with_rag_what_changed_in_the_last | WHY: RAG hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-2) LLM Optimizer — https://github.com/ai-infra-curriculum/ai-infra-engineer-learning/blob/main/lessons/mod-110-llm-infrastructure/README.md | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-3) Multimodal RAG — https://www.youtube.com/watch?v=dHgvDTXVvPA | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-4) AI Agent Reliability — https://www.linkedin.com/pulse/ai-agent-reliability-systems-problem-intelligence-mike-molinet-thswc | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-5) PDF Table Extractor — https://www.reddit.com/r/MachineLearning/comments/1dmak2a/d_what_are_open_unsolved_interesting_problems_in | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+DATE: 27th Jul 2026 to 3rd Aug 2026
+1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1k6p59i/any_good_and_easy_tutorial_on_how_to_build_a_rag | WHY: RAG issues are opaque | BUILD: Trace visualizer | MARKET: DevTools
+2) Local LLM Optimizer — https://github.com/vince-lam/awesome-local-llms | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+3) Multimodal RAG — https://arxiv.org/html/2607.28580 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+4) AI Agent Reliability Toolkit — https://www.techtimes.com/articles/322297/20260730/princeton-gives-ai-agents-unpublished-questions-original-scientists-grade-results.htm | WHY: Agents lack reliability | BUILD: Evaluation framework | MARKET: Enterprise AI teams
+5) Semantic Caching — https://www.reddit.com/r/LangChain/comments/1vddzjv/semantic_caching_quietly_serving_wrong_answers | WHY: Caching serves wrong answers | BUILD: Context-aware cache | MARKET: AI-powered search engines
