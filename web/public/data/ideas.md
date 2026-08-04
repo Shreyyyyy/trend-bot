@@ -1,6 +1,6 @@
-DATE: 27th Jul 2026 to 3rd Aug 2026
-1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1k6p59i/any_good_and_easy_tutorial_on_how_to_build_a_rag | WHY: RAG issues are opaque | BUILD: Trace visualizer | MARKET: DevTools
-2) Local LLM Optimizer — https://github.com/vince-lam/awesome-local-llms | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-3) Multimodal RAG — https://arxiv.org/html/2607.28580 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-4) AI Agent Reliability Toolkit — https://www.techtimes.com/articles/322297/20260730/princeton-gives-ai-agents-unpublished-questions-original-scientists-grade-results.htm | WHY: Agents lack reliability | BUILD: Evaluation framework | MARKET: Enterprise AI teams
-5) Semantic Caching — https://www.reddit.com/r/LangChain/comments/1vddzjv/semantic_caching_quietly_serving_wrong_answers | WHY: Caching serves wrong answers | BUILD: Context-aware cache | MARKET: AI-powered search engines
+DATE: 28th Jul 2026 to 4th Aug 2026
+1) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1venr6i/what_are_people_using_to_debug_rag_systems_that | WHY: RAG systems fail silently | BUILD: Visualizer for RAG decision paths | MARKET: DevTools
+2) Multi-modal Router — https://arxiv.org/html/2607.28580 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+3) LLM Optimizer — https://www.ddn.com/blog/why-ai-performance-starts-with-data-how-salesforce-eliminated-gpu-bottlenecks-with-ddn-and-google-cloud | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+4) Agent Replay Harness — https://github.com/ai-boost/awesome-harness-engineering | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+5) PDF Table Extractor — https://www.linkedin.com/posts/aishwarya-singh12_rag-llm-ai-activity-7487936481660039168-_oRo | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
