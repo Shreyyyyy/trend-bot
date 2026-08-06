@@ -1,6 +1,6 @@
-DATE: 29th Jul 2026 to 5th Aug 2026
-1) RAG Image Table Extractor — https://arxiv.org/html/2607.28580 | WHY: Multimodal RAG struggles with images | BUILD: Image-aware table extraction | MARKET: Data analytics and science teams
-2) Local LLM Debugger — https://www.reddit.com/r/LocalLLM/comments/1vdgtjv/does_anyone_use_ai_not_worrying_about_10xing | WHY: Local LLMs are hard to debug | BUILD: Local debugging toolkit | MARKET: AI developers and researchers
-3) AI Code Review Tool — https://dev.to/dev_kiran/best-ai-code-review-tools-for-github-in-2026-4pjk | WHY: Code review is tedious | BUILD: AI-powered code review | MARKET: Software development teams
-4) Multimodal RAG Pipeline — https://docs.cloud.google.com/bigquery/docs/rag-pipeline-pdf | WHY: RAG pipelines are limited | BUILD: Multimodal RAG pipeline | MARKET: Data scientists and researchers
-5) Agent Reliability Toolkit — https://www.facebook.com/Udacity/posts/most-agent-demos-die-the-same-death-they-work-in-the-meeting-and-fall-over-in-pr/1551293533700302 | WHY: AI agents are unreliable | BUILD: Agent reliability toolkit | MARKET: AI and machine learning teams
+DATE: 30th Jul 2026 to 6th Aug 2026
+1) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1vfkkq8/someone_convince_me_to_keep_doing_local_projects | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1venr6i/what_are_people_using_to_debug_rag_systems_that | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
+3) Multi-modal Router — https://arxiv.org/html/2607.28580 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+4) Agent Replay Harness — https://github.com/ai-boost/awesome-harness-engineering | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+5) PDF Table Extractor — https://docs.cloud.google.com/bigquery/docs/rag-pipeline-pdf | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
