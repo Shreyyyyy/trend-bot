@@ -1,6 +1,6 @@
-DATE: 30th Jul 2026 to 6th Aug 2026
+DATE: 31st Jul 2026 to 7th Aug 2026
 1) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1vfkkq8/someone_convince_me_to_keep_doing_local_projects | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1venr6i/what_are_people_using_to_debug_rag_systems_that | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-3) Multi-modal Router — https://arxiv.org/html/2607.28580 | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-4) Agent Replay Harness — https://github.com/ai-boost/awesome-harness-engineering | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-5) PDF Table Extractor — https://docs.cloud.google.com/bigquery/docs/rag-pipeline-pdf | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1k6p59i/any_good_and_easy_tutorial_on_how_to_build_a_rag | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
+3) Multimodal RAG — https://www.vectara.com/blog/open-rag-benchmark-a-new-frontier-for-multimodal-pdf-understanding-in-rag | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+4) AI Agent Reliability Toolkit — https://www.facebook.com/a10networks/videos/ai-agents-interpret-prompt-intent-through-probabilistic-text-prediction-rather-t/2529809230766642 | WHY: Prompt injection is a threat | BUILD: Secure agent harness | MARKET: Enterprise security
+5) LLM Infrastructure Planner — https://newmarketpitch.com/blogs/news/ai-infrastructure-storage-bottleneck | WHY: Storage is a bottleneck | BUILD: AI data center planner | MARKET: AI infrastructure providers
