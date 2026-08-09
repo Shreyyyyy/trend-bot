@@ -1,6 +1,6 @@
-DATE: 1st Aug 2026 to 8th Aug 2026
-1) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1vfkkq8/someone_convince_me_to_keep_doing_local_projects | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1venr6i/what_are_people_using_to_debug_rag_systems_that | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-3) Multi-modal Router — https://www.marktechpost.com/2026/08/07/building-a-multimodal-rag-pipeline-with-nvidia-nemo-retriever-hosted-nims-lancedb-reranking-and-grounded-generation | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-4) AI Agent Monitor — https://news.ycombinator.com/item?id=49201003 | WHY: Agents fail silently | BUILD: Realtime agent monitoring | MARKET: Enterprise AI teams
-5) LLM Infrastructure Planner — https://getdx.com/podcast/how-microsoft-sees-engineering-bottlenecks-changing-with-ai | WHY: AI scaling is hard | BUILD: AI infrastructure planning tool | MARKET: Large enterprises
+DATE: 2nd Aug 2026 to 9th Aug 2026
+1) Multimodal RAG Builder — https://github.com/Yigtwxx/awesome-rag-production | WHY: RAG struggles with images and tables | BUILD: Multimodal pipeline for PDFs | MARKET: Enterprise document processing
+2) AI Agent Debugger — https://www.reddit.com/r/LangChain/comments/1vi5nt1/retry_state_is_where_multimodal_agent_pipelines | WHY: Agent pipelines are hard to debug | BUILD: Visualizer for agent state transitions | MARKET: AI developer tools
+3) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1vfkkq8/someone_convince_me_to_keep_doing_local_projects | WHY: Cloud LLMs are expensive | BUILD: Optimizer for local LLM deployment | MARKET: Cost-conscious AI teams
+4) RAG PDF Table Extractor — https://towardsdatascience.com/loop-engineering-for-cross-references-when-rag-answers-see-section-7-2-instead-of-the-actual-answer | WHY: RAG fails on PDF tables | BUILD: PDF table extraction for RAG | MARKET: Financial and legal automation
+5) AI Infrastructure Cost Estimator — https://www.megaport.com/blog/are-ai-coding-agents-the-new-ci-bottleneck | WHY: AI infrastructure costs are unpredictable | BUILD: Cost estimator for AI infrastructure | MARKET: AI engineering teams
