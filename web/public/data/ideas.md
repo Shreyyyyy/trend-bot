@@ -1,6 +1,6 @@
-DATE: 3rd Aug 2026 to 10th Aug 2026
-1) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1vfkkq8/someone_convince_me_to_keep_doing_local_projects | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1vjvcl0/need_help_for_heirarchical_chunking_huge_chunks | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-3) Multi-modal Router — https://github.com/Yigtwxx/awesome-rag-production | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-4) AI Agent Reliability Kit — https://www.facebook.com/a10networks/videos/ai-agents-interpret-prompt-intent-through-probabilistic-text-prediction-rather-t/2529809230766642 | WHY: Agents are brittle | BUILD: Prompt engineering toolkit | MARKET: Enterprise AI teams
-5) LLM Infrastructure Scalator — https://www.keysight.com/blogs/en/inds/ai/tackling-ai-infrastructure-bottlenecks-executive-insights | WHY: AI infrastructure is clogged | BUILD: Auto-scaling LLM cluster | MARKET: AI service providers
+DATE: 4th Aug 2026 to 11st Aug 2026
+1) Multimodal RAG Builder — https://github.com/Yigtwxx/awesome-rag-production | WHY: RAG struggles with images | BUILD: PDF image table extractor | MARKET: Document analysis platforms
+2) LLM Cost Optimizer — https://www.reddit.com/r/LocalLLM/comments/1vfkkq8/someone_convince_me_to_keep_doing_local_projects | WHY: Cloud costs are high | BUILD: Local LLM deployment tool | MARKET: Enterprise AI teams
+3) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1vjvcl0/need_help_for_heirarchical_chunking_huge_chunks | WHY: RAG failures are opaque | BUILD: RAG visualization tool | MARKET: DevTools
+4) AI Agent Reliability — https://news.ycombinator.com/item?id=49214468 | WHY: AI agents are unreliable | BUILD: Agent testing framework | MARKET: AI startups
+5) PDF Table Extractor — https://www.marktechpost.com/2026/08/07/building-a-multimodal-rag-pipeline-with-nvidia-nemo-retriever-hosted-nims-lancedb-reranking-and-grounded-generation | WHY: PDF tables are hard to parse | BUILD: Multimodal RAG pipeline | MARKET: Financial analysis tools
