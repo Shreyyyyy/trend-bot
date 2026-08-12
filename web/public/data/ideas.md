@@ -1,6 +1,6 @@
-DATE: 4th Aug 2026 to 11st Aug 2026
-1) Multimodal RAG Builder — https://github.com/Yigtwxx/awesome-rag-production | WHY: RAG struggles with images | BUILD: PDF image table extractor | MARKET: Document analysis platforms
-2) LLM Cost Optimizer — https://www.reddit.com/r/LocalLLM/comments/1vfkkq8/someone_convince_me_to_keep_doing_local_projects | WHY: Cloud costs are high | BUILD: Local LLM deployment tool | MARKET: Enterprise AI teams
-3) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1vjvcl0/need_help_for_heirarchical_chunking_huge_chunks | WHY: RAG failures are opaque | BUILD: RAG visualization tool | MARKET: DevTools
-4) AI Agent Reliability — https://news.ycombinator.com/item?id=49214468 | WHY: AI agents are unreliable | BUILD: Agent testing framework | MARKET: AI startups
-5) PDF Table Extractor — https://www.marktechpost.com/2026/08/07/building-a-multimodal-rag-pipeline-with-nvidia-nemo-retriever-hosted-nims-lancedb-reranking-and-grounded-generation | WHY: PDF tables are hard to parse | BUILD: Multimodal RAG pipeline | MARKET: Financial analysis tools
+DATE: 5th Aug 2026 to 12nd Aug 2026
+1) Agent Reliability Checker — https://www.reddit.com/r/aiagents/comments/1vibhg8/i_keep_hearing_about_ai_agents_can_someone | WHY: Agents fail in production | BUILD: Test suite for agent robustness | MARKET: Enterprise AI teams
+2) Multimodal RAG Builder — https://github.com/Yigtwxx/awesome-rag-production | WHY: RAG struggles with images and tables | BUILD: Multimodal pipeline for PDFs | MARKET: Document-heavy industries
+3) LLM Debugger — https://www.instagram.com/p/Db2vggqyFo- | WHY: LLMs hallucinate and fail | BUILD: Visual debugger for LLMs | MARKET: AI developers and researchers
+4) AI Infrastructure Planner — https://www.techcrates.com/the-infrastructure-bottleneck-why-power-and-connectivity-are-the-new-frontiers-in-the-ai-race | WHY: AI infrastructure is a bottleneck | BUILD: Planner for AI infrastructure scaling | MARKET: Cloud and datacenter providers
+5) Causality Analysis Tool — https://www.reddit.com/r/MachineLearning/comments/1vj8lag/73_neurips_workshops_and_not_a_single_one_on | WHY: Causality is overlooked in AI | BUILD: Tool for causality analysis in AI | MARKET: Researchers and academics
