@@ -1,6 +1,6 @@
-DATE: 6th Aug 2026 to 13rd Aug 2026
-1) RAG PDF Extractor — https://www.reddit.com/r/LangChain/comments/1my7yc8/understanding_recall_and_kpr_in | WHY: RAG fails on PDFs | BUILD: PDF parsing for RAG | MARKET: Document-heavy industries
-2) Local LLM Optimizer — https://github.com/Ashx098/Mini-LLM | WHY: Cloud costs are high | BUILD: Local LLM deployment | MARKET: Edge AI applications
-3) Multimodal RAG — https://github.com/Yigtwxx/awesome-rag-production | WHY: RAG lacks multimodal support | BUILD: Multimodal RAG pipeline | MARKET: Multimodal data processing
-4) AI Agent Reliability — https://www.instagram.com/p/Db2vggqyFo- | WHY: AI agents are unreliable | BUILD: AI agent testing framework | MARKET: AI agent developers
-5) LLM Infrastructure — https://www.hfcl.com/insights/blogs/the-real-bottleneck-in-ai-infrastructure-is-not-what-you-think | WHY: LLM infrastructure is bottlenecked | BUILD: Scalable LLM infrastructure | MARKET: LLM users
+DATE: 7th Aug 2026 to 14th Aug 2026
+1) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1vnne4k/do_we_need_any_more_data_centers | WHY: Local AI users can't afford memory | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1ihw6pk/issues_with_routing_in_my_rag_agent_any_advice | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
+3) Multi-modal Router — https://www.marktechpost.com/2026/08/07/building-a-multimodal-rag-pipeline-with-nvidia-nemo-retriever-hosted-nims-lancedb-reranking-and-grounded-generation | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+4) Agent Replay Harness — https://a16z.com/can-agents-use-a-computer-yet-weve-got-the-data | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+5) PDF Table Extractor — https://medium.com/@GaoDalie_AI/ovisocr2-rag-revolutionize-complex-data-extraction-open-source-bc358902a327 | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
