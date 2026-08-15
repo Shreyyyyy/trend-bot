@@ -1,6 +1,6 @@
-DATE: 7th Aug 2026 to 14th Aug 2026
-1) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1vnne4k/do_we_need_any_more_data_centers | WHY: Local AI users can't afford memory | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
-2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1ihw6pk/issues_with_routing_in_my_rag_agent_any_advice | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
-3) Multi-modal Router — https://www.marktechpost.com/2026/08/07/building-a-multimodal-rag-pipeline-with-nvidia-nemo-retriever-hosted-nims-lancedb-reranking-and-grounded-generation | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-4) Agent Replay Harness — https://a16z.com/can-agents-use-a-computer-yet-weve-got-the-data | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-5) PDF Table Extractor — https://medium.com/@GaoDalie_AI/ovisocr2-rag-revolutionize-complex-data-extraction-open-source-bc358902a327 | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+DATE: 8th Aug 2026 to 15th Aug 2026
+1) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1vnne4k/do_we_need_any_more_data_centers | WHY: Cloud is expensive | BUILD: vLLM wrapper for edge | MARKET: Privacy-first startups
+2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1vm5xgl/how_do_you_actually_debug_a_failed_agent_run | WHY: Hallucinations are opaque | BUILD: Trace visualizer | MARKET: DevTools
+3) Multi-modal RAG — https://openrouter.ai/blog/tutorials/send-image-to-llm | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
+4) Agent Replay Harness — https://github.com/ai-boost/awesome-harness-engineering | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
+5) PDF Table Extractor — https://www.linkedin.com/posts/yrjdeveloper_i-was-stuck-on-how-to-design-rag-for-multimodal-activity-7492784715062538240-PRzX | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
