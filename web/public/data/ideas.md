@@ -1,6 +1,6 @@
-DATE: 9th Aug 2026 to 16th Aug 2026
-1) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1vnne4k/do_we_need_any_more_data_centers | WHY: Local AI users can't afford memory and video cards | BUILD: vLLM wrapper for edge devices | MARKET: Privacy-first startups
-2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1ihw6pk/issues_with_routing_in_my_rag_agent_any_advice | WHY: Hallucinations are opaque | BUILD: Trace visualizer for RAG | MARKET: DevTools
-3) Multi-modal Router — https://openrouter.ai/blog/tutorials/send-image-to-llm | WHY: Images are high cost | BUILD: Image-aware LLM gate | MARKET: Content platforms
-4) Agent Replay Harness — https://github.com/Zijian-Ni/awesome-ai-agents-2026 | WHY: Agent loops kill ROI | BUILD: Test suite for agent trajectory | MARKET: Enterprise AI teams
-5) PDF Table Extractor — https://medium.com/data-science-collective/ovisocr2-rag-revolutionize-complex-data-extraction-open-source-bc358902a327 | WHY: RAG fails on tables | BUILD: Docling-based parser | MARKET: Finance/Legal automation
+DATE: 10th Aug 2026 to 17th Aug 2026
+1) Local LLM Optimizer — https://www.reddit.com/r/LocalLLM/comments/1vomg53/new_with_local_models_need_some_help | WHY: Local models struggle with random answers | BUILD: Test suite for local LLMs | MARKET: Local AI teams
+2) RAG Debugger — https://www.reddit.com/r/LangChain/comments/1vofn8j/i_rebuilt_my_local_aiagent_debugger_after_people | WHY: RAG issues are opaque | BUILD: Trace visualizer for RAG | MARKET: DevTools
+3) Multimodal RAG — https://openrouter.ai/blog/tutorials/send-image-to-llm | WHY: Images are high cost | BUILD: Image-aware RAG | MARKET: Content platforms
+4) Agent Harness — https://github.com/Picrew/awesome-agent-harness | WHY: Agents lack observability | BUILD: OpenTelemetry-native AI engineering platform | MARKET: AI engineering teams
+5) AI Infrastructure Planner — https://www.irexta.com/blogs/ai-infrastructure-bottlenecks | WHY: AI infrastructure is bottlenecked | BUILD: AI infrastructure planning tool | MARKET: AI infrastructure teams
